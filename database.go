@@ -3,6 +3,7 @@ package main
 import (
 	_ "database/sql"
 	"fmt"
+	"log"
 	"os"
 	"time"
 
@@ -16,9 +17,13 @@ func Connect() {
 	if DB != nil {
 		DB.Close()
 	}
-	fmt.Println("Attempting connection to mysql")
+	fmt.Println("attempting to connect to MySQL")
 
-	DB, _ = gorm.Open("mysql", os.Getenv("DB_CONN_STRING"))
+	db, err := gorm.Open("mysql", os.Getenv("DB_CONN_STRING"))
+	DB = db
+	if err != nil {
+		log.Fatalf("error connecting to MySQL: %s", err)
+	}
 }
 
 func GetPublicShareByShortlink(shortlink string) (PublicShare, error) {
