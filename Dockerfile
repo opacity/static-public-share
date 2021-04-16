@@ -1,4 +1,4 @@
-FROM golang:1.16
+FROM golang:1.15
 
 WORKDIR $GOPATH/src/github.com/opacity/static-public-share
 COPY . .
