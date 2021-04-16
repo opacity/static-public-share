@@ -24,10 +24,10 @@ func init() {
 }
 func main() {
 	r := gin.Default()
-	r.LoadHTMLGlob("templates/*")
+	r.LoadHTMLFiles("templates/shortlink.tmpl")
 	r.GET("/:shortlink", getShortlink)
 
-	r.Run(":3080")
+	r.Run(":" + os.Getenv("STATIC_PUBLIC_SHARE_PORT"))
 }
 
 func getShortlink(c *gin.Context) {
