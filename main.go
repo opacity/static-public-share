@@ -20,6 +20,9 @@ func main() {
 	r := gin.Default()
 	r.LoadHTMLFiles("templates/shortlink.tmpl")
 	r.GET("/:shortlink", getShortlink)
+	r.GET("/health-check", func(c *gin.Context) {
+		c.JSON(http.StatusOK, map[string]string{"status": "ok"})
+	})
 
 	r.Run(":" + os.Getenv("STATIC_PUBLIC_SHARE_PORT"))
 }
