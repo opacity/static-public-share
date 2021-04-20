@@ -16,4 +16,4 @@ Run the image using `docker run --publish 3080:3080 --name static-public-share-t
 
 `go build`
 
-`nohup static-public-share &`
+`nohup ./static-public-share &`

@@ -30,12 +30,15 @@ func main() {
 func getShortlink(c *gin.Context) {
 	shortlink := c.Params.ByName("shortlink")
 	ps, err := GetPublicShareByShortlink(shortlink)
-	if err != nil {
-		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
-	}
 
 	if err != nil {
-		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
+		status := http.StatusInternalServerError
+		if err.Error() == "record not found" {
+			status = http.StatusNotFound
+		}
+
+		c.AbortWithStatusJSON(status, err.Error())
+		return
 	}
 
 	c.HTML(http.StatusOK, "shortlink.tmpl", gin.H{
