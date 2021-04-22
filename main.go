@@ -1,7 +1,7 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"net/http"
 	"os"
 
@@ -11,10 +11,10 @@ import (
 
 func init() {
 	if err := godotenv.Load(); err != nil {
-		log.Fatalf("error loading .env file: %s", err)
+		fmt.Printf("error loading .env file: %s", err)
 	}
 
-	Connect()
+	DbConnect()
 }
 func main() {
 	r := gin.Default()
