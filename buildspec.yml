@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - go build -o bin/static-public-share
+artifacts:
+  files:
+    - bin/static-public-share
