@@ -1,0 +1,16 @@
+[Unit]
+Description=Opacity Static Public Share Service
+ConditionPathExists=/home/ec2-user/static-public-share
+After=network.target
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/ec2-user/static-public-share
+ExecStart=/usr/bin/go run .
+Restart=on-failure
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=staticpublicshareservice
+[Install]
