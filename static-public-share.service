@@ -12,5 +12,5 @@ Restart=on-failure
 RestartSec=10
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=staticpublicshareservice
+SyslogIdentifier=static-public-share
 [Install]
