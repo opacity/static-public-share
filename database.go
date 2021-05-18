@@ -34,6 +34,12 @@ func GetPublicShareByShortlink(shortlink string) (PublicShare, error) {
 	return publicShare, err
 }
 
+func UpdateViewsCount(ps PublicShare) error {
+	ps.ViewsCount++
+
+	return DB.Save(&ps).Error
+}
+
 // PublicShare ...
 type PublicShare struct {
 	PublicID    string    `gorm:"primary_key;autoIncrement:false" json:"public_id" binding:"required"`

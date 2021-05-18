@@ -41,6 +41,12 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
+	err = UpdateViewsCount(ps)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
+		return
+	}
+
 	c.HTML(http.StatusOK, "shortlink.tmpl", gin.H{
 		"Url":         os.Getenv("OPACITY_URL"),
 		"Title":       ps.Title,
