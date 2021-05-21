@@ -4,18 +4,25 @@ import * as path from "path"
 class Context {
   runServer: boolean;
   env: {
-    NODE_ENV: "development" | "production",
+    NODE_ENV: "development" | "production"
     STORAGE_NODE_VERSION: "beta" | "production"
   }
+
   getConfig = () =>
     fusebox({
       target: "browser",
       entry: "src/index.tsx",
       webIndex: {
-        template: "src/index.html"
+        template: this.env.NODE_ENV == "production" ? "src/shortlink.html" : "src/shortlink_dev.html"
       },
       cache: true,
-      devServer: this.runServer,
+      devServer: {
+        enabled: this.runServer,
+        httpServer: {
+          enabled: this.runServer,
+          port: 4445,
+        },
+      },
       plugins: [
         pluginReplace(/node_modules\/bn\.js\/.*/, {
           "require('buffer')": "require('" + require.resolve("./node_modules/buffer") + "')",

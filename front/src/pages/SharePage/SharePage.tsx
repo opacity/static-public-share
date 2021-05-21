@@ -10,7 +10,7 @@ const shareImg = require("../../assets/share-download.svg");
 
 declare global {
   interface window {
-    OPACITY_FILE: {
+    OpacityFile: {
       url: string,
       title: string,
       description: string,
@@ -20,6 +20,7 @@ declare global {
 }
 
 const SharePage = ({ history }) => {
+  const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
   const [previewOpen, setPreviewOpen] = useState(false)
 
   return (
@@ -40,8 +41,8 @@ const SharePage = ({ history }) => {
                         <FileIcon
                           color="#A8A8A8"
                           glyphColor="#ffffff"
-                          {...defaultStyles[file && getFileExtension(file.name)]}
-                          extension={file && getFileExtension(file.name)}
+                          {...defaultStyles[file.fileExtension]}
+                          extension={file.title}
                         />
                       </div>
                   }
@@ -57,20 +58,20 @@ const SharePage = ({ history }) => {
                   <div className='text-filesize'>{file && formatBytes(file.size)}</div>
                   <div className='row mb-3' style={{ justifyContent: 'center' }}>
                     <div className='col-md-5'>
-                      <a href={window.OPACITY_FILE.url} className='btn btn-pill btn-download'>
+                      <a href={file.url} className='btn btn-pill btn-download'>
                         <span></span>
                         Download File
                     </a>
                     </div>
                     <div className='col-md-5'>
-                      <button className='btn btn-pill btn-preview' onClick={() => filePreview(handle)}>
+                      <button className='btn btn-pill btn-preview' onClick={() => filePreview(file)}>
                         <span></span>
                         {previewOpen ? 'Hide' : 'Show'} Preview
                     </button>
                     </div>
                   </div>
                   <div>
-                    <div><a href={ HOME_URL + "/sign-up" }>Get 10GB file storage and file sharing for free</a></div>
+                    <div><a href={HOME_URL + "/sign-up"}>Get 10GB file storage and file sharing for free</a></div>
                     Free to share ideas. Free to be protected. Free to be you.
                   </div>
                   <a className='learn-more' href={HOME_URL + "/platform"} target="_blank">

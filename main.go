@@ -51,11 +51,12 @@ func getShortlink(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
-		"Url":         os.Getenv("OPACITY_URL"),
-		"Title":       ps.Title,
-		"Description": ps.Description,
-		"MimeType":    ps.MimeType,
-		"Image":       imgUrl,
+		"Url":           os.Getenv("OPACITY_URL"),
+		"Title":         ps.Title,
+		"Description":   ps.Description,
+		"MimeType":      ps.MimeType,
+		"FileExtension": ps.FileExtension,
+		"Image":         imgUrl,
 	})
 }
 
