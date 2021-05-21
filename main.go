@@ -54,6 +54,7 @@ func getShortlink(c *gin.Context) {
 		"Url":         os.Getenv("OPACITY_URL"),
 		"Title":       ps.Title,
 		"Description": ps.Description,
+		"MimeType":    ps.MimeType,
 		"Image":       imgUrl,
 	})
 }
