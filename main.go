@@ -19,7 +19,7 @@ func init() {
 
 func main() {
 	r := gin.Default()
-	r.LoadHTMLFiles("templates/shortlink.html")
+	r.LoadHTMLFiles("front/src/shortlink.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{"status": "ok"})
