@@ -44,6 +44,12 @@ func getShortlink(c *gin.Context) {
 
 	imgUrl := getPublicShareThumbnailURL(ps.FileID)
 
+	err = UpdateViewsCount(ps)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
+		return
+	}
+
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
 		"Url":         os.Getenv("OPACITY_URL"),
 		"Title":       ps.Title,
