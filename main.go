@@ -16,9 +16,10 @@ func init() {
 
 	DbConnect()
 }
+
 func main() {
 	r := gin.Default()
-	r.LoadHTMLFiles("templates/shortlink.tmpl")
+	r.LoadHTMLFiles("templates/shortlink.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{"status": "ok"})
@@ -41,11 +42,13 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	c.HTML(http.StatusOK, "shortlink.tmpl", gin.H{
+	imgUrl := getPublicShareThumbnailURL(ps.FileID)
+
+	c.HTML(http.StatusOK, "shortlink.html", gin.H{
 		"Url":         os.Getenv("OPACITY_URL"),
 		"Title":       ps.Title,
 		"Description": ps.Description,
-		"Image":       getPublicShareThumbnailURL(ps.FileID),
+		"Image":       imgUrl,
 	})
 }
 
