@@ -13,7 +13,8 @@ class Context {
       target: "browser",
       entry: "src/index.tsx",
       webIndex: {
-        template: this.env.NODE_ENV == "production" ? "src/shortlink.html" : "src/shortlink_dev.html"
+        distFileName: this.env.NODE_ENV == "production" ? "../templates/shortlink.html" : undefined,
+        template: this.env.NODE_ENV == "production" ? "src/shortlink.html" : "src/shortlink_dev.html",
       },
       cache: true,
       devServer: {
@@ -32,17 +33,26 @@ class Context {
         }),
         pluginReplace(/node_modules\/readable-stream\/.*/, {
           "require('stream')": "require('" + require.resolve("./node_modules/stream-browserify") + "')",
-        })
+        }),
       ],
-      env: this.env
+      resources: {
+        resourceFolder: this.env.NODE_ENV == "production" ? "./shortlink/resources" : undefined,
+      },
+      env: this.env,
     });
 }
 
 const { task, src, exec, rm } = sparky<Context>(Context);
 
-task("remove-artifacts", async () => {
-  rm("dist")
+task("remove-artifacts", async (ctx) => {
   rm(".cache")
+
+  if (ctx.env.NODE_ENV == "production") {
+    rm("../public/shortlink")
+    rm("../templates/shortlink.html")
+  } else {
+    rm("dist")
+  }
 })
 
 task("copy-streamsaver", async () => {
@@ -71,13 +81,14 @@ task("run-dev-prod", async ctx => {
 });
 
 task("run-dev-beta", async ctx => {
-  await exec("remove-artifacts")
-
   ctx.runServer = true;
   ctx.env = {
     NODE_ENV: "development",
     STORAGE_NODE_VERSION: "beta",
   }
+
+  await exec("remove-artifacts")
+
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
@@ -85,57 +96,81 @@ task("run-dev-beta", async ctx => {
 });
 
 task("run-prod-beta", async ctx => {
-  await exec("remove-artifacts")
-
   ctx.runServer = true;
   ctx.env = {
     NODE_ENV: "production",
     STORAGE_NODE_VERSION: "beta",
   }
+
+  await exec("remove-artifacts")
+
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
-  await fuse.runProd({ uglify: false });
+  await fuse.runProd({
+    uglify: false,
+  });
 });
 
 task("run-prod-prod", async ctx => {
-  await exec("remove-artifacts")
-
   ctx.runServer = true;
   ctx.env = {
     NODE_ENV: "production",
     STORAGE_NODE_VERSION: "production",
   }
+
+  await exec("remove-artifacts")
+
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
-  await fuse.runProd({ uglify: false });
+  await fuse.runProd({
+    uglify: false,
+  });
 });
 
 task("dist-prod-beta", async ctx => {
-  await exec("remove-artifacts")
-
   ctx.runServer = false;
   ctx.env = {
     NODE_ENV: "production",
     STORAGE_NODE_VERSION: "beta",
   }
+
+  await exec("remove-artifacts")
+
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
-  await fuse.runProd({ uglify: false });
+  await fuse.runProd({
+    uglify: false,
+    bundles: {
+      distRoot: "../public",
+      app: "./shortlink/app.$hash.js",
+      styles: "./shortlink/style.$hash.css",
+      vendor: "./shortlink/vendor.$hash.js",
+    },
+  });
 });
 
 task("dist-prod-prod", async ctx => {
-  await exec("remove-artifacts")
-
   ctx.runServer = false;
   ctx.env = {
     NODE_ENV: "production",
     STORAGE_NODE_VERSION: "production",
   }
+
+  await exec("remove-artifacts")
+
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
-  await fuse.runProd({ uglify: false });
+  await fuse.runProd({
+    uglify: false,
+    bundles: {
+      distRoot: "../public",
+      app: "./shortlink/app.$hash.js",
+      styles: "./shortlink/style.$hash.css",
+      vendor: "./shortlink/vendor.$hash.js",
+    },
+  });
 });
