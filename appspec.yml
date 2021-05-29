@@ -12,4 +12,3 @@ hooks:
     - location: scripts/stop_server
       timeout: 30
       runas: root
-
