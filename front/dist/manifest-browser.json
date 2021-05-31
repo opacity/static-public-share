@@ -1,0 +1,16 @@
+[
+  {
+    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/app.js",
+    "browserPath": "/app.js",
+    "relativePath": "app.js",
+    "type": "js",
+    "webIndexed": true
+  },
+  {
+    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/vendor.js",
+    "browserPath": "/vendor.js",
+    "relativePath": "vendor.js",
+    "type": "js",
+    "webIndexed": true
+  }
+]
