@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
