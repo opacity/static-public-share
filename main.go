@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -22,7 +23,10 @@ func main() {
 	r.LoadHTMLFiles("front/src/shortlink.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
-		c.JSON(http.StatusOK, map[string]string{"status": "ok"})
+		c.JSON(http.StatusOK, map[string]string{
+			"status": "ok",
+			"uptime": fmt.Sprintf("%v", time.Since(time.Now())),
+		})
 	})
 
 	r.Run(":" + os.Getenv("STATIC_PUBLIC_SHARE_PORT"))
