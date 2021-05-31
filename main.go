@@ -21,7 +21,7 @@ func init() {
 func main() {
 	timeNow := time.Now()
 	r := gin.Default()
-	r.LoadHTMLFiles("front/dist/")
+	r.LoadHTMLFiles("front/dist/index.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{
