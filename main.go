@@ -21,7 +21,7 @@ func init() {
 func main() {
 	timeNow := time.Now()
 	r := gin.Default()
-	r.LoadHTMLFiles("front/dist/index.html")
+	r.LoadHTMLFiles("front/templates/shortlink.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{
@@ -55,7 +55,7 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	c.HTML(http.StatusOK, "index.html", gin.H{
+	c.HTML(http.StatusOK, "shortlink.html", gin.H{
 		"Url":           os.Getenv("OPACITY_URL"),
 		"Title":         ps.Title,
 		"Description":   ps.Description,

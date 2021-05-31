@@ -41,13 +41,13 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(9);
-var helpers_1 = __fusereq(11);
-var react_file_icon_1 = __fusereq(12);
-var config_1 = __fusereq(13);
-const shareImg = __fusereq(7);
+var react_bootstrap_1 = __fusereq(8);
+var helpers_1 = __fusereq(10);
+var react_file_icon_1 = __fusereq(11);
+var config_1 = __fusereq(12);
+const shareImg = __fusereq(6);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [previewOpen, setPreviewOpen] = react_1.useState(false);
@@ -113,10 +113,10 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-7: function(__fusereq, exports, module){
+6: function(__fusereq, exports, module){
 module.exports = "/resources/1a6475db.svg";
 },
-8: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(16);
@@ -124,7 +124,7 @@ var aos_1 = __fusereq(17);
 var aos_1d = __fuse.dt(aos_1);
 var footer_1 = __fusereq(18);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(13);
+var config_1 = __fusereq(12);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -281,7 +281,7 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-13: function(__fusereq, exports, module){
+12: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
