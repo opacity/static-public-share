@@ -29,7 +29,8 @@ func main() {
 			"uptime": fmt.Sprintf("%v", time.Since(timeNow)),
 		})
 	})
-	r.Static("/*", "./public/shortlink")
+	r.Static("/shortlink", "./public/shortlink")
+	r.Static("/resources", "./public/shortlink/resources")
 
 	r.Run(":" + os.Getenv("STATIC_PUBLIC_SHARE_PORT"))
 }
