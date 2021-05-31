@@ -47,9 +47,9 @@ var react_bootstrap_1 = __fusereq(9);
 var helpers_1 = __fusereq(11);
 var react_file_icon_1 = __fusereq(12);
 var config_1 = __fusereq(13);
-const shareImg = __fusereq("../../assets/share-download.svg");
+const shareImg = __fusereq(7);
 const SharePage = ({history}) => {
-  const file = useMemo(() => window.OpacityFile, [window.OpacityFile]);
+  const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [previewOpen, setPreviewOpen] = react_1.useState(false);
   return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
@@ -113,6 +113,9 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
+7: function(__fusereq, exports, module){
+module.exports = "/resources/1a6475db.svg";
+},
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
@@ -129,7 +132,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq("./assets/logo.svg");
+const logo = __fusereq(15);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -282,6 +285,9 @@ exports.default = SiteWrapper;
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
+},
+15: function(__fusereq, exports, module){
+module.exports = "/resources/06dfaeef0.svg";
 }
 })
-//# sourceMappingURL=app.06b91a595.js.map
+//# sourceMappingURL=app.16ef3b4d.js.map
