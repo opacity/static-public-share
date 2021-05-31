@@ -14,3 +14,4 @@ StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=static-public-share
 [Install]
+WantedBy=multi-user.target
