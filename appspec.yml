@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/static-public-share
+file_exists_behavior: OVERWRITE
 hooks:
   ApplicationStart:
     - location: scripts/app_start_service.sh
