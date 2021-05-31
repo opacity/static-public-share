@@ -19,13 +19,14 @@ func init() {
 }
 
 func main() {
+	timeNow := time.Now()
 	r := gin.Default()
 	r.LoadHTMLFiles("front/src/shortlink.html")
 	r.GET("/:shortlink", getShortlink)
 	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{
 			"status": "ok",
-			"uptime": fmt.Sprintf("%v", time.Since(time.Now())),
+			"uptime": fmt.Sprintf("%v", time.Since(timeNow)),
 		})
 	})
 
