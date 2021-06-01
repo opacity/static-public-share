@@ -42,12 +42,12 @@ func getShortlink(c *gin.Context) {
 	ps, err := GetPublicShareByShortlink(shortlink)
 
 	if err != nil {
-		status := http.StatusInternalServerError
 		if err.Error() == "record not found" {
-			status = http.StatusNotFound
+			c.AbortWithStatus(404)
+			return
 		}
 
-		c.AbortWithStatusJSON(status, err.Error())
+		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
 		return
 	}
 
