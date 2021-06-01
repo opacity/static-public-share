@@ -2,9 +2,10 @@ import React, { useState, useMemo } from "react";
 import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
-import { formatBytes } from "opacity-web2.0/src/helpers"
 import { HOME_URL } from "../../config"
 import { Preview } from "./preview";
+import { saveAs } from 'file-saver'
+import ReactLoading from "react-loading";
 
 const shareImg = require("../../assets/share-download.svg");
 
@@ -24,6 +25,15 @@ declare global {
 
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
+  const [pageLoading, setPageLoading] = useState(false)
+
+  const downloadFile = async () => {
+    setPageLoading(true)
+    const data = await fetch(file.url).then(res => res)
+    const blob = new Blob([data])
+    saveAs(blob, file.title)
+    setPageLoading(false)
+  }
 
   return (
     <>
@@ -51,7 +61,7 @@ const SharePage = ({ history }) => {
                   <div className='text-filesize'></div>
                   <div className='row mb-3' style={{ justifyContent: 'center' }}>
                     <div className='col-md-12'>
-                      <a href={file.url} className='btn btn-pill btn-download' download={file.title} >
+                      <a className='btn btn-pill btn-download' onClick={downloadFile}>
                         <span></span>
                         Download File
                     </a>
@@ -69,6 +79,11 @@ const SharePage = ({ history }) => {
             </Col>
           </Row>
         </Container>
+        {
+          pageLoading && <div className='loading'>
+            <ReactLoading type="spinningBubbles" color="#2e6dde" />
+          </div>
+        }
       </SiteWrapper >
     </>
   )

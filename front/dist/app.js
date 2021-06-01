@@ -43,10 +43,20 @@ var react_bootstrap_1 = __fusereq(14);
 __fusereq(15);
 var config_1 = __fusereq(16);
 var preview_1 = __fusereq(17);
+var file_saver_1 = __fusereq(377);
+var react_loading_1 = __fusereq(378);
+var react_loading_1d = __fuse.dt(react_loading_1);
 const shareImg = __fusereq(12);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
-  console.log(file.data, '-----');
+  const [pageLoading, setPageLoading] = react_1.useState(false);
+  const downloadFile = async () => {
+    setPageLoading(true);
+    const data = await fetch(file.url).then(res => res);
+    const blob = new Blob([data]);
+    file_saver_1.saveAs(blob, file.title);
+    setPageLoading(false);
+  };
   return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
   }, react_1d.default.createElement(react_bootstrap_1.Container, {
@@ -87,15 +97,20 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'col-md-12'
   }, react_1d.default.createElement("a", {
-    href: file.url,
-    className: 'btn btn-pill btn-download'
+    className: 'btn btn-pill btn-download',
+    onClick: downloadFile
   }, react_1d.default.createElement("span", null), "\n                        Download File\n                    "))), react_1d.default.createElement("div", null, react_1d.default.createElement("div", null, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/sign-up"
   }, "Get 10GB file storage and file sharing for free")), "\n                    Free to share ideas. Free to be protected. Free to be you.\n                  "), react_1d.default.createElement("a", {
     className: 'learn-more',
     href: config_1.HOME_URL + "/platform",
     target: "_blank"
-  }, "\n                    Learn More\n                  "))))))));
+  }, "\n                    Learn More\n                  ")))))), pageLoading && react_1d.default.createElement("div", {
+    className: 'loading'
+  }, react_1d.default.createElement(react_loading_1d.default, {
+    type: "spinningBubbles",
+    color: "#2e6dde"
+  }))));
 };
 exports.default = SharePage;
 
