@@ -3,8 +3,8 @@ import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
 import { formatBytes } from "opacity-web2.0/src/helpers"
-import { FileIcon, defaultStyles } from 'react-file-icon';
 import { HOME_URL } from "../../config"
+import { Preview } from "./preview";
 
 const shareImg = require("../../assets/share-download.svg");
 
@@ -15,13 +15,14 @@ declare global {
       title: string,
       description: string,
       thumbnail: string,
+      mimeType: string,
+      fileExtension: string,
     }
   }
 }
 
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
-  const [previewOpen, setPreviewOpen] = useState(false)
 
   return (
     <>
@@ -31,21 +32,12 @@ const SharePage = ({ history }) => {
             <Col md={6} className='center' >
               <Row style={{ padding: '20px' }}>
                 <div className='preview-area center'>
-                  {
-                    (previewOpen) ?
-                      <div>
-                        {/* PUT PREVIEW HERE */}
-                      </div>
-                      :
-                      <div style={{ width: '300px' }}>
-                        <FileIcon
-                          color="#A8A8A8"
-                          glyphColor="#ffffff"
-                          {...defaultStyles[file.fileExtension]}
-                          extension={file.title}
-                        />
-                      </div>
-                  }
+                  <Preview
+                    url={file.url}
+                    ext={file.fileExtension}
+                    type={file.mimeType}
+                    className='preview-content'
+                  />
                 </div>
               </Row>
             </Col>
@@ -53,21 +45,15 @@ const SharePage = ({ history }) => {
               <Row className='align-items-center'>
                 <Col className='text-center'>
                   <img width='88' src={shareImg} />
-                  <h2>You have been invited to view a file!</h2>
-                  <div className='text-filename'>{file && file.name}</div>
-                  <div className='text-filesize'>{file && formatBytes(file.size)}</div>
+                  <h2>You have been invited to view a Public File!</h2>
+                  <div className='text-filename'>{file && file.title}</div>
+                  <div className='text-filesize'></div>
                   <div className='row mb-3' style={{ justifyContent: 'center' }}>
-                    <div className='col-md-5'>
+                    <div className='col-md-12'>
                       <a href={file.url} className='btn btn-pill btn-download'>
                         <span></span>
                         Download File
                     </a>
-                    </div>
-                    <div className='col-md-5'>
-                      <button className='btn btn-pill btn-preview' onClick={() => filePreview(file)}>
-                        <span></span>
-                        {previewOpen ? 'Hide' : 'Show'} Preview
-                    </button>
                     </div>
                   </div>
                   <div>

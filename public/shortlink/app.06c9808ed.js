@@ -41,16 +41,14 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(9);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(8);
-var helpers_1 = __fusereq(10);
-var react_file_icon_1 = __fusereq(11);
+var react_bootstrap_1 = __fusereq(10);
 var config_1 = __fusereq(12);
-const shareImg = __fusereq(6);
+var preview_1 = __fusereq(13);
+const shareImg = __fusereq(8);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
-  const [previewOpen, setPreviewOpen] = react_1.useState(false);
   return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
   }, react_1d.default.createElement(react_bootstrap_1.Container, {
@@ -64,16 +62,12 @@ const SharePage = ({history}) => {
     }
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
-  }, previewOpen ? react_1d.default.createElement("div", null) : react_1d.default.createElement("div", {
-    style: {
-      width: '300px'
-    }
-  }, react_1d.default.createElement(react_file_icon_1.FileIcon, Object.assign({
-    color: "#A8A8A8",
-    glyphColor: "#ffffff"
-  }, react_file_icon_1.defaultStyles[file.fileExtension], {
-    extension: file.title
-  })))))), react_1d.default.createElement(react_bootstrap_1.Col, {
+  }, react_1d.default.createElement(preview_1.Preview, {
+    url: file.url,
+    ext: file.fileExtension,
+    type: file.mimeType,
+    className: 'preview-content'
+  })))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
     className: "control-area"
   }, react_1d.default.createElement(react_bootstrap_1.Row, {
@@ -83,26 +77,21 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("img", {
     width: '88',
     src: shareImg
-  }), react_1d.default.createElement("h2", null, "You have been invited to view a file!"), react_1d.default.createElement("div", {
+  }), react_1d.default.createElement("h2", null, "You have been invited to view a Public File!"), react_1d.default.createElement("div", {
     className: 'text-filename'
-  }, file && file.name), react_1d.default.createElement("div", {
+  }, file && file.title), react_1d.default.createElement("div", {
     className: 'text-filesize'
-  }, file && helpers_1.formatBytes(file.size)), react_1d.default.createElement("div", {
+  }), react_1d.default.createElement("div", {
     className: 'row mb-3',
     style: {
       justifyContent: 'center'
     }
   }, react_1d.default.createElement("div", {
-    className: 'col-md-5'
+    className: 'col-md-12'
   }, react_1d.default.createElement("a", {
     href: file.url,
     className: 'btn btn-pill btn-download'
-  }, react_1d.default.createElement("span", null), "\n                        Download File\n                    ")), react_1d.default.createElement("div", {
-    className: 'col-md-5'
-  }, react_1d.default.createElement("button", {
-    className: 'btn btn-pill btn-preview',
-    onClick: () => filePreview(file)
-  }, react_1d.default.createElement("span", null), previewOpen ? 'Hide' : 'Show', " Preview\n                    "))), react_1d.default.createElement("div", null, react_1d.default.createElement("div", null, react_1d.default.createElement("a", {
+  }, react_1d.default.createElement("span", null), "\n                        Download File\n                    "))), react_1d.default.createElement("div", null, react_1d.default.createElement("div", null, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/sign-up"
   }, "Get 10GB file storage and file sharing for free")), "\n                    Free to share ideas. Free to be protected. Free to be you.\n                  "), react_1d.default.createElement("a", {
     className: 'learn-more',
@@ -113,16 +102,16 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-6: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 module.exports = "/resources/1a6475db.svg";
 },
-7: function(__fusereq, exports, module){
+9: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(16);
-var aos_1 = __fusereq(17);
+var tabler_react_1 = __fusereq(15);
+var aos_1 = __fusereq(16);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(18);
+var footer_1 = __fusereq(17);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(12);
 aos_1d.default.init({
@@ -132,7 +121,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(15);
+const logo = __fusereq(14);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -205,14 +194,14 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement(tabler_react_1.Button, {
       className: 'btn btn-primary',
       onClick: () => {
-        this.props.history.push("/file-manager");
+        window.open(`${config_1.HOME_URL}/file-manager`, '_blank');
       }
     }, "\n                            Dashboard\n                        ")) : react_1.createElement("div", {
       className: 'nav-link'
     }, react_1.createElement(tabler_react_1.Button, {
       className: 'btn btn-white btn-pill',
       onClick: () => {
-        this.props.history.push("/plans");
+        window.open(`${config_1.HOME_URL}/plans`, '_blank');
       }
     }, "\n                            Explore Plans\n                      "))), react_1.createElement("li", {
       className: 'nav-item'
@@ -221,8 +210,7 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement(tabler_react_1.Button, {
       className: 'btn btn-primary',
       onClick: () => {
-        localStorage.clear();
-        this.props.history.push('/');
+        window.open(`${config_1.HOME_URL}/`, '_blank');
       }
     }, "\n                          Logout\n                        ")) : react_1.createElement("div", {
       className: ''
@@ -233,7 +221,7 @@ class SiteWrapper extends react_1.Component {
           showLoginModal: true
         });
       }
-    }, "\n                            Log in\n                      ")))))), this.state.showMobileMenu && react_1.createElement("div", {
+    }, "\n                          Log in\n                      ")))))), this.state.showMobileMenu && react_1.createElement("div", {
       className: 'mobile-menu'
     }, react_1.createElement("div", {
       className: 'd-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center'
@@ -258,11 +246,10 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement("a", {
       href: config_1.HOME_URL + '/file-manager',
       className: 'nav-link'
-    }, "\n                              Dashboard\n                            ")), react_1.createElement("li", {
+    }, "\n                              Dashboard \n                            ")), react_1.createElement("li", {
       className: 'nav-item',
       onClick: () => {
-        localStorage.clear();
-        this.props.history.push('/');
+        window.open(`${config_1.HOME_URL}/`, ' _blank');
       }
     }, react_1.createElement(tabler_react_1.Nav.Link, null, "Logout"))) : react_1.createElement(react_1.Fragment, null, react_1.createElement("li", {
       className: 'nav-item'
@@ -286,8 +273,126 @@ exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-15: function(__fusereq, exports, module){
+13: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var preview_renderer_1 = __fusereq(95);
+var react_markdown_1 = __fusereq(96);
+var react_markdown_1d = __fuse.dt(react_markdown_1);
+var react_file_icon_1 = __fusereq(97);
+const getTypeFromExt = ext => {
+  ext = ("" + ext).replace(/^\./, "");
+  if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
+    return "image";
+  }
+  if (["mp4", "ogg", "webm"].includes(ext)) {
+    return "video";
+  }
+  if (["mp3", "flac"].includes(ext)) {
+    return "audio";
+  }
+  if (["txt", "md"].includes(ext)) {
+    return "text";
+  }
+  return undefined;
+};
+const Preview = ({ext, type, url, className, onLoad, onUnload}) => {
+  react_1.useEffect(() => {
+    onLoad && onLoad();
+    return () => {
+      onUnload && onUnload();
+    };
+  });
+  const newType = "" + (type || getTypeFromExt(ext));
+  switch (newType.split("/")[0]) {
+    case "image":
+      return react_1d.default.createElement("img", {
+        className: className,
+        src: url
+      });
+    case "video":
+      return react_1d.default.createElement("video", {
+        className: className,
+        controls: true
+      }, react_1d.default.createElement("source", {
+        src: url,
+        type: type
+      }), "\n          Your browser doesn't support this video type.\n        ");
+    case "audio":
+      return react_1d.default.createElement("audio", {
+        className: className,
+        controls: true
+      }, react_1d.default.createElement("source", {
+        src: url,
+        type: type
+      }), "\n          Your browser doesn't support this audio type.\n        ");
+    case "text":
+      switch (newType.split("/")[1]) {
+        case "markdown":
+          return react_1d.default.createElement("div", {
+            className: className
+          }, react_1d.default.createElement(preview_renderer_1.PreviewRenderer, {
+            url: url,
+            render: text => react_1d.default.createElement(react_markdown_1d.default, {
+              source: text
+            })
+          }));
+        default:
+          return react_1d.default.createElement("div", {
+            className: className
+          }, react_1d.default.createElement(preview_renderer_1.PreviewRenderer, {
+            url: url
+          }));
+      }
+    default:
+      return react_1d.default.createElement("div", {
+        style: {
+          width: '300px'
+        }
+      }, react_1d.default.createElement(react_file_icon_1.FileIcon, Object.assign({
+        color: "#A8A8A8",
+        glyphColor: "#ffffff"
+      }, react_file_icon_1.defaultStyles[type], {
+        extension: type
+      })));
+  }
+};
+exports.getTypeFromExt = getTypeFromExt;
+exports.Preview = Preview;
+
+},
+14: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
+},
+95: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+const PreviewRenderer = ({url, render = text => react_1d.default.createElement("div", {
+  onClick: e => {
+    const selection = getSelection();
+    if (selection && selection.isCollapsed) {
+      const range = document.createRange();
+      range.selectNode(e.currentTarget);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+  },
+  style: {
+    textAlign: 'left'
+  }
+}, text.split(/\n+/).map((paragraph, i) => react_1d.default.createElement("p", {
+  key: i
+}, paragraph)))}) => {
+  const [text, setText] = react_1.useState();
+  react_1.useEffect(() => {
+    fetch(url).then(res => res.text()).then(text => setText(text)).catch(err => console.warn(err));
+  }, [url]);
+  return react_1d.default.createElement(react_1d.default.Fragment, null, text && render(text));
+};
+exports.PreviewRenderer = PreviewRenderer;
+
 }
 })
-//# sourceMappingURL=app.16ef3b4d.js.map
+//# sourceMappingURL=app.06c9808ed.js.map
