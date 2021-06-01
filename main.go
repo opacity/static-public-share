@@ -49,6 +49,7 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 	
+	var imgUrl string
 	imgUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png" 
 	
 	if isImageFile(ps.FileExtension) {
