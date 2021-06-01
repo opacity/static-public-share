@@ -26,7 +26,7 @@ declare global {
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
   const [pageLoading, setPageLoading] = useState(false)
-
+console.log(file.data, '0000000')
   const downloadFile = async () => {
     setPageLoading(true)
     const data = await fetch(file.url).then(res => res.blob()).then(res => res)

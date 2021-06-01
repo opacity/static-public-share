@@ -128,8 +128,8 @@ const Preview = ({
         <FileIcon
           color="#A8A8A8"
           glyphColor="#ffffff"
-          {...defaultStyles[type]}
-          extension={type}
+          {...defaultStyles[ext]}
+          extension={ext}
         />
       </div>;
   }
