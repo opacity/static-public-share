@@ -1,16 +1,23 @@
 [
   {
-    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/app.js",
-    "browserPath": "/app.js",
-    "relativePath": "app.js",
+    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/app.16ef1687.js",
+    "browserPath": "/app.16ef1687.js",
+    "relativePath": "app.16ef1687.js",
     "type": "js",
     "webIndexed": true
   },
   {
-    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/vendor.js",
-    "browserPath": "/vendor.js",
-    "relativePath": "vendor.js",
+    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/vendor.54ad2c69.js",
+    "browserPath": "/vendor.54ad2c69.js",
+    "relativePath": "vendor.54ad2c69.js",
     "type": "js",
+    "webIndexed": true
+  },
+  {
+    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/front/dist/styles/styles.050c33c42.css",
+    "browserPath": "/styles/styles.050c33c42.css",
+    "relativePath": "styles/styles.050c33c42.css",
+    "type": "css",
     "webIndexed": true
   }
 ]
