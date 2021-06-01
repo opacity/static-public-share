@@ -74,7 +74,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
   }, react_1d.default.createElement(preview_1.Preview, {
-    url: file.thumbnail,
+    url: file.url,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
@@ -124,10 +124,10 @@ module.exports = "/resources/1a6475db.svg";
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(94);
-var aos_1 = __fusereq(95);
+var tabler_react_1 = __fusereq(18);
+var aos_1 = __fusereq(19);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(96);
+var footer_1 = __fusereq(20);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(11);
 aos_1d.default.init({
@@ -137,7 +137,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(93);
+const logo = __fusereq(17);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -378,7 +378,7 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-93: function(__fusereq, exports, module){
+17: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
 98: function(__fusereq, exports, module){
@@ -411,4 +411,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.16ef1687.js.map
+//# sourceMappingURL=app.06f73b60b.js.map
