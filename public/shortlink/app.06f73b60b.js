@@ -41,15 +41,15 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(9);
+var SiteWrapper_1 = __fusereq(8);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(10);
-var config_1 = __fusereq(12);
-var preview_1 = __fusereq(13);
-var file_saver_1 = __fusereq(14);
-var react_loading_1 = __fusereq(15);
+var react_bootstrap_1 = __fusereq(9);
+var config_1 = __fusereq(11);
+var preview_1 = __fusereq(12);
+var file_saver_1 = __fusereq(13);
+var react_loading_1 = __fusereq(14);
 var react_loading_1d = __fuse.dt(react_loading_1);
-const shareImg = __fusereq(8);
+const shareImg = __fusereq(7);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
@@ -74,7 +74,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
   }, react_1d.default.createElement(preview_1.Preview, {
-    url: file.thumbnail,
+    url: file.url,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
@@ -118,10 +118,10 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-8: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 module.exports = "/resources/1a6475db.svg";
 },
-9: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(18);
@@ -129,7 +129,7 @@ var aos_1 = __fusereq(19);
 var aos_1d = __fuse.dt(aos_1);
 var footer_1 = __fusereq(20);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(12);
+var config_1 = __fusereq(11);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -284,19 +284,19 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-12: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-13: function(__fusereq, exports, module){
+12: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(99);
-var react_markdown_1 = __fusereq(100);
+var preview_renderer_1 = __fusereq(98);
+var react_markdown_1 = __fusereq(99);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(101);
+var react_file_icon_1 = __fusereq(100);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -381,7 +381,7 @@ exports.Preview = Preview;
 17: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-99: function(__fusereq, exports, module){
+98: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -411,4 +411,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.16ef1687.js.map
+//# sourceMappingURL=app.06f73b60b.js.map
