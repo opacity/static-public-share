@@ -49,6 +49,7 @@ var preview_1 = __fusereq(13);
 const shareImg = __fusereq(8);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
+  console.log(file.data, '-----');
   return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
   }, react_1d.default.createElement(react_bootstrap_1.Container, {
@@ -63,7 +64,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
   }, react_1d.default.createElement(preview_1.Preview, {
-    url: file.url,
+    url: file.thumbnail,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
@@ -277,10 +278,10 @@ exports.HOME_URL = "https://dev2.opacity.io";
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(95);
-var react_markdown_1 = __fusereq(96);
+var preview_renderer_1 = __fusereq(96);
+var react_markdown_1 = __fusereq(97);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(97);
+var react_file_icon_1 = __fusereq(98);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -365,7 +366,7 @@ exports.Preview = Preview;
 14: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-95: function(__fusereq, exports, module){
+96: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -395,4 +396,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.06c9808ed.js.map
+//# sourceMappingURL=app.0379a1009.js.map

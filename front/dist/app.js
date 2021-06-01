@@ -41,11 +41,12 @@ var SiteWrapper_1 = __fusereq(13);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
 var react_bootstrap_1 = __fusereq(14);
 __fusereq(15);
-var config_1 = __fusereq(17);
-var preview_1 = __fusereq(18);
+var config_1 = __fusereq(16);
+var preview_1 = __fusereq(17);
 const shareImg = __fusereq(12);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
+  console.log(file.data, '-----');
   return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
   }, react_1d.default.createElement(react_bootstrap_1.Container, {
@@ -60,7 +61,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
   }, react_1d.default.createElement(preview_1.Preview, {
-    url: file.url,
+    url: file.thumbnail,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
@@ -120,15 +121,15 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 module.exports = "/resources/1a6475db.svg";
 },
 
-// src/config.ts @17
-17: function(__fusereq, exports, module){
+// src/config.ts @16
+16: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
 
-// src/assets/logo.svg @21
-21: function(__fusereq, exports, module){
+// src/assets/logo.svg @20
+20: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
 
@@ -136,13 +137,13 @@ module.exports = "/resources/06dfaeef0.svg";
 13: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(4);
-var tabler_react_1 = __fusereq(22);
-var aos_1 = __fusereq(23);
+var tabler_react_1 = __fusereq(21);
+var aos_1 = __fusereq(22);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(24);
+var footer_1 = __fusereq(23);
 var footer_1d = __fuse.dt(footer_1);
-__fusereq(25);
-var config_1 = __fusereq(17);
+__fusereq(24);
+var config_1 = __fusereq(16);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -150,7 +151,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(21);
+const logo = __fusereq(20);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -303,8 +304,8 @@ exports.default = SiteWrapper;
 __fusereq(8)("src/pages/SharePage/SharePage.scss",".share {\n  margin-top: 100px;\n  margin-bottom: 100px; }\n  .share .preview-area {\n    background: #FFFFFF;\n    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.17);\n    border-radius: 5px;\n    min-width: 300px;\n    padding: 10px;\n    margin-bottom: 30px; }\n    @media (max-width: 767.9px) {\n      .share .preview-area {\n        padding: 10px; } }\n  .share .preview-content {\n    width: 500px;\n    min-height: 200px; }\n    @media (max-width: 767.9px) {\n      .share .preview-content {\n        width: 300px;\n        min-height: 200px; } }\n    .share .preview-content pre {\n      text-align: left; }\n  .share .center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-align: center; }\n  .share .control-area h2 {\n    font-weight: 600;\n    font-size: 24px;\n    line-height: 30px;\n    color: #2e6dde;\n    margin-bottom: 35px;\n    position: relative;\n    margin-top: 30px; }\n    .share .control-area h2::after {\n      content: \"\";\n      width: 184px;\n      height: 3px;\n      background-color: #2e6dde;\n      position: absolute;\n      bottom: -10px;\n      margin-left: auto;\n      margin-right: auto;\n      left: 0;\n      right: 0;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    @media (max-width: 767.9px) {\n      .share .control-area h2 {\n        font-size: 20px;\n        line-height: 30px;\n        margin-top: 20px;\n        margin-bottom: 40px; } }\n  .share .control-area .btn-download {\n    font-weight: 600;\n    font-size: 15px;\n    line-height: 26px;\n    color: #084bc3;\n    border: 2px solid #4680E8;\n    padding-left: 0.5rem; }\n    .share .control-area .btn-download:hover {\n      opacity: 0.8; }\n    .share .control-area .btn-download span {\n      width: 40px;\n      height: 40px;\n      border: 2px solid #4680E8;\n      background-color: #fff;\n      border-radius: 50%;\n      margin-right: 15px;\n      background-image: url(\"/resources/images/06b798870.svg\");\n      background-repeat: no-repeat;\n      background-size: 18px;\n      background-position: center; }\n  .share .control-area .btn-preview {\n    font-weight: 600;\n    font-size: 15px;\n    line-height: 26px;\n    color: white;\n    padding-left: 0.5rem;\n    background-color: #084bc4; }\n    .share .control-area .btn-preview:hover {\n      opacity: 0.8;\n      border-color: #084bc4 !important; }\n    .share .control-area .btn-preview span {\n      width: 40px;\n      height: 40px;\n      background-color: #fff;\n      border-radius: 50%;\n      margin-right: 15px;\n      background-image: url(\"/resources/images/7536b0ea.svg\");\n      background-repeat: no-repeat;\n      background-size: 18px;\n      background-position: center; }\n  @media (max-width: 767.9px) {\n    .share .control-area .btn {\n      width: 245px;\n      height: 51px;\n      margin: 10px 0;\n      position: relative;\n      padding-left: 60px; }\n      .share .control-area .btn span {\n        position: absolute;\n        left: 6px; } }\n  .share .control-area .text-filename {\n    word-wrap: break-word !important;\n    font-weight: 500;\n    font-size: 18px;\n    line-height: 27px;\n    color: #000000; }\n  .share .control-area .text-filesize {\n    font-style: normal;\n    font-weight: normal;\n    font-size: 15px;\n    line-height: 22px;\n    color: #484848;\n    margin-top: 10px;\n    margin-bottom: 35px; }\n  .share .control-area .text-commment {\n    font-style: normal;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 26px;\n    text-align: center;\n    color: #000000;\n    padding: 20px; }\n  .share .control-area .free-signup-text {\n    margin-top: 50px;\n    cursor: pointer; }\n    .share .control-area .free-signup-text:hover {\n      text-decoration-line: underline; }\n  .share .control-area .learn-more {\n    font-weight: 500;\n    font-size: 16px;\n    line-height: 26px;\n    float: right;\n    text-decoration-line: underline;\n    color: #000000; }\n\n.loading {\n  width: 100vw;\n  height: 100vh;\n  position: fixed;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 10000;\n  background: rgba(0, 0, 0, 0.2);\n  border-radius: 15px; }\n\n/*# sourceMappingURL=/resources/css/53ddf619.css.map */")
 },
 
-// src/pages/SharePage/preview-renderer.tsx @102
-102: function(__fusereq, exports, module){
+// src/pages/SharePage/preview-renderer.tsx @101
+101: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(4);
 var react_1d = __fuse.dt(react_1);
@@ -334,15 +335,15 @@ exports.PreviewRenderer = PreviewRenderer;
 
 },
 
-// src/pages/SharePage/preview.tsx @18
-18: function(__fusereq, exports, module){
+// src/pages/SharePage/preview.tsx @17
+17: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(4);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(102);
-var react_markdown_1 = __fusereq(103);
+var preview_renderer_1 = __fusereq(101);
+var react_markdown_1 = __fusereq(102);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(104);
+var react_file_icon_1 = __fusereq(103);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {

@@ -12,6 +12,7 @@ declare global {
   interface window {
     OpacityFile: {
       url: string,
+      data: object,
       title: string,
       description: string,
       thumbnail: string,
@@ -23,7 +24,7 @@ declare global {
 
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
-
+  console.log(file.data, '-----')
   return (
     <>
       <SiteWrapper history={history}>
@@ -33,7 +34,7 @@ const SharePage = ({ history }) => {
               <Row style={{ padding: '20px' }}>
                 <div className='preview-area center'>
                   <Preview
-                    url={file.url}
+                    url={file.thumbnail}
                     ext={file.fileExtension}
                     type={file.mimeType}
                     className='preview-content'
