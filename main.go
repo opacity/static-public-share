@@ -48,10 +48,12 @@ func getShortlink(c *gin.Context) {
 		c.AbortWithStatusJSON(status, err.Error())
 		return
 	}
-
-	imgUrl := isImageFile(ps.FileExtension) 
-		? "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png" 
-		: getPublicShareThumbnailURL(ps.FileID)
+	
+	imgUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png" 
+	
+	if isImageFile(ps.FileExtension) {
+		imgUrl := getPublicShareThumbnailURL(ps.FileID)
+	}
 
 	fileUrl := getPublicShareFileURL(ps.FileID)
 
