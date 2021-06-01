@@ -28,10 +28,17 @@ const SharePage = ({ history }) => {
 
   const downloadFile = async () => {
     setPageLoading(true)
-    const data = await fetch(file.url).then(res => res.blob()).then(res => res)
-    const blob = new Blob([data])
-    saveAs(blob, file.title)
-    setPageLoading(false)
+    await fetch(file.url, {
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin':'*'
+      }
+    }).then(res => res.blob())
+      .then(res => {
+        const blob = new Blob([res])
+        saveAs(blob, file.title)
+        setPageLoading(false)
+      })
   }
 
   return (
