@@ -29,7 +29,7 @@ const SharePage = ({ history }) => {
 
   const downloadFile = async () => {
     setPageLoading(true)
-    const data = await fetch(file.url).then(res => res)
+    const data = await fetch(file.url).then(res => res.blob()).then(res => res)
     const blob = new Blob([data])
     saveAs(blob, file.title)
     setPageLoading(false)
