@@ -83,13 +83,13 @@ func getPublicShareFileURL(fileHandle string) string {
 	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/public"
 }
 
-func isImageFile(ext string) bool {
-	var a := []string{"png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"}
+// func isImageFile(ext string) bool {
+// 	var a := []string{"png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"}
 
-    for _, n := range a {
-        if ext == n {
-            return true
-        }
-    }
-    return false
-}
+//     for _, n := range a {
+//         if ext == n {
+//             return true
+//         }
+//     }
+//     return false
+// }
