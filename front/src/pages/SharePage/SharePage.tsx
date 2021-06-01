@@ -51,7 +51,7 @@ const SharePage = ({ history }) => {
                   <div className='text-filesize'></div>
                   <div className='row mb-3' style={{ justifyContent: 'center' }}>
                     <div className='col-md-12'>
-                      <a href={file.url} className='btn btn-pill btn-download'>
+                      <a href={file.url} className='btn btn-pill btn-download' download={file.title} >
                         <span></span>
                         Download File
                     </a>
