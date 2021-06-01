@@ -49,7 +49,14 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	imgUrl := getPublicShareThumbnailURL(ps.FileID)
+	// var imgUrl string
+	// imgUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png" 
+	
+	// isImage = isImageFile(ps.FileExtension)
+	// if isImage == true {
+		imgUrl := getPublicShareThumbnailURL(ps.FileID)
+	// }
+
 	fileUrl := getPublicShareFileURL(ps.FileID)
 
 	err = UpdateViewsCount(ps)
@@ -75,3 +82,14 @@ func getPublicShareThumbnailURL(fileHandle string) string {
 func getPublicShareFileURL(fileHandle string) string {
 	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/public"
 }
+
+// func isImageFile(ext string) bool {
+// 	var a := []string{"png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"}
+
+//     for _, n := range a {
+//         if ext == n {
+//             return true
+//         }
+//     }
+//     return false
+// }
