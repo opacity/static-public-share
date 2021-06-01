@@ -24,7 +24,7 @@ declare global {
 
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
-  console.log(file.data, '-----')
+
   return (
     <>
       <SiteWrapper history={history}>

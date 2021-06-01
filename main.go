@@ -50,6 +50,7 @@ func getShortlink(c *gin.Context) {
 	}
 
 	imgUrl := getPublicShareThumbnailURL(ps.FileID)
+	fileUrl := getPublicShareFileURL(ps.FileID)
 
 	err = UpdateViewsCount(ps)
 	if err != nil {
@@ -58,8 +59,7 @@ func getShortlink(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
-		"Url":           os.Getenv("OPACITY_URL"),
-		"Data": 		 ps,
+		"Url":           fileUrl,
 		"Title":         ps.Title,
 		"Description":   ps.Description,
 		"MimeType":      ps.MimeType,
@@ -70,4 +70,8 @@ func getShortlink(c *gin.Context) {
 
 func getPublicShareThumbnailURL(fileHandle string) string {
 	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail"
+}
+
+func getPublicShareFileURL(fileHandle string) string {
+	return os.Getenv("PUBLIC_FILE_BUCKET_URL") + fileHandle + "/public"
 }
