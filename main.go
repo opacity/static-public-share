@@ -73,5 +73,5 @@ func getPublicShareThumbnailURL(fileHandle string) string {
 }
 
 func getPublicShareFileURL(fileHandle string) string {
-	return os.Getenv("PUBLIC_FILE_BUCKET_URL") + fileHandle + "/public"
+	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/public"
 }
