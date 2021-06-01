@@ -71,7 +71,13 @@ func getShortlink(c *gin.Context) {
 }
 
 func getPublicShareThumbnailURL(fileHandle string) string {
-	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail"
+	url := os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail"
+	resp, err := http.Head(url)
+
+	if err == nil && resp.StatusCode == http.StatusOK {
+		return url
+	}
+	return "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
 }
 
 func getPublicShareFileURL(fileHandle string) string {
