@@ -83,7 +83,7 @@ func getPublicShareFileURL(fileHandle string) string {
 }
 
 func isImageFile(ext string) bool {
-	a := []string{"png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"}
+	var a := []string{"png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"}
 
     for _, n := range a {
         if ext == n {
