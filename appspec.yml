@@ -1,15 +1,15 @@
 version: 0.0
 os: linux
 files:
-  - source: /static-public-share
+  - source: /
     destination: /home/ec2-user/static-public-share
+file_exists_behavior: OVERWRITE
 hooks:
-  BeforeInstall:
-    - location: scripts/start_server
+  ApplicationStart:
+    - location: scripts/app_start_service.sh
       timeout: 30
       runas: root
   ApplicationStop:
-    - location: scripts/stop_server
+    - location: scripts/app_stop_service.sh
       timeout: 30
       runas: root
-

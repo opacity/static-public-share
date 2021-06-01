@@ -1,5 +1,0 @@
-#!/bin/bash
-isExistApp=$(pgrep -f static-public-share)
-if [[ -n $isExistApp ]]; then
-    service static-public-share stop        
-fi
