@@ -90,7 +90,8 @@ const SharePage = ({history}) => {
     className: 'col-md-12'
   }, react_1d.default.createElement("a", {
     href: file.url,
-    className: 'btn btn-pill btn-download'
+    className: 'btn btn-pill btn-download',
+    download: file.title
   }, react_1d.default.createElement("span", null), "\n                        Download File\n                    "))), react_1d.default.createElement("div", null, react_1d.default.createElement("div", null, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/sign-up"
   }, "Get 10GB file storage and file sharing for free")), "\n                    Free to share ideas. Free to be protected. Free to be you.\n                  "), react_1d.default.createElement("a", {
@@ -108,10 +109,10 @@ module.exports = "/resources/1a6475db.svg";
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(16);
-var aos_1 = __fusereq(17);
+var tabler_react_1 = __fusereq(92);
+var aos_1 = __fusereq(93);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(18);
+var footer_1 = __fusereq(94);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(11);
 aos_1d.default.init({
@@ -121,7 +122,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(15);
+const logo = __fusereq(91);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -277,10 +278,10 @@ exports.HOME_URL = "https://dev2.opacity.io";
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(20);
-var react_markdown_1 = __fusereq(21);
+var preview_renderer_1 = __fusereq(96);
+var react_markdown_1 = __fusereq(97);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(22);
+var react_file_icon_1 = __fusereq(98);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -362,10 +363,10 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-15: function(__fusereq, exports, module){
+91: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-20: function(__fusereq, exports, module){
+96: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -395,4 +396,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.2d70a748.js.map
+//# sourceMappingURL=app.45f61a53.js.map
