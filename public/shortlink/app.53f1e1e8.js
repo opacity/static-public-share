@@ -125,10 +125,10 @@ module.exports = "/resources/1a6475db.svg";
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(18);
-var aos_1 = __fusereq(19);
+var tabler_react_1 = __fusereq(17);
+var aos_1 = __fusereq(18);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(20);
+var footer_1 = __fusereq(19);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(11);
 aos_1d.default.init({
@@ -138,7 +138,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(17);
+const logo = __fusereq(16);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -379,7 +379,7 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-17: function(__fusereq, exports, module){
+16: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
 22: function(__fusereq, exports, module){
