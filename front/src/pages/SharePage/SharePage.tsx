@@ -28,13 +28,8 @@ const SharePage = ({ history }) => {
 
   const downloadFile = async () => {
     setPageLoading(true)
-    await fetch(file.url, {
-      method: 'GET',
-      headers: {
-        'Access-Control-Allow-Origin':'*',
-        Accept: '*'
-      }
-    }).then(res => res.blob())
+    await fetch(`https://cors-anywhere.herokuapp.com/${file.url}`)
+      .then(res => res.blob())
       .then(res => {
         const blob = new Blob([res])
         saveAs(blob, file.title)
