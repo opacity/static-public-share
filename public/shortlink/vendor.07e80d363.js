@@ -21317,7 +21317,7 @@ var extends_1 = __fusereq(110);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(111);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var activeElement_1 = __fusereq(216);
+var activeElement_1 = __fusereq(215);
 var activeElement_1d = __fuse.dt(activeElement_1);
 var contains_1 = __fusereq(153);
 var contains_1d = __fuse.dt(contains_1);
@@ -21339,7 +21339,7 @@ var usePrevious_1 = __fusereq(196);
 var usePrevious_1d = __fuse.dt(usePrevious_1);
 var useEventCallback_1 = __fusereq(115);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ModalManager_1 = __fusereq(215);
+var ModalManager_1 = __fusereq(216);
 var ModalManager_1d = __fuse.dt(ModalManager_1);
 var useWaitForDOMRef_1 = __fusereq(208);
 var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
@@ -21556,7 +21556,7 @@ var querySelectorAll_1 = __fusereq(195);
 var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
 var scrollbarSize_1 = __fusereq(161);
 var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var ModalManager_1 = __fusereq(215);
+var ModalManager_1 = __fusereq(216);
 var ModalManager_1d = __fuse.dt(ModalManager_1);
 var Selector = {
   FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
@@ -21688,12 +21688,12 @@ function extend() {
 },
 170: function(__fusereq, exports, module){
 'use strict';
-var extend = __fusereq(220);
-var bail = __fusereq(221);
-var vfile = __fusereq(222);
-var trough = __fusereq(223);
-var string = __fusereq(224);
-var plain = __fusereq(225);
+var extend = __fusereq(217);
+var bail = __fusereq(218);
+var vfile = __fusereq(219);
+var trough = __fusereq(220);
+var string = __fusereq(221);
+var plain = __fusereq(222);
 module.exports = unified().freeze();
 var slice = [].slice;
 var own = ({}).hasOwnProperty;
@@ -21999,9 +21999,9 @@ function assertDone(name, asyncName, complete) {
 },
 171: function(__fusereq, exports, module){
 'use strict';
-var unherit = __fusereq(217);
+var unherit = __fusereq(223);
 var xtend = __fusereq(169);
-var Parser = __fusereq(218);
+var Parser = __fusereq(224);
 module.exports = parse;
 parse.Parser = Parser;
 function parse(options) {
@@ -22012,7 +22012,7 @@ function parse(options) {
 
 },
 172: function(__fusereq, exports, module){
-var visitWithParents = __fusereq(219);
+var visitWithParents = __fusereq(225);
 function addListMetadata() {
   return function (ast) {
     visitWithParents(ast, 'list', function (listNode, parents) {
@@ -24599,6 +24599,25 @@ exports.default = triggerEvent;
 },
 215: function(__fusereq, exports, module){
 exports.__esModule = true;
+var ownerDocument_1 = __fusereq(159);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+function activeElement(doc) {
+  if (doc === void 0) {
+    doc = ownerDocument_1d.default();
+  }
+  try {
+    var active = doc.activeElement;
+    if (!active || !active.nodeName) return null;
+    return active;
+  } catch (e) {
+    return doc.body;
+  }
+}
+exports.default = activeElement;
+
+},
+216: function(__fusereq, exports, module){
+exports.__esModule = true;
 var addClass_1 = __fusereq(245);
 var addClass_1d = __fuse.dt(addClass_1);
 var removeClass_1 = __fusereq(246);
@@ -24725,205 +24744,7 @@ var ModalManager = (function () {
 exports.default = ModalManager;
 
 },
-216: function(__fusereq, exports, module){
-exports.__esModule = true;
-var ownerDocument_1 = __fusereq(159);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-function activeElement(doc) {
-  if (doc === void 0) {
-    doc = ownerDocument_1d.default();
-  }
-  try {
-    var active = doc.activeElement;
-    if (!active || !active.nodeName) return null;
-    return active;
-  } catch (e) {
-    return doc.body;
-  }
-}
-exports.default = activeElement;
-
-},
 217: function(__fusereq, exports, module){
-'use strict';
-var xtend = __fusereq(169);
-var inherits = __fusereq(249);
-module.exports = unherit;
-function unherit(Super) {
-  var result;
-  var key;
-  var value;
-  inherits(Of, Super);
-  inherits(From, Of);
-  result = Of.prototype;
-  for (key in result) {
-    value = result[key];
-    if (value && typeof value === 'object') {
-      result[key] = ('concat' in value) ? value.concat() : xtend(value);
-    }
-  }
-  return Of;
-  function From(parameters) {
-    return Super.apply(this, parameters);
-  }
-  function Of() {
-    if (!(this instanceof Of)) {
-      return new From(arguments);
-    }
-    return Super.apply(this, arguments);
-  }
-}
-
-},
-218: function(__fusereq, exports, module){
-'use strict';
-var xtend = __fusereq(169);
-var toggle = __fusereq(250);
-var vfileLocation = __fusereq(251);
-var unescape = __fusereq(252);
-var decode = __fusereq(253);
-var tokenizer = __fusereq(254);
-module.exports = Parser;
-function Parser(doc, file) {
-  this.file = file;
-  this.offset = {};
-  this.options = xtend(this.options);
-  this.setOptions({});
-  this.inList = false;
-  this.inBlock = false;
-  this.inLink = false;
-  this.atStart = true;
-  this.toOffset = vfileLocation(file).toOffset;
-  this.unescape = unescape(this, 'escape');
-  this.decode = decode(this);
-}
-var proto = Parser.prototype;
-proto.setOptions = __fusereq(255);
-proto.parse = __fusereq(256);
-proto.options = __fusereq(257);
-proto.exitStart = toggle('atStart', true);
-proto.enterList = toggle('inList', false);
-proto.enterLink = toggle('inLink', false);
-proto.enterBlock = toggle('inBlock', false);
-proto.interruptParagraph = [['thematicBreak'], ['atxHeading'], ['fencedCode'], ['blockquote'], ['html'], ['setextHeading', {
-  commonmark: false
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.interruptList = [['atxHeading', {
-  pedantic: false
-}], ['fencedCode', {
-  pedantic: false
-}], ['thematicBreak', {
-  pedantic: false
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.interruptBlockquote = [['indentedCode', {
-  commonmark: true
-}], ['fencedCode', {
-  commonmark: true
-}], ['atxHeading', {
-  commonmark: true
-}], ['setextHeading', {
-  commonmark: true
-}], ['thematicBreak', {
-  commonmark: true
-}], ['html', {
-  commonmark: true
-}], ['list', {
-  commonmark: true
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.blockTokenizers = {
-  newline: __fusereq(258),
-  indentedCode: __fusereq(259),
-  fencedCode: __fusereq(260),
-  blockquote: __fusereq(261),
-  atxHeading: __fusereq(262),
-  thematicBreak: __fusereq(263),
-  list: __fusereq(264),
-  setextHeading: __fusereq(265),
-  html: __fusereq(266),
-  footnote: __fusereq(267),
-  definition: __fusereq(268),
-  table: __fusereq(269),
-  paragraph: __fusereq(270)
-};
-proto.inlineTokenizers = {
-  escape: __fusereq(271),
-  autoLink: __fusereq(272),
-  url: __fusereq(273),
-  html: __fusereq(274),
-  link: __fusereq(275),
-  reference: __fusereq(276),
-  strong: __fusereq(277),
-  emphasis: __fusereq(278),
-  deletion: __fusereq(279),
-  code: __fusereq(280),
-  break: __fusereq(281),
-  text: __fusereq(282)
-};
-proto.blockMethods = keys(proto.blockTokenizers);
-proto.inlineMethods = keys(proto.inlineTokenizers);
-proto.tokenizeBlock = tokenizer('block');
-proto.tokenizeInline = tokenizer('inline');
-proto.tokenizeFactory = tokenizer;
-function keys(value) {
-  var result = [];
-  var key;
-  for (key in value) {
-    result.push(key);
-  }
-  return result;
-}
-
-},
-219: function(__fusereq, exports, module){
-'use strict';
-module.exports = visitParents;
-function visitParents(tree, type, visitor) {
-  var stack = [];
-  if (typeof type === 'function') {
-    visitor = type;
-    type = null;
-  }
-  one(tree);
-  function one(node) {
-    var result;
-    if (!type || node.type === type) {
-      result = visitor(node, stack.concat());
-    }
-    if (node.children && result !== false) {
-      return all(node.children, node);
-    }
-    return result;
-  }
-  function all(children, parent) {
-    var length = children.length;
-    var index = -1;
-    var child;
-    stack.push(parent);
-    while (++index < length) {
-      child = children[index];
-      if (child && one(child) === false) {
-        return false;
-      }
-    }
-    stack.pop();
-    return true;
-  }
-}
-
-},
-220: function(__fusereq, exports, module){
 'use strict';
 var hasOwn = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
@@ -25016,7 +24837,7 @@ module.exports = function extend() {
 };
 
 },
-221: function(__fusereq, exports, module){
+218: function(__fusereq, exports, module){
 'use strict';
 module.exports = bail;
 function bail(err) {
@@ -25026,10 +24847,10 @@ function bail(err) {
 }
 
 },
-222: function(__fusereq, exports, module){
+219: function(__fusereq, exports, module){
 'use strict';
-var VMessage = __fusereq(283);
-var VFile = __fusereq(284);
+var VMessage = __fusereq(249);
+var VFile = __fusereq(250);
 module.exports = VFile;
 var proto = VFile.prototype;
 proto.message = message;
@@ -25059,9 +24880,9 @@ function info() {
 }
 
 },
-223: function(__fusereq, exports, module){
+220: function(__fusereq, exports, module){
 'use strict';
-var wrap = __fusereq(285);
+var wrap = __fusereq(251);
 module.exports = trough;
 trough.wrap = wrap;
 var slice = [].slice;
@@ -25112,7 +24933,7 @@ function trough() {
 }
 
 },
-224: function(__fusereq, exports, module){
+221: function(__fusereq, exports, module){
 var toString = Object.prototype.toString;
 module.exports = isString;
 function isString(obj) {
@@ -25120,13 +24941,192 @@ function isString(obj) {
 }
 
 },
-225: function(__fusereq, exports, module){
+222: function(__fusereq, exports, module){
 'use strict';
 var toString = Object.prototype.toString;
 module.exports = function (x) {
   var prototype;
   return toString.call(x) === '[object Object]' && (prototype = Object.getPrototypeOf(x), prototype === null || prototype === Object.getPrototypeOf({}));
 };
+
+},
+223: function(__fusereq, exports, module){
+'use strict';
+var xtend = __fusereq(169);
+var inherits = __fusereq(252);
+module.exports = unherit;
+function unherit(Super) {
+  var result;
+  var key;
+  var value;
+  inherits(Of, Super);
+  inherits(From, Of);
+  result = Of.prototype;
+  for (key in result) {
+    value = result[key];
+    if (value && typeof value === 'object') {
+      result[key] = ('concat' in value) ? value.concat() : xtend(value);
+    }
+  }
+  return Of;
+  function From(parameters) {
+    return Super.apply(this, parameters);
+  }
+  function Of() {
+    if (!(this instanceof Of)) {
+      return new From(arguments);
+    }
+    return Super.apply(this, arguments);
+  }
+}
+
+},
+224: function(__fusereq, exports, module){
+'use strict';
+var xtend = __fusereq(169);
+var toggle = __fusereq(253);
+var vfileLocation = __fusereq(254);
+var unescape = __fusereq(255);
+var decode = __fusereq(256);
+var tokenizer = __fusereq(257);
+module.exports = Parser;
+function Parser(doc, file) {
+  this.file = file;
+  this.offset = {};
+  this.options = xtend(this.options);
+  this.setOptions({});
+  this.inList = false;
+  this.inBlock = false;
+  this.inLink = false;
+  this.atStart = true;
+  this.toOffset = vfileLocation(file).toOffset;
+  this.unescape = unescape(this, 'escape');
+  this.decode = decode(this);
+}
+var proto = Parser.prototype;
+proto.setOptions = __fusereq(258);
+proto.parse = __fusereq(259);
+proto.options = __fusereq(260);
+proto.exitStart = toggle('atStart', true);
+proto.enterList = toggle('inList', false);
+proto.enterLink = toggle('inLink', false);
+proto.enterBlock = toggle('inBlock', false);
+proto.interruptParagraph = [['thematicBreak'], ['atxHeading'], ['fencedCode'], ['blockquote'], ['html'], ['setextHeading', {
+  commonmark: false
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.interruptList = [['atxHeading', {
+  pedantic: false
+}], ['fencedCode', {
+  pedantic: false
+}], ['thematicBreak', {
+  pedantic: false
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.interruptBlockquote = [['indentedCode', {
+  commonmark: true
+}], ['fencedCode', {
+  commonmark: true
+}], ['atxHeading', {
+  commonmark: true
+}], ['setextHeading', {
+  commonmark: true
+}], ['thematicBreak', {
+  commonmark: true
+}], ['html', {
+  commonmark: true
+}], ['list', {
+  commonmark: true
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.blockTokenizers = {
+  newline: __fusereq(261),
+  indentedCode: __fusereq(262),
+  fencedCode: __fusereq(263),
+  blockquote: __fusereq(264),
+  atxHeading: __fusereq(265),
+  thematicBreak: __fusereq(266),
+  list: __fusereq(267),
+  setextHeading: __fusereq(268),
+  html: __fusereq(269),
+  footnote: __fusereq(270),
+  definition: __fusereq(271),
+  table: __fusereq(272),
+  paragraph: __fusereq(273)
+};
+proto.inlineTokenizers = {
+  escape: __fusereq(274),
+  autoLink: __fusereq(275),
+  url: __fusereq(276),
+  html: __fusereq(277),
+  link: __fusereq(278),
+  reference: __fusereq(279),
+  strong: __fusereq(280),
+  emphasis: __fusereq(281),
+  deletion: __fusereq(282),
+  code: __fusereq(283),
+  break: __fusereq(284),
+  text: __fusereq(285)
+};
+proto.blockMethods = keys(proto.blockTokenizers);
+proto.inlineMethods = keys(proto.inlineTokenizers);
+proto.tokenizeBlock = tokenizer('block');
+proto.tokenizeInline = tokenizer('inline');
+proto.tokenizeFactory = tokenizer;
+function keys(value) {
+  var result = [];
+  var key;
+  for (key in value) {
+    result.push(key);
+  }
+  return result;
+}
+
+},
+225: function(__fusereq, exports, module){
+'use strict';
+module.exports = visitParents;
+function visitParents(tree, type, visitor) {
+  var stack = [];
+  if (typeof type === 'function') {
+    visitor = type;
+    type = null;
+  }
+  one(tree);
+  function one(node) {
+    var result;
+    if (!type || node.type === type) {
+      result = visitor(node, stack.concat());
+    }
+    if (node.children && result !== false) {
+      return all(node.children, node);
+    }
+    return result;
+  }
+  function all(children, parent) {
+    var length = children.length;
+    var index = -1;
+    var child;
+    stack.push(parent);
+    while (++index < length) {
+      child = children[index];
+      if (child && one(child) === false) {
+        return false;
+      }
+    }
+    stack.pop();
+    return true;
+  }
+}
 
 },
 226: function(__fusereq, exports, module){
@@ -26048,6 +26048,251 @@ exports.showSiblings = showSiblings;
 
 },
 249: function(__fusereq, exports, module){
+'use strict';
+var stringify = __fusereq(309);
+module.exports = VMessage;
+function VMessagePrototype() {}
+VMessagePrototype.prototype = Error.prototype;
+VMessage.prototype = new VMessagePrototype();
+var proto = VMessage.prototype;
+proto.file = '';
+proto.name = '';
+proto.reason = '';
+proto.message = '';
+proto.stack = '';
+proto.fatal = null;
+proto.column = null;
+proto.line = null;
+function VMessage(reason, position, origin) {
+  var parts;
+  var range;
+  var location;
+  if (typeof position === 'string') {
+    origin = position;
+    position = null;
+  }
+  parts = parseOrigin(origin);
+  range = stringify(position) || '1:1';
+  location = {
+    start: {
+      line: null,
+      column: null
+    },
+    end: {
+      line: null,
+      column: null
+    }
+  };
+  if (position && position.position) {
+    position = position.position;
+  }
+  if (position) {
+    if (position.start) {
+      location = position;
+      position = position.start;
+    } else {
+      location.start = position;
+    }
+  }
+  if (reason.stack) {
+    this.stack = reason.stack;
+    reason = reason.message;
+  }
+  this.message = reason;
+  this.name = range;
+  this.reason = reason;
+  this.line = position ? position.line : null;
+  this.column = position ? position.column : null;
+  this.location = location;
+  this.source = parts[0];
+  this.ruleId = parts[1];
+}
+function parseOrigin(origin) {
+  var result = [null, null];
+  var index;
+  if (typeof origin === 'string') {
+    index = origin.indexOf(':');
+    if (index === -1) {
+      result[1] = origin;
+    } else {
+      result[0] = origin.slice(0, index);
+      result[1] = origin.slice(index + 1);
+    }
+  }
+  return result;
+}
+
+},
+250: function(__fusereq, exports, module){
+var process = __fusereq(313);
+'use strict';
+var path = __fusereq(310);
+var replace = __fusereq(311);
+var buffer = __fusereq(312);
+module.exports = VFile;
+var own = ({}).hasOwnProperty;
+var proto = VFile.prototype;
+proto.toString = toString;
+var order = ['history', 'path', 'basename', 'stem', 'extname', 'dirname'];
+function VFile(options) {
+  var prop;
+  var index;
+  var length;
+  if (!options) {
+    options = {};
+  } else if (typeof options === 'string' || buffer(options)) {
+    options = {
+      contents: options
+    };
+  } else if (('message' in options) && ('messages' in options)) {
+    return options;
+  }
+  if (!(this instanceof VFile)) {
+    return new VFile(options);
+  }
+  this.data = {};
+  this.messages = [];
+  this.history = [];
+  this.cwd = process.cwd();
+  index = -1;
+  length = order.length;
+  while (++index < length) {
+    prop = order[index];
+    if (own.call(options, prop)) {
+      this[prop] = options[prop];
+    }
+  }
+  for (prop in options) {
+    if (order.indexOf(prop) === -1) {
+      this[prop] = options[prop];
+    }
+  }
+}
+Object.defineProperty(proto, 'path', {
+  get: function () {
+    return this.history[this.history.length - 1];
+  },
+  set: function (path) {
+    assertNonEmpty(path, 'path');
+    if (path !== this.path) {
+      this.history.push(path);
+    }
+  }
+});
+Object.defineProperty(proto, 'dirname', {
+  get: function () {
+    return typeof this.path === 'string' ? path.dirname(this.path) : undefined;
+  },
+  set: function (dirname) {
+    assertPath(this.path, 'dirname');
+    this.path = path.join(dirname || '', this.basename);
+  }
+});
+Object.defineProperty(proto, 'basename', {
+  get: function () {
+    return typeof this.path === 'string' ? path.basename(this.path) : undefined;
+  },
+  set: function (basename) {
+    assertNonEmpty(basename, 'basename');
+    assertPart(basename, 'basename');
+    this.path = path.join(this.dirname || '', basename);
+  }
+});
+Object.defineProperty(proto, 'extname', {
+  get: function () {
+    return typeof this.path === 'string' ? path.extname(this.path) : undefined;
+  },
+  set: function (extname) {
+    var ext = extname || '';
+    assertPart(ext, 'extname');
+    assertPath(this.path, 'extname');
+    if (ext) {
+      if (ext.charAt(0) !== '.') {
+        throw new Error('`extname` must start with `.`');
+      }
+      if (ext.indexOf('.', 1) !== -1) {
+        throw new Error('`extname` cannot contain multiple dots');
+      }
+    }
+    this.path = replace(this.path, ext);
+  }
+});
+Object.defineProperty(proto, 'stem', {
+  get: function () {
+    return typeof this.path === 'string' ? path.basename(this.path, this.extname) : undefined;
+  },
+  set: function (stem) {
+    assertNonEmpty(stem, 'stem');
+    assertPart(stem, 'stem');
+    this.path = path.join(this.dirname || '', stem + (this.extname || ''));
+  }
+});
+function toString(encoding) {
+  var value = this.contents || '';
+  return buffer(value) ? value.toString(encoding) : String(value);
+}
+function assertPart(part, name) {
+  if (part.indexOf(path.sep) !== -1) {
+    throw new Error('`' + name + '` cannot be a path: did not expect `' + path.sep + '`');
+  }
+}
+function assertNonEmpty(part, name) {
+  if (!part) {
+    throw new Error('`' + name + '` cannot be empty');
+  }
+}
+function assertPath(path, name) {
+  if (!path) {
+    throw new Error('Setting `' + name + '` requires `path` to be set too');
+  }
+}
+
+},
+251: function(__fusereq, exports, module){
+'use strict';
+var slice = [].slice;
+module.exports = wrap;
+function wrap(fn, callback) {
+  var invoked;
+  return wrapped;
+  function wrapped() {
+    var params = slice.call(arguments, 0);
+    var callback = fn.length > params.length;
+    var result;
+    if (callback) {
+      params.push(done);
+    }
+    try {
+      result = fn.apply(null, params);
+    } catch (error) {
+      if (callback && invoked) {
+        throw error;
+      }
+      return done(error);
+    }
+    if (!callback) {
+      if (result && typeof result.then === 'function') {
+        result.then(then, done);
+      } else if (result instanceof Error) {
+        done(result);
+      } else {
+        then(result);
+      }
+    }
+  }
+  function done() {
+    if (!invoked) {
+      invoked = true;
+      callback.apply(null, arguments);
+    }
+  }
+  function then(value) {
+    done(null, value);
+  }
+}
+
+},
+252: function(__fusereq, exports, module){
 if (typeof Object.create === 'function') {
   module.exports = function inherits(ctor, superCtor) {
     if (superCtor) {
@@ -26075,7 +26320,7 @@ if (typeof Object.create === 'function') {
 }
 
 },
-250: function(__fusereq, exports, module){
+253: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(key, state, ctx) {
@@ -26092,7 +26337,7 @@ function factory(key, state, ctx) {
 }
 
 },
-251: function(__fusereq, exports, module){
+254: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(file) {
@@ -26145,7 +26390,7 @@ function indices(value) {
 }
 
 },
-252: function(__fusereq, exports, module){
+255: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(ctx, key) {
@@ -26171,10 +26416,10 @@ function factory(ctx, key) {
 }
 
 },
-253: function(__fusereq, exports, module){
+256: function(__fusereq, exports, module){
 'use strict';
 var xtend = __fusereq(169);
-var entities = __fusereq(309);
+var entities = __fusereq(314);
 module.exports = factory;
 function factory(ctx) {
   decoder.raw = decodeRaw;
@@ -26219,7 +26464,7 @@ function factory(ctx) {
 }
 
 },
-254: function(__fusereq, exports, module){
+257: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 var MERGEABLE_NODES = {
@@ -26413,11 +26658,11 @@ function factory(type) {
 }
 
 },
-255: function(__fusereq, exports, module){
+258: function(__fusereq, exports, module){
 'use strict';
 var xtend = __fusereq(169);
-var escapes = __fusereq(310);
-var defaults = __fusereq(257);
+var escapes = __fusereq(315);
+var defaults = __fusereq(260);
 module.exports = setOptions;
 function setOptions(options) {
   var self = this;
@@ -26447,10 +26692,10 @@ function setOptions(options) {
 }
 
 },
-256: function(__fusereq, exports, module){
+259: function(__fusereq, exports, module){
 'use strict';
 var xtend = __fusereq(169);
-var removePosition = __fusereq(311);
+var removePosition = __fusereq(316);
 module.exports = parse;
 var C_NEWLINE = '\n';
 var EXPRESSION_LINE_BREAKS = /\r\n|\r/g;
@@ -26485,7 +26730,7 @@ function parse() {
 }
 
 },
-257: function(__fusereq, exports, module){
+260: function(__fusereq, exports, module){
 'use strict';
 module.exports = {
   position: true,
@@ -26493,13 +26738,13 @@ module.exports = {
   commonmark: false,
   footnotes: false,
   pedantic: false,
-  blocks: __fusereq(312)
+  blocks: __fusereq(317)
 };
 
 },
-258: function(__fusereq, exports, module){
+261: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
+var whitespace = __fusereq(318);
 module.exports = newline;
 function newline(eat, value, silent) {
   var character = value.charAt(0);
@@ -26533,10 +26778,10 @@ function newline(eat, value, silent) {
 }
 
 },
-259: function(__fusereq, exports, module){
+262: function(__fusereq, exports, module){
 'use strict';
-var repeat = __fusereq(314);
-var trim = __fusereq(315);
+var repeat = __fusereq(319);
+var trim = __fusereq(320);
 module.exports = indentedCode;
 var C_NEWLINE = '\n';
 var C_TAB = '\t';
@@ -26611,9 +26856,9 @@ function indentedCode(eat, value, silent) {
 }
 
 },
-260: function(__fusereq, exports, module){
+263: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(315);
+var trim = __fusereq(320);
 module.exports = fencedCode;
 var C_NEWLINE = '\n';
 var C_TAB = '\t';
@@ -26784,10 +27029,10 @@ function fencedCode(eat, value, silent) {
 }
 
 },
-261: function(__fusereq, exports, module){
+264: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var interrupt = __fusereq(317);
+var trim = __fusereq(321);
+var interrupt = __fusereq(322);
 module.exports = blockquote;
 var C_NEWLINE = '\n';
 var C_TAB = '\t';
@@ -26885,7 +27130,7 @@ function blockquote(eat, value, silent) {
 }
 
 },
-262: function(__fusereq, exports, module){
+265: function(__fusereq, exports, module){
 'use strict';
 module.exports = atxHeading;
 var C_NEWLINE = '\n';
@@ -26982,7 +27227,7 @@ function atxHeading(eat, value, silent) {
 }
 
 },
-263: function(__fusereq, exports, module){
+266: function(__fusereq, exports, module){
 'use strict';
 module.exports = thematicBreak;
 var C_NEWLINE = '\n';
@@ -27037,14 +27282,14 @@ function thematicBreak(eat, value, silent) {
 }
 
 },
-264: function(__fusereq, exports, module){
+267: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var repeat = __fusereq(314);
-var decimal = __fusereq(318);
-var getIndent = __fusereq(319);
-var removeIndent = __fusereq(320);
-var interrupt = __fusereq(317);
+var trim = __fusereq(321);
+var repeat = __fusereq(319);
+var decimal = __fusereq(323);
+var getIndent = __fusereq(324);
+var removeIndent = __fusereq(325);
+var interrupt = __fusereq(322);
 module.exports = list;
 var C_ASTERISK = '*';
 var C_UNDERSCORE = '_';
@@ -27385,7 +27630,7 @@ function normalListItem(ctx, value, position) {
 }
 
 },
-265: function(__fusereq, exports, module){
+268: function(__fusereq, exports, module){
 'use strict';
 module.exports = setextHeading;
 var C_NEWLINE = '\n';
@@ -27464,9 +27709,9 @@ function setextHeading(eat, value, silent) {
 }
 
 },
-266: function(__fusereq, exports, module){
+269: function(__fusereq, exports, module){
 'use strict';
-var openCloseTag = __fusereq(321).openCloseTag;
+var openCloseTag = __fusereq(326).openCloseTag;
 module.exports = blockHTML;
 var C_TAB = '\t';
 var C_SPACE = ' ';
@@ -27535,10 +27780,10 @@ function blockHTML(eat, value, silent) {
 }
 
 },
-267: function(__fusereq, exports, module){
+270: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var normalize = __fusereq(322);
+var whitespace = __fusereq(318);
+var normalize = __fusereq(327);
 module.exports = footnoteDefinition;
 footnoteDefinition.notInList = true;
 footnoteDefinition.notInBlock = true;
@@ -27675,10 +27920,10 @@ function footnoteDefinition(eat, value, silent) {
 }
 
 },
-268: function(__fusereq, exports, module){
+271: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var normalize = __fusereq(322);
+var whitespace = __fusereq(318);
+var normalize = __fusereq(327);
 module.exports = definition;
 definition.notInList = true;
 definition.notInBlock = true;
@@ -27882,9 +28127,9 @@ function isUnclosedURLCharacter(character) {
 }
 
 },
-269: function(__fusereq, exports, module){
+272: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
+var whitespace = __fusereq(318);
 module.exports = table;
 var C_BACKSLASH = '\\';
 var C_TICK = '`';
@@ -28094,12 +28339,12 @@ function table(eat, value, silent) {
 }
 
 },
-270: function(__fusereq, exports, module){
+273: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var decimal = __fusereq(318);
-var trimTrailingLines = __fusereq(315);
-var interrupt = __fusereq(317);
+var trim = __fusereq(321);
+var decimal = __fusereq(323);
+var trimTrailingLines = __fusereq(320);
+var interrupt = __fusereq(322);
 module.exports = paragraph;
 var C_NEWLINE = '\n';
 var C_TAB = '\t';
@@ -28178,9 +28423,9 @@ function paragraph(eat, value, silent) {
 }
 
 },
-271: function(__fusereq, exports, module){
+274: function(__fusereq, exports, module){
 'use strict';
-var locate = __fusereq(323);
+var locate = __fusereq(328);
 module.exports = escape;
 escape.locator = locate;
 function escape(eat, value, silent) {
@@ -28209,11 +28454,11 @@ function escape(eat, value, silent) {
 }
 
 },
-272: function(__fusereq, exports, module){
+275: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var decode = __fusereq(309);
-var locate = __fusereq(324);
+var whitespace = __fusereq(318);
+var decode = __fusereq(314);
+var locate = __fusereq(329);
 module.exports = autoLink;
 autoLink.locator = locate;
 autoLink.notInLink = true;
@@ -28322,11 +28567,11 @@ function autoLink(eat, value, silent) {
 }
 
 },
-273: function(__fusereq, exports, module){
+276: function(__fusereq, exports, module){
 'use strict';
-var decode = __fusereq(309);
-var whitespace = __fusereq(313);
-var locate = __fusereq(325);
+var decode = __fusereq(314);
+var whitespace = __fusereq(318);
+var locate = __fusereq(330);
 module.exports = url;
 url.locator = locate;
 url.notInLink = true;
@@ -28428,11 +28673,11 @@ function url(eat, value, silent) {
 }
 
 },
-274: function(__fusereq, exports, module){
+277: function(__fusereq, exports, module){
 'use strict';
-var alphabetical = __fusereq(326);
-var locate = __fusereq(324);
-var tag = __fusereq(321).tag;
+var alphabetical = __fusereq(331);
+var locate = __fusereq(329);
+var tag = __fusereq(326).tag;
 module.exports = inlineHTML;
 inlineHTML.locator = locate;
 var EXPRESSION_HTML_LINK_OPEN = /^<a /i;
@@ -28469,10 +28714,10 @@ function inlineHTML(eat, value, silent) {
 }
 
 },
-275: function(__fusereq, exports, module){
+278: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var locate = __fusereq(327);
+var whitespace = __fusereq(318);
+var locate = __fusereq(332);
 module.exports = link;
 link.locator = locate;
 var own = ({}).hasOwnProperty;
@@ -28762,11 +29007,11 @@ function link(eat, value, silent) {
 }
 
 },
-276: function(__fusereq, exports, module){
+279: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var locate = __fusereq(327);
-var normalize = __fusereq(322);
+var whitespace = __fusereq(318);
+var locate = __fusereq(332);
+var normalize = __fusereq(327);
 module.exports = reference;
 reference.locator = locate;
 var T_LINK = 'link';
@@ -28922,11 +29167,11 @@ function reference(eat, value, silent) {
 }
 
 },
-277: function(__fusereq, exports, module){
+280: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var whitespace = __fusereq(313);
-var locate = __fusereq(328);
+var trim = __fusereq(321);
+var whitespace = __fusereq(318);
+var locate = __fusereq(333);
 module.exports = strong;
 strong.locator = locate;
 var C_ASTERISK = '*';
@@ -28986,12 +29231,12 @@ function strong(eat, value, silent) {
 }
 
 },
-278: function(__fusereq, exports, module){
+281: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var word = __fusereq(329);
-var whitespace = __fusereq(313);
-var locate = __fusereq(330);
+var trim = __fusereq(321);
+var word = __fusereq(334);
+var whitespace = __fusereq(318);
+var locate = __fusereq(335);
 module.exports = emphasis;
 emphasis.locator = locate;
 var C_ASTERISK = '*';
@@ -29056,10 +29301,10 @@ function emphasis(eat, value, silent) {
 }
 
 },
-279: function(__fusereq, exports, module){
+282: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var locate = __fusereq(331);
+var whitespace = __fusereq(318);
+var locate = __fusereq(336);
 module.exports = strikethrough;
 strikethrough.locator = locate;
 var C_TILDE = '~';
@@ -29099,10 +29344,10 @@ function strikethrough(eat, value, silent) {
 }
 
 },
-280: function(__fusereq, exports, module){
+283: function(__fusereq, exports, module){
 'use strict';
-var whitespace = __fusereq(313);
-var locate = __fusereq(332);
+var whitespace = __fusereq(318);
+var locate = __fusereq(337);
 module.exports = inlineCode;
 inlineCode.locator = locate;
 var C_TICK = '`';
@@ -29189,9 +29434,9 @@ function inlineCode(eat, value, silent) {
 }
 
 },
-281: function(__fusereq, exports, module){
+284: function(__fusereq, exports, module){
 'use strict';
-var locate = __fusereq(333);
+var locate = __fusereq(338);
 module.exports = hardBreak;
 hardBreak.locator = locate;
 var MIN_BREAK_LENGTH = 2;
@@ -29222,7 +29467,7 @@ function hardBreak(eat, value, silent) {
 }
 
 },
-282: function(__fusereq, exports, module){
+285: function(__fusereq, exports, module){
 'use strict';
 module.exports = text;
 function text(eat, value, silent) {
@@ -29267,251 +29512,6 @@ function text(eat, value, silent) {
       value: content
     });
   });
-}
-
-},
-283: function(__fusereq, exports, module){
-'use strict';
-var stringify = __fusereq(334);
-module.exports = VMessage;
-function VMessagePrototype() {}
-VMessagePrototype.prototype = Error.prototype;
-VMessage.prototype = new VMessagePrototype();
-var proto = VMessage.prototype;
-proto.file = '';
-proto.name = '';
-proto.reason = '';
-proto.message = '';
-proto.stack = '';
-proto.fatal = null;
-proto.column = null;
-proto.line = null;
-function VMessage(reason, position, origin) {
-  var parts;
-  var range;
-  var location;
-  if (typeof position === 'string') {
-    origin = position;
-    position = null;
-  }
-  parts = parseOrigin(origin);
-  range = stringify(position) || '1:1';
-  location = {
-    start: {
-      line: null,
-      column: null
-    },
-    end: {
-      line: null,
-      column: null
-    }
-  };
-  if (position && position.position) {
-    position = position.position;
-  }
-  if (position) {
-    if (position.start) {
-      location = position;
-      position = position.start;
-    } else {
-      location.start = position;
-    }
-  }
-  if (reason.stack) {
-    this.stack = reason.stack;
-    reason = reason.message;
-  }
-  this.message = reason;
-  this.name = range;
-  this.reason = reason;
-  this.line = position ? position.line : null;
-  this.column = position ? position.column : null;
-  this.location = location;
-  this.source = parts[0];
-  this.ruleId = parts[1];
-}
-function parseOrigin(origin) {
-  var result = [null, null];
-  var index;
-  if (typeof origin === 'string') {
-    index = origin.indexOf(':');
-    if (index === -1) {
-      result[1] = origin;
-    } else {
-      result[0] = origin.slice(0, index);
-      result[1] = origin.slice(index + 1);
-    }
-  }
-  return result;
-}
-
-},
-284: function(__fusereq, exports, module){
-var process = __fusereq(338);
-'use strict';
-var path = __fusereq(335);
-var replace = __fusereq(336);
-var buffer = __fusereq(337);
-module.exports = VFile;
-var own = ({}).hasOwnProperty;
-var proto = VFile.prototype;
-proto.toString = toString;
-var order = ['history', 'path', 'basename', 'stem', 'extname', 'dirname'];
-function VFile(options) {
-  var prop;
-  var index;
-  var length;
-  if (!options) {
-    options = {};
-  } else if (typeof options === 'string' || buffer(options)) {
-    options = {
-      contents: options
-    };
-  } else if (('message' in options) && ('messages' in options)) {
-    return options;
-  }
-  if (!(this instanceof VFile)) {
-    return new VFile(options);
-  }
-  this.data = {};
-  this.messages = [];
-  this.history = [];
-  this.cwd = process.cwd();
-  index = -1;
-  length = order.length;
-  while (++index < length) {
-    prop = order[index];
-    if (own.call(options, prop)) {
-      this[prop] = options[prop];
-    }
-  }
-  for (prop in options) {
-    if (order.indexOf(prop) === -1) {
-      this[prop] = options[prop];
-    }
-  }
-}
-Object.defineProperty(proto, 'path', {
-  get: function () {
-    return this.history[this.history.length - 1];
-  },
-  set: function (path) {
-    assertNonEmpty(path, 'path');
-    if (path !== this.path) {
-      this.history.push(path);
-    }
-  }
-});
-Object.defineProperty(proto, 'dirname', {
-  get: function () {
-    return typeof this.path === 'string' ? path.dirname(this.path) : undefined;
-  },
-  set: function (dirname) {
-    assertPath(this.path, 'dirname');
-    this.path = path.join(dirname || '', this.basename);
-  }
-});
-Object.defineProperty(proto, 'basename', {
-  get: function () {
-    return typeof this.path === 'string' ? path.basename(this.path) : undefined;
-  },
-  set: function (basename) {
-    assertNonEmpty(basename, 'basename');
-    assertPart(basename, 'basename');
-    this.path = path.join(this.dirname || '', basename);
-  }
-});
-Object.defineProperty(proto, 'extname', {
-  get: function () {
-    return typeof this.path === 'string' ? path.extname(this.path) : undefined;
-  },
-  set: function (extname) {
-    var ext = extname || '';
-    assertPart(ext, 'extname');
-    assertPath(this.path, 'extname');
-    if (ext) {
-      if (ext.charAt(0) !== '.') {
-        throw new Error('`extname` must start with `.`');
-      }
-      if (ext.indexOf('.', 1) !== -1) {
-        throw new Error('`extname` cannot contain multiple dots');
-      }
-    }
-    this.path = replace(this.path, ext);
-  }
-});
-Object.defineProperty(proto, 'stem', {
-  get: function () {
-    return typeof this.path === 'string' ? path.basename(this.path, this.extname) : undefined;
-  },
-  set: function (stem) {
-    assertNonEmpty(stem, 'stem');
-    assertPart(stem, 'stem');
-    this.path = path.join(this.dirname || '', stem + (this.extname || ''));
-  }
-});
-function toString(encoding) {
-  var value = this.contents || '';
-  return buffer(value) ? value.toString(encoding) : String(value);
-}
-function assertPart(part, name) {
-  if (part.indexOf(path.sep) !== -1) {
-    throw new Error('`' + name + '` cannot be a path: did not expect `' + path.sep + '`');
-  }
-}
-function assertNonEmpty(part, name) {
-  if (!part) {
-    throw new Error('`' + name + '` cannot be empty');
-  }
-}
-function assertPath(path, name) {
-  if (!path) {
-    throw new Error('Setting `' + name + '` requires `path` to be set too');
-  }
-}
-
-},
-285: function(__fusereq, exports, module){
-'use strict';
-var slice = [].slice;
-module.exports = wrap;
-function wrap(fn, callback) {
-  var invoked;
-  return wrapped;
-  function wrapped() {
-    var params = slice.call(arguments, 0);
-    var callback = fn.length > params.length;
-    var result;
-    if (callback) {
-      params.push(done);
-    }
-    try {
-      result = fn.apply(null, params);
-    } catch (error) {
-      if (callback && invoked) {
-        throw error;
-      }
-      return done(error);
-    }
-    if (!callback) {
-      if (result && typeof result.then === 'function') {
-        result.then(then, done);
-      } else if (result instanceof Error) {
-        done(result);
-      } else {
-        then(result);
-      }
-    }
-  }
-  function done() {
-    if (!invoked) {
-      invoked = true;
-      callback.apply(null, arguments);
-    }
-  }
-  function then(value) {
-    done(null, value);
-  }
 }
 
 },
@@ -29584,7 +29584,7 @@ exports.default = getBasePlacement;
 },
 288: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(344);
+var getBoundingClientRect_js_1 = __fusereq(340);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 function getLayoutRect(element) {
   var clientRect = getBoundingClientRect_js_1d.default(element);
@@ -29608,7 +29608,7 @@ exports.default = getLayoutRect;
 },
 289: function(__fusereq, exports, module){
 exports.__esModule = true;
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 function contains(parent, child) {
   var rootNode = child.getRootNode && child.getRootNode();
   if (parent.contains(child)) {
@@ -29631,14 +29631,14 @@ exports.default = contains;
 exports.__esModule = true;
 var getWindow_js_1 = __fusereq(295);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var getComputedStyle_js_1 = __fusereq(297);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var instanceOf_js_1 = __fusereq(340);
-var isTableElement_js_1 = __fusereq(342);
+var instanceOf_js_1 = __fusereq(341);
+var isTableElement_js_1 = __fusereq(343);
 var isTableElement_js_1d = __fuse.dt(isTableElement_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(344);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 function getTrueOffsetParent(element) {
   if (!instanceOf_js_1.isHTMLElement(element) || getComputedStyle_js_1d.default(element).position === 'fixed') {
@@ -29735,7 +29735,7 @@ exports.default = getWindow;
 },
 296: function(__fusereq, exports, module){
 exports.__esModule = true;
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 function getDocumentElement(element) {
   return ((instanceOf_js_1.isElement(element) ? element.ownerDocument : element.document) || window.document).documentElement;
 }
@@ -29791,7 +29791,7 @@ exports.default = getOppositeVariationPlacement;
 },
 301: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(344);
+var getBoundingClientRect_js_1 = __fusereq(340);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getClippingRect_js_1 = __fusereq(345);
 var getClippingRect_js_1d = __fuse.dt(getClippingRect_js_1);
@@ -29802,7 +29802,7 @@ var computeOffsets_js_1d = __fuse.dt(computeOffsets_js_1);
 var rectToClientRect_js_1 = __fusereq(346);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
 var enums_js_1 = __fusereq(241);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 var mergePaddingObject_js_1 = __fusereq(293);
 var mergePaddingObject_js_1d = __fuse.dt(mergePaddingObject_js_1);
 var expandToHashMap_js_1 = __fusereq(294);
@@ -29983,23 +29983,23 @@ exports.default = getFreshSideObject;
 },
 307: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getCompositeRect_js_1 = __fusereq(348);
+var getCompositeRect_js_1 = __fusereq(347);
 var getCompositeRect_js_1d = __fuse.dt(getCompositeRect_js_1);
 var getLayoutRect_js_1 = __fusereq(288);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var listScrollParents_js_1 = __fusereq(349);
+var listScrollParents_js_1 = __fusereq(348);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
 var getOffsetParent_js_1 = __fusereq(290);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var orderModifiers_js_1 = __fusereq(350);
+var orderModifiers_js_1 = __fusereq(349);
 var orderModifiers_js_1d = __fuse.dt(orderModifiers_js_1);
-var debounce_js_1 = __fusereq(351);
+var debounce_js_1 = __fusereq(350);
 var debounce_js_1d = __fuse.dt(debounce_js_1);
-var mergeByName_js_1 = __fusereq(352);
+var mergeByName_js_1 = __fusereq(351);
 var mergeByName_js_1d = __fuse.dt(mergeByName_js_1);
 var detectOverflow_js_1 = __fusereq(301);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 var INVALID_ELEMENT_ERROR = 'Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.';
 var INFINITE_LOOP_ERROR = 'Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.';
 var DEFAULT_OPTIONS = {
@@ -30139,7 +30139,7 @@ exports.detectOverflow = detectOverflow_js_1d.default;
 },
 308: function(__fusereq, exports, module){
 exports.__esModule = true;
-var isDocument_1 = __fusereq(347);
+var isDocument_1 = __fusereq(352);
 var isDocument_1d = __fuse.dt(isDocument_1);
 function isWindow(node) {
   if (('window' in node) && node.window === node) return node;
@@ -30151,9 +30151,318 @@ exports.default = isWindow;
 },
 309: function(__fusereq, exports, module){
 'use strict';
+var own = ({}).hasOwnProperty;
+module.exports = stringify;
+function stringify(value) {
+  if (!value || typeof value !== 'object') {
+    return null;
+  }
+  if (own.call(value, 'position') || own.call(value, 'type')) {
+    return position(value.position);
+  }
+  if (own.call(value, 'start') || own.call(value, 'end')) {
+    return position(value);
+  }
+  if (own.call(value, 'line') || own.call(value, 'column')) {
+    return point(value);
+  }
+  return null;
+}
+function point(point) {
+  if (!point || typeof point !== 'object') {
+    point = {};
+  }
+  return index(point.line) + ':' + index(point.column);
+}
+function position(pos) {
+  if (!pos || typeof pos !== 'object') {
+    pos = {};
+  }
+  return point(pos.start) + '-' + point(pos.end);
+}
+function index(value) {
+  return value && typeof value === 'number' ? value : 1;
+}
+
+},
+310: function(__fusereq, exports, module){
+function normalizeArray(parts, allowAboveRoot) {
+  var up = 0;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    var last = parts[i];
+    if (last === '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
+  return parts;
+}
+var splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
+var splitPath = function (filename) {
+  return splitPathRe.exec(filename).slice(1);
+};
+exports.resolve = function () {
+  var resolvedPath = '', resolvedAbsolute = false;
+  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+    var path = i >= 0 ? arguments[i] : '/';
+    if (typeof path !== 'string') {
+      throw new TypeError('Arguments to path.resolve must be strings');
+    } else if (!path) {
+      continue;
+    }
+    resolvedPath = path + '/' + resolvedPath;
+    resolvedAbsolute = path.charAt(0) === '/';
+  }
+  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function (p) {
+    return !!p;
+  }), !resolvedAbsolute).join('/');
+  return (resolvedAbsolute ? '/' : '') + resolvedPath || '.';
+};
+exports.normalize = function (path) {
+  var isAbsolute = exports.isAbsolute(path), trailingSlash = substr(path, -1) === '/';
+  path = normalizeArray(filter(path.split('/'), function (p) {
+    return !!p;
+  }), !isAbsolute).join('/');
+  if (!path && !isAbsolute) {
+    path = '.';
+  }
+  if (path && trailingSlash) {
+    path += '/';
+  }
+  return (isAbsolute ? '/' : '') + path;
+};
+exports.isAbsolute = function (path) {
+  return path.charAt(0) === '/';
+};
+exports.join = function () {
+  var paths = Array.prototype.slice.call(arguments, 0);
+  return exports.normalize(filter(paths, function (p, index) {
+    if (typeof p !== 'string') {
+      throw new TypeError('Arguments to path.join must be strings');
+    }
+    return p;
+  }).join('/'));
+};
+exports.relative = function (from, to) {
+  from = exports.resolve(from).substr(1);
+  to = exports.resolve(to).substr(1);
+  function trim(arr) {
+    var start = 0;
+    for (; start < arr.length; start++) {
+      if (arr[start] !== '') break;
+    }
+    var end = arr.length - 1;
+    for (; end >= 0; end--) {
+      if (arr[end] !== '') break;
+    }
+    if (start > end) return [];
+    return arr.slice(start, end - start + 1);
+  }
+  var fromParts = trim(from.split('/'));
+  var toParts = trim(to.split('/'));
+  var length = Math.min(fromParts.length, toParts.length);
+  var samePartsLength = length;
+  for (var i = 0; i < length; i++) {
+    if (fromParts[i] !== toParts[i]) {
+      samePartsLength = i;
+      break;
+    }
+  }
+  var outputParts = [];
+  for (var i = samePartsLength; i < fromParts.length; i++) {
+    outputParts.push('..');
+  }
+  outputParts = outputParts.concat(toParts.slice(samePartsLength));
+  return outputParts.join('/');
+};
+exports.sep = '/';
+exports.delimiter = ':';
+exports.dirname = function (path) {
+  var result = splitPath(path), root = result[0], dir = result[1];
+  if (!root && !dir) {
+    return '.';
+  }
+  if (dir) {
+    dir = dir.substr(0, dir.length - 1);
+  }
+  return root + dir;
+};
+exports.basename = function (path, ext) {
+  var f = splitPath(path)[2];
+  if (ext && f.substr(-1 * ext.length) === ext) {
+    f = f.substr(0, f.length - ext.length);
+  }
+  return f;
+};
+exports.extname = function (path) {
+  return splitPath(path)[3];
+};
+function filter(xs, f) {
+  if (xs.filter) return xs.filter(f);
+  var res = [];
+  for (var i = 0; i < xs.length; i++) {
+    if (f(xs[i], i, xs)) res.push(xs[i]);
+  }
+  return res;
+}
+var substr = ('ab').substr(-1) === 'b' ? function (str, start, len) {
+  return str.substr(start, len);
+} : function (str, start, len) {
+  if (start < 0) start = str.length + start;
+  return str.substr(start, len);
+};
+
+},
+311: function(__fusereq, exports, module){
+'use strict';
+var path = __fusereq(310);
+function replaceExt(npath, ext) {
+  if (typeof npath !== 'string') {
+    return npath;
+  }
+  if (npath.length === 0) {
+    return npath;
+  }
+  var nFileName = path.basename(npath, path.extname(npath)) + ext;
+  return path.join(path.dirname(npath), nFileName);
+}
+module.exports = replaceExt;
+
+},
+312: function(__fusereq, exports, module){
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
+};
+function isBuffer(obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
+}
+function isSlowBuffer(obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
+}
+
+},
+313: function(__fusereq, exports, module){
+if (typeof Object.assign != 'function') {
+  Object.assign = function (target, varArgs) {
+    'use strict';
+    if (target == null) {
+      throw new TypeError('Cannot convert undefined or null to object');
+    }
+    var to = Object(target);
+    for (var index = 1; index < arguments.length; index++) {
+      var nextSource = arguments[index];
+      if (nextSource != null) {
+        for (var nextKey in nextSource) {
+          if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+            to[nextKey] = nextSource[nextKey];
+          }
+        }
+      }
+    }
+    return to;
+  };
+}
+var productionEnv = false;
+var process = module.exports = {};
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+function cleanUpNextTick() {
+  draining = false;
+  if (currentQueue.length) {
+    queue = currentQueue.concat(queue);
+  } else {
+    queueIndex = -1;
+  }
+  if (queue.length) {
+    drainQueue();
+  }
+}
+function drainQueue() {
+  if (draining) {
+    return;
+  }
+  var timeout = setTimeout(cleanUpNextTick);
+  draining = true;
+  var len = queue.length;
+  while (len) {
+    currentQueue = queue;
+    queue = [];
+    while (++queueIndex < len) {
+      if (currentQueue) {
+        currentQueue[queueIndex].run();
+      }
+    }
+    queueIndex = -1;
+    len = queue.length;
+  }
+  currentQueue = null;
+  draining = false;
+  clearTimeout(timeout);
+}
+process.nextTick = function (fun) {
+  var args = new Array(arguments.length - 1);
+  if (arguments.length > 1) {
+    for (var i = 1; i < arguments.length; i++) {
+      args[i - 1] = arguments[i];
+    }
+  }
+  queue.push(new Item(fun, args));
+  if (queue.length === 1 && !draining) {
+    setTimeout(drainQueue, 0);
+  }
+};
+function Item(fun, array) {
+  this.fun = fun;
+  this.array = array;
+}
+Item.prototype.run = function () {
+  this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = '';
+process.versions = {};
+function noop() {}
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.binding = function (name) {
+  throw new Error('process.binding is not supported');
+};
+process.cwd = function () {
+  return '/';
+};
+process.chdir = function (dir) {
+  throw new Error('process.chdir is not supported');
+};
+process.umask = function () {
+  return 0;
+};
+
+},
+314: function(__fusereq, exports, module){
+'use strict';
 var legacy = __fusereq(353);
 var invalid = __fusereq(354);
-var decimal = __fusereq(318);
+var decimal = __fusereq(323);
 var hexadecimal = __fusereq(355);
 var alphanumerical = __fusereq(356);
 var decodeEntity = __fusereq(357);
@@ -30449,7 +30758,7 @@ function disallowed(code) {
 }
 
 },
-310: function(__fusereq, exports, module){
+315: function(__fusereq, exports, module){
 'use strict';
 module.exports = escapes;
 var defaults = ['\\', '`', '*', '{', '}', '[', ']', '(', ')', '#', '+', '-', '.', '!', '_', '>'];
@@ -30467,7 +30776,7 @@ function escapes(options) {
 }
 
 },
-311: function(__fusereq, exports, module){
+316: function(__fusereq, exports, module){
 'use strict';
 var visit = __fusereq(226);
 module.exports = removePosition;
@@ -30483,7 +30792,7 @@ function soft(node) {
 }
 
 },
-312: function(__fusereq, exports, module){
+317: function(__fusereq, exports, module){
 module.exports = [
   "address",
   "article",
@@ -30554,7 +30863,7 @@ module.exports = [
 ]
 ;
 },
-313: function(__fusereq, exports, module){
+318: function(__fusereq, exports, module){
 'use strict';
 module.exports = whitespace;
 var fromCode = String.fromCharCode;
@@ -30564,7 +30873,7 @@ function whitespace(character) {
 }
 
 },
-314: function(__fusereq, exports, module){
+319: function(__fusereq, exports, module){
 'use strict';
 var res = '';
 var cache;
@@ -30595,7 +30904,7 @@ function repeat(str, num) {
 }
 
 },
-315: function(__fusereq, exports, module){
+320: function(__fusereq, exports, module){
 'use strict';
 module.exports = trimTrailingLines;
 function trimTrailingLines(value) {
@@ -30603,7 +30912,7 @@ function trimTrailingLines(value) {
 }
 
 },
-316: function(__fusereq, exports, module){
+321: function(__fusereq, exports, module){
 exports = module.exports = trim;
 function trim(str) {
   return str.replace(/^\s*|\s*$/g, '');
@@ -30616,7 +30925,7 @@ exports.right = function (str) {
 };
 
 },
-317: function(__fusereq, exports, module){
+322: function(__fusereq, exports, module){
 'use strict';
 module.exports = interrupt;
 function interrupt(interruptors, tokenizers, ctx, params) {
@@ -30654,7 +30963,7 @@ function interrupt(interruptors, tokenizers, ctx, params) {
 }
 
 },
-318: function(__fusereq, exports, module){
+323: function(__fusereq, exports, module){
 'use strict';
 module.exports = decimal;
 function decimal(character) {
@@ -30663,7 +30972,7 @@ function decimal(character) {
 }
 
 },
-319: function(__fusereq, exports, module){
+324: function(__fusereq, exports, module){
 'use strict';
 module.exports = indentation;
 var characters = {
@@ -30692,11 +31001,11 @@ function indentation(value) {
 }
 
 },
-320: function(__fusereq, exports, module){
+325: function(__fusereq, exports, module){
 'use strict';
-var trim = __fusereq(316);
-var repeat = __fusereq(314);
-var getIndent = __fusereq(319);
+var trim = __fusereq(321);
+var repeat = __fusereq(319);
+var getIndent = __fusereq(324);
 module.exports = indentation;
 var C_SPACE = ' ';
 var C_NEWLINE = '\n';
@@ -30747,7 +31056,7 @@ function indentation(value, maximum) {
 }
 
 },
-321: function(__fusereq, exports, module){
+326: function(__fusereq, exports, module){
 'use strict';
 var attributeName = '[a-zA-Z_:][a-zA-Z0-9:._-]*';
 var unquoted = '[^"\'=<>`\\u0000-\\u0020]+';
@@ -30765,7 +31074,7 @@ exports.openCloseTag = new RegExp('^(?:' + openTag + '|' + closeTag + ')');
 exports.tag = new RegExp('^(?:' + openTag + '|' + closeTag + '|' + comment + '|' + processing + '|' + declaration + '|' + cdata + ')');
 
 },
-322: function(__fusereq, exports, module){
+327: function(__fusereq, exports, module){
 'use strict';
 var collapseWhiteSpace = __fusereq(358);
 module.exports = normalize;
@@ -30774,7 +31083,7 @@ function normalize(value) {
 }
 
 },
-323: function(__fusereq, exports, module){
+328: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30782,7 +31091,7 @@ function locate(value, fromIndex) {
 }
 
 },
-324: function(__fusereq, exports, module){
+329: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30790,7 +31099,7 @@ function locate(value, fromIndex) {
 }
 
 },
-325: function(__fusereq, exports, module){
+330: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 var PROTOCOLS = ['https://', 'http://', 'mailto:'];
@@ -30812,7 +31121,7 @@ function locate(value, fromIndex) {
 }
 
 },
-326: function(__fusereq, exports, module){
+331: function(__fusereq, exports, module){
 'use strict';
 module.exports = alphabetical;
 function alphabetical(character) {
@@ -30821,7 +31130,7 @@ function alphabetical(character) {
 }
 
 },
-327: function(__fusereq, exports, module){
+332: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30834,7 +31143,7 @@ function locate(value, fromIndex) {
 }
 
 },
-328: function(__fusereq, exports, module){
+333: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30850,7 +31159,7 @@ function locate(value, fromIndex) {
 }
 
 },
-329: function(__fusereq, exports, module){
+334: function(__fusereq, exports, module){
 'use strict';
 module.exports = wordCharacter;
 var fromCode = String.fromCharCode;
@@ -30860,7 +31169,7 @@ function wordCharacter(character) {
 }
 
 },
-330: function(__fusereq, exports, module){
+335: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30876,7 +31185,7 @@ function locate(value, fromIndex) {
 }
 
 },
-331: function(__fusereq, exports, module){
+336: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30884,7 +31193,7 @@ function locate(value, fromIndex) {
 }
 
 },
-332: function(__fusereq, exports, module){
+337: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30892,7 +31201,7 @@ function locate(value, fromIndex) {
 }
 
 },
-333: function(__fusereq, exports, module){
+338: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -30905,315 +31214,6 @@ function locate(value, fromIndex) {
   }
   return index;
 }
-
-},
-334: function(__fusereq, exports, module){
-'use strict';
-var own = ({}).hasOwnProperty;
-module.exports = stringify;
-function stringify(value) {
-  if (!value || typeof value !== 'object') {
-    return null;
-  }
-  if (own.call(value, 'position') || own.call(value, 'type')) {
-    return position(value.position);
-  }
-  if (own.call(value, 'start') || own.call(value, 'end')) {
-    return position(value);
-  }
-  if (own.call(value, 'line') || own.call(value, 'column')) {
-    return point(value);
-  }
-  return null;
-}
-function point(point) {
-  if (!point || typeof point !== 'object') {
-    point = {};
-  }
-  return index(point.line) + ':' + index(point.column);
-}
-function position(pos) {
-  if (!pos || typeof pos !== 'object') {
-    pos = {};
-  }
-  return point(pos.start) + '-' + point(pos.end);
-}
-function index(value) {
-  return value && typeof value === 'number' ? value : 1;
-}
-
-},
-335: function(__fusereq, exports, module){
-function normalizeArray(parts, allowAboveRoot) {
-  var up = 0;
-  for (var i = parts.length - 1; i >= 0; i--) {
-    var last = parts[i];
-    if (last === '.') {
-      parts.splice(i, 1);
-    } else if (last === '..') {
-      parts.splice(i, 1);
-      up++;
-    } else if (up) {
-      parts.splice(i, 1);
-      up--;
-    }
-  }
-  if (allowAboveRoot) {
-    for (; up--; up) {
-      parts.unshift('..');
-    }
-  }
-  return parts;
-}
-var splitPathRe = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
-var splitPath = function (filename) {
-  return splitPathRe.exec(filename).slice(1);
-};
-exports.resolve = function () {
-  var resolvedPath = '', resolvedAbsolute = false;
-  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
-    var path = i >= 0 ? arguments[i] : '/';
-    if (typeof path !== 'string') {
-      throw new TypeError('Arguments to path.resolve must be strings');
-    } else if (!path) {
-      continue;
-    }
-    resolvedPath = path + '/' + resolvedPath;
-    resolvedAbsolute = path.charAt(0) === '/';
-  }
-  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function (p) {
-    return !!p;
-  }), !resolvedAbsolute).join('/');
-  return (resolvedAbsolute ? '/' : '') + resolvedPath || '.';
-};
-exports.normalize = function (path) {
-  var isAbsolute = exports.isAbsolute(path), trailingSlash = substr(path, -1) === '/';
-  path = normalizeArray(filter(path.split('/'), function (p) {
-    return !!p;
-  }), !isAbsolute).join('/');
-  if (!path && !isAbsolute) {
-    path = '.';
-  }
-  if (path && trailingSlash) {
-    path += '/';
-  }
-  return (isAbsolute ? '/' : '') + path;
-};
-exports.isAbsolute = function (path) {
-  return path.charAt(0) === '/';
-};
-exports.join = function () {
-  var paths = Array.prototype.slice.call(arguments, 0);
-  return exports.normalize(filter(paths, function (p, index) {
-    if (typeof p !== 'string') {
-      throw new TypeError('Arguments to path.join must be strings');
-    }
-    return p;
-  }).join('/'));
-};
-exports.relative = function (from, to) {
-  from = exports.resolve(from).substr(1);
-  to = exports.resolve(to).substr(1);
-  function trim(arr) {
-    var start = 0;
-    for (; start < arr.length; start++) {
-      if (arr[start] !== '') break;
-    }
-    var end = arr.length - 1;
-    for (; end >= 0; end--) {
-      if (arr[end] !== '') break;
-    }
-    if (start > end) return [];
-    return arr.slice(start, end - start + 1);
-  }
-  var fromParts = trim(from.split('/'));
-  var toParts = trim(to.split('/'));
-  var length = Math.min(fromParts.length, toParts.length);
-  var samePartsLength = length;
-  for (var i = 0; i < length; i++) {
-    if (fromParts[i] !== toParts[i]) {
-      samePartsLength = i;
-      break;
-    }
-  }
-  var outputParts = [];
-  for (var i = samePartsLength; i < fromParts.length; i++) {
-    outputParts.push('..');
-  }
-  outputParts = outputParts.concat(toParts.slice(samePartsLength));
-  return outputParts.join('/');
-};
-exports.sep = '/';
-exports.delimiter = ':';
-exports.dirname = function (path) {
-  var result = splitPath(path), root = result[0], dir = result[1];
-  if (!root && !dir) {
-    return '.';
-  }
-  if (dir) {
-    dir = dir.substr(0, dir.length - 1);
-  }
-  return root + dir;
-};
-exports.basename = function (path, ext) {
-  var f = splitPath(path)[2];
-  if (ext && f.substr(-1 * ext.length) === ext) {
-    f = f.substr(0, f.length - ext.length);
-  }
-  return f;
-};
-exports.extname = function (path) {
-  return splitPath(path)[3];
-};
-function filter(xs, f) {
-  if (xs.filter) return xs.filter(f);
-  var res = [];
-  for (var i = 0; i < xs.length; i++) {
-    if (f(xs[i], i, xs)) res.push(xs[i]);
-  }
-  return res;
-}
-var substr = ('ab').substr(-1) === 'b' ? function (str, start, len) {
-  return str.substr(start, len);
-} : function (str, start, len) {
-  if (start < 0) start = str.length + start;
-  return str.substr(start, len);
-};
-
-},
-336: function(__fusereq, exports, module){
-'use strict';
-var path = __fusereq(335);
-function replaceExt(npath, ext) {
-  if (typeof npath !== 'string') {
-    return npath;
-  }
-  if (npath.length === 0) {
-    return npath;
-  }
-  var nFileName = path.basename(npath, path.extname(npath)) + ext;
-  return path.join(path.dirname(npath), nFileName);
-}
-module.exports = replaceExt;
-
-},
-337: function(__fusereq, exports, module){
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
-};
-function isBuffer(obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
-}
-function isSlowBuffer(obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
-}
-
-},
-338: function(__fusereq, exports, module){
-if (typeof Object.assign != 'function') {
-  Object.assign = function (target, varArgs) {
-    'use strict';
-    if (target == null) {
-      throw new TypeError('Cannot convert undefined or null to object');
-    }
-    var to = Object(target);
-    for (var index = 1; index < arguments.length; index++) {
-      var nextSource = arguments[index];
-      if (nextSource != null) {
-        for (var nextKey in nextSource) {
-          if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
-            to[nextKey] = nextSource[nextKey];
-          }
-        }
-      }
-    }
-    return to;
-  };
-}
-var productionEnv = false;
-var process = module.exports = {};
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-function cleanUpNextTick() {
-  draining = false;
-  if (currentQueue.length) {
-    queue = currentQueue.concat(queue);
-  } else {
-    queueIndex = -1;
-  }
-  if (queue.length) {
-    drainQueue();
-  }
-}
-function drainQueue() {
-  if (draining) {
-    return;
-  }
-  var timeout = setTimeout(cleanUpNextTick);
-  draining = true;
-  var len = queue.length;
-  while (len) {
-    currentQueue = queue;
-    queue = [];
-    while (++queueIndex < len) {
-      if (currentQueue) {
-        currentQueue[queueIndex].run();
-      }
-    }
-    queueIndex = -1;
-    len = queue.length;
-  }
-  currentQueue = null;
-  draining = false;
-  clearTimeout(timeout);
-}
-process.nextTick = function (fun) {
-  var args = new Array(arguments.length - 1);
-  if (arguments.length > 1) {
-    for (var i = 1; i < arguments.length; i++) {
-      args[i - 1] = arguments[i];
-    }
-  }
-  queue.push(new Item(fun, args));
-  if (queue.length === 1 && !draining) {
-    setTimeout(drainQueue, 0);
-  }
-};
-function Item(fun, array) {
-  this.fun = fun;
-  this.array = array;
-}
-Item.prototype.run = function () {
-  this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = '';
-process.versions = {};
-function noop() {}
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.binding = function (name) {
-  throw new Error('process.binding is not supported');
-};
-process.cwd = function () {
-  return '/';
-};
-process.chdir = function (dir) {
-  throw new Error('process.chdir is not supported');
-};
-process.umask = function () {
-  return 0;
-};
 
 },
 339: function(__fusereq, exports, module){
@@ -31282,6 +31282,24 @@ function ok() {
 },
 340: function(__fusereq, exports, module){
 exports.__esModule = true;
+function getBoundingClientRect(element) {
+  var rect = element.getBoundingClientRect();
+  return {
+    width: rect.width,
+    height: rect.height,
+    top: rect.top,
+    right: rect.right,
+    bottom: rect.bottom,
+    left: rect.left,
+    x: rect.left,
+    y: rect.top
+  };
+}
+exports.default = getBoundingClientRect;
+
+},
+341: function(__fusereq, exports, module){
+exports.__esModule = true;
 var getWindow_js_1 = __fusereq(295);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function isElement(node) {
@@ -31304,7 +31322,7 @@ exports.isHTMLElement = isHTMLElement;
 exports.isShadowRoot = isShadowRoot;
 
 },
-341: function(__fusereq, exports, module){
+342: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getNodeName(element) {
   return element ? (element.nodeName || '').toLowerCase() : null;
@@ -31312,9 +31330,9 @@ function getNodeName(element) {
 exports.default = getNodeName;
 
 },
-342: function(__fusereq, exports, module){
+343: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 function isTableElement(element) {
   return ['table', 'td', 'th'].indexOf(getNodeName_js_1d.default(element)) >= 0;
@@ -31322,13 +31340,13 @@ function isTableElement(element) {
 exports.default = isTableElement;
 
 },
-343: function(__fusereq, exports, module){
+344: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var getDocumentElement_js_1 = __fusereq(296);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 function getParentNode(element) {
   if (getNodeName_js_1d.default(element) === 'html') {
     return element;
@@ -31338,24 +31356,6 @@ function getParentNode(element) {
 exports.default = getParentNode;
 
 },
-344: function(__fusereq, exports, module){
-exports.__esModule = true;
-function getBoundingClientRect(element) {
-  var rect = element.getBoundingClientRect();
-  return {
-    width: rect.width,
-    height: rect.height,
-    top: rect.top,
-    right: rect.right,
-    bottom: rect.bottom,
-    left: rect.left,
-    x: rect.left,
-    y: rect.top
-  };
-}
-exports.default = getBoundingClientRect;
-
-},
 345: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(241);
@@ -31363,7 +31363,7 @@ var getViewportRect_js_1 = __fusereq(359);
 var getViewportRect_js_1d = __fuse.dt(getViewportRect_js_1);
 var getDocumentRect_js_1 = __fusereq(360);
 var getDocumentRect_js_1d = __fuse.dt(getDocumentRect_js_1);
-var listScrollParents_js_1 = __fusereq(349);
+var listScrollParents_js_1 = __fusereq(348);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
 var getOffsetParent_js_1 = __fusereq(290);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
@@ -31371,14 +31371,14 @@ var getDocumentElement_js_1 = __fusereq(296);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var getComputedStyle_js_1 = __fusereq(297);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var instanceOf_js_1 = __fusereq(340);
-var getBoundingClientRect_js_1 = __fusereq(344);
+var instanceOf_js_1 = __fusereq(341);
+var getBoundingClientRect_js_1 = __fusereq(340);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(344);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 var contains_js_1 = __fusereq(289);
 var contains_js_1d = __fuse.dt(contains_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var rectToClientRect_js_1 = __fusereq(346);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
@@ -31445,21 +31445,13 @@ exports.default = rectToClientRect;
 },
 347: function(__fusereq, exports, module){
 exports.__esModule = true;
-function isDocument(element) {
-  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
-}
-exports.default = isDocument;
-
-},
-348: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(344);
+var getBoundingClientRect_js_1 = __fusereq(340);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getNodeScroll_js_1 = __fusereq(361);
 var getNodeScroll_js_1d = __fuse.dt(getNodeScroll_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 var getWindowScrollBarX_js_1 = __fusereq(362);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
 var getDocumentElement_js_1 = __fusereq(296);
@@ -31503,11 +31495,11 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 exports.default = getCompositeRect;
 
 },
-349: function(__fusereq, exports, module){
+348: function(__fusereq, exports, module){
 exports.__esModule = true;
 var getScrollParent_js_1 = __fusereq(364);
 var getScrollParent_js_1d = __fuse.dt(getScrollParent_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(344);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 var getWindow_js_1 = __fusereq(295);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
@@ -31528,7 +31520,7 @@ function listScrollParents(element, list) {
 exports.default = listScrollParents;
 
 },
-350: function(__fusereq, exports, module){
+349: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(241);
 function order(modifiers) {
@@ -31569,7 +31561,7 @@ function orderModifiers(modifiers) {
 exports.default = orderModifiers;
 
 },
-351: function(__fusereq, exports, module){
+350: function(__fusereq, exports, module){
 exports.__esModule = true;
 function debounce(fn) {
   var pending;
@@ -31588,7 +31580,7 @@ function debounce(fn) {
 exports.default = debounce;
 
 },
-352: function(__fusereq, exports, module){
+351: function(__fusereq, exports, module){
 exports.__esModule = true;
 function mergeByName(modifiers) {
   var merged = modifiers.reduce(function (merged, current) {
@@ -31604,6 +31596,14 @@ function mergeByName(modifiers) {
   });
 }
 exports.default = mergeByName;
+
+},
+352: function(__fusereq, exports, module){
+exports.__esModule = true;
+function isDocument(element) {
+  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
+}
+exports.default = isDocument;
 
 },
 353: function(__fusereq, exports, module){
@@ -31761,8 +31761,8 @@ function hexadecimal(character) {
 },
 356: function(__fusereq, exports, module){
 'use strict';
-var alphabetical = __fusereq(326);
-var decimal = __fusereq(318);
+var alphabetical = __fusereq(331);
+var decimal = __fusereq(323);
 module.exports = alphanumerical;
 function alphanumerical(character) {
   return alphabetical(character) || decimal(character);
@@ -31868,7 +31868,7 @@ var getWindowScroll_js_1 = __fusereq(365);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
 var getWindow_js_1 = __fusereq(295);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 var getHTMLElementScroll_js_1 = __fusereq(366);
 var getHTMLElementScroll_js_1d = __fuse.dt(getHTMLElementScroll_js_1);
 function getNodeScroll(node) {
@@ -31883,7 +31883,7 @@ exports.default = getNodeScroll;
 },
 362: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(344);
+var getBoundingClientRect_js_1 = __fusereq(340);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getDocumentElement_js_1 = __fusereq(296);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
@@ -31908,13 +31908,13 @@ exports.default = isScrollParent;
 },
 364: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(344);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 var isScrollParent_js_1 = __fusereq(363);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(342);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var instanceOf_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(341);
 function getScrollParent(node) {
   if (['html', 'body', '#document'].indexOf(getNodeName_js_1d.default(node)) >= 0) {
     return node.ownerDocument.body;
