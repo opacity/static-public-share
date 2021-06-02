@@ -29,9 +29,10 @@ const SharePage = ({ history }) => {
   const downloadFile = async () => {
     setPageLoading(true)
     await fetch(file.url, {
-      mode: 'no-cors',
+      method: 'GET',
       headers: {
-        'Access-Control-Allow-Origin':'*'
+        'Access-Control-Allow-Origin':'*',
+        Accept: '*'
       }
     }).then(res => res.blob())
       .then(res => {
