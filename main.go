@@ -1,13 +1,9 @@
 package main
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"os"
-	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -55,11 +51,8 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	downloadPublicFileData, err := getPublicFileDownloadData(ps.FileID)
-	if err != nil {
-		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
-		return
-	}
+	imgUrl := getPublicShareThumbnailURL(ps.FileID)
+	fileUrl := getPublicShareFileURL(ps.FileID)
 
 	err = UpdateViewsCount(ps)
 	if err != nil {
@@ -68,46 +61,25 @@ func getShortlink(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
-		"Url":           &downloadPublicFileData.FileDownloadUrl,
+		"Url":           fileUrl,
 		"Title":         ps.Title,
 		"Description":   ps.Description,
 		"MimeType":      ps.MimeType,
 		"FileExtension": ps.FileExtension,
-		"Image":         &downloadPublicFileData.FileDownloadThumbnailUrl,
+		"Image":         imgUrl,
 	})
 }
 
-type downloadFileDataReq struct {
-	FileID string `json:"fileID" binding:"required"`
+func getPublicShareThumbnailURL(fileHandle string) string {
+	url := os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail"
+	resp, err := http.Head(url)
+
+	if err == nil && resp.StatusCode == http.StatusOK {
+		return url
+	}
+	return "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
 }
 
-type downloadPublicFileData struct {
-	FileDownloadUrl          string `json:"fileDownloadUrl" example:"a URL to use to download the public file"`
-	FileDownloadThumbnailUrl string `json:"fileDownloadThumbnailUrl" example:"a URL to use to download the public file thumbnail"`
-}
-
-func getPublicFileDownloadData(fileID string) (downloadPublicFileData *downloadPublicFileData, err error) {
-	url := strings.TrimSuffix("/", os.Getenv("STORAGE_NODE_URL")) + "/api/v2/download/public"
-
-	reqBody, err := json.Marshal(downloadFileDataReq{
-		FileID: fileID,
-	})
-	if err != nil {
-		return
-	}
-
-	resp, err := http.Post(url, "application/json", bytes.NewBuffer(reqBody))
-	if err != nil {
-		return
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return
-	}
-
-	err = json.Unmarshal(body, downloadPublicFileData)
-
-	return
+func getPublicShareFileURL(fileHandle string) string {
+	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/public"
 }
