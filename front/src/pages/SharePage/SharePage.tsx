@@ -58,7 +58,7 @@ const SharePage = ({ history }) => {
               <Row className='align-items-center'>
                 <Col className='text-center'>
                   <img width='88' src={shareImg} />
-                  <h2>You have been invited to view a Public File!</h2>
+                  <h2>You have been invited to view a public file!</h2>
                   <div className='text-filename'>{file && file.title}</div>
                   <div className='text-filesize'></div>
                   <div className='row mb-3' style={{ justifyContent: 'center' }}>
@@ -71,7 +71,7 @@ const SharePage = ({ history }) => {
                   </div>
                   <div>
                     <div><a href={HOME_URL + "/sign-up"}>Get 10GB file storage and file sharing for free</a></div>
-                    Free to share ideas. Free to be protected. Free to be you.
+                    Free to share ideas. Free to be private. Free to be you.
                   </div>
                   <a className='learn-more' href={HOME_URL + "/platform"} target="_blank">
                     Learn More

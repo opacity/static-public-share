@@ -41,15 +41,15 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(9);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(9);
-var config_1 = __fusereq(11);
-var preview_1 = __fusereq(12);
-var file_saver_1 = __fusereq(13);
-var react_loading_1 = __fusereq(14);
+var react_bootstrap_1 = __fusereq(10);
+var config_1 = __fusereq(12);
+var preview_1 = __fusereq(13);
+var file_saver_1 = __fusereq(14);
+var react_loading_1 = __fusereq(15);
 var react_loading_1d = __fuse.dt(react_loading_1);
-const shareImg = __fusereq(7);
+const shareImg = __fusereq(8);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
@@ -89,7 +89,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("img", {
     width: '88',
     src: shareImg
-  }), react_1d.default.createElement("h2", null, "You have been invited to view a Public File!"), react_1d.default.createElement("div", {
+  }), react_1d.default.createElement("h2", null, "You have been invited to view a public file!"), react_1d.default.createElement("div", {
     className: 'text-filename'
   }, file && file.title), react_1d.default.createElement("div", {
     className: 'text-filesize'
@@ -105,7 +105,7 @@ const SharePage = ({history}) => {
     onClick: downloadFile
   }, react_1d.default.createElement("span", null), "\n                        Download File\n                    "))), react_1d.default.createElement("div", null, react_1d.default.createElement("div", null, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/sign-up"
-  }, "Get 10GB file storage and file sharing for free")), "\n                    Free to share ideas. Free to be protected. Free to be you.\n                  "), react_1d.default.createElement("a", {
+  }, "Get 10GB file storage and file sharing for free")), "\n                    Free to share ideas. Free to be private. Free to be you.\n                  "), react_1d.default.createElement("a", {
     className: 'learn-more',
     href: config_1.HOME_URL + "/platform",
     target: "_blank"
@@ -119,18 +119,18 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-7: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 module.exports = "/resources/1a6475db.svg";
 },
-8: function(__fusereq, exports, module){
+9: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(17);
-var aos_1 = __fusereq(18);
+var tabler_react_1 = __fusereq(95);
+var aos_1 = __fusereq(96);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(19);
+var footer_1 = __fusereq(97);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(11);
+var config_1 = __fusereq(12);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -138,7 +138,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(16);
+const logo = __fusereq(94);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -285,19 +285,19 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-11: function(__fusereq, exports, module){
+12: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-12: function(__fusereq, exports, module){
+13: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(22);
-var react_markdown_1 = __fusereq(23);
+var preview_renderer_1 = __fusereq(99);
+var react_markdown_1 = __fusereq(100);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(24);
+var react_file_icon_1 = __fusereq(101);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -379,10 +379,10 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-16: function(__fusereq, exports, module){
+94: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-22: function(__fusereq, exports, module){
+99: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -412,4 +412,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.53f1e1e8.js.map
+//# sourceMappingURL=app.6b5a6389.js.map
