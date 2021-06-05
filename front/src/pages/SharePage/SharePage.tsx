@@ -70,7 +70,7 @@ const SharePage = ({ history }) => {
                     </div>
                   </div>
                   <div>
-                    <div><a href={HOME_URL + "/sign-up"}>Get 10GB file storage and file sharing for free</a></div>
+                    <div><a href={HOME_URL + "/plans"} target='_blank'>Get 10GB file storage and file sharing for free</a></div>
                     Free to share ideas. Free to be private. Free to be you.
                   </div>
                   <a className='learn-more' href={HOME_URL + "/platform"} target="_blank">
