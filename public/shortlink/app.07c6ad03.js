@@ -41,21 +41,21 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(9);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(8);
-var config_1 = __fusereq(10);
-var preview_1 = __fusereq(11);
-var file_saver_1 = __fusereq(12);
-var react_loading_1 = __fusereq(13);
+var react_bootstrap_1 = __fusereq(10);
+var config_1 = __fusereq(12);
+var preview_1 = __fusereq(13);
+var file_saver_1 = __fusereq(14);
+var react_loading_1 = __fusereq(15);
 var react_loading_1d = __fuse.dt(react_loading_1);
-const shareImg = __fusereq(6);
+const shareImg = __fusereq(8);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
   const downloadFile = async () => {
     setPageLoading(true);
-    await fetch(`https://cors-anywhere.herokuapp.com/${file.url}`).then(res => res.blob()).then(res => {
+    await fetch(`${file.url}`).then(res => res.blob()).then(res => {
       const blob = new Blob([res]);
       file_saver_1.saveAs(blob, file.title);
       setPageLoading(false);
@@ -120,18 +120,18 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-6: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 module.exports = "/resources/1a6475db.svg";
 },
-7: function(__fusereq, exports, module){
+9: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(17);
-var aos_1 = __fusereq(18);
+var tabler_react_1 = __fusereq(93);
+var aos_1 = __fusereq(94);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(19);
+var footer_1 = __fusereq(95);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(10);
+var config_1 = __fusereq(12);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -139,7 +139,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(16);
+const logo = __fusereq(92);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -286,12 +286,12 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-10: function(__fusereq, exports, module){
+12: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-11: function(__fusereq, exports, module){
+13: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -380,7 +380,7 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-16: function(__fusereq, exports, module){
+92: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
 97: function(__fusereq, exports, module){
@@ -413,4 +413,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.019597cdb.js.map
+//# sourceMappingURL=app.07c6ad03.js.map
