@@ -138,7 +138,7 @@ class SiteWrapper extends React.Component<Props, State> {
                         <Button
                           className='btn btn-primary btn-pill'
                           onClick={() => {
-                            this.setState({ showLoginModal: true });
+                            window.open(`${HOME_URL}/`, '_blank');
                           }}
                         >
                           Log in
@@ -159,7 +159,7 @@ class SiteWrapper extends React.Component<Props, State> {
                         Why Opacity?
                     </a>
                     </li>
-                    <li className='nav-item'> 
+                    <li className='nav-item'>
                       <a href={HOME_URL + '/community'} className='nav-link'>
                         App Gallery
                     </a>
@@ -167,19 +167,19 @@ class SiteWrapper extends React.Component<Props, State> {
                     <li className='nav-item'>
                       <Nav.Link href='/blog'>Learn</Nav.Link>
                     </li>
-              
+
                     {
-                      loggedIn ? (  
+                      loggedIn ? (
                         <>
                           <li className='nav-item'>
                             <a href={HOME_URL + '/file-manager'} className='nav-link' >
-                              Dashboard 
+                              Dashboard
                             </a>
                           </li>
                           <li
                             className='nav-item'
-                            onClick={() => {  
-                              window.open(`${HOME_URL}/`, ' _blank');  
+                            onClick={() => {
+                              window.open(`${HOME_URL}/`, ' _blank');
                             }}
                           >
                             <Nav.Link>Logout</Nav.Link>
@@ -191,8 +191,8 @@ class SiteWrapper extends React.Component<Props, State> {
                             <Nav.Link href='/plans'>Explore Plans</Nav.Link>
                           </li>
                           <li
-                            className='nav-item'  
-                            onClick={() => {  
+                            className='nav-item'
+                            onClick={() => {
                               this.setState({ showLoginModal: true });
                             }}
                           >

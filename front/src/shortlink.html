@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8" />
@@ -8,21 +8,21 @@
   <meta name="description" content="{{.Description}}">
 
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="{{.Title}}">
-  <meta itemprop="description" content="{{.Description}}">
+  <meta itemprop="name" content="Opacity.io">
+  <!-- <meta itemprop="description" content="{{.Description}}"> -->
   <meta itemprop="image" content={{.Image}}>
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="http://public.opacity.io/">
+  <meta property="og:url" content="{{.Shortlink}}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{.Title}}">
-  <meta property="og:description" content="{{.Description}}">
+  <meta property="og:title" content="Opacity.io">
+  <!-- <meta property="og:description" content="{{.Description}}"> -->
   <meta property="og:image" content={{.Image}}>
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bicycle.gif">
-  <meta name="twitter:description" content="{{.Description}}">
+  <meta name="twitter:title" content="Opacity.io">
+  <!-- <meta name="twitter:description" content="{{.Description}}"> -->
   <meta name="twitter:image" content={{.Image}}>
   
   <meta name="telegram:channel" content="@telegram">
@@ -36,6 +36,7 @@
 
   <script>
     window.OpacityFile = {
+      shortlink: "{{.Shortlink}}",
       url: "{{.Url}}",
       title: "{{.Title}}",
       description: "{{.Description}}",

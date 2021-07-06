@@ -61,6 +61,7 @@ func getShortlink(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
+		"Shortlink":     "https://public-share.opacitynodes.com/" + shortlink,
 		"Url":           fileUrl,
 		"Title":         ps.Title,
 		"Description":   ps.Description,
