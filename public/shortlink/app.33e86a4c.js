@@ -305,10 +305,10 @@ exports.HOME_URL = "https://dev2.opacity.io";
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(98);
-var react_markdown_1 = __fusereq(99);
+var preview_renderer_1 = __fusereq(23);
+var react_markdown_1 = __fusereq(24);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(100);
+var react_file_icon_1 = __fusereq(25);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -393,7 +393,7 @@ exports.Preview = Preview;
 17: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-98: function(__fusereq, exports, module){
+23: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
