@@ -60,6 +60,11 @@ task("copy-streamsaver", async () => {
     .dest("dist/resources/streamsaver", path.join(__dirname, "node_modules/streamsaver"))
     .write()
     .exec()
+
+  await src("src/favicon.ico")
+    .dest("dist", path.join(__dirname, "src"))
+    .write()
+    .exec();
 })
 
 task("default", async ctx => {

@@ -44,7 +44,7 @@ const SharePage = ({ history }) => {
       <SiteWrapper history={history}>
         <Container fluid='xl share'>
           <Row>
-            <Col md={6} className='center' >
+            <Col md={6} xl={12} className='center' >
               <Row style={{ padding: '20px' }}>
                 <div className='preview-area center'>
                   {previewOpen
@@ -63,7 +63,7 @@ const SharePage = ({ history }) => {
                 </div>
               </Row>
             </Col>
-            <Col md={6} className="control-area">
+            <Col md={6} xl={12} className="control-area">
               <Row className='align-items-center'>
                 <Col className='text-center'>
                   <div className='text-filename'>{file && file.title}</div>
