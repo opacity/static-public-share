@@ -46,11 +46,9 @@ var preview_1 = __fusereq(15);
 var file_saver_1 = __fusereq(16);
 var react_loading_1 = __fusereq(17);
 var react_loading_1d = __fuse.dt(react_loading_1);
-const shareImg = __fusereq(10);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
-  const [previewOpen, setPreviewOpen] = react_1.useState(false);
   const downloadFile = async () => {
     setPageLoading(true);
     await fetch(`${file.url}`).then(res => res.blob()).then(res => {
@@ -73,19 +71,12 @@ const SharePage = ({history}) => {
     }
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
-  }, previewOpen ? react_1d.default.createElement(preview_1.Preview, {
+  }, react_1d.default.createElement(preview_1.Preview, {
     url: file.url,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
-  }) : react_1d.default.createElement("div", {
-    style: {
-      width: "100%"
-    }
-  }, react_1d.default.createElement("img", {
-    src: file.thumbnail,
-    alt: 'thumbnail'
-  }))))), react_1d.default.createElement(react_bootstrap_1.Col, {
+  })))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
     xs: 12,
     className: "control-area"
@@ -96,8 +87,8 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'text-filename'
   }, file && file.title), react_1d.default.createElement("div", {
-    className: 'text-filesize'
-  }), react_1d.default.createElement("div", {
+    className: "text-filesize"
+  }, file && file.size), react_1d.default.createElement("div", {
     className: "row mb-3",
     style: {
       justifyContent: "center"
@@ -107,12 +98,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("button", {
     className: "btn btn-pill btn-download",
     onClick: downloadFile
-  }, react_1d.default.createElement("span", null), "\n                      Download File\n                    ")), react_1d.default.createElement("div", {
-    className: "col-md-5"
-  }, react_1d.default.createElement("button", {
-    className: "btn btn-pill btn-preview",
-    onClick: () => setPreviewOpen(prev => !prev)
-  }, react_1d.default.createElement("span", null), previewOpen ? "Hide" : "Show", " Preview\n                    "))), react_1d.default.createElement("h2", null, "Easily share your files with Opacity"), react_1d.default.createElement("div", {
+  }, react_1d.default.createElement("span", null), "\n                      Download File\n                    "))), react_1d.default.createElement("h2", null, "Easily share your files with Opacity"), react_1d.default.createElement("div", {
     className: "free-signup-text"
   }, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/plans",
@@ -145,11 +131,6 @@ function App() {
 }
 react_dom_1.render(react_1.createElement(App, null), document.getElementById("root"));
 
-},
-
-// src/assets/share-download.svg @10
-10: function(__fusereq, exports, module){
-module.exports = "/resources/1a6475db.svg";
 },
 
 // src/config.ts @14

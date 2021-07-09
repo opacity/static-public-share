@@ -7,8 +7,6 @@ import { Preview } from "./preview";
 import { saveAs } from 'file-saver'
 import ReactLoading from "react-loading";
 
-const shareImg = require("../../assets/share-download.svg");
-
 declare global {
   interface window {
     OpacityFile: {
@@ -19,6 +17,7 @@ declare global {
       thumbnail: string,
       mimeType: string,
       fileExtension: string,
+      size: string,
     }
   }
 }
@@ -26,7 +25,6 @@ declare global {
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
   const [pageLoading, setPageLoading] = useState(false)
-  const [previewOpen, setPreviewOpen] = useState(false)
 
   const downloadFile = async () => {
     setPageLoading(true)
@@ -39,6 +37,7 @@ const SharePage = ({ history }) => {
       })
   }
 
+
   return (
     <>
       <SiteWrapper history={history}>
@@ -47,19 +46,12 @@ const SharePage = ({ history }) => {
             <Col md={6} xs={12} className='center' >
               <Row style={{ padding: '20px' }}>
                 <div className='preview-area center'>
-                  {previewOpen
-                    ?
-                    <Preview
-                      url={file.url}
-                      ext={file.fileExtension}
-                      type={file.mimeType}
-                      className='preview-content'
-                    />
-                    :
-                    <div style={{ width: "100%" }}>
-                      <img src={file.thumbnail} alt='thumbnail' />
-                    </div>
-                  }
+                  <Preview
+                    url={file.url}
+                    ext={file.fileExtension}
+                    type={file.mimeType}
+                    className='preview-content'
+                  />
                 </div>
               </Row>
             </Col>
@@ -67,7 +59,9 @@ const SharePage = ({ history }) => {
               <Row className='align-items-center'>
                 <Col className='text-center'>
                   <div className='text-filename'>{file && file.title}</div>
-                  <div className='text-filesize'></div>
+                  <div className="text-filesize">
+                    {file && file.size}
+                  </div>
                   <div className="row mb-3" style={{ justifyContent: "center" }}>
                     <div className="col-md-5">
                       <button
@@ -78,7 +72,7 @@ const SharePage = ({ history }) => {
                       Download File
                     </button>
                     </div>
-                    <div className="col-md-5">
+                    {/* <div className="col-md-5">
                       <button
                         className="btn btn-pill btn-preview"
                         onClick={() => setPreviewOpen(prev => !prev)}
@@ -86,7 +80,7 @@ const SharePage = ({ history }) => {
                         <span></span>
                         {previewOpen ? "Hide" : "Show"} Preview
                     </button>
-                    </div>
+                    </div> */}
                   </div>
 
                   <h2>Easily share your files with Opacity</h2>

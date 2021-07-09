@@ -41,19 +41,17 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(9);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(10);
-var config_1 = __fusereq(12);
-var preview_1 = __fusereq(13);
-var file_saver_1 = __fusereq(14);
-var react_loading_1 = __fusereq(15);
+var react_bootstrap_1 = __fusereq(8);
+var config_1 = __fusereq(10);
+var preview_1 = __fusereq(11);
+var file_saver_1 = __fusereq(12);
+var react_loading_1 = __fusereq(13);
 var react_loading_1d = __fuse.dt(react_loading_1);
-const shareImg = __fusereq(8);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
-  const [previewOpen, setPreviewOpen] = react_1.useState(false);
   const downloadFile = async () => {
     setPageLoading(true);
     await fetch(`${file.url}`).then(res => res.blob()).then(res => {
@@ -76,19 +74,12 @@ const SharePage = ({history}) => {
     }
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
-  }, previewOpen ? react_1d.default.createElement(preview_1.Preview, {
+  }, react_1d.default.createElement(preview_1.Preview, {
     url: file.url,
     ext: file.fileExtension,
     type: file.mimeType,
     className: 'preview-content'
-  }) : react_1d.default.createElement("div", {
-    style: {
-      width: "100%"
-    }
-  }, react_1d.default.createElement("img", {
-    src: file.thumbnail,
-    alt: 'thumbnail'
-  }))))), react_1d.default.createElement(react_bootstrap_1.Col, {
+  })))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
     xs: 12,
     className: "control-area"
@@ -99,8 +90,8 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'text-filename'
   }, file && file.title), react_1d.default.createElement("div", {
-    className: 'text-filesize'
-  }), react_1d.default.createElement("div", {
+    className: "text-filesize"
+  }, file && file.size), react_1d.default.createElement("div", {
     className: "row mb-3",
     style: {
       justifyContent: "center"
@@ -110,12 +101,7 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("button", {
     className: "btn btn-pill btn-download",
     onClick: downloadFile
-  }, react_1d.default.createElement("span", null), "\n                      Download File\n                    ")), react_1d.default.createElement("div", {
-    className: "col-md-5"
-  }, react_1d.default.createElement("button", {
-    className: "btn btn-pill btn-preview",
-    onClick: () => setPreviewOpen(prev => !prev)
-  }, react_1d.default.createElement("span", null), previewOpen ? "Hide" : "Show", " Preview\n                    "))), react_1d.default.createElement("h2", null, "Easily share your files with Opacity"), react_1d.default.createElement("div", {
+  }, react_1d.default.createElement("span", null), "\n                      Download File\n                    "))), react_1d.default.createElement("h2", null, "Easily share your files with Opacity"), react_1d.default.createElement("div", {
     className: "free-signup-text"
   }, react_1d.default.createElement("a", {
     href: config_1.HOME_URL + "/plans",
@@ -134,18 +120,15 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-8: function(__fusereq, exports, module){
-module.exports = "/resources/1a6475db.svg";
-},
-9: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(95);
-var aos_1 = __fusereq(96);
+var tabler_react_1 = __fusereq(96);
+var aos_1 = __fusereq(97);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(97);
+var footer_1 = __fusereq(98);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(12);
+var config_1 = __fusereq(10);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -153,7 +136,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(94);
+const logo = __fusereq(95);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -298,19 +281,19 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-12: function(__fusereq, exports, module){
+10: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-13: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(99);
-var react_markdown_1 = __fusereq(100);
+var preview_renderer_1 = __fusereq(92);
+var react_markdown_1 = __fusereq(93);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(101);
+var react_file_icon_1 = __fusereq(94);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -392,10 +375,7 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-94: function(__fusereq, exports, module){
-module.exports = "/resources/06dfaeef0.svg";
-},
-99: function(__fusereq, exports, module){
+92: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -423,6 +403,9 @@ const PreviewRenderer = ({url, render = text => react_1d.default.createElement("
 };
 exports.PreviewRenderer = PreviewRenderer;
 
+},
+95: function(__fusereq, exports, module){
+module.exports = "/resources/06dfaeef0.svg";
 }
 })
-//# sourceMappingURL=app.5cc31ea7.js.map
+//# sourceMappingURL=app.0475cfcab.js.map
