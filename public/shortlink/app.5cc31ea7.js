@@ -68,7 +68,7 @@ const SharePage = ({history}) => {
     fluid: 'xl share'
   }, react_1d.default.createElement(react_bootstrap_1.Row, null, react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
-    xl: 12,
+    xs: 12,
     className: 'center'
   }, react_1d.default.createElement(react_bootstrap_1.Row, {
     style: {
@@ -90,7 +90,7 @@ const SharePage = ({history}) => {
     alt: 'thumbnail'
   }))))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
-    xl: 12,
+    xs: 12,
     className: "control-area"
   }, react_1d.default.createElement(react_bootstrap_1.Row, {
     className: 'align-items-center'
@@ -140,10 +140,10 @@ module.exports = "/resources/1a6475db.svg";
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(18);
-var aos_1 = __fusereq(19);
+var tabler_react_1 = __fusereq(17);
+var aos_1 = __fusereq(18);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(20);
+var footer_1 = __fusereq(19);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(11);
 aos_1d.default.init({
@@ -153,7 +153,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(17);
+const logo = __fusereq(16);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -307,10 +307,10 @@ exports.HOME_URL = "https://dev2.opacity.io";
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(22);
-var react_markdown_1 = __fusereq(23);
+var preview_renderer_1 = __fusereq(97);
+var react_markdown_1 = __fusereq(98);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(24);
+var react_file_icon_1 = __fusereq(99);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -392,10 +392,10 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-17: function(__fusereq, exports, module){
+16: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-22: function(__fusereq, exports, module){
+97: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -425,4 +425,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.063a892d4.js.map
+//# sourceMappingURL=app.5cc31ea7.js.map

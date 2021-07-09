@@ -169,6 +169,10 @@ task("dist-prod-prod", async ctx => {
   const fuse = ctx.getConfig();
 
   await exec("copy-streamsaver")
+  await src("src/favicon.ico")
+    .dest("../public/shortlink", path.join(__dirname, "src"))
+    .write()
+    .exec();
   await fuse.runProd({
     uglify: false,
     bundles: {
