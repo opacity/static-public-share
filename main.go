@@ -24,7 +24,6 @@ func main() {
 
 	r.LoadHTMLFiles("templates/shortlink.html")
 	r.Static("/shortlink", "./public/shortlink")
-	r.Static("/favicon.ico", "./public/shortlink/favicon.ico")
 	r.Static("/resources", "./public/shortlink/resources")
 
 	r.GET("/:shortlink", getShortlink)

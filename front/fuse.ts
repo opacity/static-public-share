@@ -170,7 +170,7 @@ task("dist-prod-prod", async ctx => {
 
   await exec("copy-streamsaver")
   await src("src/favicon.ico")
-    .dest("../public/shortlink", path.join(__dirname, "src"))
+    .dest("../public/shortlink/resources", path.join(__dirname, "src"))
     .write()
     .exec();
   await fuse.runProd({
