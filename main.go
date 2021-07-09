@@ -68,7 +68,6 @@ func getShortlink(c *gin.Context) {
 		"MimeType":      ps.MimeType,
 		"FileExtension": ps.FileExtension,
 		"Image":         imgUrl,
-		"Size":          ps.Size,
 	})
 }
 
