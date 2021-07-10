@@ -17,7 +17,6 @@ declare global {
       thumbnail: string,
       mimeType: string,
       fileExtension: string,
-      size: string,
     }
   }
 }
@@ -60,7 +59,7 @@ const SharePage = ({ history }) => {
                 <Col className='text-center'>
                   <div className='text-filename'>{file && file.title}</div>
                   <div className="text-filesize">
-                    {file && file.size}
+                    {file && file.description}
                   </div>
                   <div className="row mb-3" style={{ justifyContent: "center" }}>
                     <div className="col-md-5">
