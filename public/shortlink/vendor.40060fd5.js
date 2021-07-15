@@ -16431,7 +16431,7 @@ var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var AbstractNavItem_1 = __fusereq(147);
+var AbstractNavItem_1 = __fusereq(144);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -16502,43 +16502,43 @@ var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
-var addEventListener_1 = __fusereq(156);
+var addEventListener_1 = __fusereq(168);
 var addEventListener_1d = __fuse.dt(addEventListener_1);
-var canUseDOM_1 = __fusereq(157);
+var canUseDOM_1 = __fusereq(169);
 var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1 = __fusereq(170);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-var removeEventListener_1 = __fusereq(159);
+var removeEventListener_1 = __fusereq(171);
 var removeEventListener_1d = __fuse.dt(removeEventListener_1);
-var scrollbarSize_1 = __fusereq(160);
+var scrollbarSize_1 = __fusereq(172);
 var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var useCallbackRef_1 = __fusereq(161);
+var useCallbackRef_1 = __fusereq(173);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var useWillUnmount_1 = __fusereq(162);
+var useWillUnmount_1 = __fusereq(174);
 var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
-var transitionEnd_1 = __fusereq(163);
+var transitionEnd_1 = __fusereq(175);
 var transitionEnd_1d = __fuse.dt(transitionEnd_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var Modal_1 = __fusereq(164);
+var Modal_1 = __fusereq(176);
 var Modal_1d = __fuse.dt(Modal_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var BootstrapModalManager_1 = __fusereq(165);
+var BootstrapModalManager_1 = __fusereq(177);
 var BootstrapModalManager_1d = __fuse.dt(BootstrapModalManager_1);
 var Fade_1 = __fusereq(45);
 var Fade_1d = __fuse.dt(Fade_1);
 var ModalBody_1 = __fusereq(62);
 var ModalBody_1d = __fuse.dt(ModalBody_1);
-var ModalContext_1 = __fusereq(166);
+var ModalContext_1 = __fusereq(178);
 var ModalContext_1d = __fuse.dt(ModalContext_1);
 var ModalDialog_1 = __fusereq(63);
 var ModalDialog_1d = __fuse.dt(ModalDialog_1);
 var ModalFooter_1 = __fusereq(64);
 var ModalFooter_1d = __fuse.dt(ModalFooter_1);
-var ModalHeader_1 = __fusereq(167);
+var ModalHeader_1 = __fusereq(179);
 var ModalHeader_1d = __fuse.dt(ModalHeader_1);
 var ModalTitle_1 = __fusereq(65);
 var ModalTitle_1d = __fuse.dt(ModalTitle_1);
@@ -16811,7 +16811,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var uncontrollable_1 = __fusereq(112);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var CardContext_1 = __fusereq(117);
 var CardContext_1d = __fuse.dt(CardContext_1);
@@ -16871,12 +16871,12 @@ var createWithBsPrefix_1 = __fusereq(116);
 var createWithBsPrefix_1d = __fuse.dt(createWithBsPrefix_1);
 var NavbarBrand_1 = __fusereq(68);
 var NavbarBrand_1d = __fuse.dt(NavbarBrand_1);
-var NavbarCollapse_1 = __fusereq(145);
+var NavbarCollapse_1 = __fusereq(146);
 var NavbarCollapse_1d = __fuse.dt(NavbarCollapse_1);
-var NavbarToggle_1 = __fusereq(146);
+var NavbarToggle_1 = __fusereq(147);
 var NavbarToggle_1d = __fuse.dt(NavbarToggle_1);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -17036,7 +17036,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var SafeAnchor_1 = __fusereq(82);
 var SafeAnchor_1d = __fuse.dt(SafeAnchor_1);
-var AbstractNavItem_1 = __fusereq(147);
+var AbstractNavItem_1 = __fusereq(144);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -18379,19 +18379,19 @@ function _arrayWithoutHoles(arr) {
     return arr2;
   }
 }
-var xtend = __fusereq(168);
-var unified = __fusereq(169);
-var parse = __fusereq(170);
+var xtend = __fusereq(156);
+var unified = __fusereq(157);
+var parse = __fusereq(158);
 var PropTypes = __fusereq(122);
-var addListMetadata = __fusereq(171);
-var naiveHtml = __fusereq(172);
-var disallowNode = __fusereq(173);
-var astToReact = __fusereq(174);
-var wrapTableRows = __fusereq(175);
-var getDefinitions = __fusereq(176);
-var uriTransformer = __fusereq(177);
-var defaultRenderers = __fusereq(178);
-var symbols = __fusereq(179);
+var addListMetadata = __fusereq(159);
+var naiveHtml = __fusereq(160);
+var disallowNode = __fusereq(161);
+var astToReact = __fusereq(162);
+var wrapTableRows = __fusereq(163);
+var getDefinitions = __fusereq(164);
+var uriTransformer = __fusereq(165);
+var defaultRenderers = __fusereq(166);
+var symbols = __fusereq(167);
 var allTypes = Object.keys(defaultRenderers);
 var ReactMarkdown = function ReactMarkdown(props) {
   var src = props.source || props.children || '';
@@ -19577,7 +19577,7 @@ exports.__esModule = true;
 var react_1 = __fusereq(2);
 var useMounted_1 = __fusereq(185);
 var useMounted_1d = __fuse.dt(useMounted_1);
-var useWillUnmount_1 = __fusereq(162);
+var useWillUnmount_1 = __fusereq(174);
 var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
 var MAX_DELAY_MS = Math.pow(2, 31) - 1;
 function setChainedTimeout(handleRef, fn, timeoutAtMs) {
@@ -19927,7 +19927,7 @@ exports.forEach = forEach;
 exports.__esModule = true;
 var css_1 = __fusereq(127);
 var css_1d = __fuse.dt(css_1);
-var transitionEnd_1 = __fusereq(163);
+var transitionEnd_1 = __fusereq(175);
 var transitionEnd_1d = __fuse.dt(transitionEnd_1);
 function parseDuration(node, property) {
   var str = css_1d.default(node, property) || '';
@@ -19957,11 +19957,11 @@ exports.default = triggerBrowserReflow;
 },
 127: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getComputedStyle_1 = __fusereq(198);
+var getComputedStyle_1 = __fusereq(190);
 var getComputedStyle_1d = __fuse.dt(getComputedStyle_1);
-var hyphenateStyle_1 = __fusereq(199);
+var hyphenateStyle_1 = __fusereq(191);
 var hyphenateStyle_1d = __fuse.dt(hyphenateStyle_1);
-var isTransform_1 = __fusereq(200);
+var isTransform_1 = __fusereq(192);
 var isTransform_1d = __fuse.dt(isTransform_1);
 function style(node, property) {
   var css = '';
@@ -20014,28 +20014,28 @@ exports.default = createChainedFunction;
 },
 129: function(__fusereq, exports, module){
 exports.__esModule = true;
-var matches_1 = __fusereq(190);
+var matches_1 = __fusereq(198);
 var matches_1d = __fuse.dt(matches_1);
-var querySelectorAll_1 = __fusereq(191);
+var querySelectorAll_1 = __fusereq(199);
 var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
-var addEventListener_1 = __fusereq(156);
+var addEventListener_1 = __fusereq(168);
 var addEventListener_1d = __fuse.dt(addEventListener_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
 var uncontrollable_1 = __fusereq(112);
-var usePrevious_1 = __fusereq(192);
+var usePrevious_1 = __fusereq(200);
 var usePrevious_1d = __fuse.dt(usePrevious_1);
-var useForceUpdate_1 = __fusereq(193);
+var useForceUpdate_1 = __fusereq(201);
 var useForceUpdate_1d = __fuse.dt(useForceUpdate_1);
-var useGlobalListener_1 = __fusereq(194);
+var useGlobalListener_1 = __fusereq(202);
 var useGlobalListener_1d = __fuse.dt(useGlobalListener_1);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var DropdownContext_1 = __fusereq(195);
+var DropdownContext_1 = __fusereq(203);
 var DropdownContext_1d = __fuse.dt(DropdownContext_1);
-var DropdownMenu_1 = __fusereq(196);
+var DropdownMenu_1 = __fusereq(194);
 var DropdownMenu_1d = __fuse.dt(DropdownMenu_1);
 var DropdownToggle_1 = __fusereq(197);
 var DropdownToggle_1d = __fuse.dt(DropdownToggle_1);
@@ -20193,7 +20193,7 @@ var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
 var ThemeProvider_1 = __fusereq(91);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(193);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SafeAnchor_1 = __fusereq(82);
 var SafeAnchor_1d = __fuse.dt(SafeAnchor_1);
@@ -20240,15 +20240,15 @@ var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var DropdownMenu_1 = __fusereq(196);
-var useMergedRefs_1 = __fusereq(202);
+var DropdownMenu_1 = __fusereq(194);
+var useMergedRefs_1 = __fusereq(195);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var ThemeProvider_1 = __fusereq(91);
-var useWrappedRefWithWarning_1 = __fusereq(203);
+var useWrappedRefWithWarning_1 = __fusereq(196);
 var useWrappedRefWithWarning_1d = __fuse.dt(useWrappedRefWithWarning_1);
 var usePopperMarginModifiers_1 = __fusereq(150);
 var usePopperMarginModifiers_1d = __fuse.dt(usePopperMarginModifiers_1);
@@ -20332,12 +20332,12 @@ var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var DropdownToggle_1 = __fusereq(197);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(195);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var Button_1 = __fusereq(30);
 var Button_1d = __fuse.dt(Button_1);
 var ThemeProvider_1 = __fusereq(91);
-var useWrappedRefWithWarning_1 = __fusereq(203);
+var useWrappedRefWithWarning_1 = __fusereq(196);
 var useWrappedRefWithWarning_1d = __fuse.dt(useWrappedRefWithWarning_1);
 var DropdownToggle = react_1d.default.forwardRef(function (_ref, ref) {
   var bsPrefix = _ref.bsPrefix, split = _ref.split, className = _ref.className, childBsPrefix = _ref.childBsPrefix, _ref$as = _ref.as, Component = _ref$as === void 0 ? Button_1d.default : _ref$as, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "split", "className", "childBsPrefix", "as"]);
@@ -20615,15 +20615,15 @@ var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var querySelectorAll_1 = __fusereq(191);
+var querySelectorAll_1 = __fusereq(199);
 var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var useForceUpdate_1 = __fusereq(193);
+var useForceUpdate_1 = __fusereq(201);
 var useForceUpdate_1d = __fuse.dt(useForceUpdate_1);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(195);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(193);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -20711,87 +20711,6 @@ exports.default = AbstractNav;
 },
 144: function(__fusereq, exports, module){
 exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var context = react_1d.default.createContext(null);
-context.displayName = 'NavbarContext';
-exports.default = context;
-
-},
-145: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var Collapse_1 = __fusereq(42);
-var Collapse_1d = __fuse.dt(Collapse_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
-  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
-  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
-    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
-      in: !!(context && context.expanded)
-    }, props), react_1d.default.createElement("div", {
-      ref: ref,
-      className: bsPrefix
-    }, children));
-  });
-});
-NavbarCollapse.displayName = 'NavbarCollapse';
-exports.default = NavbarCollapse;
-
-},
-146: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var classnames_1 = __fusereq(111);
-var classnames_1d = __fuse.dt(classnames_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var defaultProps = {
-  label: 'Toggle navigation'
-};
-var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
-  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
-  var handleClick = useEventCallback_1d.default(function (e) {
-    if (onClick) onClick(e);
-    if (onToggle) onToggle();
-  });
-  if (Component === 'button') {
-    props.type = 'button';
-  }
-  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
-    ref: ref,
-    onClick: handleClick,
-    "aria-label": label,
-    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
-  }), children || react_1d.default.createElement("span", {
-    className: bsPrefix + "-icon"
-  }));
-});
-NavbarToggle.displayName = 'NavbarToggle';
-NavbarToggle.defaultProps = defaultProps;
-exports.default = NavbarToggle;
-
-},
-147: function(__fusereq, exports, module){
-exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
@@ -20804,7 +20723,7 @@ var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(193);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -20851,6 +20770,87 @@ AbstractNavItem.defaultProps = defaultProps;
 exports.default = AbstractNavItem;
 
 },
+145: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var context = react_1d.default.createContext(null);
+context.displayName = 'NavbarContext';
+exports.default = context;
+
+},
+146: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var Collapse_1 = __fusereq(42);
+var Collapse_1d = __fuse.dt(Collapse_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(145);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
+  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
+  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
+    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
+      in: !!(context && context.expanded)
+    }, props), react_1d.default.createElement("div", {
+      ref: ref,
+      className: bsPrefix
+    }, children));
+  });
+});
+NavbarCollapse.displayName = 'NavbarCollapse';
+exports.default = NavbarCollapse;
+
+},
+147: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var classnames_1 = __fusereq(111);
+var classnames_1d = __fuse.dt(classnames_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(145);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var defaultProps = {
+  label: 'Toggle navigation'
+};
+var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
+  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
+  var handleClick = useEventCallback_1d.default(function (e) {
+    if (onClick) onClick(e);
+    if (onToggle) onToggle();
+  });
+  if (Component === 'button') {
+    props.type = 'button';
+  }
+  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
+    ref: ref,
+    onClick: handleClick,
+    "aria-label": label,
+    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
+  }), children || react_1d.default.createElement("span", {
+    className: bsPrefix + "-icon"
+  }));
+});
+NavbarToggle.displayName = 'NavbarToggle';
+NavbarToggle.defaultProps = defaultProps;
+exports.default = NavbarToggle;
+
+},
 148: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
@@ -20863,18 +20863,18 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var react_dom_1 = __fusereq(3);
 var react_dom_1d = __fuse.dt(react_dom_1);
-var useCallbackRef_1 = __fusereq(161);
+var useCallbackRef_1 = __fusereq(173);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(195);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
-var popper_1 = __fusereq(205);
-var usePopper_1 = __fusereq(206);
+var popper_1 = __fusereq(204);
+var usePopper_1 = __fusereq(205);
 var usePopper_1d = __fuse.dt(usePopper_1);
-var useRootClose_1 = __fusereq(207);
+var useRootClose_1 = __fusereq(206);
 var useRootClose_1d = __fuse.dt(useRootClose_1);
-var useWaitForDOMRef_1 = __fusereq(208);
+var useWaitForDOMRef_1 = __fusereq(207);
 var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
-var mergeOptionsWithPopperConfig_1 = __fusereq(209);
+var mergeOptionsWithPopperConfig_1 = __fusereq(208);
 var mergeOptionsWithPopperConfig_1d = __fuse.dt(mergeOptionsWithPopperConfig_1);
 var Overlay = react_1d.default.forwardRef(function (props, outerRef) {
   var flip = props.flip, offset = props.offset, placement = props.placement, _props$containerPaddi = props.containerPadding, containerPadding = _props$containerPaddi === void 0 ? 5 : _props$containerPaddi, _props$popperConfig = props.popperConfig, popperConfig = _props$popperConfig === void 0 ? {} : _props$popperConfig, Transition = props.transition;
@@ -20988,7 +20988,7 @@ exports.default = safeFindDOMNode;
 150: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var hasClass_1 = __fusereq(204);
+var hasClass_1 = __fusereq(209);
 var hasClass_1d = __fuse.dt(hasClass_1);
 var ThemeProvider_1 = __fusereq(91);
 function getMargins(element) {
@@ -21157,519 +21157,6 @@ module.exports = invariant;
 
 },
 156: function(__fusereq, exports, module){
-exports.__esModule = true;
-var canUseDOM_1 = __fusereq(157);
-var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-exports.optionsSupported = false;
-exports.onceSupported = false;
-try {
-  var options = {
-    get passive() {
-      return exports.optionsSupported = true;
-    },
-    get once() {
-      return exports.onceSupported = exports.optionsSupported = true;
-    }
-  };
-  if (canUseDOM_1d.default) {
-    window.addEventListener('test', options, options);
-    window.removeEventListener('test', options, true);
-  }
-} catch (e) {}
-function addEventListener(node, eventName, handler, options) {
-  if (options && typeof options !== 'boolean' && !exports.onceSupported) {
-    var once = options.once, capture = options.capture;
-    var wrappedHandler = handler;
-    if (!exports.onceSupported && once) {
-      wrappedHandler = handler.__once || (function onceHandler(event) {
-        this.removeEventListener(eventName, onceHandler, capture);
-        handler.call(this, event);
-      });
-      handler.__once = wrappedHandler;
-    }
-    node.addEventListener(eventName, wrappedHandler, exports.optionsSupported ? options : capture);
-  }
-  node.addEventListener(eventName, handler, options);
-}
-exports.default = addEventListener;
-
-},
-157: function(__fusereq, exports, module){
-exports.__esModule = true;
-exports.default = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-
-},
-158: function(__fusereq, exports, module){
-exports.__esModule = true;
-function ownerDocument(node) {
-  return node && node.ownerDocument || document;
-}
-exports.default = ownerDocument;
-
-},
-159: function(__fusereq, exports, module){
-exports.__esModule = true;
-function removeEventListener(node, eventName, handler, options) {
-  var capture = options && typeof options !== 'boolean' ? options.capture : options;
-  node.removeEventListener(eventName, handler, capture);
-  if (handler.__once) {
-    node.removeEventListener(eventName, handler.__once, capture);
-  }
-}
-exports.default = removeEventListener;
-
-},
-160: function(__fusereq, exports, module){
-exports.__esModule = true;
-var canUseDOM_1 = __fusereq(157);
-var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-var size;
-function scrollbarSize(recalc) {
-  if (!size && size !== 0 || recalc) {
-    if (canUseDOM_1d.default) {
-      var scrollDiv = document.createElement('div');
-      scrollDiv.style.position = 'absolute';
-      scrollDiv.style.top = '-9999px';
-      scrollDiv.style.width = '50px';
-      scrollDiv.style.height = '50px';
-      scrollDiv.style.overflow = 'scroll';
-      document.body.appendChild(scrollDiv);
-      size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-      document.body.removeChild(scrollDiv);
-    }
-  }
-  return size;
-}
-exports.default = scrollbarSize;
-
-},
-161: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-function useCallbackRef() {
-  return react_1.useState(null);
-}
-exports.default = useCallbackRef;
-
-},
-162: function(__fusereq, exports, module){
-exports.__esModule = true;
-var useUpdatedRef_1 = __fusereq(211);
-var useUpdatedRef_1d = __fuse.dt(useUpdatedRef_1);
-var react_1 = __fusereq(2);
-function useWillUnmount(fn) {
-  var onUnmount = useUpdatedRef_1d.default(fn);
-  react_1.useEffect(function () {
-    return function () {
-      return onUnmount.current();
-    };
-  }, []);
-}
-exports.default = useWillUnmount;
-
-},
-163: function(__fusereq, exports, module){
-exports.__esModule = true;
-var css_1 = __fusereq(127);
-var css_1d = __fuse.dt(css_1);
-var listen_1 = __fusereq(213);
-var listen_1d = __fuse.dt(listen_1);
-var triggerEvent_1 = __fusereq(215);
-var triggerEvent_1d = __fuse.dt(triggerEvent_1);
-function parseDuration(node) {
-  var str = css_1d.default(node, 'transitionDuration') || '';
-  var mult = str.indexOf('ms') === -1 ? 1000 : 1;
-  return parseFloat(str) * mult;
-}
-function emulateTransitionEnd(element, duration, padding) {
-  if (padding === void 0) {
-    padding = 5;
-  }
-  var called = false;
-  var handle = setTimeout(function () {
-    if (!called) triggerEvent_1d.default(element, 'transitionend', true);
-  }, duration + padding);
-  var remove = listen_1d.default(element, 'transitionend', function () {
-    called = true;
-  }, {
-    once: true
-  });
-  return function () {
-    clearTimeout(handle);
-    remove();
-  };
-}
-function transitionEnd(element, handler, duration, padding) {
-  if (duration == null) duration = parseDuration(element) || 0;
-  var removeEmulate = emulateTransitionEnd(element, duration, padding);
-  var remove = listen_1d.default(element, 'transitionend', handler);
-  return function () {
-    removeEmulate();
-    remove();
-  };
-}
-exports.default = transitionEnd;
-
-},
-164: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var activeElement_1 = __fusereq(212);
-var activeElement_1d = __fuse.dt(activeElement_1);
-var contains_1 = __fusereq(152);
-var contains_1d = __fuse.dt(contains_1);
-var canUseDOM_1 = __fusereq(157);
-var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-var listen_1 = __fusereq(213);
-var listen_1d = __fuse.dt(listen_1);
-var prop_types_1 = __fusereq(122);
-var prop_types_1d = __fuse.dt(prop_types_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var react_dom_1 = __fusereq(3);
-var react_dom_1d = __fuse.dt(react_dom_1);
-var useMounted_1 = __fusereq(185);
-var useMounted_1d = __fuse.dt(useMounted_1);
-var useWillUnmount_1 = __fusereq(162);
-var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
-var usePrevious_1 = __fusereq(192);
-var usePrevious_1d = __fuse.dt(usePrevious_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ModalManager_1 = __fusereq(214);
-var ModalManager_1d = __fuse.dt(ModalManager_1);
-var useWaitForDOMRef_1 = __fusereq(208);
-var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
-var manager;
-function getManager() {
-  if (!manager) manager = new ModalManager_1d.default();
-  return manager;
-}
-function useModalManager(provided) {
-  var modalManager = provided || getManager();
-  var modal = react_1.useRef({
-    dialog: null,
-    backdrop: null
-  });
-  return Object.assign(modal.current, {
-    add: function add(container, className) {
-      return modalManager.add(modal.current, container, className);
-    },
-    remove: function remove() {
-      return modalManager.remove(modal.current);
-    },
-    isTopModal: function isTopModal() {
-      return modalManager.isTopModal(modal.current);
-    },
-    setDialogRef: react_1.useCallback(function (ref) {
-      modal.current.dialog = ref;
-    }, []),
-    setBackdropRef: react_1.useCallback(function (ref) {
-      modal.current.backdrop = ref;
-    }, [])
-  });
-}
-var Modal = react_1.forwardRef(function (_ref, ref) {
-  var _ref$show = _ref.show, show = _ref$show === void 0 ? false : _ref$show, _ref$role = _ref.role, role = _ref$role === void 0 ? 'dialog' : _ref$role, className = _ref.className, style = _ref.style, children = _ref.children, _ref$backdrop = _ref.backdrop, backdrop = _ref$backdrop === void 0 ? true : _ref$backdrop, _ref$keyboard = _ref.keyboard, keyboard = _ref$keyboard === void 0 ? true : _ref$keyboard, onBackdropClick = _ref.onBackdropClick, onEscapeKeyDown = _ref.onEscapeKeyDown, transition = _ref.transition, backdropTransition = _ref.backdropTransition, _ref$autoFocus = _ref.autoFocus, autoFocus = _ref$autoFocus === void 0 ? true : _ref$autoFocus, _ref$enforceFocus = _ref.enforceFocus, enforceFocus = _ref$enforceFocus === void 0 ? true : _ref$enforceFocus, _ref$restoreFocus = _ref.restoreFocus, restoreFocus = _ref$restoreFocus === void 0 ? true : _ref$restoreFocus, restoreFocusOptions = _ref.restoreFocusOptions, renderDialog = _ref.renderDialog, _ref$renderBackdrop = _ref.renderBackdrop, renderBackdrop = _ref$renderBackdrop === void 0 ? function (props) {
-    return react_1d.default.createElement("div", props);
-  } : _ref$renderBackdrop, providedManager = _ref.manager, containerRef = _ref.container, containerClassName = _ref.containerClassName, onShow = _ref.onShow, _ref$onHide = _ref.onHide, onHide = _ref$onHide === void 0 ? function () {} : _ref$onHide, onExit = _ref.onExit, onExited = _ref.onExited, onExiting = _ref.onExiting, onEnter = _ref.onEnter, onEntering = _ref.onEntering, onEntered = _ref.onEntered, rest = objectWithoutPropertiesLoose_1d.default(_ref, ["show", "role", "className", "style", "children", "backdrop", "keyboard", "onBackdropClick", "onEscapeKeyDown", "transition", "backdropTransition", "autoFocus", "enforceFocus", "restoreFocus", "restoreFocusOptions", "renderDialog", "renderBackdrop", "manager", "container", "containerClassName", "onShow", "onHide", "onExit", "onExited", "onExiting", "onEnter", "onEntering", "onEntered"]);
-  var container = useWaitForDOMRef_1d.default(containerRef);
-  var modal = useModalManager(providedManager);
-  var isMounted = useMounted_1d.default();
-  var prevShow = usePrevious_1d.default(show);
-  var _useState = react_1.useState(!show), exited = _useState[0], setExited = _useState[1];
-  var lastFocusRef = react_1.useRef(null);
-  react_1.useImperativeHandle(ref, function () {
-    return modal;
-  }, [modal]);
-  if (canUseDOM_1d.default && !prevShow && show) {
-    lastFocusRef.current = activeElement_1d.default();
-  }
-  if (!transition && !show && !exited) {
-    setExited(true);
-  } else if (show && exited) {
-    setExited(false);
-  }
-  var handleShow = useEventCallback_1d.default(function () {
-    modal.add(container, containerClassName);
-    removeKeydownListenerRef.current = listen_1d.default(document, 'keydown', handleDocumentKeyDown);
-    removeFocusListenerRef.current = listen_1d.default(document, 'focus', function () {
-      return setTimeout(handleEnforceFocus);
-    }, true);
-    if (onShow) {
-      onShow();
-    }
-    if (autoFocus) {
-      var currentActiveElement = activeElement_1d.default(document);
-      if (modal.dialog && currentActiveElement && !contains_1d.default(modal.dialog, currentActiveElement)) {
-        lastFocusRef.current = currentActiveElement;
-        modal.dialog.focus();
-      }
-    }
-  });
-  var handleHide = useEventCallback_1d.default(function () {
-    modal.remove();
-    removeKeydownListenerRef.current == null ? void 0 : removeKeydownListenerRef.current();
-    removeFocusListenerRef.current == null ? void 0 : removeFocusListenerRef.current();
-    if (restoreFocus) {
-      var _lastFocusRef$current;
-      (_lastFocusRef$current = lastFocusRef.current) == null ? void 0 : _lastFocusRef$current.focus == null ? void 0 : _lastFocusRef$current.focus(restoreFocusOptions);
-      lastFocusRef.current = null;
-    }
-  });
-  react_1.useEffect(function () {
-    if (!show || !container) return;
-    handleShow();
-  }, [show, container, handleShow]);
-  react_1.useEffect(function () {
-    if (!exited) return;
-    handleHide();
-  }, [exited, handleHide]);
-  useWillUnmount_1d.default(function () {
-    handleHide();
-  });
-  var handleEnforceFocus = useEventCallback_1d.default(function () {
-    if (!enforceFocus || !isMounted() || !modal.isTopModal()) {
-      return;
-    }
-    var currentActiveElement = activeElement_1d.default();
-    if (modal.dialog && currentActiveElement && !contains_1d.default(modal.dialog, currentActiveElement)) {
-      modal.dialog.focus();
-    }
-  });
-  var handleBackdropClick = useEventCallback_1d.default(function (e) {
-    if (e.target !== e.currentTarget) {
-      return;
-    }
-    onBackdropClick == null ? void 0 : onBackdropClick(e);
-    if (backdrop === true) {
-      onHide();
-    }
-  });
-  var handleDocumentKeyDown = useEventCallback_1d.default(function (e) {
-    if (keyboard && e.keyCode === 27 && modal.isTopModal()) {
-      onEscapeKeyDown == null ? void 0 : onEscapeKeyDown(e);
-      if (!e.defaultPrevented) {
-        onHide();
-      }
-    }
-  });
-  var removeFocusListenerRef = react_1.useRef();
-  var removeKeydownListenerRef = react_1.useRef();
-  var handleHidden = function handleHidden() {
-    setExited(true);
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-    onExited == null ? void 0 : onExited.apply(void 0, args);
-  };
-  var Transition = transition;
-  if (!container || !(show || Transition && !exited)) {
-    return null;
-  }
-  var dialogProps = extends_1d.default({
-    role: role,
-    ref: modal.setDialogRef,
-    'aria-modal': role === 'dialog' ? true : undefined
-  }, rest, {
-    style: style,
-    className: className,
-    tabIndex: -1
-  });
-  var dialog = renderDialog ? renderDialog(dialogProps) : react_1d.default.createElement("div", dialogProps, react_1d.default.cloneElement(children, {
-    role: 'document'
-  }));
-  if (Transition) {
-    dialog = react_1d.default.createElement(Transition, {
-      appear: true,
-      unmountOnExit: true,
-      "in": !!show,
-      onExit: onExit,
-      onExiting: onExiting,
-      onExited: handleHidden,
-      onEnter: onEnter,
-      onEntering: onEntering,
-      onEntered: onEntered
-    }, dialog);
-  }
-  var backdropElement = null;
-  if (backdrop) {
-    var BackdropTransition = backdropTransition;
-    backdropElement = renderBackdrop({
-      ref: modal.setBackdropRef,
-      onClick: handleBackdropClick
-    });
-    if (BackdropTransition) {
-      backdropElement = react_1d.default.createElement(BackdropTransition, {
-        appear: true,
-        "in": !!show
-      }, backdropElement);
-    }
-  }
-  return react_1d.default.createElement(react_1d.default.Fragment, null, react_dom_1d.default.createPortal(react_1d.default.createElement(react_1d.default.Fragment, null, backdropElement, dialog), container));
-});
-var propTypes = {
-  show: prop_types_1d.default.bool,
-  container: prop_types_1d.default.any,
-  onShow: prop_types_1d.default.func,
-  onHide: prop_types_1d.default.func,
-  backdrop: prop_types_1d.default.oneOfType([prop_types_1d.default.bool, prop_types_1d.default.oneOf(['static'])]),
-  renderDialog: prop_types_1d.default.func,
-  renderBackdrop: prop_types_1d.default.func,
-  onEscapeKeyDown: prop_types_1d.default.func,
-  onBackdropClick: prop_types_1d.default.func,
-  containerClassName: prop_types_1d.default.string,
-  keyboard: prop_types_1d.default.bool,
-  transition: prop_types_1d.default.elementType,
-  backdropTransition: prop_types_1d.default.elementType,
-  autoFocus: prop_types_1d.default.bool,
-  enforceFocus: prop_types_1d.default.bool,
-  restoreFocus: prop_types_1d.default.bool,
-  restoreFocusOptions: prop_types_1d.default.shape({
-    preventScroll: prop_types_1d.default.bool
-  }),
-  onEnter: prop_types_1d.default.func,
-  onEntering: prop_types_1d.default.func,
-  onEntered: prop_types_1d.default.func,
-  onExit: prop_types_1d.default.func,
-  onExiting: prop_types_1d.default.func,
-  onExited: prop_types_1d.default.func,
-  manager: prop_types_1d.default.instanceOf(ModalManager_1d.default)
-};
-Modal.displayName = 'Modal';
-Modal.propTypes = propTypes;
-exports.default = Object.assign(Modal, {
-  Manager: ModalManager_1d.default
-});
-
-},
-165: function(__fusereq, exports, module){
-exports.__esModule = true;
-var inheritsLoose_1 = __fusereq(151);
-var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
-var css_1 = __fusereq(127);
-var css_1d = __fuse.dt(css_1);
-var querySelectorAll_1 = __fusereq(191);
-var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
-var scrollbarSize_1 = __fusereq(160);
-var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var ModalManager_1 = __fusereq(214);
-var ModalManager_1d = __fuse.dt(ModalManager_1);
-var Selector = {
-  FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
-  STICKY_CONTENT: '.sticky-top',
-  NAVBAR_TOGGLER: '.navbar-toggler'
-};
-var BootstrapModalManager = (function (_ModalManager) {
-  inheritsLoose_1d.default(BootstrapModalManager, _ModalManager);
-  function BootstrapModalManager() {
-    return _ModalManager.apply(this, arguments) || this;
-  }
-  var _proto = BootstrapModalManager.prototype;
-  _proto.adjustAndStore = function adjustAndStore(prop, element, adjust) {
-    var _css;
-    var actual = element.style[prop];
-    element.dataset[prop] = actual;
-    css_1d.default(element, (_css = {}, _css[prop] = parseFloat(css_1d.default(element, prop)) + adjust + "px", _css));
-  };
-  _proto.restore = function restore(prop, element) {
-    var value = element.dataset[prop];
-    if (value !== undefined) {
-      var _css2;
-      delete element.dataset[prop];
-      css_1d.default(element, (_css2 = {}, _css2[prop] = value, _css2));
-    }
-  };
-  _proto.setContainerStyle = function setContainerStyle(containerState, container) {
-    var _this = this;
-    _ModalManager.prototype.setContainerStyle.call(this, containerState, container);
-    if (!containerState.overflowing) return;
-    var size = scrollbarSize_1d.default();
-    querySelectorAll_1d.default(container, Selector.FIXED_CONTENT).forEach(function (el) {
-      return _this.adjustAndStore('paddingRight', el, size);
-    });
-    querySelectorAll_1d.default(container, Selector.STICKY_CONTENT).forEach(function (el) {
-      return _this.adjustAndStore('marginRight', el, -size);
-    });
-    querySelectorAll_1d.default(container, Selector.NAVBAR_TOGGLER).forEach(function (el) {
-      return _this.adjustAndStore('marginRight', el, size);
-    });
-  };
-  _proto.removeContainerStyle = function removeContainerStyle(containerState, container) {
-    var _this2 = this;
-    _ModalManager.prototype.removeContainerStyle.call(this, containerState, container);
-    querySelectorAll_1d.default(container, Selector.FIXED_CONTENT).forEach(function (el) {
-      return _this2.restore('paddingRight', el);
-    });
-    querySelectorAll_1d.default(container, Selector.STICKY_CONTENT).forEach(function (el) {
-      return _this2.restore('marginRight', el);
-    });
-    querySelectorAll_1d.default(container, Selector.NAVBAR_TOGGLER).forEach(function (el) {
-      return _this2.restore('marginRight', el);
-    });
-  };
-  return BootstrapModalManager;
-})(ModalManager_1d.default);
-exports.default = BootstrapModalManager;
-
-},
-166: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var ModalContext = react_1d.default.createContext({
-  onHide: function onHide() {}
-});
-exports.default = ModalContext;
-
-},
-167: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var classnames_1 = __fusereq(111);
-var classnames_1d = __fuse.dt(classnames_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ThemeProvider_1 = __fusereq(91);
-var CloseButton_1 = __fusereq(40);
-var CloseButton_1d = __fuse.dt(CloseButton_1);
-var ModalContext_1 = __fusereq(166);
-var ModalContext_1d = __fuse.dt(ModalContext_1);
-var defaultProps = {
-  closeLabel: 'Close',
-  closeButton: false
-};
-var ModalHeader = react_1d.default.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix, closeLabel = _ref.closeLabel, closeButton = _ref.closeButton, onHide = _ref.onHide, className = _ref.className, children = _ref.children, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "closeLabel", "closeButton", "onHide", "className", "children"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'modal-header');
-  var context = react_1.useContext(ModalContext_1d.default);
-  var handleClick = useEventCallback_1d.default(function () {
-    if (context) context.onHide();
-    if (onHide) onHide();
-  });
-  return react_1d.default.createElement("div", extends_1d.default({
-    ref: ref
-  }, props, {
-    className: classnames_1d.default(className, bsPrefix)
-  }), children, closeButton && react_1d.default.createElement(CloseButton_1d.default, {
-    label: closeLabel,
-    onClick: handleClick
-  }));
-});
-ModalHeader.displayName = 'ModalHeader';
-ModalHeader.defaultProps = defaultProps;
-exports.default = ModalHeader;
-
-},
-168: function(__fusereq, exports, module){
 module.exports = extend;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 function extend() {
@@ -21686,14 +21173,14 @@ function extend() {
 }
 
 },
-169: function(__fusereq, exports, module){
+157: function(__fusereq, exports, module){
 'use strict';
-var extend = __fusereq(216);
-var bail = __fusereq(217);
-var vfile = __fusereq(218);
-var trough = __fusereq(219);
-var string = __fusereq(220);
-var plain = __fusereq(221);
+var extend = __fusereq(211);
+var bail = __fusereq(212);
+var vfile = __fusereq(213);
+var trough = __fusereq(214);
+var string = __fusereq(215);
+var plain = __fusereq(216);
 module.exports = unified().freeze();
 var slice = [].slice;
 var own = ({}).hasOwnProperty;
@@ -21997,11 +21484,11 @@ function assertDone(name, asyncName, complete) {
 }
 
 },
-170: function(__fusereq, exports, module){
+158: function(__fusereq, exports, module){
 'use strict';
-var unherit = __fusereq(223);
-var xtend = __fusereq(168);
-var Parser = __fusereq(224);
+var unherit = __fusereq(219);
+var xtend = __fusereq(156);
+var Parser = __fusereq(220);
 module.exports = parse;
 parse.Parser = Parser;
 function parse(options) {
@@ -22011,8 +21498,8 @@ function parse(options) {
 }
 
 },
-171: function(__fusereq, exports, module){
-var visitWithParents = __fusereq(222);
+159: function(__fusereq, exports, module){
+var visitWithParents = __fusereq(217);
 function addListMetadata() {
   return function (ast) {
     visitWithParents(ast, 'list', function (listNode, parents) {
@@ -22033,9 +21520,9 @@ function addListMetadata() {
 module.exports = addListMetadata;
 
 },
-172: function(__fusereq, exports, module){
+160: function(__fusereq, exports, module){
 "use strict";
-var visit = __fusereq(225);
+var visit = __fusereq(218);
 var type = 'virtualHtml';
 var selfClosingRe = /^<(area|base|br|col|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)\s*\/?>$/i;
 var simpleTagRe = /^<(\/?)([a-z]+)\s*>$/;
@@ -22109,9 +21596,9 @@ function virtual(fromNode, toNode, parent) {
 }
 
 },
-173: function(__fusereq, exports, module){
+161: function(__fusereq, exports, module){
 "use strict";
-var visit = __fusereq(225);
+var visit = __fusereq(218);
 exports.ofType = function (types, mode) {
   return function (node) {
     types.forEach(function (type) {
@@ -22149,10 +21636,10 @@ function untangle(node, index, parent, mode) {
 }
 
 },
-174: function(__fusereq, exports, module){
+162: function(__fusereq, exports, module){
 'use strict';
 var React = __fusereq(2);
-var xtend = __fusereq(168);
+var xtend = __fusereq(156);
 function astToReact(node, options) {
   var parent = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var index = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
@@ -22346,9 +21833,9 @@ function unwrapParagraphs(node) {
 module.exports = astToReact;
 
 },
-175: function(__fusereq, exports, module){
+163: function(__fusereq, exports, module){
 'use strict';
-var visit = __fusereq(225);
+var visit = __fusereq(218);
 module.exports = function (node) {
   visit(node, 'table', wrap);
   return node;
@@ -22375,7 +21862,7 @@ function wrap(table) {
 }
 
 },
-176: function(__fusereq, exports, module){
+164: function(__fusereq, exports, module){
 'use strict';
 module.exports = function getDefinitions(node) {
   var defs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -22391,7 +21878,7 @@ module.exports = function getDefinitions(node) {
 };
 
 },
-177: function(__fusereq, exports, module){
+165: function(__fusereq, exports, module){
 "use strict";
 var protocols = ['http', 'https', 'mailto', 'tel'];
 module.exports = function uriTransformer(uri) {
@@ -22424,9 +21911,9 @@ module.exports = function uriTransformer(uri) {
 };
 
 },
-178: function(__fusereq, exports, module){
+166: function(__fusereq, exports, module){
 'use strict';
-var xtend = __fusereq(168);
+var xtend = __fusereq(156);
 var React = __fusereq(2);
 var supportsStringRender = parseInt((React.version || '16').slice(0, 2), 10) >= 16;
 var createElement = React.createElement;
@@ -22545,10 +22032,523 @@ function getCoreProps(props) {
 }
 
 },
-179: function(__fusereq, exports, module){
+167: function(__fusereq, exports, module){
 "use strict";
 var HtmlParser = '__RMD_HTML_PARSER__';
 exports.HtmlParser = typeof Symbol === 'undefined' ? HtmlParser : Symbol(HtmlParser);
+
+},
+168: function(__fusereq, exports, module){
+exports.__esModule = true;
+var canUseDOM_1 = __fusereq(169);
+var canUseDOM_1d = __fuse.dt(canUseDOM_1);
+exports.optionsSupported = false;
+exports.onceSupported = false;
+try {
+  var options = {
+    get passive() {
+      return exports.optionsSupported = true;
+    },
+    get once() {
+      return exports.onceSupported = exports.optionsSupported = true;
+    }
+  };
+  if (canUseDOM_1d.default) {
+    window.addEventListener('test', options, options);
+    window.removeEventListener('test', options, true);
+  }
+} catch (e) {}
+function addEventListener(node, eventName, handler, options) {
+  if (options && typeof options !== 'boolean' && !exports.onceSupported) {
+    var once = options.once, capture = options.capture;
+    var wrappedHandler = handler;
+    if (!exports.onceSupported && once) {
+      wrappedHandler = handler.__once || (function onceHandler(event) {
+        this.removeEventListener(eventName, onceHandler, capture);
+        handler.call(this, event);
+      });
+      handler.__once = wrappedHandler;
+    }
+    node.addEventListener(eventName, wrappedHandler, exports.optionsSupported ? options : capture);
+  }
+  node.addEventListener(eventName, handler, options);
+}
+exports.default = addEventListener;
+
+},
+169: function(__fusereq, exports, module){
+exports.__esModule = true;
+exports.default = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+},
+170: function(__fusereq, exports, module){
+exports.__esModule = true;
+function ownerDocument(node) {
+  return node && node.ownerDocument || document;
+}
+exports.default = ownerDocument;
+
+},
+171: function(__fusereq, exports, module){
+exports.__esModule = true;
+function removeEventListener(node, eventName, handler, options) {
+  var capture = options && typeof options !== 'boolean' ? options.capture : options;
+  node.removeEventListener(eventName, handler, capture);
+  if (handler.__once) {
+    node.removeEventListener(eventName, handler.__once, capture);
+  }
+}
+exports.default = removeEventListener;
+
+},
+172: function(__fusereq, exports, module){
+exports.__esModule = true;
+var canUseDOM_1 = __fusereq(169);
+var canUseDOM_1d = __fuse.dt(canUseDOM_1);
+var size;
+function scrollbarSize(recalc) {
+  if (!size && size !== 0 || recalc) {
+    if (canUseDOM_1d.default) {
+      var scrollDiv = document.createElement('div');
+      scrollDiv.style.position = 'absolute';
+      scrollDiv.style.top = '-9999px';
+      scrollDiv.style.width = '50px';
+      scrollDiv.style.height = '50px';
+      scrollDiv.style.overflow = 'scroll';
+      document.body.appendChild(scrollDiv);
+      size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+      document.body.removeChild(scrollDiv);
+    }
+  }
+  return size;
+}
+exports.default = scrollbarSize;
+
+},
+173: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+function useCallbackRef() {
+  return react_1.useState(null);
+}
+exports.default = useCallbackRef;
+
+},
+174: function(__fusereq, exports, module){
+exports.__esModule = true;
+var useUpdatedRef_1 = __fusereq(221);
+var useUpdatedRef_1d = __fuse.dt(useUpdatedRef_1);
+var react_1 = __fusereq(2);
+function useWillUnmount(fn) {
+  var onUnmount = useUpdatedRef_1d.default(fn);
+  react_1.useEffect(function () {
+    return function () {
+      return onUnmount.current();
+    };
+  }, []);
+}
+exports.default = useWillUnmount;
+
+},
+175: function(__fusereq, exports, module){
+exports.__esModule = true;
+var css_1 = __fusereq(127);
+var css_1d = __fuse.dt(css_1);
+var listen_1 = __fusereq(223);
+var listen_1d = __fuse.dt(listen_1);
+var triggerEvent_1 = __fusereq(225);
+var triggerEvent_1d = __fuse.dt(triggerEvent_1);
+function parseDuration(node) {
+  var str = css_1d.default(node, 'transitionDuration') || '';
+  var mult = str.indexOf('ms') === -1 ? 1000 : 1;
+  return parseFloat(str) * mult;
+}
+function emulateTransitionEnd(element, duration, padding) {
+  if (padding === void 0) {
+    padding = 5;
+  }
+  var called = false;
+  var handle = setTimeout(function () {
+    if (!called) triggerEvent_1d.default(element, 'transitionend', true);
+  }, duration + padding);
+  var remove = listen_1d.default(element, 'transitionend', function () {
+    called = true;
+  }, {
+    once: true
+  });
+  return function () {
+    clearTimeout(handle);
+    remove();
+  };
+}
+function transitionEnd(element, handler, duration, padding) {
+  if (duration == null) duration = parseDuration(element) || 0;
+  var removeEmulate = emulateTransitionEnd(element, duration, padding);
+  var remove = listen_1d.default(element, 'transitionend', handler);
+  return function () {
+    removeEmulate();
+    remove();
+  };
+}
+exports.default = transitionEnd;
+
+},
+176: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var activeElement_1 = __fusereq(222);
+var activeElement_1d = __fuse.dt(activeElement_1);
+var contains_1 = __fusereq(152);
+var contains_1d = __fuse.dt(contains_1);
+var canUseDOM_1 = __fusereq(169);
+var canUseDOM_1d = __fuse.dt(canUseDOM_1);
+var listen_1 = __fusereq(223);
+var listen_1d = __fuse.dt(listen_1);
+var prop_types_1 = __fusereq(122);
+var prop_types_1d = __fuse.dt(prop_types_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var react_dom_1 = __fusereq(3);
+var react_dom_1d = __fuse.dt(react_dom_1);
+var useMounted_1 = __fusereq(185);
+var useMounted_1d = __fuse.dt(useMounted_1);
+var useWillUnmount_1 = __fusereq(174);
+var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
+var usePrevious_1 = __fusereq(200);
+var usePrevious_1d = __fuse.dt(usePrevious_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var ModalManager_1 = __fusereq(224);
+var ModalManager_1d = __fuse.dt(ModalManager_1);
+var useWaitForDOMRef_1 = __fusereq(207);
+var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
+var manager;
+function getManager() {
+  if (!manager) manager = new ModalManager_1d.default();
+  return manager;
+}
+function useModalManager(provided) {
+  var modalManager = provided || getManager();
+  var modal = react_1.useRef({
+    dialog: null,
+    backdrop: null
+  });
+  return Object.assign(modal.current, {
+    add: function add(container, className) {
+      return modalManager.add(modal.current, container, className);
+    },
+    remove: function remove() {
+      return modalManager.remove(modal.current);
+    },
+    isTopModal: function isTopModal() {
+      return modalManager.isTopModal(modal.current);
+    },
+    setDialogRef: react_1.useCallback(function (ref) {
+      modal.current.dialog = ref;
+    }, []),
+    setBackdropRef: react_1.useCallback(function (ref) {
+      modal.current.backdrop = ref;
+    }, [])
+  });
+}
+var Modal = react_1.forwardRef(function (_ref, ref) {
+  var _ref$show = _ref.show, show = _ref$show === void 0 ? false : _ref$show, _ref$role = _ref.role, role = _ref$role === void 0 ? 'dialog' : _ref$role, className = _ref.className, style = _ref.style, children = _ref.children, _ref$backdrop = _ref.backdrop, backdrop = _ref$backdrop === void 0 ? true : _ref$backdrop, _ref$keyboard = _ref.keyboard, keyboard = _ref$keyboard === void 0 ? true : _ref$keyboard, onBackdropClick = _ref.onBackdropClick, onEscapeKeyDown = _ref.onEscapeKeyDown, transition = _ref.transition, backdropTransition = _ref.backdropTransition, _ref$autoFocus = _ref.autoFocus, autoFocus = _ref$autoFocus === void 0 ? true : _ref$autoFocus, _ref$enforceFocus = _ref.enforceFocus, enforceFocus = _ref$enforceFocus === void 0 ? true : _ref$enforceFocus, _ref$restoreFocus = _ref.restoreFocus, restoreFocus = _ref$restoreFocus === void 0 ? true : _ref$restoreFocus, restoreFocusOptions = _ref.restoreFocusOptions, renderDialog = _ref.renderDialog, _ref$renderBackdrop = _ref.renderBackdrop, renderBackdrop = _ref$renderBackdrop === void 0 ? function (props) {
+    return react_1d.default.createElement("div", props);
+  } : _ref$renderBackdrop, providedManager = _ref.manager, containerRef = _ref.container, containerClassName = _ref.containerClassName, onShow = _ref.onShow, _ref$onHide = _ref.onHide, onHide = _ref$onHide === void 0 ? function () {} : _ref$onHide, onExit = _ref.onExit, onExited = _ref.onExited, onExiting = _ref.onExiting, onEnter = _ref.onEnter, onEntering = _ref.onEntering, onEntered = _ref.onEntered, rest = objectWithoutPropertiesLoose_1d.default(_ref, ["show", "role", "className", "style", "children", "backdrop", "keyboard", "onBackdropClick", "onEscapeKeyDown", "transition", "backdropTransition", "autoFocus", "enforceFocus", "restoreFocus", "restoreFocusOptions", "renderDialog", "renderBackdrop", "manager", "container", "containerClassName", "onShow", "onHide", "onExit", "onExited", "onExiting", "onEnter", "onEntering", "onEntered"]);
+  var container = useWaitForDOMRef_1d.default(containerRef);
+  var modal = useModalManager(providedManager);
+  var isMounted = useMounted_1d.default();
+  var prevShow = usePrevious_1d.default(show);
+  var _useState = react_1.useState(!show), exited = _useState[0], setExited = _useState[1];
+  var lastFocusRef = react_1.useRef(null);
+  react_1.useImperativeHandle(ref, function () {
+    return modal;
+  }, [modal]);
+  if (canUseDOM_1d.default && !prevShow && show) {
+    lastFocusRef.current = activeElement_1d.default();
+  }
+  if (!transition && !show && !exited) {
+    setExited(true);
+  } else if (show && exited) {
+    setExited(false);
+  }
+  var handleShow = useEventCallback_1d.default(function () {
+    modal.add(container, containerClassName);
+    removeKeydownListenerRef.current = listen_1d.default(document, 'keydown', handleDocumentKeyDown);
+    removeFocusListenerRef.current = listen_1d.default(document, 'focus', function () {
+      return setTimeout(handleEnforceFocus);
+    }, true);
+    if (onShow) {
+      onShow();
+    }
+    if (autoFocus) {
+      var currentActiveElement = activeElement_1d.default(document);
+      if (modal.dialog && currentActiveElement && !contains_1d.default(modal.dialog, currentActiveElement)) {
+        lastFocusRef.current = currentActiveElement;
+        modal.dialog.focus();
+      }
+    }
+  });
+  var handleHide = useEventCallback_1d.default(function () {
+    modal.remove();
+    removeKeydownListenerRef.current == null ? void 0 : removeKeydownListenerRef.current();
+    removeFocusListenerRef.current == null ? void 0 : removeFocusListenerRef.current();
+    if (restoreFocus) {
+      var _lastFocusRef$current;
+      (_lastFocusRef$current = lastFocusRef.current) == null ? void 0 : _lastFocusRef$current.focus == null ? void 0 : _lastFocusRef$current.focus(restoreFocusOptions);
+      lastFocusRef.current = null;
+    }
+  });
+  react_1.useEffect(function () {
+    if (!show || !container) return;
+    handleShow();
+  }, [show, container, handleShow]);
+  react_1.useEffect(function () {
+    if (!exited) return;
+    handleHide();
+  }, [exited, handleHide]);
+  useWillUnmount_1d.default(function () {
+    handleHide();
+  });
+  var handleEnforceFocus = useEventCallback_1d.default(function () {
+    if (!enforceFocus || !isMounted() || !modal.isTopModal()) {
+      return;
+    }
+    var currentActiveElement = activeElement_1d.default();
+    if (modal.dialog && currentActiveElement && !contains_1d.default(modal.dialog, currentActiveElement)) {
+      modal.dialog.focus();
+    }
+  });
+  var handleBackdropClick = useEventCallback_1d.default(function (e) {
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+    onBackdropClick == null ? void 0 : onBackdropClick(e);
+    if (backdrop === true) {
+      onHide();
+    }
+  });
+  var handleDocumentKeyDown = useEventCallback_1d.default(function (e) {
+    if (keyboard && e.keyCode === 27 && modal.isTopModal()) {
+      onEscapeKeyDown == null ? void 0 : onEscapeKeyDown(e);
+      if (!e.defaultPrevented) {
+        onHide();
+      }
+    }
+  });
+  var removeFocusListenerRef = react_1.useRef();
+  var removeKeydownListenerRef = react_1.useRef();
+  var handleHidden = function handleHidden() {
+    setExited(true);
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    onExited == null ? void 0 : onExited.apply(void 0, args);
+  };
+  var Transition = transition;
+  if (!container || !(show || Transition && !exited)) {
+    return null;
+  }
+  var dialogProps = extends_1d.default({
+    role: role,
+    ref: modal.setDialogRef,
+    'aria-modal': role === 'dialog' ? true : undefined
+  }, rest, {
+    style: style,
+    className: className,
+    tabIndex: -1
+  });
+  var dialog = renderDialog ? renderDialog(dialogProps) : react_1d.default.createElement("div", dialogProps, react_1d.default.cloneElement(children, {
+    role: 'document'
+  }));
+  if (Transition) {
+    dialog = react_1d.default.createElement(Transition, {
+      appear: true,
+      unmountOnExit: true,
+      "in": !!show,
+      onExit: onExit,
+      onExiting: onExiting,
+      onExited: handleHidden,
+      onEnter: onEnter,
+      onEntering: onEntering,
+      onEntered: onEntered
+    }, dialog);
+  }
+  var backdropElement = null;
+  if (backdrop) {
+    var BackdropTransition = backdropTransition;
+    backdropElement = renderBackdrop({
+      ref: modal.setBackdropRef,
+      onClick: handleBackdropClick
+    });
+    if (BackdropTransition) {
+      backdropElement = react_1d.default.createElement(BackdropTransition, {
+        appear: true,
+        "in": !!show
+      }, backdropElement);
+    }
+  }
+  return react_1d.default.createElement(react_1d.default.Fragment, null, react_dom_1d.default.createPortal(react_1d.default.createElement(react_1d.default.Fragment, null, backdropElement, dialog), container));
+});
+var propTypes = {
+  show: prop_types_1d.default.bool,
+  container: prop_types_1d.default.any,
+  onShow: prop_types_1d.default.func,
+  onHide: prop_types_1d.default.func,
+  backdrop: prop_types_1d.default.oneOfType([prop_types_1d.default.bool, prop_types_1d.default.oneOf(['static'])]),
+  renderDialog: prop_types_1d.default.func,
+  renderBackdrop: prop_types_1d.default.func,
+  onEscapeKeyDown: prop_types_1d.default.func,
+  onBackdropClick: prop_types_1d.default.func,
+  containerClassName: prop_types_1d.default.string,
+  keyboard: prop_types_1d.default.bool,
+  transition: prop_types_1d.default.elementType,
+  backdropTransition: prop_types_1d.default.elementType,
+  autoFocus: prop_types_1d.default.bool,
+  enforceFocus: prop_types_1d.default.bool,
+  restoreFocus: prop_types_1d.default.bool,
+  restoreFocusOptions: prop_types_1d.default.shape({
+    preventScroll: prop_types_1d.default.bool
+  }),
+  onEnter: prop_types_1d.default.func,
+  onEntering: prop_types_1d.default.func,
+  onEntered: prop_types_1d.default.func,
+  onExit: prop_types_1d.default.func,
+  onExiting: prop_types_1d.default.func,
+  onExited: prop_types_1d.default.func,
+  manager: prop_types_1d.default.instanceOf(ModalManager_1d.default)
+};
+Modal.displayName = 'Modal';
+Modal.propTypes = propTypes;
+exports.default = Object.assign(Modal, {
+  Manager: ModalManager_1d.default
+});
+
+},
+177: function(__fusereq, exports, module){
+exports.__esModule = true;
+var inheritsLoose_1 = __fusereq(151);
+var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
+var css_1 = __fusereq(127);
+var css_1d = __fuse.dt(css_1);
+var querySelectorAll_1 = __fusereq(199);
+var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
+var scrollbarSize_1 = __fusereq(172);
+var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
+var ModalManager_1 = __fusereq(224);
+var ModalManager_1d = __fuse.dt(ModalManager_1);
+var Selector = {
+  FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
+  STICKY_CONTENT: '.sticky-top',
+  NAVBAR_TOGGLER: '.navbar-toggler'
+};
+var BootstrapModalManager = (function (_ModalManager) {
+  inheritsLoose_1d.default(BootstrapModalManager, _ModalManager);
+  function BootstrapModalManager() {
+    return _ModalManager.apply(this, arguments) || this;
+  }
+  var _proto = BootstrapModalManager.prototype;
+  _proto.adjustAndStore = function adjustAndStore(prop, element, adjust) {
+    var _css;
+    var actual = element.style[prop];
+    element.dataset[prop] = actual;
+    css_1d.default(element, (_css = {}, _css[prop] = parseFloat(css_1d.default(element, prop)) + adjust + "px", _css));
+  };
+  _proto.restore = function restore(prop, element) {
+    var value = element.dataset[prop];
+    if (value !== undefined) {
+      var _css2;
+      delete element.dataset[prop];
+      css_1d.default(element, (_css2 = {}, _css2[prop] = value, _css2));
+    }
+  };
+  _proto.setContainerStyle = function setContainerStyle(containerState, container) {
+    var _this = this;
+    _ModalManager.prototype.setContainerStyle.call(this, containerState, container);
+    if (!containerState.overflowing) return;
+    var size = scrollbarSize_1d.default();
+    querySelectorAll_1d.default(container, Selector.FIXED_CONTENT).forEach(function (el) {
+      return _this.adjustAndStore('paddingRight', el, size);
+    });
+    querySelectorAll_1d.default(container, Selector.STICKY_CONTENT).forEach(function (el) {
+      return _this.adjustAndStore('marginRight', el, -size);
+    });
+    querySelectorAll_1d.default(container, Selector.NAVBAR_TOGGLER).forEach(function (el) {
+      return _this.adjustAndStore('marginRight', el, size);
+    });
+  };
+  _proto.removeContainerStyle = function removeContainerStyle(containerState, container) {
+    var _this2 = this;
+    _ModalManager.prototype.removeContainerStyle.call(this, containerState, container);
+    querySelectorAll_1d.default(container, Selector.FIXED_CONTENT).forEach(function (el) {
+      return _this2.restore('paddingRight', el);
+    });
+    querySelectorAll_1d.default(container, Selector.STICKY_CONTENT).forEach(function (el) {
+      return _this2.restore('marginRight', el);
+    });
+    querySelectorAll_1d.default(container, Selector.NAVBAR_TOGGLER).forEach(function (el) {
+      return _this2.restore('marginRight', el);
+    });
+  };
+  return BootstrapModalManager;
+})(ModalManager_1d.default);
+exports.default = BootstrapModalManager;
+
+},
+178: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var ModalContext = react_1d.default.createContext({
+  onHide: function onHide() {}
+});
+exports.default = ModalContext;
+
+},
+179: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var classnames_1 = __fusereq(111);
+var classnames_1d = __fuse.dt(classnames_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var ThemeProvider_1 = __fusereq(91);
+var CloseButton_1 = __fusereq(40);
+var CloseButton_1d = __fuse.dt(CloseButton_1);
+var ModalContext_1 = __fusereq(178);
+var ModalContext_1d = __fuse.dt(ModalContext_1);
+var defaultProps = {
+  closeLabel: 'Close',
+  closeButton: false
+};
+var ModalHeader = react_1d.default.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix, closeLabel = _ref.closeLabel, closeButton = _ref.closeButton, onHide = _ref.onHide, className = _ref.className, children = _ref.children, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "closeLabel", "closeButton", "onHide", "className", "children"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'modal-header');
+  var context = react_1.useContext(ModalContext_1d.default);
+  var handleClick = useEventCallback_1d.default(function () {
+    if (context) context.onHide();
+    if (onHide) onHide();
+  });
+  return react_1d.default.createElement("div", extends_1d.default({
+    ref: ref
+  }, props, {
+    className: classnames_1d.default(className, bsPrefix)
+  }), children, closeButton && react_1d.default.createElement(CloseButton_1d.default, {
+    label: closeLabel,
+    onClick: handleClick
+  }));
+});
+ModalHeader.displayName = 'ModalHeader';
+ModalHeader.defaultProps = defaultProps;
+exports.default = ModalHeader;
 
 },
 180: function(__fusereq, exports, module){
@@ -23897,80 +23897,44 @@ module.exports = function () {
 },
 190: function(__fusereq, exports, module){
 exports.__esModule = true;
-var matchesImpl;
-function matches(node, selector) {
-  if (!matchesImpl) {
-    var body = document.body;
-    var nativeMatch = body.matches || body.matchesSelector || body.webkitMatchesSelector || body.mozMatchesSelector || body.msMatchesSelector;
-    matchesImpl = function matchesImpl(n, s) {
-      return nativeMatch.call(n, s);
-    };
-  }
-  return matchesImpl(node, selector);
+var ownerWindow_1 = __fusereq(229);
+var ownerWindow_1d = __fuse.dt(ownerWindow_1);
+function getComputedStyle(node, psuedoElement) {
+  return ownerWindow_1d.default(node).getComputedStyle(node, psuedoElement);
 }
-exports.default = matches;
+exports.default = getComputedStyle;
 
 },
 191: function(__fusereq, exports, module){
 exports.__esModule = true;
-var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
-function qsa(element, selector) {
-  return toArray(element.querySelectorAll(selector));
+var hyphenate_1 = __fusereq(230);
+var hyphenate_1d = __fuse.dt(hyphenate_1);
+var msPattern = /^ms-/;
+function hyphenateStyleName(string) {
+  return hyphenate_1d.default(string).replace(msPattern, '-ms-');
 }
-exports.default = qsa;
+exports.default = hyphenateStyleName;
 
 },
 192: function(__fusereq, exports, module){
 exports.__esModule = true;
-var react_1 = __fusereq(2);
-function usePrevious(value) {
-  var ref = react_1.useRef(null);
-  react_1.useEffect(function () {
-    ref.current = value;
-  });
-  return ref.current;
+var supportedTransforms = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i;
+function isTransform(value) {
+  return !!(value && supportedTransforms.test(value));
 }
-exports.default = usePrevious;
+exports.default = isTransform;
 
 },
 193: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-function useForceUpdate() {
-  var _useReducer = react_1.useReducer(function (state) {
-    return !state;
-  }, false), dispatch = _useReducer[1];
-  return dispatch;
-}
-exports.default = useForceUpdate;
+var react_1d = __fuse.dt(react_1);
+var NavContext = react_1d.default.createContext(null);
+NavContext.displayName = 'NavContext';
+exports.default = NavContext;
 
 },
 194: function(__fusereq, exports, module){
-exports.__esModule = true;
-var useEventListener_1 = __fusereq(229);
-var useEventListener_1d = __fuse.dt(useEventListener_1);
-var react_1 = __fusereq(2);
-function useGlobalListener(event, handler, capture) {
-  if (capture === void 0) {
-    capture = false;
-  }
-  var documentTarget = react_1.useCallback(function () {
-    return document;
-  }, []);
-  return useEventListener_1d.default(documentTarget, event, handler, capture);
-}
-exports.default = useGlobalListener;
-
-},
-195: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var DropdownContext = react_1d.default.createContext(null);
-exports.default = DropdownContext;
-
-},
-196: function(__fusereq, exports, module){
 exports.__esModule = true;
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
@@ -23980,15 +23944,15 @@ var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var useCallbackRef_1 = __fusereq(161);
+var useCallbackRef_1 = __fusereq(173);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
-var DropdownContext_1 = __fusereq(195);
+var DropdownContext_1 = __fusereq(203);
 var DropdownContext_1d = __fuse.dt(DropdownContext_1);
-var usePopper_1 = __fusereq(206);
+var usePopper_1 = __fusereq(205);
 var usePopper_1d = __fuse.dt(usePopper_1);
-var useRootClose_1 = __fusereq(207);
+var useRootClose_1 = __fusereq(206);
 var useRootClose_1d = __fuse.dt(useRootClose_1);
-var mergeOptionsWithPopperConfig_1 = __fusereq(209);
+var mergeOptionsWithPopperConfig_1 = __fusereq(208);
 var mergeOptionsWithPopperConfig_1d = __fuse.dt(mergeOptionsWithPopperConfig_1);
 var noop = function noop() {};
 function useDropdownMenu(options) {
@@ -24068,13 +24032,55 @@ DropdownMenu.defaultProps = defaultProps;
 exports.default = DropdownMenu;
 
 },
+195: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var toFnRef = function toFnRef(ref) {
+  return !ref || typeof ref === 'function' ? ref : function (value) {
+    ref.current = value;
+  };
+};
+function mergeRefs(refA, refB) {
+  var a = toFnRef(refA);
+  var b = toFnRef(refB);
+  return function (value) {
+    if (a) a(value);
+    if (b) b(value);
+  };
+}
+exports.mergeRefs = mergeRefs;
+function useMergedRefs(refA, refB) {
+  return react_1.useMemo(function () {
+    return mergeRefs(refA, refB);
+  }, [refA, refB]);
+}
+exports.default = useMergedRefs;
+
+},
+196: function(__fusereq, exports, module){
+exports.__esModule = true;
+var invariant_1 = __fusereq(155);
+var invariant_1d = __fuse.dt(invariant_1);
+var react_1 = __fusereq(2);
+var useMergedRefs_1 = __fusereq(195);
+var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
+function useWrappedRefWithWarning(ref, componentName) {
+  if (!("production" !== "production")) return ref;
+  var warningRef = react_1.useCallback(function (refValue) {
+    !(refValue == null || !refValue.isReactComponent) ? "production" !== "production" ? invariant_1d.default(false, componentName + " injected a ref to a provided `as` component that resolved to a component instance instead of a DOM element. " + 'Use `React.forwardRef` to provide the injected ref to the class component as a prop in order to pass it directly to a DOM element') : invariant_1d.default(false) : void 0;
+  }, [componentName]);
+  return useMergedRefs_1d.default(warningRef, ref);
+}
+exports.default = useWrappedRefWithWarning;
+
+},
 197: function(__fusereq, exports, module){
 exports.__esModule = true;
 var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var DropdownContext_1 = __fusereq(195);
+var DropdownContext_1 = __fusereq(203);
 var DropdownContext_1d = __fuse.dt(DropdownContext_1);
 var noop = function noop() {};
 function useDropdownToggle() {
@@ -24108,95 +24114,80 @@ exports.default = DropdownToggle;
 },
 198: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerWindow_1 = __fusereq(230);
-var ownerWindow_1d = __fuse.dt(ownerWindow_1);
-function getComputedStyle(node, psuedoElement) {
-  return ownerWindow_1d.default(node).getComputedStyle(node, psuedoElement);
+var matchesImpl;
+function matches(node, selector) {
+  if (!matchesImpl) {
+    var body = document.body;
+    var nativeMatch = body.matches || body.matchesSelector || body.webkitMatchesSelector || body.mozMatchesSelector || body.msMatchesSelector;
+    matchesImpl = function matchesImpl(n, s) {
+      return nativeMatch.call(n, s);
+    };
+  }
+  return matchesImpl(node, selector);
 }
-exports.default = getComputedStyle;
+exports.default = matches;
 
 },
 199: function(__fusereq, exports, module){
 exports.__esModule = true;
-var hyphenate_1 = __fusereq(231);
-var hyphenate_1d = __fuse.dt(hyphenate_1);
-var msPattern = /^ms-/;
-function hyphenateStyleName(string) {
-  return hyphenate_1d.default(string).replace(msPattern, '-ms-');
+var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
+function qsa(element, selector) {
+  return toArray(element.querySelectorAll(selector));
 }
-exports.default = hyphenateStyleName;
+exports.default = qsa;
 
 },
 200: function(__fusereq, exports, module){
 exports.__esModule = true;
-var supportedTransforms = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i;
-function isTransform(value) {
-  return !!(value && supportedTransforms.test(value));
+var react_1 = __fusereq(2);
+function usePrevious(value) {
+  var ref = react_1.useRef(null);
+  react_1.useEffect(function () {
+    ref.current = value;
+  });
+  return ref.current;
 }
-exports.default = isTransform;
+exports.default = usePrevious;
 
 },
 201: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var NavContext = react_1d.default.createContext(null);
-NavContext.displayName = 'NavContext';
-exports.default = NavContext;
+function useForceUpdate() {
+  var _useReducer = react_1.useReducer(function (state) {
+    return !state;
+  }, false), dispatch = _useReducer[1];
+  return dispatch;
+}
+exports.default = useForceUpdate;
 
 },
 202: function(__fusereq, exports, module){
 exports.__esModule = true;
+var useEventListener_1 = __fusereq(231);
+var useEventListener_1d = __fuse.dt(useEventListener_1);
 var react_1 = __fusereq(2);
-var toFnRef = function toFnRef(ref) {
-  return !ref || typeof ref === 'function' ? ref : function (value) {
-    ref.current = value;
-  };
-};
-function mergeRefs(refA, refB) {
-  var a = toFnRef(refA);
-  var b = toFnRef(refB);
-  return function (value) {
-    if (a) a(value);
-    if (b) b(value);
-  };
+function useGlobalListener(event, handler, capture) {
+  if (capture === void 0) {
+    capture = false;
+  }
+  var documentTarget = react_1.useCallback(function () {
+    return document;
+  }, []);
+  return useEventListener_1d.default(documentTarget, event, handler, capture);
 }
-exports.mergeRefs = mergeRefs;
-function useMergedRefs(refA, refB) {
-  return react_1.useMemo(function () {
-    return mergeRefs(refA, refB);
-  }, [refA, refB]);
-}
-exports.default = useMergedRefs;
+exports.default = useGlobalListener;
 
 },
 203: function(__fusereq, exports, module){
 exports.__esModule = true;
-var invariant_1 = __fusereq(155);
-var invariant_1d = __fuse.dt(invariant_1);
 var react_1 = __fusereq(2);
-var useMergedRefs_1 = __fusereq(202);
-var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
-function useWrappedRefWithWarning(ref, componentName) {
-  if (!("production" !== "production")) return ref;
-  var warningRef = react_1.useCallback(function (refValue) {
-    !(refValue == null || !refValue.isReactComponent) ? "production" !== "production" ? invariant_1d.default(false, componentName + " injected a ref to a provided `as` component that resolved to a component instance instead of a DOM element. " + 'Use `React.forwardRef` to provide the injected ref to the class component as a prop in order to pass it directly to a DOM element') : invariant_1d.default(false) : void 0;
-  }, [componentName]);
-  return useMergedRefs_1d.default(warningRef, ref);
-}
-exports.default = useWrappedRefWithWarning;
+var react_1d = __fuse.dt(react_1);
+var DropdownContext = react_1d.default.createContext(null);
+exports.default = DropdownContext;
 
 },
 204: function(__fusereq, exports, module){
-exports.__esModule = true;
-function hasClass(element, className) {
-  if (element.classList) return !!className && element.classList.contains(className);
-  return (" " + (element.className.baseVal || element.className) + " ").indexOf(" " + className + " ") !== -1;
-}
-exports.default = hasClass;
-
-},
-205: function(__fusereq, exports, module){
 exports.__esModule = true;
 var arrow_1 = __fusereq(232);
 var arrow_1d = __fuse.dt(arrow_1);
@@ -24222,7 +24213,7 @@ exports.createPopper = popper_base_1.popperGenerator({
 exports.placements = enums_1.placements;
 
 },
-206: function(__fusereq, exports, module){
+205: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
@@ -24231,7 +24222,7 @@ var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var react_1 = __fusereq(2);
 var useSafeState_1 = __fusereq(242);
 var useSafeState_1d = __fuse.dt(useSafeState_1);
-var popper_1 = __fusereq(205);
+var popper_1 = __fusereq(204);
 var initialPopperStyles = function initialPopperStyles(position) {
   return {
     position: position,
@@ -24359,11 +24350,11 @@ function usePopper(referenceElement, popperElement, _temp) {
 exports.default = usePopper;
 
 },
-207: function(__fusereq, exports, module){
+206: function(__fusereq, exports, module){
 exports.__esModule = true;
 var contains_1 = __fusereq(152);
 var contains_1d = __fuse.dt(contains_1);
-var listen_1 = __fusereq(213);
+var listen_1 = __fusereq(223);
 var listen_1d = __fuse.dt(listen_1);
 var react_1 = __fusereq(2);
 var useEventCallback_1 = __fusereq(114);
@@ -24440,9 +24431,9 @@ function useRootClose(ref, onRootClose, _temp) {
 exports.default = useRootClose;
 
 },
-208: function(__fusereq, exports, module){
+207: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1 = __fusereq(170);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
 var react_1 = __fusereq(2);
 exports.resolveContainerRef = function resolveContainerRef(ref) {
@@ -24478,7 +24469,7 @@ function useWaitForDOMRef(ref, onResolved) {
 exports.default = useWaitForDOMRef;
 
 },
-209: function(__fusereq, exports, module){
+208: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
@@ -24541,6 +24532,15 @@ function mergeOptionsWithPopperConfig(_ref) {
 exports.default = mergeOptionsWithPopperConfig;
 
 },
+209: function(__fusereq, exports, module){
+exports.__esModule = true;
+function hasClass(element, className) {
+  if (element.classList) return !!className && element.classList.contains(className);
+  return (" " + (element.className.baseVal || element.className) + " ").indexOf(" " + className + " ") !== -1;
+}
+exports.default = hasClass;
+
+},
 210: function(__fusereq, exports, module){
 exports.__esModule = true;
 function _setPrototypeOf(o, p) {
@@ -24554,6 +24554,416 @@ exports.default = _setPrototypeOf;
 
 },
 211: function(__fusereq, exports, module){
+'use strict';
+var hasOwn = Object.prototype.hasOwnProperty;
+var toStr = Object.prototype.toString;
+var defineProperty = Object.defineProperty;
+var gOPD = Object.getOwnPropertyDescriptor;
+var isArray = function isArray(arr) {
+  if (typeof Array.isArray === 'function') {
+    return Array.isArray(arr);
+  }
+  return toStr.call(arr) === '[object Array]';
+};
+var isPlainObject = function isPlainObject(obj) {
+  if (!obj || toStr.call(obj) !== '[object Object]') {
+    return false;
+  }
+  var hasOwnConstructor = hasOwn.call(obj, 'constructor');
+  var hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+  if (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {
+    return false;
+  }
+  var key;
+  for (key in obj) {}
+  return typeof key === 'undefined' || hasOwn.call(obj, key);
+};
+var setProperty = function setProperty(target, options) {
+  if (defineProperty && options.name === '__proto__') {
+    defineProperty(target, options.name, {
+      enumerable: true,
+      configurable: true,
+      value: options.newValue,
+      writable: true
+    });
+  } else {
+    target[options.name] = options.newValue;
+  }
+};
+var getProperty = function getProperty(obj, name) {
+  if (name === '__proto__') {
+    if (!hasOwn.call(obj, name)) {
+      return void 0;
+    } else if (gOPD) {
+      return gOPD(obj, name).value;
+    }
+  }
+  return obj[name];
+};
+module.exports = function extend() {
+  var options, name, src, copy, copyIsArray, clone;
+  var target = arguments[0];
+  var i = 1;
+  var length = arguments.length;
+  var deep = false;
+  if (typeof target === 'boolean') {
+    deep = target;
+    target = arguments[1] || ({});
+    i = 2;
+  }
+  if (target == null || typeof target !== 'object' && typeof target !== 'function') {
+    target = {};
+  }
+  for (; i < length; ++i) {
+    options = arguments[i];
+    if (options != null) {
+      for (name in options) {
+        src = getProperty(target, name);
+        copy = getProperty(options, name);
+        if (target !== copy) {
+          if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
+            if (copyIsArray) {
+              copyIsArray = false;
+              clone = src && isArray(src) ? src : [];
+            } else {
+              clone = src && isPlainObject(src) ? src : {};
+            }
+            setProperty(target, {
+              name: name,
+              newValue: extend(deep, clone, copy)
+            });
+          } else if (typeof copy !== 'undefined') {
+            setProperty(target, {
+              name: name,
+              newValue: copy
+            });
+          }
+        }
+      }
+    }
+  }
+  return target;
+};
+
+},
+212: function(__fusereq, exports, module){
+'use strict';
+module.exports = bail;
+function bail(err) {
+  if (err) {
+    throw err;
+  }
+}
+
+},
+213: function(__fusereq, exports, module){
+'use strict';
+var VMessage = __fusereq(244);
+var VFile = __fusereq(245);
+module.exports = VFile;
+var proto = VFile.prototype;
+proto.message = message;
+proto.info = info;
+proto.fail = fail;
+proto.warn = message;
+function message(reason, position, origin) {
+  var filePath = this.path;
+  var message = new VMessage(reason, position, origin);
+  if (filePath) {
+    message.name = filePath + ':' + message.name;
+    message.file = filePath;
+  }
+  message.fatal = false;
+  this.messages.push(message);
+  return message;
+}
+function fail() {
+  var message = this.message.apply(this, arguments);
+  message.fatal = true;
+  throw message;
+}
+function info() {
+  var message = this.message.apply(this, arguments);
+  message.fatal = null;
+  return message;
+}
+
+},
+214: function(__fusereq, exports, module){
+'use strict';
+var wrap = __fusereq(246);
+module.exports = trough;
+trough.wrap = wrap;
+var slice = [].slice;
+function trough() {
+  var fns = [];
+  var middleware = {};
+  middleware.run = run;
+  middleware.use = use;
+  return middleware;
+  function run() {
+    var index = -1;
+    var input = slice.call(arguments, 0, -1);
+    var done = arguments[arguments.length - 1];
+    if (typeof done !== 'function') {
+      throw new Error('Expected function as last argument, not ' + done);
+    }
+    next.apply(null, [null].concat(input));
+    function next(err) {
+      var fn = fns[++index];
+      var params = slice.call(arguments, 0);
+      var values = params.slice(1);
+      var length = input.length;
+      var pos = -1;
+      if (err) {
+        done(err);
+        return;
+      }
+      while (++pos < length) {
+        if (values[pos] === null || values[pos] === undefined) {
+          values[pos] = input[pos];
+        }
+      }
+      input = values;
+      if (fn) {
+        wrap(fn, next).apply(null, input);
+      } else {
+        done.apply(null, [null].concat(input));
+      }
+    }
+  }
+  function use(fn) {
+    if (typeof fn !== 'function') {
+      throw new Error('Expected `fn` to be a function, not ' + fn);
+    }
+    fns.push(fn);
+    return middleware;
+  }
+}
+
+},
+215: function(__fusereq, exports, module){
+var toString = Object.prototype.toString;
+module.exports = isString;
+function isString(obj) {
+  return toString.call(obj) === "[object String]";
+}
+
+},
+216: function(__fusereq, exports, module){
+'use strict';
+var toString = Object.prototype.toString;
+module.exports = function (x) {
+  var prototype;
+  return toString.call(x) === '[object Object]' && (prototype = Object.getPrototypeOf(x), prototype === null || prototype === Object.getPrototypeOf({}));
+};
+
+},
+217: function(__fusereq, exports, module){
+'use strict';
+module.exports = visitParents;
+function visitParents(tree, type, visitor) {
+  var stack = [];
+  if (typeof type === 'function') {
+    visitor = type;
+    type = null;
+  }
+  one(tree);
+  function one(node) {
+    var result;
+    if (!type || node.type === type) {
+      result = visitor(node, stack.concat());
+    }
+    if (node.children && result !== false) {
+      return all(node.children, node);
+    }
+    return result;
+  }
+  function all(children, parent) {
+    var length = children.length;
+    var index = -1;
+    var child;
+    stack.push(parent);
+    while (++index < length) {
+      child = children[index];
+      if (child && one(child) === false) {
+        return false;
+      }
+    }
+    stack.pop();
+    return true;
+  }
+}
+
+},
+218: function(__fusereq, exports, module){
+'use strict';
+module.exports = visit;
+var visitParents = __fusereq(247);
+var CONTINUE = visitParents.CONTINUE;
+var SKIP = visitParents.SKIP;
+var EXIT = visitParents.EXIT;
+visit.CONTINUE = CONTINUE;
+visit.SKIP = SKIP;
+visit.EXIT = EXIT;
+function visit(tree, test, visitor, reverse) {
+  if (typeof test === 'function' && typeof visitor !== 'function') {
+    reverse = visitor;
+    visitor = test;
+    test = null;
+  }
+  visitParents(tree, test, overload, reverse);
+  function overload(node, parents) {
+    var parent = parents[parents.length - 1];
+    var index = parent ? parent.children.indexOf(node) : null;
+    return visitor(node, index, parent);
+  }
+}
+
+},
+219: function(__fusereq, exports, module){
+'use strict';
+var xtend = __fusereq(156);
+var inherits = __fusereq(248);
+module.exports = unherit;
+function unherit(Super) {
+  var result;
+  var key;
+  var value;
+  inherits(Of, Super);
+  inherits(From, Of);
+  result = Of.prototype;
+  for (key in result) {
+    value = result[key];
+    if (value && typeof value === 'object') {
+      result[key] = ('concat' in value) ? value.concat() : xtend(value);
+    }
+  }
+  return Of;
+  function From(parameters) {
+    return Super.apply(this, parameters);
+  }
+  function Of() {
+    if (!(this instanceof Of)) {
+      return new From(arguments);
+    }
+    return Super.apply(this, arguments);
+  }
+}
+
+},
+220: function(__fusereq, exports, module){
+'use strict';
+var xtend = __fusereq(156);
+var toggle = __fusereq(249);
+var vfileLocation = __fusereq(250);
+var unescape = __fusereq(251);
+var decode = __fusereq(252);
+var tokenizer = __fusereq(253);
+module.exports = Parser;
+function Parser(doc, file) {
+  this.file = file;
+  this.offset = {};
+  this.options = xtend(this.options);
+  this.setOptions({});
+  this.inList = false;
+  this.inBlock = false;
+  this.inLink = false;
+  this.atStart = true;
+  this.toOffset = vfileLocation(file).toOffset;
+  this.unescape = unescape(this, 'escape');
+  this.decode = decode(this);
+}
+var proto = Parser.prototype;
+proto.setOptions = __fusereq(254);
+proto.parse = __fusereq(255);
+proto.options = __fusereq(256);
+proto.exitStart = toggle('atStart', true);
+proto.enterList = toggle('inList', false);
+proto.enterLink = toggle('inLink', false);
+proto.enterBlock = toggle('inBlock', false);
+proto.interruptParagraph = [['thematicBreak'], ['atxHeading'], ['fencedCode'], ['blockquote'], ['html'], ['setextHeading', {
+  commonmark: false
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.interruptList = [['atxHeading', {
+  pedantic: false
+}], ['fencedCode', {
+  pedantic: false
+}], ['thematicBreak', {
+  pedantic: false
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.interruptBlockquote = [['indentedCode', {
+  commonmark: true
+}], ['fencedCode', {
+  commonmark: true
+}], ['atxHeading', {
+  commonmark: true
+}], ['setextHeading', {
+  commonmark: true
+}], ['thematicBreak', {
+  commonmark: true
+}], ['html', {
+  commonmark: true
+}], ['list', {
+  commonmark: true
+}], ['definition', {
+  commonmark: false
+}], ['footnote', {
+  commonmark: false
+}]];
+proto.blockTokenizers = {
+  newline: __fusereq(257),
+  indentedCode: __fusereq(258),
+  fencedCode: __fusereq(259),
+  blockquote: __fusereq(260),
+  atxHeading: __fusereq(261),
+  thematicBreak: __fusereq(262),
+  list: __fusereq(263),
+  setextHeading: __fusereq(264),
+  html: __fusereq(265),
+  footnote: __fusereq(266),
+  definition: __fusereq(267),
+  table: __fusereq(268),
+  paragraph: __fusereq(269)
+};
+proto.inlineTokenizers = {
+  escape: __fusereq(270),
+  autoLink: __fusereq(271),
+  url: __fusereq(272),
+  html: __fusereq(273),
+  link: __fusereq(274),
+  reference: __fusereq(275),
+  strong: __fusereq(276),
+  emphasis: __fusereq(277),
+  deletion: __fusereq(278),
+  code: __fusereq(279),
+  break: __fusereq(280),
+  text: __fusereq(281)
+};
+proto.blockMethods = keys(proto.blockTokenizers);
+proto.inlineMethods = keys(proto.inlineTokenizers);
+proto.tokenizeBlock = tokenizer('block');
+proto.tokenizeInline = tokenizer('inline');
+proto.tokenizeFactory = tokenizer;
+function keys(value) {
+  var result = [];
+  var key;
+  for (key in value) {
+    result.push(key);
+  }
+  return result;
+}
+
+},
+221: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 function useUpdatedRef(value) {
@@ -24564,9 +24974,9 @@ function useUpdatedRef(value) {
 exports.default = useUpdatedRef;
 
 },
-212: function(__fusereq, exports, module){
+222: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1 = __fusereq(170);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
 function activeElement(doc) {
   if (doc === void 0) {
@@ -24583,11 +24993,11 @@ function activeElement(doc) {
 exports.default = activeElement;
 
 },
-213: function(__fusereq, exports, module){
+223: function(__fusereq, exports, module){
 exports.__esModule = true;
-var addEventListener_1 = __fusereq(156);
+var addEventListener_1 = __fusereq(168);
 var addEventListener_1d = __fuse.dt(addEventListener_1);
-var removeEventListener_1 = __fusereq(159);
+var removeEventListener_1 = __fusereq(171);
 var removeEventListener_1d = __fuse.dt(removeEventListener_1);
 function listen(node, eventName, handler, options) {
   addEventListener_1d.default(node, eventName, handler, options);
@@ -24598,19 +25008,19 @@ function listen(node, eventName, handler, options) {
 exports.default = listen;
 
 },
-214: function(__fusereq, exports, module){
+224: function(__fusereq, exports, module){
 exports.__esModule = true;
-var addClass_1 = __fusereq(244);
+var addClass_1 = __fusereq(282);
 var addClass_1d = __fuse.dt(addClass_1);
-var removeClass_1 = __fusereq(245);
+var removeClass_1 = __fusereq(283);
 var removeClass_1d = __fuse.dt(removeClass_1);
 var css_1 = __fusereq(127);
 var css_1d = __fuse.dt(css_1);
-var scrollbarSize_1 = __fusereq(160);
+var scrollbarSize_1 = __fusereq(172);
 var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var isOverflowing_1 = __fusereq(246);
+var isOverflowing_1 = __fusereq(284);
 var isOverflowing_1d = __fuse.dt(isOverflowing_1);
-var manageAriaHidden_1 = __fusereq(247);
+var manageAriaHidden_1 = __fusereq(285);
 function findIndexOf(arr, cb) {
   var idx = -1;
   arr.some(function (d, i) {
@@ -24726,7 +25136,7 @@ var ModalManager = (function () {
 exports.default = ModalManager;
 
 },
-215: function(__fusereq, exports, module){
+225: function(__fusereq, exports, module){
 exports.__esModule = true;
 function triggerEvent(node, eventName, bubbles, cancelable) {
   if (bubbles === void 0) {
@@ -24742,416 +25152,6 @@ function triggerEvent(node, eventName, bubbles, cancelable) {
   }
 }
 exports.default = triggerEvent;
-
-},
-216: function(__fusereq, exports, module){
-'use strict';
-var hasOwn = Object.prototype.hasOwnProperty;
-var toStr = Object.prototype.toString;
-var defineProperty = Object.defineProperty;
-var gOPD = Object.getOwnPropertyDescriptor;
-var isArray = function isArray(arr) {
-  if (typeof Array.isArray === 'function') {
-    return Array.isArray(arr);
-  }
-  return toStr.call(arr) === '[object Array]';
-};
-var isPlainObject = function isPlainObject(obj) {
-  if (!obj || toStr.call(obj) !== '[object Object]') {
-    return false;
-  }
-  var hasOwnConstructor = hasOwn.call(obj, 'constructor');
-  var hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
-  if (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {
-    return false;
-  }
-  var key;
-  for (key in obj) {}
-  return typeof key === 'undefined' || hasOwn.call(obj, key);
-};
-var setProperty = function setProperty(target, options) {
-  if (defineProperty && options.name === '__proto__') {
-    defineProperty(target, options.name, {
-      enumerable: true,
-      configurable: true,
-      value: options.newValue,
-      writable: true
-    });
-  } else {
-    target[options.name] = options.newValue;
-  }
-};
-var getProperty = function getProperty(obj, name) {
-  if (name === '__proto__') {
-    if (!hasOwn.call(obj, name)) {
-      return void 0;
-    } else if (gOPD) {
-      return gOPD(obj, name).value;
-    }
-  }
-  return obj[name];
-};
-module.exports = function extend() {
-  var options, name, src, copy, copyIsArray, clone;
-  var target = arguments[0];
-  var i = 1;
-  var length = arguments.length;
-  var deep = false;
-  if (typeof target === 'boolean') {
-    deep = target;
-    target = arguments[1] || ({});
-    i = 2;
-  }
-  if (target == null || typeof target !== 'object' && typeof target !== 'function') {
-    target = {};
-  }
-  for (; i < length; ++i) {
-    options = arguments[i];
-    if (options != null) {
-      for (name in options) {
-        src = getProperty(target, name);
-        copy = getProperty(options, name);
-        if (target !== copy) {
-          if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
-            if (copyIsArray) {
-              copyIsArray = false;
-              clone = src && isArray(src) ? src : [];
-            } else {
-              clone = src && isPlainObject(src) ? src : {};
-            }
-            setProperty(target, {
-              name: name,
-              newValue: extend(deep, clone, copy)
-            });
-          } else if (typeof copy !== 'undefined') {
-            setProperty(target, {
-              name: name,
-              newValue: copy
-            });
-          }
-        }
-      }
-    }
-  }
-  return target;
-};
-
-},
-217: function(__fusereq, exports, module){
-'use strict';
-module.exports = bail;
-function bail(err) {
-  if (err) {
-    throw err;
-  }
-}
-
-},
-218: function(__fusereq, exports, module){
-'use strict';
-var VMessage = __fusereq(248);
-var VFile = __fusereq(249);
-module.exports = VFile;
-var proto = VFile.prototype;
-proto.message = message;
-proto.info = info;
-proto.fail = fail;
-proto.warn = message;
-function message(reason, position, origin) {
-  var filePath = this.path;
-  var message = new VMessage(reason, position, origin);
-  if (filePath) {
-    message.name = filePath + ':' + message.name;
-    message.file = filePath;
-  }
-  message.fatal = false;
-  this.messages.push(message);
-  return message;
-}
-function fail() {
-  var message = this.message.apply(this, arguments);
-  message.fatal = true;
-  throw message;
-}
-function info() {
-  var message = this.message.apply(this, arguments);
-  message.fatal = null;
-  return message;
-}
-
-},
-219: function(__fusereq, exports, module){
-'use strict';
-var wrap = __fusereq(250);
-module.exports = trough;
-trough.wrap = wrap;
-var slice = [].slice;
-function trough() {
-  var fns = [];
-  var middleware = {};
-  middleware.run = run;
-  middleware.use = use;
-  return middleware;
-  function run() {
-    var index = -1;
-    var input = slice.call(arguments, 0, -1);
-    var done = arguments[arguments.length - 1];
-    if (typeof done !== 'function') {
-      throw new Error('Expected function as last argument, not ' + done);
-    }
-    next.apply(null, [null].concat(input));
-    function next(err) {
-      var fn = fns[++index];
-      var params = slice.call(arguments, 0);
-      var values = params.slice(1);
-      var length = input.length;
-      var pos = -1;
-      if (err) {
-        done(err);
-        return;
-      }
-      while (++pos < length) {
-        if (values[pos] === null || values[pos] === undefined) {
-          values[pos] = input[pos];
-        }
-      }
-      input = values;
-      if (fn) {
-        wrap(fn, next).apply(null, input);
-      } else {
-        done.apply(null, [null].concat(input));
-      }
-    }
-  }
-  function use(fn) {
-    if (typeof fn !== 'function') {
-      throw new Error('Expected `fn` to be a function, not ' + fn);
-    }
-    fns.push(fn);
-    return middleware;
-  }
-}
-
-},
-220: function(__fusereq, exports, module){
-var toString = Object.prototype.toString;
-module.exports = isString;
-function isString(obj) {
-  return toString.call(obj) === "[object String]";
-}
-
-},
-221: function(__fusereq, exports, module){
-'use strict';
-var toString = Object.prototype.toString;
-module.exports = function (x) {
-  var prototype;
-  return toString.call(x) === '[object Object]' && (prototype = Object.getPrototypeOf(x), prototype === null || prototype === Object.getPrototypeOf({}));
-};
-
-},
-222: function(__fusereq, exports, module){
-'use strict';
-module.exports = visitParents;
-function visitParents(tree, type, visitor) {
-  var stack = [];
-  if (typeof type === 'function') {
-    visitor = type;
-    type = null;
-  }
-  one(tree);
-  function one(node) {
-    var result;
-    if (!type || node.type === type) {
-      result = visitor(node, stack.concat());
-    }
-    if (node.children && result !== false) {
-      return all(node.children, node);
-    }
-    return result;
-  }
-  function all(children, parent) {
-    var length = children.length;
-    var index = -1;
-    var child;
-    stack.push(parent);
-    while (++index < length) {
-      child = children[index];
-      if (child && one(child) === false) {
-        return false;
-      }
-    }
-    stack.pop();
-    return true;
-  }
-}
-
-},
-223: function(__fusereq, exports, module){
-'use strict';
-var xtend = __fusereq(168);
-var inherits = __fusereq(251);
-module.exports = unherit;
-function unherit(Super) {
-  var result;
-  var key;
-  var value;
-  inherits(Of, Super);
-  inherits(From, Of);
-  result = Of.prototype;
-  for (key in result) {
-    value = result[key];
-    if (value && typeof value === 'object') {
-      result[key] = ('concat' in value) ? value.concat() : xtend(value);
-    }
-  }
-  return Of;
-  function From(parameters) {
-    return Super.apply(this, parameters);
-  }
-  function Of() {
-    if (!(this instanceof Of)) {
-      return new From(arguments);
-    }
-    return Super.apply(this, arguments);
-  }
-}
-
-},
-224: function(__fusereq, exports, module){
-'use strict';
-var xtend = __fusereq(168);
-var toggle = __fusereq(252);
-var vfileLocation = __fusereq(253);
-var unescape = __fusereq(254);
-var decode = __fusereq(255);
-var tokenizer = __fusereq(256);
-module.exports = Parser;
-function Parser(doc, file) {
-  this.file = file;
-  this.offset = {};
-  this.options = xtend(this.options);
-  this.setOptions({});
-  this.inList = false;
-  this.inBlock = false;
-  this.inLink = false;
-  this.atStart = true;
-  this.toOffset = vfileLocation(file).toOffset;
-  this.unescape = unescape(this, 'escape');
-  this.decode = decode(this);
-}
-var proto = Parser.prototype;
-proto.setOptions = __fusereq(257);
-proto.parse = __fusereq(258);
-proto.options = __fusereq(259);
-proto.exitStart = toggle('atStart', true);
-proto.enterList = toggle('inList', false);
-proto.enterLink = toggle('inLink', false);
-proto.enterBlock = toggle('inBlock', false);
-proto.interruptParagraph = [['thematicBreak'], ['atxHeading'], ['fencedCode'], ['blockquote'], ['html'], ['setextHeading', {
-  commonmark: false
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.interruptList = [['atxHeading', {
-  pedantic: false
-}], ['fencedCode', {
-  pedantic: false
-}], ['thematicBreak', {
-  pedantic: false
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.interruptBlockquote = [['indentedCode', {
-  commonmark: true
-}], ['fencedCode', {
-  commonmark: true
-}], ['atxHeading', {
-  commonmark: true
-}], ['setextHeading', {
-  commonmark: true
-}], ['thematicBreak', {
-  commonmark: true
-}], ['html', {
-  commonmark: true
-}], ['list', {
-  commonmark: true
-}], ['definition', {
-  commonmark: false
-}], ['footnote', {
-  commonmark: false
-}]];
-proto.blockTokenizers = {
-  newline: __fusereq(260),
-  indentedCode: __fusereq(261),
-  fencedCode: __fusereq(262),
-  blockquote: __fusereq(263),
-  atxHeading: __fusereq(264),
-  thematicBreak: __fusereq(265),
-  list: __fusereq(266),
-  setextHeading: __fusereq(267),
-  html: __fusereq(268),
-  footnote: __fusereq(269),
-  definition: __fusereq(270),
-  table: __fusereq(271),
-  paragraph: __fusereq(272)
-};
-proto.inlineTokenizers = {
-  escape: __fusereq(273),
-  autoLink: __fusereq(274),
-  url: __fusereq(275),
-  html: __fusereq(276),
-  link: __fusereq(277),
-  reference: __fusereq(278),
-  strong: __fusereq(279),
-  emphasis: __fusereq(280),
-  deletion: __fusereq(281),
-  code: __fusereq(282),
-  break: __fusereq(283),
-  text: __fusereq(284)
-};
-proto.blockMethods = keys(proto.blockTokenizers);
-proto.inlineMethods = keys(proto.inlineTokenizers);
-proto.tokenizeBlock = tokenizer('block');
-proto.tokenizeInline = tokenizer('inline');
-proto.tokenizeFactory = tokenizer;
-function keys(value) {
-  var result = [];
-  var key;
-  for (key in value) {
-    result.push(key);
-  }
-  return result;
-}
-
-},
-225: function(__fusereq, exports, module){
-'use strict';
-module.exports = visit;
-var visitParents = __fusereq(285);
-var CONTINUE = visitParents.CONTINUE;
-var SKIP = visitParents.SKIP;
-var EXIT = visitParents.EXIT;
-visit.CONTINUE = CONTINUE;
-visit.SKIP = SKIP;
-visit.EXIT = EXIT;
-function visit(tree, test, visitor, reverse) {
-  if (typeof test === 'function' && typeof visitor !== 'function') {
-    reverse = visitor;
-    visitor = test;
-    test = null;
-  }
-  visitParents(tree, test, overload, reverse);
-  function overload(node, parents) {
-    var parent = parents[parents.length - 1];
-    var index = parent ? parent.children.indexOf(node) : null;
-    return visitor(node, index, parent);
-  }
-}
 
 },
 226: function(__fusereq, exports, module){
@@ -25277,6 +25277,26 @@ module.exports = ReactPropTypesSecret;
 },
 229: function(__fusereq, exports, module){
 exports.__esModule = true;
+var ownerDocument_1 = __fusereq(170);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+function ownerWindow(node) {
+  var doc = ownerDocument_1d.default(node);
+  return doc && doc.defaultView || window;
+}
+exports.default = ownerWindow;
+
+},
+230: function(__fusereq, exports, module){
+exports.__esModule = true;
+var rUpper = /([A-Z])/g;
+function hyphenate(string) {
+  return string.replace(rUpper, '-$1').toLowerCase();
+}
+exports.default = hyphenate;
+
+},
+231: function(__fusereq, exports, module){
+exports.__esModule = true;
 var react_1 = __fusereq(2);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
@@ -25294,26 +25314,6 @@ function useEventListener(eventTarget, event, listener, capture) {
   }, [eventTarget]);
 }
 exports.default = useEventListener;
-
-},
-230: function(__fusereq, exports, module){
-exports.__esModule = true;
-var ownerDocument_1 = __fusereq(158);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-function ownerWindow(node) {
-  var doc = ownerDocument_1d.default(node);
-  return doc && doc.defaultView || window;
-}
-exports.default = ownerWindow;
-
-},
-231: function(__fusereq, exports, module){
-exports.__esModule = true;
-var rUpper = /([A-Z])/g;
-function hyphenate(string) {
-  return string.replace(rUpper, '-$1').toLowerCase();
-}
-exports.default = hyphenate;
 
 },
 232: function(__fusereq, exports, module){
@@ -25952,7 +25952,7 @@ exports.default = useSafeState;
 },
 243: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1 = __fusereq(170);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
 var safeFindDOMNode_1 = __fusereq(149);
 var safeFindDOMNode_1d = __fuse.dt(safeFindDOMNode_1);
@@ -25962,94 +25962,8 @@ exports.default = function (componentOrElement) {
 
 },
 244: function(__fusereq, exports, module){
-exports.__esModule = true;
-var hasClass_1 = __fusereq(204);
-var hasClass_1d = __fuse.dt(hasClass_1);
-function addClass(element, className) {
-  if (element.classList) element.classList.add(className); else if (!hasClass_1d.default(element, className)) if (typeof element.className === 'string') element.className = element.className + " " + className; else element.setAttribute('class', (element.className && element.className.baseVal || '') + " " + className);
-}
-exports.default = addClass;
-
-},
-245: function(__fusereq, exports, module){
-exports.__esModule = true;
-function replaceClassName(origClass, classToRemove) {
-  return origClass.replace(new RegExp("(^|\\s)" + classToRemove + "(?:\\s|$)", 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
-}
-function removeClass(element, className) {
-  if (element.classList) {
-    element.classList.remove(className);
-  } else if (typeof element.className === 'string') {
-    element.className = replaceClassName(element.className, className);
-  } else {
-    element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
-  }
-}
-exports.default = removeClass;
-
-},
-246: function(__fusereq, exports, module){
-exports.__esModule = true;
-var isWindow_1 = __fusereq(307);
-var isWindow_1d = __fuse.dt(isWindow_1);
-var ownerDocument_1 = __fusereq(158);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-function isBody(node) {
-  return node && node.tagName.toLowerCase() === 'body';
-}
-function bodyIsOverflowing(node) {
-  var doc = isWindow_1d.default(node) ? ownerDocument_1d.default() : ownerDocument_1d.default(node);
-  var win = isWindow_1d.default(node) || doc.defaultView;
-  return doc.body.clientWidth < win.innerWidth;
-}
-function isOverflowing(container) {
-  var win = isWindow_1d.default(container);
-  return win || isBody(container) ? bodyIsOverflowing(container) : container.scrollHeight > container.clientHeight;
-}
-exports.default = isOverflowing;
-
-},
-247: function(__fusereq, exports, module){
-var BLACKLIST = ['template', 'script', 'style'];
-var isHidable = function isHidable(_ref) {
-  var nodeType = _ref.nodeType, tagName = _ref.tagName;
-  return nodeType === 1 && BLACKLIST.indexOf(tagName.toLowerCase()) === -1;
-};
-var siblings = function siblings(container, exclude, cb) {
-  [].forEach.call(container.children, function (node) {
-    if (exclude.indexOf(node) === -1 && isHidable(node)) {
-      cb(node);
-    }
-  });
-};
-function ariaHidden(hide, node) {
-  if (!node) return;
-  if (hide) {
-    node.setAttribute('aria-hidden', 'true');
-  } else {
-    node.removeAttribute('aria-hidden');
-  }
-}
-exports.ariaHidden = ariaHidden;
-function hideSiblings(container, _ref2) {
-  var dialog = _ref2.dialog, backdrop = _ref2.backdrop;
-  siblings(container, [dialog, backdrop], function (node) {
-    return ariaHidden(true, node);
-  });
-}
-exports.hideSiblings = hideSiblings;
-function showSiblings(container, _ref3) {
-  var dialog = _ref3.dialog, backdrop = _ref3.backdrop;
-  siblings(container, [dialog, backdrop], function (node) {
-    return ariaHidden(false, node);
-  });
-}
-exports.showSiblings = showSiblings;
-
-},
-248: function(__fusereq, exports, module){
 'use strict';
-var stringify = __fusereq(308);
+var stringify = __fusereq(311);
 module.exports = VMessage;
 function VMessagePrototype() {}
 VMessagePrototype.prototype = Error.prototype;
@@ -26123,12 +26037,12 @@ function parseOrigin(origin) {
 }
 
 },
-249: function(__fusereq, exports, module){
-var process = __fusereq(312);
+245: function(__fusereq, exports, module){
+var process = __fusereq(310);
 'use strict';
-var path = __fusereq(309);
-var replace = __fusereq(310);
-var buffer = __fusereq(311);
+var path = __fusereq(307);
+var replace = __fusereq(308);
+var buffer = __fusereq(309);
 module.exports = VFile;
 var own = ({}).hasOwnProperty;
 var proto = VFile.prototype;
@@ -26248,7 +26162,7 @@ function assertPath(path, name) {
 }
 
 },
-250: function(__fusereq, exports, module){
+246: function(__fusereq, exports, module){
 'use strict';
 var slice = [].slice;
 module.exports = wrap;
@@ -26292,7 +26206,66 @@ function wrap(fn, callback) {
 }
 
 },
-251: function(__fusereq, exports, module){
+247: function(__fusereq, exports, module){
+'use strict';
+module.exports = visitParents;
+var convert = __fusereq(312);
+var CONTINUE = true;
+var SKIP = 'skip';
+var EXIT = false;
+visitParents.CONTINUE = CONTINUE;
+visitParents.SKIP = SKIP;
+visitParents.EXIT = EXIT;
+function visitParents(tree, test, visitor, reverse) {
+  var is;
+  if (typeof test === 'function' && typeof visitor !== 'function') {
+    reverse = visitor;
+    visitor = test;
+    test = null;
+  }
+  is = convert(test);
+  one(tree, null, []);
+  function one(node, index, parents) {
+    var result = [];
+    var subresult;
+    if (!test || is(node, index, parents[parents.length - 1] || null)) {
+      result = toResult(visitor(node, parents));
+      if (result[0] === EXIT) {
+        return result;
+      }
+    }
+    if (node.children && result[0] !== SKIP) {
+      subresult = toResult(all(node.children, parents.concat(node)));
+      return subresult[0] === EXIT ? subresult : result;
+    }
+    return result;
+  }
+  function all(children, parents) {
+    var min = -1;
+    var step = reverse ? -1 : 1;
+    var index = (reverse ? children.length : min) + step;
+    var result;
+    while (index > min && index < children.length) {
+      result = one(children[index], index, parents);
+      if (result[0] === EXIT) {
+        return result;
+      }
+      index = typeof result[1] === 'number' ? result[1] : index + step;
+    }
+  }
+}
+function toResult(value) {
+  if (value !== null && typeof value === 'object' && ('length' in value)) {
+    return value;
+  }
+  if (typeof value === 'number') {
+    return [CONTINUE, value];
+  }
+  return [value];
+}
+
+},
+248: function(__fusereq, exports, module){
 if (typeof Object.create === 'function') {
   module.exports = function inherits(ctor, superCtor) {
     if (superCtor) {
@@ -26320,7 +26293,7 @@ if (typeof Object.create === 'function') {
 }
 
 },
-252: function(__fusereq, exports, module){
+249: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(key, state, ctx) {
@@ -26337,7 +26310,7 @@ function factory(key, state, ctx) {
 }
 
 },
-253: function(__fusereq, exports, module){
+250: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(file) {
@@ -26390,7 +26363,7 @@ function indices(value) {
 }
 
 },
-254: function(__fusereq, exports, module){
+251: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 function factory(ctx, key) {
@@ -26416,9 +26389,9 @@ function factory(ctx, key) {
 }
 
 },
-255: function(__fusereq, exports, module){
+252: function(__fusereq, exports, module){
 'use strict';
-var xtend = __fusereq(168);
+var xtend = __fusereq(156);
 var entities = __fusereq(313);
 module.exports = factory;
 function factory(ctx) {
@@ -26464,7 +26437,7 @@ function factory(ctx) {
 }
 
 },
-256: function(__fusereq, exports, module){
+253: function(__fusereq, exports, module){
 'use strict';
 module.exports = factory;
 var MERGEABLE_NODES = {
@@ -26658,11 +26631,11 @@ function factory(type) {
 }
 
 },
-257: function(__fusereq, exports, module){
+254: function(__fusereq, exports, module){
 'use strict';
-var xtend = __fusereq(168);
+var xtend = __fusereq(156);
 var escapes = __fusereq(314);
-var defaults = __fusereq(259);
+var defaults = __fusereq(256);
 module.exports = setOptions;
 function setOptions(options) {
   var self = this;
@@ -26692,9 +26665,9 @@ function setOptions(options) {
 }
 
 },
-258: function(__fusereq, exports, module){
+255: function(__fusereq, exports, module){
 'use strict';
-var xtend = __fusereq(168);
+var xtend = __fusereq(156);
 var removePosition = __fusereq(315);
 module.exports = parse;
 var C_NEWLINE = '\n';
@@ -26730,7 +26703,7 @@ function parse() {
 }
 
 },
-259: function(__fusereq, exports, module){
+256: function(__fusereq, exports, module){
 'use strict';
 module.exports = {
   position: true,
@@ -26742,7 +26715,7 @@ module.exports = {
 };
 
 },
-260: function(__fusereq, exports, module){
+257: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 module.exports = newline;
@@ -26778,7 +26751,7 @@ function newline(eat, value, silent) {
 }
 
 },
-261: function(__fusereq, exports, module){
+258: function(__fusereq, exports, module){
 'use strict';
 var repeat = __fusereq(318);
 var trim = __fusereq(319);
@@ -26856,7 +26829,7 @@ function indentedCode(eat, value, silent) {
 }
 
 },
-262: function(__fusereq, exports, module){
+259: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(319);
 module.exports = fencedCode;
@@ -27029,7 +27002,7 @@ function fencedCode(eat, value, silent) {
 }
 
 },
-263: function(__fusereq, exports, module){
+260: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var interrupt = __fusereq(321);
@@ -27130,7 +27103,7 @@ function blockquote(eat, value, silent) {
 }
 
 },
-264: function(__fusereq, exports, module){
+261: function(__fusereq, exports, module){
 'use strict';
 module.exports = atxHeading;
 var C_NEWLINE = '\n';
@@ -27227,7 +27200,7 @@ function atxHeading(eat, value, silent) {
 }
 
 },
-265: function(__fusereq, exports, module){
+262: function(__fusereq, exports, module){
 'use strict';
 module.exports = thematicBreak;
 var C_NEWLINE = '\n';
@@ -27282,7 +27255,7 @@ function thematicBreak(eat, value, silent) {
 }
 
 },
-266: function(__fusereq, exports, module){
+263: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var repeat = __fusereq(318);
@@ -27630,7 +27603,7 @@ function normalListItem(ctx, value, position) {
 }
 
 },
-267: function(__fusereq, exports, module){
+264: function(__fusereq, exports, module){
 'use strict';
 module.exports = setextHeading;
 var C_NEWLINE = '\n';
@@ -27709,7 +27682,7 @@ function setextHeading(eat, value, silent) {
 }
 
 },
-268: function(__fusereq, exports, module){
+265: function(__fusereq, exports, module){
 'use strict';
 var openCloseTag = __fusereq(325).openCloseTag;
 module.exports = blockHTML;
@@ -27780,7 +27753,7 @@ function blockHTML(eat, value, silent) {
 }
 
 },
-269: function(__fusereq, exports, module){
+266: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var normalize = __fusereq(326);
@@ -27920,7 +27893,7 @@ function footnoteDefinition(eat, value, silent) {
 }
 
 },
-270: function(__fusereq, exports, module){
+267: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var normalize = __fusereq(326);
@@ -28127,7 +28100,7 @@ function isUnclosedURLCharacter(character) {
 }
 
 },
-271: function(__fusereq, exports, module){
+268: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 module.exports = table;
@@ -28339,7 +28312,7 @@ function table(eat, value, silent) {
 }
 
 },
-272: function(__fusereq, exports, module){
+269: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var decimal = __fusereq(322);
@@ -28423,7 +28396,7 @@ function paragraph(eat, value, silent) {
 }
 
 },
-273: function(__fusereq, exports, module){
+270: function(__fusereq, exports, module){
 'use strict';
 var locate = __fusereq(327);
 module.exports = escape;
@@ -28454,7 +28427,7 @@ function escape(eat, value, silent) {
 }
 
 },
-274: function(__fusereq, exports, module){
+271: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var decode = __fusereq(313);
@@ -28567,7 +28540,7 @@ function autoLink(eat, value, silent) {
 }
 
 },
-275: function(__fusereq, exports, module){
+272: function(__fusereq, exports, module){
 'use strict';
 var decode = __fusereq(313);
 var whitespace = __fusereq(317);
@@ -28673,7 +28646,7 @@ function url(eat, value, silent) {
 }
 
 },
-276: function(__fusereq, exports, module){
+273: function(__fusereq, exports, module){
 'use strict';
 var alphabetical = __fusereq(330);
 var locate = __fusereq(328);
@@ -28714,7 +28687,7 @@ function inlineHTML(eat, value, silent) {
 }
 
 },
-277: function(__fusereq, exports, module){
+274: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var locate = __fusereq(331);
@@ -29007,7 +28980,7 @@ function link(eat, value, silent) {
 }
 
 },
-278: function(__fusereq, exports, module){
+275: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var locate = __fusereq(331);
@@ -29167,7 +29140,7 @@ function reference(eat, value, silent) {
 }
 
 },
-279: function(__fusereq, exports, module){
+276: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var whitespace = __fusereq(317);
@@ -29231,7 +29204,7 @@ function strong(eat, value, silent) {
 }
 
 },
-280: function(__fusereq, exports, module){
+277: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var word = __fusereq(333);
@@ -29301,7 +29274,7 @@ function emphasis(eat, value, silent) {
 }
 
 },
-281: function(__fusereq, exports, module){
+278: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var locate = __fusereq(335);
@@ -29344,7 +29317,7 @@ function strikethrough(eat, value, silent) {
 }
 
 },
-282: function(__fusereq, exports, module){
+279: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
 var locate = __fusereq(336);
@@ -29434,7 +29407,7 @@ function inlineCode(eat, value, silent) {
 }
 
 },
-283: function(__fusereq, exports, module){
+280: function(__fusereq, exports, module){
 'use strict';
 var locate = __fusereq(337);
 module.exports = hardBreak;
@@ -29467,7 +29440,7 @@ function hardBreak(eat, value, silent) {
 }
 
 },
-284: function(__fusereq, exports, module){
+281: function(__fusereq, exports, module){
 'use strict';
 module.exports = text;
 function text(eat, value, silent) {
@@ -29515,63 +29488,90 @@ function text(eat, value, silent) {
 }
 
 },
+282: function(__fusereq, exports, module){
+exports.__esModule = true;
+var hasClass_1 = __fusereq(209);
+var hasClass_1d = __fuse.dt(hasClass_1);
+function addClass(element, className) {
+  if (element.classList) element.classList.add(className); else if (!hasClass_1d.default(element, className)) if (typeof element.className === 'string') element.className = element.className + " " + className; else element.setAttribute('class', (element.className && element.className.baseVal || '') + " " + className);
+}
+exports.default = addClass;
+
+},
+283: function(__fusereq, exports, module){
+exports.__esModule = true;
+function replaceClassName(origClass, classToRemove) {
+  return origClass.replace(new RegExp("(^|\\s)" + classToRemove + "(?:\\s|$)", 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
+}
+function removeClass(element, className) {
+  if (element.classList) {
+    element.classList.remove(className);
+  } else if (typeof element.className === 'string') {
+    element.className = replaceClassName(element.className, className);
+  } else {
+    element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
+  }
+}
+exports.default = removeClass;
+
+},
+284: function(__fusereq, exports, module){
+exports.__esModule = true;
+var isWindow_1 = __fusereq(338);
+var isWindow_1d = __fuse.dt(isWindow_1);
+var ownerDocument_1 = __fusereq(170);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+function isBody(node) {
+  return node && node.tagName.toLowerCase() === 'body';
+}
+function bodyIsOverflowing(node) {
+  var doc = isWindow_1d.default(node) ? ownerDocument_1d.default() : ownerDocument_1d.default(node);
+  var win = isWindow_1d.default(node) || doc.defaultView;
+  return doc.body.clientWidth < win.innerWidth;
+}
+function isOverflowing(container) {
+  var win = isWindow_1d.default(container);
+  return win || isBody(container) ? bodyIsOverflowing(container) : container.scrollHeight > container.clientHeight;
+}
+exports.default = isOverflowing;
+
+},
 285: function(__fusereq, exports, module){
-'use strict';
-module.exports = visitParents;
-var convert = __fusereq(338);
-var CONTINUE = true;
-var SKIP = 'skip';
-var EXIT = false;
-visitParents.CONTINUE = CONTINUE;
-visitParents.SKIP = SKIP;
-visitParents.EXIT = EXIT;
-function visitParents(tree, test, visitor, reverse) {
-  var is;
-  if (typeof test === 'function' && typeof visitor !== 'function') {
-    reverse = visitor;
-    visitor = test;
-    test = null;
-  }
-  is = convert(test);
-  one(tree, null, []);
-  function one(node, index, parents) {
-    var result = [];
-    var subresult;
-    if (!test || is(node, index, parents[parents.length - 1] || null)) {
-      result = toResult(visitor(node, parents));
-      if (result[0] === EXIT) {
-        return result;
-      }
+var BLACKLIST = ['template', 'script', 'style'];
+var isHidable = function isHidable(_ref) {
+  var nodeType = _ref.nodeType, tagName = _ref.tagName;
+  return nodeType === 1 && BLACKLIST.indexOf(tagName.toLowerCase()) === -1;
+};
+var siblings = function siblings(container, exclude, cb) {
+  [].forEach.call(container.children, function (node) {
+    if (exclude.indexOf(node) === -1 && isHidable(node)) {
+      cb(node);
     }
-    if (node.children && result[0] !== SKIP) {
-      subresult = toResult(all(node.children, parents.concat(node)));
-      return subresult[0] === EXIT ? subresult : result;
-    }
-    return result;
-  }
-  function all(children, parents) {
-    var min = -1;
-    var step = reverse ? -1 : 1;
-    var index = (reverse ? children.length : min) + step;
-    var result;
-    while (index > min && index < children.length) {
-      result = one(children[index], index, parents);
-      if (result[0] === EXIT) {
-        return result;
-      }
-      index = typeof result[1] === 'number' ? result[1] : index + step;
-    }
+  });
+};
+function ariaHidden(hide, node) {
+  if (!node) return;
+  if (hide) {
+    node.setAttribute('aria-hidden', 'true');
+  } else {
+    node.removeAttribute('aria-hidden');
   }
 }
-function toResult(value) {
-  if (value !== null && typeof value === 'object' && ('length' in value)) {
-    return value;
-  }
-  if (typeof value === 'number') {
-    return [CONTINUE, value];
-  }
-  return [value];
+exports.ariaHidden = ariaHidden;
+function hideSiblings(container, _ref2) {
+  var dialog = _ref2.dialog, backdrop = _ref2.backdrop;
+  siblings(container, [dialog, backdrop], function (node) {
+    return ariaHidden(true, node);
+  });
 }
+exports.hideSiblings = hideSiblings;
+function showSiblings(container, _ref3) {
+  var dialog = _ref3.dialog, backdrop = _ref3.backdrop;
+  siblings(container, [dialog, backdrop], function (node) {
+    return ariaHidden(false, node);
+  });
+}
+exports.showSiblings = showSiblings;
 
 },
 286: function(__fusereq, exports, module){
@@ -30138,54 +30138,6 @@ exports.detectOverflow = detectOverflow_js_1d.default;
 
 },
 307: function(__fusereq, exports, module){
-exports.__esModule = true;
-var isDocument_1 = __fusereq(351);
-var isDocument_1d = __fuse.dt(isDocument_1);
-function isWindow(node) {
-  if (('window' in node) && node.window === node) return node;
-  if (isDocument_1d.default(node)) return node.defaultView || false;
-  return false;
-}
-exports.default = isWindow;
-
-},
-308: function(__fusereq, exports, module){
-'use strict';
-var own = ({}).hasOwnProperty;
-module.exports = stringify;
-function stringify(value) {
-  if (!value || typeof value !== 'object') {
-    return null;
-  }
-  if (own.call(value, 'position') || own.call(value, 'type')) {
-    return position(value.position);
-  }
-  if (own.call(value, 'start') || own.call(value, 'end')) {
-    return position(value);
-  }
-  if (own.call(value, 'line') || own.call(value, 'column')) {
-    return point(value);
-  }
-  return null;
-}
-function point(point) {
-  if (!point || typeof point !== 'object') {
-    point = {};
-  }
-  return index(point.line) + ':' + index(point.column);
-}
-function position(pos) {
-  if (!pos || typeof pos !== 'object') {
-    pos = {};
-  }
-  return point(pos.start) + '-' + point(pos.end);
-}
-function index(value) {
-  return value && typeof value === 'number' ? value : 1;
-}
-
-},
-309: function(__fusereq, exports, module){
 function normalizeArray(parts, allowAboveRoot) {
   var up = 0;
   for (var i = parts.length - 1; i >= 0; i--) {
@@ -30323,9 +30275,9 @@ var substr = ('ab').substr(-1) === 'b' ? function (str, start, len) {
 };
 
 },
-310: function(__fusereq, exports, module){
+308: function(__fusereq, exports, module){
 'use strict';
-var path = __fusereq(309);
+var path = __fusereq(307);
 function replaceExt(npath, ext) {
   if (typeof npath !== 'string') {
     return npath;
@@ -30339,7 +30291,7 @@ function replaceExt(npath, ext) {
 module.exports = replaceExt;
 
 },
-311: function(__fusereq, exports, module){
+309: function(__fusereq, exports, module){
 module.exports = function (obj) {
   return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
 };
@@ -30351,7 +30303,7 @@ function isSlowBuffer(obj) {
 }
 
 },
-312: function(__fusereq, exports, module){
+310: function(__fusereq, exports, module){
 if (typeof Object.assign != 'function') {
   Object.assign = function (target, varArgs) {
     'use strict';
@@ -30458,14 +30410,114 @@ process.umask = function () {
 };
 
 },
+311: function(__fusereq, exports, module){
+'use strict';
+var own = ({}).hasOwnProperty;
+module.exports = stringify;
+function stringify(value) {
+  if (!value || typeof value !== 'object') {
+    return null;
+  }
+  if (own.call(value, 'position') || own.call(value, 'type')) {
+    return position(value.position);
+  }
+  if (own.call(value, 'start') || own.call(value, 'end')) {
+    return position(value);
+  }
+  if (own.call(value, 'line') || own.call(value, 'column')) {
+    return point(value);
+  }
+  return null;
+}
+function point(point) {
+  if (!point || typeof point !== 'object') {
+    point = {};
+  }
+  return index(point.line) + ':' + index(point.column);
+}
+function position(pos) {
+  if (!pos || typeof pos !== 'object') {
+    pos = {};
+  }
+  return point(pos.start) + '-' + point(pos.end);
+}
+function index(value) {
+  return value && typeof value === 'number' ? value : 1;
+}
+
+},
+312: function(__fusereq, exports, module){
+'use strict';
+module.exports = convert;
+function convert(test) {
+  if (typeof test === 'string') {
+    return typeFactory(test);
+  }
+  if (test === null || test === undefined) {
+    return ok;
+  }
+  if (typeof test === 'object') {
+    return (('length' in test) ? anyFactory : matchesFactory)(test);
+  }
+  if (typeof test === 'function') {
+    return test;
+  }
+  throw new Error('Expected function, string, or object as test');
+}
+function convertAll(tests) {
+  var results = [];
+  var length = tests.length;
+  var index = -1;
+  while (++index < length) {
+    results[index] = convert(tests[index]);
+  }
+  return results;
+}
+function matchesFactory(test) {
+  return matches;
+  function matches(node) {
+    var key;
+    for (key in test) {
+      if (node[key] !== test[key]) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+function anyFactory(tests) {
+  var checks = convertAll(tests);
+  var length = checks.length;
+  return matches;
+  function matches() {
+    var index = -1;
+    while (++index < length) {
+      if (checks[index].apply(this, arguments)) {
+        return true;
+      }
+    }
+    return false;
+  }
+}
+function typeFactory(test) {
+  return type;
+  function type(node) {
+    return Boolean(node && node.type === test);
+  }
+}
+function ok() {
+  return true;
+}
+
+},
 313: function(__fusereq, exports, module){
 'use strict';
-var legacy = __fusereq(352);
-var invalid = __fusereq(353);
+var legacy = __fusereq(351);
+var invalid = __fusereq(352);
 var decimal = __fusereq(322);
-var hexadecimal = __fusereq(354);
-var alphanumerical = __fusereq(355);
-var decodeEntity = __fusereq(356);
+var hexadecimal = __fusereq(353);
+var alphanumerical = __fusereq(354);
+var decodeEntity = __fusereq(355);
 module.exports = parseEntities;
 var own = ({}).hasOwnProperty;
 var fromCharCode = String.fromCharCode;
@@ -30778,7 +30830,7 @@ function escapes(options) {
 },
 315: function(__fusereq, exports, module){
 'use strict';
-var visit = __fusereq(225);
+var visit = __fusereq(218);
 module.exports = removePosition;
 function removePosition(node, force) {
   visit(node, force ? hard : soft);
@@ -31076,7 +31128,7 @@ exports.tag = new RegExp('^(?:' + openTag + '|' + closeTag + '|' + comment + '|'
 },
 326: function(__fusereq, exports, module){
 'use strict';
-var collapseWhiteSpace = __fusereq(357);
+var collapseWhiteSpace = __fusereq(356);
 module.exports = normalize;
 function normalize(value) {
   return collapseWhiteSpace(value).toLowerCase();
@@ -31217,67 +31269,15 @@ function locate(value, fromIndex) {
 
 },
 338: function(__fusereq, exports, module){
-'use strict';
-module.exports = convert;
-function convert(test) {
-  if (typeof test === 'string') {
-    return typeFactory(test);
-  }
-  if (test === null || test === undefined) {
-    return ok;
-  }
-  if (typeof test === 'object') {
-    return (('length' in test) ? anyFactory : matchesFactory)(test);
-  }
-  if (typeof test === 'function') {
-    return test;
-  }
-  throw new Error('Expected function, string, or object as test');
+exports.__esModule = true;
+var isDocument_1 = __fusereq(357);
+var isDocument_1d = __fuse.dt(isDocument_1);
+function isWindow(node) {
+  if (('window' in node) && node.window === node) return node;
+  if (isDocument_1d.default(node)) return node.defaultView || false;
+  return false;
 }
-function convertAll(tests) {
-  var results = [];
-  var length = tests.length;
-  var index = -1;
-  while (++index < length) {
-    results[index] = convert(tests[index]);
-  }
-  return results;
-}
-function matchesFactory(test) {
-  return matches;
-  function matches(node) {
-    var key;
-    for (key in test) {
-      if (node[key] !== test[key]) {
-        return false;
-      }
-    }
-    return true;
-  }
-}
-function anyFactory(tests) {
-  var checks = convertAll(tests);
-  var length = checks.length;
-  return matches;
-  function matches() {
-    var index = -1;
-    while (++index < length) {
-      if (checks[index].apply(this, arguments)) {
-        return true;
-      }
-    }
-    return false;
-  }
-}
-function typeFactory(test) {
-  return type;
-  function type(node) {
-    return Boolean(node && node.type === test);
-  }
-}
-function ok() {
-  return true;
-}
+exports.default = isWindow;
 
 },
 339: function(__fusereq, exports, module){
@@ -31599,14 +31599,6 @@ exports.default = mergeByName;
 
 },
 351: function(__fusereq, exports, module){
-exports.__esModule = true;
-function isDocument(element) {
-  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
-}
-exports.default = isDocument;
-
-},
-352: function(__fusereq, exports, module){
 module.exports = {
   "AElig": "Æ",
   "AMP": "&",
@@ -31717,7 +31709,7 @@ module.exports = {
 }
 ;
 },
-353: function(__fusereq, exports, module){
+352: function(__fusereq, exports, module){
 module.exports = {
   "0": "�",
   "128": "€",
@@ -31750,7 +31742,7 @@ module.exports = {
 }
 ;
 },
-354: function(__fusereq, exports, module){
+353: function(__fusereq, exports, module){
 'use strict';
 module.exports = hexadecimal;
 function hexadecimal(character) {
@@ -31759,7 +31751,7 @@ function hexadecimal(character) {
 }
 
 },
-355: function(__fusereq, exports, module){
+354: function(__fusereq, exports, module){
 'use strict';
 var alphabetical = __fusereq(330);
 var decimal = __fusereq(322);
@@ -31769,7 +31761,7 @@ function alphanumerical(character) {
 }
 
 },
-356: function(__fusereq, exports, module){
+355: function(__fusereq, exports, module){
 'use strict';
 var el;
 var semicolon = 59;
@@ -31787,12 +31779,20 @@ function decodeEntity(characters) {
 }
 
 },
-357: function(__fusereq, exports, module){
+356: function(__fusereq, exports, module){
 'use strict';
 module.exports = collapse;
 function collapse(value) {
   return String(value).replace(/\s+/g, ' ');
 }
+
+},
+357: function(__fusereq, exports, module){
+exports.__esModule = true;
+function isDocument(element) {
+  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
+}
+exports.default = isDocument;
 
 },
 358: function(__fusereq, exports, module){
