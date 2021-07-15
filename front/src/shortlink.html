@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html>
 
-<head>
+<head  prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
@@ -14,7 +14,7 @@
   <meta itemprop="image" content={{.Image}}>
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://public-share.opacitynodes.com/pELyl9gnR">
+  <meta property="og:url" content="{{.Shortlink}}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Opacity.io">
   <meta property="og:image" content="{{.Image}} ">
@@ -23,6 +23,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Opacity.io">
   <meta name="twitter:image" content={{.Image}}>
+  <link rel="canonical" href="{{.Shortlink}}">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-alpha.13/dist/css/tabler.min.css">
   <script src="https://unpkg.com/@tabler/core@alpha/dist/js/tabler.min.js"></script>
