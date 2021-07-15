@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html class>
+<html xmlns:og="http://opengraphprotocol.org/schema/">
 
-<head  prefix="og: https://ogp.me/ns#">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
   <!-- HTML Meta Tags -->
-  <meta property="og:image" content="{{.Image}} ">
   <title>{{.Title}} - Opacity Storage</title>
-  <meta name="robots" content="follow, index">
+  <meta name="description" content="">
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Opacity.io">
-  <meta itemprop="image" content={{.Image}}>
+  <meta itemprop="url" content="{{.Shortlink}}/">
+  <meta itemprop="image" content="{{.Image}}?format=1500w">
+  <meta itemprop="thumbnailUrl" content="{{.Image}}?format=1500w">
+  <link rel="image_src" href="{{.Image}}?format=1500w">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="{{.Shortlink}}">
-  <meta property="og:type" content="website">
   <meta property="og:title" content="Opacity.io">
+  <meta property="og:url" content="{{.Shortlink}}/">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="{{.Image}}?format=1500w">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="845">
+  <meta property="og:type" content="article" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Opacity.io">
-  <meta name="twitter:image" content={{.Image}}>
-  <link rel="canonical" href="{{.Shortlink}}">
-  <meta name="telegram:channel" content="@telegram">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="{{.Image}}">
 
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
