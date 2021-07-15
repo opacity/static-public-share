@@ -27,7 +27,7 @@ func main() {
 	r.Static("/resources", "./public/shortlink/resources")
 
 	r.GET("/:shortlink", getShortlink)
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/health-check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, map[string]string{
 			"status": "ok",
 			"uptime": fmt.Sprintf("%v", time.Since(timeNow)),
