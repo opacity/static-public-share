@@ -22,7 +22,7 @@ module.exports = __fusereq(7);
 },
 6: function(__fusereq, exports, module){
 'use strict';
-var l = __fusereq(15), n = "function" === typeof Symbol && Symbol.for, p = n ? Symbol.for("react.element") : 60103, q = n ? Symbol.for("react.portal") : 60106, r = n ? Symbol.for("react.fragment") : 60107, t = n ? Symbol.for("react.strict_mode") : 60108, u = n ? Symbol.for("react.profiler") : 60114, v = n ? Symbol.for("react.provider") : 60109, w = n ? Symbol.for("react.context") : 60110, x = n ? Symbol.for("react.forward_ref") : 60112, y = n ? Symbol.for("react.suspense") : 60113, z = n ? Symbol.for("react.memo") : 60115, A = n ? Symbol.for("react.lazy") : 60116, B = "function" === typeof Symbol && Symbol.iterator;
+var l = __fusereq(20), n = "function" === typeof Symbol && Symbol.for, p = n ? Symbol.for("react.element") : 60103, q = n ? Symbol.for("react.portal") : 60106, r = n ? Symbol.for("react.fragment") : 60107, t = n ? Symbol.for("react.strict_mode") : 60108, u = n ? Symbol.for("react.profiler") : 60114, v = n ? Symbol.for("react.provider") : 60109, w = n ? Symbol.for("react.context") : 60110, x = n ? Symbol.for("react.forward_ref") : 60112, y = n ? Symbol.for("react.suspense") : 60113, z = n ? Symbol.for("react.memo") : 60115, A = n ? Symbol.for("react.lazy") : 60116, B = "function" === typeof Symbol && Symbol.iterator;
 function C(a) {
   for (var b = "https://reactjs.org/docs/error-decoder.html?invariant=" + a, c = 1; c < arguments.length; c++) b += "&args[]=" + encodeURIComponent(arguments[c]);
   return "Minified React error #" + a + "; visit " + b + " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";
@@ -348,7 +348,7 @@ exports.version = "16.14.0";
 },
 7: function(__fusereq, exports, module){
 'use strict';
-var aa = __fusereq(2), n = __fusereq(15), r = __fusereq(16);
+var aa = __fusereq(2), n = __fusereq(20), r = __fusereq(21);
 function u(a) {
   for (var b = "https://reactjs.org/docs/error-decoder.html?invariant=" + a, c = 1; c < arguments.length; c++) b += "&args[]=" + encodeURIComponent(arguments[c]);
   return "Minified React error #" + a + "; visit " + b + " for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";
@@ -7477,79 +7477,7 @@ exports.Tooltip = Tooltip_1d.default;
 });
 
 },
-15: function(__fusereq, exports, module){
-'use strict';
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-function toObject(val) {
-  if (val === null || val === undefined) {
-    throw new TypeError('Object.assign cannot be called with null or undefined');
-  }
-  return Object(val);
-}
-function shouldUseNative() {
-  try {
-    if (!Object.assign) {
-      return false;
-    }
-    var test1 = new String('abc');
-    test1[5] = 'de';
-    if (Object.getOwnPropertyNames(test1)[0] === '5') {
-      return false;
-    }
-    var test2 = {};
-    for (var i = 0; i < 10; i++) {
-      test2['_' + String.fromCharCode(i)] = i;
-    }
-    var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-      return test2[n];
-    });
-    if (order2.join('') !== '0123456789') {
-      return false;
-    }
-    var test3 = {};
-    ('abcdefghijklmnopqrst').split('').forEach(function (letter) {
-      test3[letter] = letter;
-    });
-    if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
-      return false;
-    }
-    return true;
-  } catch (err) {
-    return false;
-  }
-}
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-  var from;
-  var to = toObject(target);
-  var symbols;
-  for (var s = 1; s < arguments.length; s++) {
-    from = Object(arguments[s]);
-    for (var key in from) {
-      if (hasOwnProperty.call(from, key)) {
-        to[key] = from[key];
-      }
-    }
-    if (getOwnPropertySymbols) {
-      symbols = getOwnPropertySymbols(from);
-      for (var i = 0; i < symbols.length; i++) {
-        if (propIsEnumerable.call(from, symbols[i])) {
-          to[symbols[i]] = from[symbols[i]];
-        }
-      }
-    }
-  }
-  return to;
-};
-
-},
 16: function(__fusereq, exports, module){
-'use strict';
-module.exports = __fusereq(101);
-
-},
-18: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -14115,7 +14043,7 @@ exports.colors = colors;
 exports.softColors = softColors;
 
 },
-19: function(__fusereq, exports, module){
+17: function(__fusereq, exports, module){
 !(function (e, t) {
   "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.AOS = t() : e.AOS = t();
 })(this, function () {
@@ -14535,16 +14463,16 @@ exports.softColors = softColors;
 });
 
 },
-20: function(__fusereq, exports, module){
+18: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(18);
-const logo = __fusereq(102);
-const github = __fusereq(103);
-const reddit = __fusereq(104);
-const telegram = __fusereq(105);
-const twitter = __fusereq(106);
-const youtube = __fusereq(107);
+var tabler_react_1 = __fusereq(16);
+const logo = __fusereq(101);
+const github = __fusereq(102);
+const reddit = __fusereq(103);
+const telegram = __fusereq(104);
+const twitter = __fusereq(105);
+const youtube = __fusereq(106);
 const Footer = () => {
   return react_1.createElement("footer", null, react_1.createElement("div", {
     className: 'container-xl'
@@ -14638,6 +14566,78 @@ const Footer = () => {
   }, " © 2018-2021 Opacity Storage Inc. All rights reserved."))));
 };
 exports.default = Footer;
+
+},
+20: function(__fusereq, exports, module){
+'use strict';
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+  if (val === null || val === undefined) {
+    throw new TypeError('Object.assign cannot be called with null or undefined');
+  }
+  return Object(val);
+}
+function shouldUseNative() {
+  try {
+    if (!Object.assign) {
+      return false;
+    }
+    var test1 = new String('abc');
+    test1[5] = 'de';
+    if (Object.getOwnPropertyNames(test1)[0] === '5') {
+      return false;
+    }
+    var test2 = {};
+    for (var i = 0; i < 10; i++) {
+      test2['_' + String.fromCharCode(i)] = i;
+    }
+    var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+      return test2[n];
+    });
+    if (order2.join('') !== '0123456789') {
+      return false;
+    }
+    var test3 = {};
+    ('abcdefghijklmnopqrst').split('').forEach(function (letter) {
+      test3[letter] = letter;
+    });
+    if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
+      return false;
+    }
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+  var from;
+  var to = toObject(target);
+  var symbols;
+  for (var s = 1; s < arguments.length; s++) {
+    from = Object(arguments[s]);
+    for (var key in from) {
+      if (hasOwnProperty.call(from, key)) {
+        to[key] = from[key];
+      }
+    }
+    if (getOwnPropertySymbols) {
+      symbols = getOwnPropertySymbols(from);
+      for (var i = 0; i < symbols.length; i++) {
+        if (propIsEnumerable.call(from, symbols[i])) {
+          to[symbols[i]] = from[symbols[i]];
+        }
+      }
+    }
+  }
+  return to;
+};
+
+},
+21: function(__fusereq, exports, module){
+'use strict';
+module.exports = __fusereq(108);
 
 },
 22: function(__fusereq, exports, module){
@@ -16431,7 +16431,7 @@ var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var AbstractNavItem_1 = __fusereq(147);
+var AbstractNavItem_1 = __fusereq(144);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -16811,7 +16811,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var uncontrollable_1 = __fusereq(112);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var CardContext_1 = __fusereq(117);
 var CardContext_1d = __fuse.dt(CardContext_1);
@@ -16871,12 +16871,12 @@ var createWithBsPrefix_1 = __fusereq(116);
 var createWithBsPrefix_1d = __fuse.dt(createWithBsPrefix_1);
 var NavbarBrand_1 = __fusereq(68);
 var NavbarBrand_1d = __fuse.dt(NavbarBrand_1);
-var NavbarCollapse_1 = __fusereq(145);
+var NavbarCollapse_1 = __fusereq(146);
 var NavbarCollapse_1d = __fuse.dt(NavbarCollapse_1);
-var NavbarToggle_1 = __fusereq(146);
+var NavbarToggle_1 = __fusereq(147);
 var NavbarToggle_1d = __fuse.dt(NavbarToggle_1);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -17036,7 +17036,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var SafeAnchor_1 = __fusereq(82);
 var SafeAnchor_1d = __fuse.dt(SafeAnchor_1);
-var AbstractNavItem_1 = __fusereq(147);
+var AbstractNavItem_1 = __fusereq(144);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -19080,6 +19080,24 @@ exports.defaultStyles = defaultStyles;
 
 },
 101: function(__fusereq, exports, module){
+module.exports = "/resources/03fbe6df8.svg";
+},
+102: function(__fusereq, exports, module){
+module.exports = "/resources/03ca8f180.svg";
+},
+103: function(__fusereq, exports, module){
+module.exports = "/resources/073bb0c85.svg";
+},
+104: function(__fusereq, exports, module){
+module.exports = "/resources/0e337122.svg";
+},
+105: function(__fusereq, exports, module){
+module.exports = "/resources/0195f7f5e.svg";
+},
+106: function(__fusereq, exports, module){
+module.exports = "/resources/4f122952.svg";
+},
+108: function(__fusereq, exports, module){
 'use strict';
 var f, g, h, k, l;
 if ("undefined" === typeof window || "function" !== typeof MessageChannel) {
@@ -19342,24 +19360,6 @@ exports.unstable_wrapCallback = function (a) {
   };
 };
 
-},
-102: function(__fusereq, exports, module){
-module.exports = "/resources/03fbe6df8.svg";
-},
-103: function(__fusereq, exports, module){
-module.exports = "/resources/03ca8f180.svg";
-},
-104: function(__fusereq, exports, module){
-module.exports = "/resources/073bb0c85.svg";
-},
-105: function(__fusereq, exports, module){
-module.exports = "/resources/0e337122.svg";
-},
-106: function(__fusereq, exports, module){
-module.exports = "/resources/0195f7f5e.svg";
-},
-107: function(__fusereq, exports, module){
-module.exports = "/resources/4f122952.svg";
 },
 109: function(__fusereq, exports, module){
 exports.__esModule = true;
@@ -20193,7 +20193,7 @@ var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
 var ThemeProvider_1 = __fusereq(91);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(203);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SafeAnchor_1 = __fusereq(82);
 var SafeAnchor_1d = __fuse.dt(SafeAnchor_1);
@@ -20241,14 +20241,14 @@ var prop_types_1d = __fuse.dt(prop_types_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var DropdownMenu_1 = __fusereq(199);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(201);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1 = __fusereq(145);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var ThemeProvider_1 = __fusereq(91);
-var useWrappedRefWithWarning_1 = __fusereq(203);
+var useWrappedRefWithWarning_1 = __fusereq(202);
 var useWrappedRefWithWarning_1d = __fuse.dt(useWrappedRefWithWarning_1);
 var usePopperMarginModifiers_1 = __fusereq(150);
 var usePopperMarginModifiers_1d = __fuse.dt(usePopperMarginModifiers_1);
@@ -20332,12 +20332,12 @@ var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var DropdownToggle_1 = __fusereq(200);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(201);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var Button_1 = __fusereq(30);
 var Button_1d = __fuse.dt(Button_1);
 var ThemeProvider_1 = __fusereq(91);
-var useWrappedRefWithWarning_1 = __fusereq(203);
+var useWrappedRefWithWarning_1 = __fusereq(202);
 var useWrappedRefWithWarning_1d = __fuse.dt(useWrappedRefWithWarning_1);
 var DropdownToggle = react_1d.default.forwardRef(function (_ref, ref) {
   var bsPrefix = _ref.bsPrefix, split = _ref.split, className = _ref.className, childBsPrefix = _ref.childBsPrefix, _ref$as = _ref.as, Component = _ref$as === void 0 ? Button_1d.default : _ref$as, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "split", "className", "childBsPrefix", "as"]);
@@ -20621,9 +20621,9 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var useForceUpdate_1 = __fusereq(196);
 var useForceUpdate_1d = __fuse.dt(useForceUpdate_1);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(201);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(203);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -20711,87 +20711,6 @@ exports.default = AbstractNav;
 },
 144: function(__fusereq, exports, module){
 exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var context = react_1d.default.createContext(null);
-context.displayName = 'NavbarContext';
-exports.default = context;
-
-},
-145: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var Collapse_1 = __fusereq(42);
-var Collapse_1d = __fuse.dt(Collapse_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
-  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
-  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
-    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
-      in: !!(context && context.expanded)
-    }, props), react_1d.default.createElement("div", {
-      ref: ref,
-      className: bsPrefix
-    }, children));
-  });
-});
-NavbarCollapse.displayName = 'NavbarCollapse';
-exports.default = NavbarCollapse;
-
-},
-146: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var classnames_1 = __fusereq(111);
-var classnames_1d = __fuse.dt(classnames_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(144);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var defaultProps = {
-  label: 'Toggle navigation'
-};
-var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
-  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
-  var handleClick = useEventCallback_1d.default(function (e) {
-    if (onClick) onClick(e);
-    if (onToggle) onToggle();
-  });
-  if (Component === 'button') {
-    props.type = 'button';
-  }
-  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
-    ref: ref,
-    onClick: handleClick,
-    "aria-label": label,
-    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
-  }), children || react_1d.default.createElement("span", {
-    className: bsPrefix + "-icon"
-  }));
-});
-NavbarToggle.displayName = 'NavbarToggle';
-NavbarToggle.defaultProps = defaultProps;
-exports.default = NavbarToggle;
-
-},
-147: function(__fusereq, exports, module){
-exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
@@ -20804,7 +20723,7 @@ var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var NavContext_1 = __fusereq(201);
+var NavContext_1 = __fusereq(203);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -20851,6 +20770,87 @@ AbstractNavItem.defaultProps = defaultProps;
 exports.default = AbstractNavItem;
 
 },
+145: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var context = react_1d.default.createContext(null);
+context.displayName = 'NavbarContext';
+exports.default = context;
+
+},
+146: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var Collapse_1 = __fusereq(42);
+var Collapse_1d = __fuse.dt(Collapse_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(145);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
+  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
+  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
+    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
+      in: !!(context && context.expanded)
+    }, props), react_1d.default.createElement("div", {
+      ref: ref,
+      className: bsPrefix
+    }, children));
+  });
+});
+NavbarCollapse.displayName = 'NavbarCollapse';
+exports.default = NavbarCollapse;
+
+},
+147: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var classnames_1 = __fusereq(111);
+var classnames_1d = __fuse.dt(classnames_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(145);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var defaultProps = {
+  label: 'Toggle navigation'
+};
+var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
+  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
+  var handleClick = useEventCallback_1d.default(function (e) {
+    if (onClick) onClick(e);
+    if (onToggle) onToggle();
+  });
+  if (Component === 'button') {
+    props.type = 'button';
+  }
+  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
+    ref: ref,
+    onClick: handleClick,
+    "aria-label": label,
+    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
+  }), children || react_1d.default.createElement("span", {
+    className: bsPrefix + "-icon"
+  }));
+});
+NavbarToggle.displayName = 'NavbarToggle';
+NavbarToggle.defaultProps = defaultProps;
+exports.default = NavbarToggle;
+
+},
 148: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
@@ -20865,7 +20865,7 @@ var react_dom_1 = __fusereq(3);
 var react_dom_1d = __fuse.dt(react_dom_1);
 var useCallbackRef_1 = __fusereq(161);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(201);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var popper_1 = __fusereq(204);
 var usePopper_1 = __fusereq(205);
@@ -24139,15 +24139,6 @@ exports.default = DropdownToggle;
 201: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var NavContext = react_1d.default.createContext(null);
-NavContext.displayName = 'NavContext';
-exports.default = NavContext;
-
-},
-202: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
 var toFnRef = function toFnRef(ref) {
   return !ref || typeof ref === 'function' ? ref : function (value) {
     ref.current = value;
@@ -24170,12 +24161,12 @@ function useMergedRefs(refA, refB) {
 exports.default = useMergedRefs;
 
 },
-203: function(__fusereq, exports, module){
+202: function(__fusereq, exports, module){
 exports.__esModule = true;
 var invariant_1 = __fusereq(155);
 var invariant_1d = __fuse.dt(invariant_1);
 var react_1 = __fusereq(2);
-var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1 = __fusereq(201);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 function useWrappedRefWithWarning(ref, componentName) {
   if (!("production" !== "production")) return ref;
@@ -24185,6 +24176,15 @@ function useWrappedRefWithWarning(ref, componentName) {
   return useMergedRefs_1d.default(warningRef, ref);
 }
 exports.default = useWrappedRefWithWarning;
+
+},
+203: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var NavContext = react_1d.default.createContext(null);
+NavContext.displayName = 'NavContext';
+exports.default = NavContext;
 
 },
 204: function(__fusereq, exports, module){
@@ -25318,21 +25318,21 @@ exports.default = useEventListener;
 },
 232: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getLayoutRect_js_1 = __fusereq(287);
+var getLayoutRect_js_1 = __fusereq(297);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var contains_js_1 = __fusereq(288);
+var contains_js_1 = __fusereq(298);
 var contains_js_1d = __fuse.dt(contains_js_1);
-var getOffsetParent_js_1 = __fusereq(289);
+var getOffsetParent_js_1 = __fusereq(286);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(290);
+var getMainAxisFromPlacement_js_1 = __fusereq(299);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
-var within_js_1 = __fusereq(291);
+var within_js_1 = __fusereq(300);
 var within_js_1d = __fuse.dt(within_js_1);
-var mergePaddingObject_js_1 = __fusereq(292);
+var mergePaddingObject_js_1 = __fusereq(301);
 var mergePaddingObject_js_1d = __fuse.dt(mergePaddingObject_js_1);
-var expandToHashMap_js_1 = __fusereq(293);
+var expandToHashMap_js_1 = __fusereq(302);
 var expandToHashMap_js_1d = __fuse.dt(expandToHashMap_js_1);
 var enums_js_1 = __fusereq(240);
 var toPaddingObject = function toPaddingObject(padding, state) {
@@ -25400,17 +25400,17 @@ exports.default = {
 233: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(240);
-var getOffsetParent_js_1 = __fusereq(289);
+var getOffsetParent_js_1 = __fusereq(286);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(296);
+var getComputedStyle_js_1 = __fusereq(289);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var math_js_1 = __fusereq(297);
+var math_js_1 = __fusereq(291);
 var unsetSides = {
   top: 'auto',
   right: 'auto',
@@ -25508,7 +25508,7 @@ exports.default = {
 },
 234: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 var passive = {
   passive: true
@@ -25549,18 +25549,18 @@ exports.default = {
 },
 235: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getOppositePlacement_js_1 = __fusereq(298);
+var getOppositePlacement_js_1 = __fusereq(292);
 var getOppositePlacement_js_1d = __fuse.dt(getOppositePlacement_js_1);
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getOppositeVariationPlacement_js_1 = __fusereq(299);
+var getOppositeVariationPlacement_js_1 = __fusereq(293);
 var getOppositeVariationPlacement_js_1d = __fuse.dt(getOppositeVariationPlacement_js_1);
-var detectOverflow_js_1 = __fusereq(300);
+var detectOverflow_js_1 = __fusereq(294);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var computeAutoPlacement_js_1 = __fusereq(301);
+var computeAutoPlacement_js_1 = __fusereq(295);
 var computeAutoPlacement_js_1d = __fuse.dt(computeAutoPlacement_js_1);
 var enums_js_1 = __fusereq(240);
-var getVariation_js_1 = __fusereq(302);
+var getVariation_js_1 = __fusereq(296);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
 function getExpandedFallbackPlacements(placement) {
   if (getBasePlacement_js_1d.default(placement) === enums_js_1.auto) {
@@ -25670,7 +25670,7 @@ exports.default = {
 236: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(240);
-var detectOverflow_js_1 = __fusereq(300);
+var detectOverflow_js_1 = __fusereq(294);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
 function getSideOffsets(overflow, rect, preventedOffsets) {
   if (preventedOffsets === void 0) {
@@ -25728,7 +25728,7 @@ exports.default = {
 },
 237: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
 var enums_js_1 = __fusereq(240);
 function distanceAndSkiddingToXY(placement, rects, offset) {
@@ -25796,25 +25796,25 @@ exports.default = {
 239: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(240);
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(290);
+var getMainAxisFromPlacement_js_1 = __fusereq(299);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
 var getAltAxis_js_1 = __fusereq(304);
 var getAltAxis_js_1d = __fuse.dt(getAltAxis_js_1);
-var within_js_1 = __fusereq(291);
+var within_js_1 = __fusereq(300);
 var within_js_1d = __fuse.dt(within_js_1);
-var getLayoutRect_js_1 = __fusereq(287);
+var getLayoutRect_js_1 = __fusereq(297);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var getOffsetParent_js_1 = __fusereq(289);
+var getOffsetParent_js_1 = __fusereq(286);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var detectOverflow_js_1 = __fusereq(300);
+var detectOverflow_js_1 = __fusereq(294);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var getVariation_js_1 = __fusereq(302);
+var getVariation_js_1 = __fusereq(296);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
 var getFreshSideObject_js_1 = __fusereq(305);
 var getFreshSideObject_js_1d = __fuse.dt(getFreshSideObject_js_1);
-var math_js_1 = __fusereq(297);
+var math_js_1 = __fusereq(291);
 function preventOverflow(_ref) {
   var state = _ref.state, options = _ref.options, name = _ref.name;
   var _options$mainAxis = options.mainAxis, checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis, _options$altAxis = options.altAxis, checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis, boundary = options.boundary, rootBoundary = options.rootBoundary, altBoundary = options.altBoundary, padding = options.padding, _options$tether = options.tether, tether = _options$tether === void 0 ? true : _options$tether, _options$tetherOffset = options.tetherOffset, tetherOffset = _options$tetherOffset === void 0 ? 0 : _options$tetherOffset;
@@ -26661,7 +26661,7 @@ function factory(type) {
 257: function(__fusereq, exports, module){
 'use strict';
 var xtend = __fusereq(168);
-var escapes = __fusereq(314);
+var escapes = __fusereq(316);
 var defaults = __fusereq(259);
 module.exports = setOptions;
 function setOptions(options) {
@@ -26695,7 +26695,7 @@ function setOptions(options) {
 258: function(__fusereq, exports, module){
 'use strict';
 var xtend = __fusereq(168);
-var removePosition = __fusereq(315);
+var removePosition = __fusereq(314);
 module.exports = parse;
 var C_NEWLINE = '\n';
 var EXPRESSION_LINE_BREAKS = /\r\n|\r/g;
@@ -26738,7 +26738,7 @@ module.exports = {
   commonmark: false,
   footnotes: false,
   pedantic: false,
-  blocks: __fusereq(316)
+  blocks: __fusereq(315)
 };
 
 },
@@ -27286,9 +27286,9 @@ function thematicBreak(eat, value, silent) {
 'use strict';
 var trim = __fusereq(320);
 var repeat = __fusereq(318);
-var decimal = __fusereq(322);
-var getIndent = __fusereq(323);
-var removeIndent = __fusereq(324);
+var decimal = __fusereq(324);
+var getIndent = __fusereq(325);
+var removeIndent = __fusereq(326);
 var interrupt = __fusereq(321);
 module.exports = list;
 var C_ASTERISK = '*';
@@ -27711,7 +27711,7 @@ function setextHeading(eat, value, silent) {
 },
 268: function(__fusereq, exports, module){
 'use strict';
-var openCloseTag = __fusereq(325).openCloseTag;
+var openCloseTag = __fusereq(322).openCloseTag;
 module.exports = blockHTML;
 var C_TAB = '\t';
 var C_SPACE = ' ';
@@ -27783,7 +27783,7 @@ function blockHTML(eat, value, silent) {
 269: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
-var normalize = __fusereq(326);
+var normalize = __fusereq(323);
 module.exports = footnoteDefinition;
 footnoteDefinition.notInList = true;
 footnoteDefinition.notInBlock = true;
@@ -27923,7 +27923,7 @@ function footnoteDefinition(eat, value, silent) {
 270: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
-var normalize = __fusereq(326);
+var normalize = __fusereq(323);
 module.exports = definition;
 definition.notInList = true;
 definition.notInBlock = true;
@@ -28342,7 +28342,7 @@ function table(eat, value, silent) {
 272: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
-var decimal = __fusereq(322);
+var decimal = __fusereq(324);
 var trimTrailingLines = __fusereq(319);
 var interrupt = __fusereq(321);
 module.exports = paragraph;
@@ -28677,7 +28677,7 @@ function url(eat, value, silent) {
 'use strict';
 var alphabetical = __fusereq(330);
 var locate = __fusereq(328);
-var tag = __fusereq(325).tag;
+var tag = __fusereq(322).tag;
 module.exports = inlineHTML;
 inlineHTML.locator = locate;
 var EXPRESSION_HTML_LINK_OPEN = /^<a /i;
@@ -29011,7 +29011,7 @@ function link(eat, value, silent) {
 'use strict';
 var whitespace = __fusereq(317);
 var locate = __fusereq(331);
-var normalize = __fusereq(326);
+var normalize = __fusereq(323);
 module.exports = reference;
 reference.locator = locate;
 var T_LINK = 'link';
@@ -29304,7 +29304,7 @@ function emphasis(eat, value, silent) {
 281: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
-var locate = __fusereq(335);
+var locate = __fusereq(338);
 module.exports = strikethrough;
 strikethrough.locator = locate;
 var C_TILDE = '~';
@@ -29347,7 +29347,7 @@ function strikethrough(eat, value, silent) {
 282: function(__fusereq, exports, module){
 'use strict';
 var whitespace = __fusereq(317);
-var locate = __fusereq(336);
+var locate = __fusereq(335);
 module.exports = inlineCode;
 inlineCode.locator = locate;
 var C_TICK = '`';
@@ -29436,7 +29436,7 @@ function inlineCode(eat, value, silent) {
 },
 283: function(__fusereq, exports, module){
 'use strict';
-var locate = __fusereq(337);
+var locate = __fusereq(336);
 module.exports = hardBreak;
 hardBreak.locator = locate;
 var MIN_BREAK_LENGTH = 2;
@@ -29518,7 +29518,7 @@ function text(eat, value, silent) {
 285: function(__fusereq, exports, module){
 'use strict';
 module.exports = visitParents;
-var convert = __fusereq(338);
+var convert = __fusereq(337);
 var CONTINUE = true;
 var SKIP = 'skip';
 var EXIT = false;
@@ -29576,69 +29576,16 @@ function toResult(value) {
 },
 286: function(__fusereq, exports, module){
 exports.__esModule = true;
-function getBasePlacement(placement) {
-  return placement.split('-')[0];
-}
-exports.default = getBasePlacement;
-
-},
-287: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(339);
-var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-function getLayoutRect(element) {
-  var clientRect = getBoundingClientRect_js_1d.default(element);
-  var width = element.offsetWidth;
-  var height = element.offsetHeight;
-  if (Math.abs(clientRect.width - width) <= 1) {
-    width = clientRect.width;
-  }
-  if (Math.abs(clientRect.height - height) <= 1) {
-    height = clientRect.height;
-  }
-  return {
-    x: element.offsetLeft,
-    y: element.offsetTop,
-    width: width,
-    height: height
-  };
-}
-exports.default = getLayoutRect;
-
-},
-288: function(__fusereq, exports, module){
-exports.__esModule = true;
-var instanceOf_js_1 = __fusereq(340);
-function contains(parent, child) {
-  var rootNode = child.getRootNode && child.getRootNode();
-  if (parent.contains(child)) {
-    return true;
-  } else if (rootNode && instanceOf_js_1.isShadowRoot(rootNode)) {
-    var next = child;
-    do {
-      if (next && parent.isSameNode(next)) {
-        return true;
-      }
-      next = next.parentNode || next.host;
-    } while (next);
-  }
-  return false;
-}
-exports.default = contains;
-
-},
-289: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var getComputedStyle_js_1 = __fusereq(296);
+var getComputedStyle_js_1 = __fusereq(289);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 var instanceOf_js_1 = __fusereq(340);
-var isTableElement_js_1 = __fusereq(342);
+var isTableElement_js_1 = __fusereq(341);
 var isTableElement_js_1d = __fuse.dt(isTableElement_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(342);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 function getTrueOffsetParent(element) {
   if (!instanceOf_js_1.isHTMLElement(element) || getComputedStyle_js_1d.default(element).position === 'fixed') {
@@ -29680,45 +29627,7 @@ function getOffsetParent(element) {
 exports.default = getOffsetParent;
 
 },
-290: function(__fusereq, exports, module){
-exports.__esModule = true;
-function getMainAxisFromPlacement(placement) {
-  return ['top', 'bottom'].indexOf(placement) >= 0 ? 'x' : 'y';
-}
-exports.default = getMainAxisFromPlacement;
-
-},
-291: function(__fusereq, exports, module){
-exports.__esModule = true;
-var math_js_1 = __fusereq(297);
-function within(min, value, max) {
-  return math_js_1.max(min, math_js_1.min(value, max));
-}
-exports.default = within;
-
-},
-292: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getFreshSideObject_js_1 = __fusereq(305);
-var getFreshSideObject_js_1d = __fuse.dt(getFreshSideObject_js_1);
-function mergePaddingObject(paddingObject) {
-  return Object.assign({}, getFreshSideObject_js_1d.default(), paddingObject);
-}
-exports.default = mergePaddingObject;
-
-},
-293: function(__fusereq, exports, module){
-exports.__esModule = true;
-function expandToHashMap(value, keys) {
-  return keys.reduce(function (hashMap, key) {
-    hashMap[key] = value;
-    return hashMap;
-  }, {});
-}
-exports.default = expandToHashMap;
-
-},
-294: function(__fusereq, exports, module){
+287: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getWindow(node) {
   if (node == null) {
@@ -29733,7 +29642,7 @@ function getWindow(node) {
 exports.default = getWindow;
 
 },
-295: function(__fusereq, exports, module){
+288: function(__fusereq, exports, module){
 exports.__esModule = true;
 var instanceOf_js_1 = __fusereq(340);
 function getDocumentElement(element) {
@@ -29742,9 +29651,9 @@ function getDocumentElement(element) {
 exports.default = getDocumentElement;
 
 },
-296: function(__fusereq, exports, module){
+289: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function getComputedStyle(element) {
   return getWindow_js_1d.default(element).getComputedStyle(element);
@@ -29752,14 +29661,22 @@ function getComputedStyle(element) {
 exports.default = getComputedStyle;
 
 },
-297: function(__fusereq, exports, module){
+290: function(__fusereq, exports, module){
+exports.__esModule = true;
+function getBasePlacement(placement) {
+  return placement.split('-')[0];
+}
+exports.default = getBasePlacement;
+
+},
+291: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.max = Math.max;
 exports.min = Math.min;
 exports.round = Math.round;
 
 },
-298: function(__fusereq, exports, module){
+292: function(__fusereq, exports, module){
 exports.__esModule = true;
 var hash = {
   left: 'right',
@@ -29775,7 +29692,7 @@ function getOppositePlacement(placement) {
 exports.default = getOppositePlacement;
 
 },
-299: function(__fusereq, exports, module){
+293: function(__fusereq, exports, module){
 exports.__esModule = true;
 var hash = {
   start: 'end',
@@ -29789,13 +29706,13 @@ function getOppositeVariationPlacement(placement) {
 exports.default = getOppositeVariationPlacement;
 
 },
-300: function(__fusereq, exports, module){
+294: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(339);
+var getBoundingClientRect_js_1 = __fusereq(343);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getClippingRect_js_1 = __fusereq(344);
 var getClippingRect_js_1d = __fuse.dt(getClippingRect_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var computeOffsets_js_1 = __fusereq(303);
 var computeOffsets_js_1d = __fuse.dt(computeOffsets_js_1);
@@ -29803,9 +29720,9 @@ var rectToClientRect_js_1 = __fusereq(345);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
 var enums_js_1 = __fusereq(240);
 var instanceOf_js_1 = __fusereq(340);
-var mergePaddingObject_js_1 = __fusereq(292);
+var mergePaddingObject_js_1 = __fusereq(301);
 var mergePaddingObject_js_1d = __fuse.dt(mergePaddingObject_js_1);
-var expandToHashMap_js_1 = __fusereq(293);
+var expandToHashMap_js_1 = __fusereq(302);
 var expandToHashMap_js_1d = __fuse.dt(expandToHashMap_js_1);
 function detectOverflow(state, options) {
   if (options === void 0) {
@@ -29847,14 +29764,14 @@ function detectOverflow(state, options) {
 exports.default = detectOverflow;
 
 },
-301: function(__fusereq, exports, module){
+295: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getVariation_js_1 = __fusereq(302);
+var getVariation_js_1 = __fusereq(296);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
 var enums_js_1 = __fusereq(240);
-var detectOverflow_js_1 = __fusereq(300);
+var detectOverflow_js_1 = __fusereq(294);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
 function computeAutoPlacement(state, options) {
   if (options === void 0) {
@@ -29887,7 +29804,7 @@ function computeAutoPlacement(state, options) {
 exports.default = computeAutoPlacement;
 
 },
-302: function(__fusereq, exports, module){
+296: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getVariation(placement) {
   return placement.split('-')[1];
@@ -29895,13 +29812,96 @@ function getVariation(placement) {
 exports.default = getVariation;
 
 },
+297: function(__fusereq, exports, module){
+exports.__esModule = true;
+var getBoundingClientRect_js_1 = __fusereq(343);
+var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
+function getLayoutRect(element) {
+  var clientRect = getBoundingClientRect_js_1d.default(element);
+  var width = element.offsetWidth;
+  var height = element.offsetHeight;
+  if (Math.abs(clientRect.width - width) <= 1) {
+    width = clientRect.width;
+  }
+  if (Math.abs(clientRect.height - height) <= 1) {
+    height = clientRect.height;
+  }
+  return {
+    x: element.offsetLeft,
+    y: element.offsetTop,
+    width: width,
+    height: height
+  };
+}
+exports.default = getLayoutRect;
+
+},
+298: function(__fusereq, exports, module){
+exports.__esModule = true;
+var instanceOf_js_1 = __fusereq(340);
+function contains(parent, child) {
+  var rootNode = child.getRootNode && child.getRootNode();
+  if (parent.contains(child)) {
+    return true;
+  } else if (rootNode && instanceOf_js_1.isShadowRoot(rootNode)) {
+    var next = child;
+    do {
+      if (next && parent.isSameNode(next)) {
+        return true;
+      }
+      next = next.parentNode || next.host;
+    } while (next);
+  }
+  return false;
+}
+exports.default = contains;
+
+},
+299: function(__fusereq, exports, module){
+exports.__esModule = true;
+function getMainAxisFromPlacement(placement) {
+  return ['top', 'bottom'].indexOf(placement) >= 0 ? 'x' : 'y';
+}
+exports.default = getMainAxisFromPlacement;
+
+},
+300: function(__fusereq, exports, module){
+exports.__esModule = true;
+var math_js_1 = __fusereq(291);
+function within(min, value, max) {
+  return math_js_1.max(min, math_js_1.min(value, max));
+}
+exports.default = within;
+
+},
+301: function(__fusereq, exports, module){
+exports.__esModule = true;
+var getFreshSideObject_js_1 = __fusereq(305);
+var getFreshSideObject_js_1d = __fuse.dt(getFreshSideObject_js_1);
+function mergePaddingObject(paddingObject) {
+  return Object.assign({}, getFreshSideObject_js_1d.default(), paddingObject);
+}
+exports.default = mergePaddingObject;
+
+},
+302: function(__fusereq, exports, module){
+exports.__esModule = true;
+function expandToHashMap(value, keys) {
+  return keys.reduce(function (hashMap, key) {
+    hashMap[key] = value;
+    return hashMap;
+  }, {});
+}
+exports.default = expandToHashMap;
+
+},
 303: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(286);
+var getBasePlacement_js_1 = __fusereq(290);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getVariation_js_1 = __fusereq(302);
+var getVariation_js_1 = __fusereq(296);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(290);
+var getMainAxisFromPlacement_js_1 = __fusereq(299);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
 var enums_js_1 = __fusereq(240);
 function computeOffsets(_ref) {
@@ -29983,21 +29983,21 @@ exports.default = getFreshSideObject;
 },
 306: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getCompositeRect_js_1 = __fusereq(346);
+var getCompositeRect_js_1 = __fusereq(347);
 var getCompositeRect_js_1d = __fuse.dt(getCompositeRect_js_1);
-var getLayoutRect_js_1 = __fusereq(287);
+var getLayoutRect_js_1 = __fusereq(297);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var listScrollParents_js_1 = __fusereq(347);
+var listScrollParents_js_1 = __fusereq(348);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
-var getOffsetParent_js_1 = __fusereq(289);
+var getOffsetParent_js_1 = __fusereq(286);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var orderModifiers_js_1 = __fusereq(348);
+var orderModifiers_js_1 = __fusereq(349);
 var orderModifiers_js_1d = __fuse.dt(orderModifiers_js_1);
-var debounce_js_1 = __fusereq(349);
+var debounce_js_1 = __fusereq(350);
 var debounce_js_1d = __fuse.dt(debounce_js_1);
-var mergeByName_js_1 = __fusereq(350);
+var mergeByName_js_1 = __fusereq(351);
 var mergeByName_js_1d = __fuse.dt(mergeByName_js_1);
-var detectOverflow_js_1 = __fusereq(300);
+var detectOverflow_js_1 = __fusereq(294);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
 var instanceOf_js_1 = __fusereq(340);
 var INVALID_ELEMENT_ERROR = 'Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.';
@@ -30139,7 +30139,7 @@ exports.detectOverflow = detectOverflow_js_1d.default;
 },
 307: function(__fusereq, exports, module){
 exports.__esModule = true;
-var isDocument_1 = __fusereq(351);
+var isDocument_1 = __fusereq(346);
 var isDocument_1d = __fuse.dt(isDocument_1);
 function isWindow(node) {
   if (('window' in node) && node.window === node) return node;
@@ -30462,7 +30462,7 @@ process.umask = function () {
 'use strict';
 var legacy = __fusereq(352);
 var invalid = __fusereq(353);
-var decimal = __fusereq(322);
+var decimal = __fusereq(324);
 var hexadecimal = __fusereq(354);
 var alphanumerical = __fusereq(355);
 var decodeEntity = __fusereq(356);
@@ -30760,24 +30760,6 @@ function disallowed(code) {
 },
 314: function(__fusereq, exports, module){
 'use strict';
-module.exports = escapes;
-var defaults = ['\\', '`', '*', '{', '}', '[', ']', '(', ')', '#', '+', '-', '.', '!', '_', '>'];
-var gfm = defaults.concat(['~', '|']);
-var commonmark = gfm.concat(['\n', '"', '$', '%', '&', "'", ',', '/', ':', ';', '<', '=', '?', '@', '^']);
-escapes.default = defaults;
-escapes.gfm = gfm;
-escapes.commonmark = commonmark;
-function escapes(options) {
-  var settings = options || ({});
-  if (settings.commonmark) {
-    return commonmark;
-  }
-  return settings.gfm ? gfm : defaults;
-}
-
-},
-315: function(__fusereq, exports, module){
-'use strict';
 var visit = __fusereq(225);
 module.exports = removePosition;
 function removePosition(node, force) {
@@ -30792,7 +30774,7 @@ function soft(node) {
 }
 
 },
-316: function(__fusereq, exports, module){
+315: function(__fusereq, exports, module){
 module.exports = [
   "address",
   "article",
@@ -30862,6 +30844,24 @@ module.exports = [
   "ul"
 ]
 ;
+},
+316: function(__fusereq, exports, module){
+'use strict';
+module.exports = escapes;
+var defaults = ['\\', '`', '*', '{', '}', '[', ']', '(', ')', '#', '+', '-', '.', '!', '_', '>'];
+var gfm = defaults.concat(['~', '|']);
+var commonmark = gfm.concat(['\n', '"', '$', '%', '&', "'", ',', '/', ':', ';', '<', '=', '?', '@', '^']);
+escapes.default = defaults;
+escapes.gfm = gfm;
+escapes.commonmark = commonmark;
+function escapes(options) {
+  var settings = options || ({});
+  if (settings.commonmark) {
+    return commonmark;
+  }
+  return settings.gfm ? gfm : defaults;
+}
+
 },
 317: function(__fusereq, exports, module){
 'use strict';
@@ -30965,6 +30965,33 @@ function interrupt(interruptors, tokenizers, ctx, params) {
 },
 322: function(__fusereq, exports, module){
 'use strict';
+var attributeName = '[a-zA-Z_:][a-zA-Z0-9:._-]*';
+var unquoted = '[^"\'=<>`\\u0000-\\u0020]+';
+var singleQuoted = '\'[^\']*\'';
+var doubleQuoted = '"[^"]*"';
+var attributeValue = '(?:' + unquoted + '|' + singleQuoted + '|' + doubleQuoted + ')';
+var attribute = '(?:\\s+' + attributeName + '(?:\\s*=\\s*' + attributeValue + ')?)';
+var openTag = '<[A-Za-z][A-Za-z0-9\\-]*' + attribute + '*\\s*\\/?>';
+var closeTag = '<\\/[A-Za-z][A-Za-z0-9\\-]*\\s*>';
+var comment = '<!---->|<!--(?:-?[^>-])(?:-?[^-])*-->';
+var processing = '<[?].*?[?]>';
+var declaration = '<![A-Za-z]+\\s+[^>]*>';
+var cdata = '<!\\[CDATA\\[[\\s\\S]*?\\]\\]>';
+exports.openCloseTag = new RegExp('^(?:' + openTag + '|' + closeTag + ')');
+exports.tag = new RegExp('^(?:' + openTag + '|' + closeTag + '|' + comment + '|' + processing + '|' + declaration + '|' + cdata + ')');
+
+},
+323: function(__fusereq, exports, module){
+'use strict';
+var collapseWhiteSpace = __fusereq(357);
+module.exports = normalize;
+function normalize(value) {
+  return collapseWhiteSpace(value).toLowerCase();
+}
+
+},
+324: function(__fusereq, exports, module){
+'use strict';
 module.exports = decimal;
 function decimal(character) {
   var code = typeof character === 'string' ? character.charCodeAt(0) : character;
@@ -30972,7 +30999,7 @@ function decimal(character) {
 }
 
 },
-323: function(__fusereq, exports, module){
+325: function(__fusereq, exports, module){
 'use strict';
 module.exports = indentation;
 var characters = {
@@ -31001,11 +31028,11 @@ function indentation(value) {
 }
 
 },
-324: function(__fusereq, exports, module){
+326: function(__fusereq, exports, module){
 'use strict';
 var trim = __fusereq(320);
 var repeat = __fusereq(318);
-var getIndent = __fusereq(323);
+var getIndent = __fusereq(325);
 module.exports = indentation;
 var C_SPACE = ' ';
 var C_NEWLINE = '\n';
@@ -31053,33 +31080,6 @@ function indentation(value, maximum) {
   }
   values.shift();
   return values.join(C_NEWLINE);
-}
-
-},
-325: function(__fusereq, exports, module){
-'use strict';
-var attributeName = '[a-zA-Z_:][a-zA-Z0-9:._-]*';
-var unquoted = '[^"\'=<>`\\u0000-\\u0020]+';
-var singleQuoted = '\'[^\']*\'';
-var doubleQuoted = '"[^"]*"';
-var attributeValue = '(?:' + unquoted + '|' + singleQuoted + '|' + doubleQuoted + ')';
-var attribute = '(?:\\s+' + attributeName + '(?:\\s*=\\s*' + attributeValue + ')?)';
-var openTag = '<[A-Za-z][A-Za-z0-9\\-]*' + attribute + '*\\s*\\/?>';
-var closeTag = '<\\/[A-Za-z][A-Za-z0-9\\-]*\\s*>';
-var comment = '<!---->|<!--(?:-?[^>-])(?:-?[^-])*-->';
-var processing = '<[?].*?[?]>';
-var declaration = '<![A-Za-z]+\\s+[^>]*>';
-var cdata = '<!\\[CDATA\\[[\\s\\S]*?\\]\\]>';
-exports.openCloseTag = new RegExp('^(?:' + openTag + '|' + closeTag + ')');
-exports.tag = new RegExp('^(?:' + openTag + '|' + closeTag + '|' + comment + '|' + processing + '|' + declaration + '|' + cdata + ')');
-
-},
-326: function(__fusereq, exports, module){
-'use strict';
-var collapseWhiteSpace = __fusereq(357);
-module.exports = normalize;
-function normalize(value) {
-  return collapseWhiteSpace(value).toLowerCase();
 }
 
 },
@@ -31189,19 +31189,11 @@ function locate(value, fromIndex) {
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
-  return value.indexOf('~~', fromIndex);
-}
-
-},
-336: function(__fusereq, exports, module){
-'use strict';
-module.exports = locate;
-function locate(value, fromIndex) {
   return value.indexOf('`', fromIndex);
 }
 
 },
-337: function(__fusereq, exports, module){
+336: function(__fusereq, exports, module){
 'use strict';
 module.exports = locate;
 function locate(value, fromIndex) {
@@ -31216,7 +31208,7 @@ function locate(value, fromIndex) {
 }
 
 },
-338: function(__fusereq, exports, module){
+337: function(__fusereq, exports, module){
 'use strict';
 module.exports = convert;
 function convert(test) {
@@ -31280,27 +31272,25 @@ function ok() {
 }
 
 },
+338: function(__fusereq, exports, module){
+'use strict';
+module.exports = locate;
+function locate(value, fromIndex) {
+  return value.indexOf('~~', fromIndex);
+}
+
+},
 339: function(__fusereq, exports, module){
 exports.__esModule = true;
-function getBoundingClientRect(element) {
-  var rect = element.getBoundingClientRect();
-  return {
-    width: rect.width,
-    height: rect.height,
-    top: rect.top,
-    right: rect.right,
-    bottom: rect.bottom,
-    left: rect.left,
-    x: rect.left,
-    y: rect.top
-  };
+function getNodeName(element) {
+  return element ? (element.nodeName || '').toLowerCase() : null;
 }
-exports.default = getBoundingClientRect;
+exports.default = getNodeName;
 
 },
 340: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function isElement(node) {
   var OwnElement = getWindow_js_1d.default(node).Element;
@@ -31324,15 +31314,7 @@ exports.isShadowRoot = isShadowRoot;
 },
 341: function(__fusereq, exports, module){
 exports.__esModule = true;
-function getNodeName(element) {
-  return element ? (element.nodeName || '').toLowerCase() : null;
-}
-exports.default = getNodeName;
-
-},
-342: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 function isTableElement(element) {
   return ['table', 'td', 'th'].indexOf(getNodeName_js_1d.default(element)) >= 0;
@@ -31340,11 +31322,11 @@ function isTableElement(element) {
 exports.default = isTableElement;
 
 },
-343: function(__fusereq, exports, module){
+342: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var instanceOf_js_1 = __fusereq(340);
 function getParentNode(element) {
@@ -31356,6 +31338,24 @@ function getParentNode(element) {
 exports.default = getParentNode;
 
 },
+343: function(__fusereq, exports, module){
+exports.__esModule = true;
+function getBoundingClientRect(element) {
+  var rect = element.getBoundingClientRect();
+  return {
+    width: rect.width,
+    height: rect.height,
+    top: rect.top,
+    right: rect.right,
+    bottom: rect.bottom,
+    left: rect.left,
+    x: rect.left,
+    y: rect.top
+  };
+}
+exports.default = getBoundingClientRect;
+
+},
 344: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(240);
@@ -31363,26 +31363,26 @@ var getViewportRect_js_1 = __fusereq(358);
 var getViewportRect_js_1d = __fuse.dt(getViewportRect_js_1);
 var getDocumentRect_js_1 = __fusereq(359);
 var getDocumentRect_js_1d = __fuse.dt(getDocumentRect_js_1);
-var listScrollParents_js_1 = __fusereq(347);
+var listScrollParents_js_1 = __fusereq(348);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
-var getOffsetParent_js_1 = __fusereq(289);
+var getOffsetParent_js_1 = __fusereq(286);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(296);
+var getComputedStyle_js_1 = __fusereq(289);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 var instanceOf_js_1 = __fusereq(340);
-var getBoundingClientRect_js_1 = __fusereq(339);
+var getBoundingClientRect_js_1 = __fusereq(343);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(342);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
-var contains_js_1 = __fusereq(288);
+var contains_js_1 = __fusereq(298);
 var contains_js_1d = __fuse.dt(contains_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var rectToClientRect_js_1 = __fusereq(345);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
-var math_js_1 = __fusereq(297);
+var math_js_1 = __fusereq(291);
 function getInnerBoundingClientRect(element) {
   var rect = getBoundingClientRect_js_1d.default(element);
   rect.top = rect.top + element.clientTop;
@@ -31445,16 +31445,24 @@ exports.default = rectToClientRect;
 },
 346: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(339);
+function isDocument(element) {
+  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
+}
+exports.default = isDocument;
+
+},
+347: function(__fusereq, exports, module){
+exports.__esModule = true;
+var getBoundingClientRect_js_1 = __fusereq(343);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getNodeScroll_js_1 = __fusereq(360);
 var getNodeScroll_js_1d = __fuse.dt(getNodeScroll_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var instanceOf_js_1 = __fusereq(340);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
@@ -31495,13 +31503,13 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 exports.default = getCompositeRect;
 
 },
-347: function(__fusereq, exports, module){
+348: function(__fusereq, exports, module){
 exports.__esModule = true;
 var getScrollParent_js_1 = __fusereq(363);
 var getScrollParent_js_1d = __fuse.dt(getScrollParent_js_1);
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(342);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
@@ -31520,7 +31528,7 @@ function listScrollParents(element, list) {
 exports.default = listScrollParents;
 
 },
-348: function(__fusereq, exports, module){
+349: function(__fusereq, exports, module){
 exports.__esModule = true;
 var enums_js_1 = __fusereq(240);
 function order(modifiers) {
@@ -31561,7 +31569,7 @@ function orderModifiers(modifiers) {
 exports.default = orderModifiers;
 
 },
-349: function(__fusereq, exports, module){
+350: function(__fusereq, exports, module){
 exports.__esModule = true;
 function debounce(fn) {
   var pending;
@@ -31580,7 +31588,7 @@ function debounce(fn) {
 exports.default = debounce;
 
 },
-350: function(__fusereq, exports, module){
+351: function(__fusereq, exports, module){
 exports.__esModule = true;
 function mergeByName(modifiers) {
   var merged = modifiers.reduce(function (merged, current) {
@@ -31596,14 +31604,6 @@ function mergeByName(modifiers) {
   });
 }
 exports.default = mergeByName;
-
-},
-351: function(__fusereq, exports, module){
-exports.__esModule = true;
-function isDocument(element) {
-  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
-}
-exports.default = isDocument;
 
 },
 352: function(__fusereq, exports, module){
@@ -31762,7 +31762,7 @@ function hexadecimal(character) {
 355: function(__fusereq, exports, module){
 'use strict';
 var alphabetical = __fusereq(330);
-var decimal = __fusereq(322);
+var decimal = __fusereq(324);
 module.exports = alphanumerical;
 function alphanumerical(character) {
   return alphabetical(character) || decimal(character);
@@ -31797,9 +31797,9 @@ function collapse(value) {
 },
 358: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
@@ -31831,15 +31831,15 @@ exports.default = getViewportRect;
 },
 359: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(296);
+var getComputedStyle_js_1 = __fusereq(289);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
-var math_js_1 = __fusereq(297);
+var math_js_1 = __fusereq(291);
 function getDocumentRect(element) {
   var _element$ownerDocumen;
   var html = getDocumentElement_js_1d.default(element);
@@ -31866,7 +31866,7 @@ exports.default = getDocumentRect;
 exports.__esModule = true;
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 var instanceOf_js_1 = __fusereq(340);
 var getHTMLElementScroll_js_1 = __fusereq(365);
@@ -31883,9 +31883,9 @@ exports.default = getNodeScroll;
 },
 361: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(339);
+var getBoundingClientRect_js_1 = __fusereq(343);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getDocumentElement_js_1 = __fusereq(295);
+var getDocumentElement_js_1 = __fusereq(288);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
@@ -31897,7 +31897,7 @@ exports.default = getWindowScrollBarX;
 },
 362: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getComputedStyle_js_1 = __fusereq(296);
+var getComputedStyle_js_1 = __fusereq(289);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 function isScrollParent(element) {
   var _getComputedStyle = getComputedStyle_js_1d.default(element), overflow = _getComputedStyle.overflow, overflowX = _getComputedStyle.overflowX, overflowY = _getComputedStyle.overflowY;
@@ -31908,11 +31908,11 @@ exports.default = isScrollParent;
 },
 363: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getParentNode_js_1 = __fusereq(343);
+var getParentNode_js_1 = __fusereq(342);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
-var getNodeName_js_1 = __fusereq(341);
+var getNodeName_js_1 = __fusereq(339);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 var instanceOf_js_1 = __fusereq(340);
 function getScrollParent(node) {
@@ -31929,7 +31929,7 @@ exports.default = getScrollParent;
 },
 364: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(294);
+var getWindow_js_1 = __fusereq(287);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function getWindowScroll(node) {
   var win = getWindow_js_1d.default(node);
