@@ -16431,7 +16431,7 @@ var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var AbstractNavItem_1 = __fusereq(159);
+var AbstractNavItem_1 = __fusereq(147);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -16502,43 +16502,43 @@ var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
-var addEventListener_1 = __fusereq(144);
+var addEventListener_1 = __fusereq(156);
 var addEventListener_1d = __fuse.dt(addEventListener_1);
-var canUseDOM_1 = __fusereq(145);
+var canUseDOM_1 = __fusereq(157);
 var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-var ownerDocument_1 = __fusereq(146);
+var ownerDocument_1 = __fusereq(158);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-var removeEventListener_1 = __fusereq(147);
+var removeEventListener_1 = __fusereq(159);
 var removeEventListener_1d = __fuse.dt(removeEventListener_1);
-var scrollbarSize_1 = __fusereq(148);
+var scrollbarSize_1 = __fusereq(160);
 var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var useCallbackRef_1 = __fusereq(149);
+var useCallbackRef_1 = __fusereq(161);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var useWillUnmount_1 = __fusereq(150);
+var useWillUnmount_1 = __fusereq(162);
 var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
-var transitionEnd_1 = __fusereq(151);
+var transitionEnd_1 = __fusereq(163);
 var transitionEnd_1d = __fuse.dt(transitionEnd_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var Modal_1 = __fusereq(152);
+var Modal_1 = __fusereq(164);
 var Modal_1d = __fuse.dt(Modal_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var BootstrapModalManager_1 = __fusereq(153);
+var BootstrapModalManager_1 = __fusereq(165);
 var BootstrapModalManager_1d = __fuse.dt(BootstrapModalManager_1);
 var Fade_1 = __fusereq(45);
 var Fade_1d = __fuse.dt(Fade_1);
 var ModalBody_1 = __fusereq(62);
 var ModalBody_1d = __fuse.dt(ModalBody_1);
-var ModalContext_1 = __fusereq(154);
+var ModalContext_1 = __fusereq(166);
 var ModalContext_1d = __fuse.dt(ModalContext_1);
 var ModalDialog_1 = __fusereq(63);
 var ModalDialog_1d = __fuse.dt(ModalDialog_1);
 var ModalFooter_1 = __fusereq(64);
 var ModalFooter_1d = __fuse.dt(ModalFooter_1);
-var ModalHeader_1 = __fusereq(155);
+var ModalHeader_1 = __fusereq(167);
 var ModalHeader_1d = __fuse.dt(ModalHeader_1);
 var ModalTitle_1 = __fusereq(65);
 var ModalTitle_1d = __fuse.dt(ModalTitle_1);
@@ -16811,7 +16811,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var uncontrollable_1 = __fusereq(112);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(156);
+var NavbarContext_1 = __fusereq(144);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var CardContext_1 = __fusereq(117);
 var CardContext_1d = __fuse.dt(CardContext_1);
@@ -16871,12 +16871,12 @@ var createWithBsPrefix_1 = __fusereq(116);
 var createWithBsPrefix_1d = __fuse.dt(createWithBsPrefix_1);
 var NavbarBrand_1 = __fusereq(68);
 var NavbarBrand_1d = __fuse.dt(NavbarBrand_1);
-var NavbarCollapse_1 = __fusereq(157);
+var NavbarCollapse_1 = __fusereq(145);
 var NavbarCollapse_1d = __fuse.dt(NavbarCollapse_1);
-var NavbarToggle_1 = __fusereq(158);
+var NavbarToggle_1 = __fusereq(146);
 var NavbarToggle_1d = __fuse.dt(NavbarToggle_1);
 var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(156);
+var NavbarContext_1 = __fusereq(144);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -17036,7 +17036,7 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var SafeAnchor_1 = __fusereq(82);
 var SafeAnchor_1d = __fuse.dt(SafeAnchor_1);
-var AbstractNavItem_1 = __fusereq(159);
+var AbstractNavItem_1 = __fusereq(147);
 var AbstractNavItem_1d = __fuse.dt(AbstractNavItem_1);
 var ThemeProvider_1 = __fusereq(91);
 var defaultProps = {
@@ -17071,11 +17071,11 @@ var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var classnames_1 = __fusereq(111);
 var classnames_1d = __fuse.dt(classnames_1);
-var Overlay_1 = __fusereq(160);
+var Overlay_1 = __fusereq(148);
 var Overlay_1d = __fuse.dt(Overlay_1);
-var safeFindDOMNode_1 = __fusereq(161);
+var safeFindDOMNode_1 = __fusereq(149);
 var safeFindDOMNode_1d = __fuse.dt(safeFindDOMNode_1);
-var usePopperMarginModifiers_1 = __fusereq(162);
+var usePopperMarginModifiers_1 = __fusereq(150);
 var usePopperMarginModifiers_1d = __fuse.dt(usePopperMarginModifiers_1);
 var Fade_1 = __fusereq(45);
 var Fade_1d = __fuse.dt(Fade_1);
@@ -17144,15 +17144,15 @@ var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var inheritsLoose_1 = __fusereq(163);
+var inheritsLoose_1 = __fusereq(151);
 var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
-var contains_1 = __fusereq(164);
+var contains_1 = __fusereq(152);
 var contains_1d = __fuse.dt(contains_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var useTimeout_1 = __fusereq(120);
 var useTimeout_1d = __fuse.dt(useTimeout_1);
-var safeFindDOMNode_1 = __fusereq(161);
+var safeFindDOMNode_1 = __fusereq(149);
 var safeFindDOMNode_1d = __fuse.dt(safeFindDOMNode_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
@@ -17777,7 +17777,7 @@ exports.default = SplitButton;
 },
 85: function(__fusereq, exports, module){
 exports.__esModule = true;
-var inheritsLoose_1 = __fusereq(163);
+var inheritsLoose_1 = __fusereq(151);
 var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -17810,7 +17810,7 @@ exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var uncontrollable_1 = __fusereq(112);
-var TabContext_1 = __fusereq(165);
+var TabContext_1 = __fusereq(153);
 var TabContext_1d = __fuse.dt(TabContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -17914,7 +17914,7 @@ var classnames_1d = __fuse.dt(classnames_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var ThemeProvider_1 = __fusereq(91);
-var TabContext_1 = __fusereq(165);
+var TabContext_1 = __fusereq(153);
 var TabContext_1d = __fuse.dt(TabContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
@@ -18107,7 +18107,7 @@ var ToastHeader_1d = __fuse.dt(ToastHeader_1);
 var ToastBody_1 = __fusereq(93);
 var ToastBody_1d = __fuse.dt(ToastBody_1);
 var ThemeProvider_1 = __fusereq(91);
-var ToastContext_1 = __fusereq(166);
+var ToastContext_1 = __fusereq(154);
 var ToastContext_1d = __fuse.dt(ToastContext_1);
 var Toast = react_1d.default.forwardRef(function (_ref, ref) {
   var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, _ref$transition = _ref.transition, Transition = _ref$transition === void 0 ? Fade_1d.default : _ref$transition, _ref$show = _ref.show, show = _ref$show === void 0 ? true : _ref$show, _ref$animation = _ref.animation, animation = _ref$animation === void 0 ? true : _ref$animation, _ref$delay = _ref.delay, delay = _ref$delay === void 0 ? 3000 : _ref$delay, _ref$autohide = _ref.autohide, autohide = _ref$autohide === void 0 ? false : _ref$autohide, onClose = _ref.onClose, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "transition", "show", "animation", "delay", "autohide", "onClose"]);
@@ -18177,7 +18177,7 @@ var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var ThemeProvider_1 = __fusereq(91);
 var CloseButton_1 = __fusereq(40);
 var CloseButton_1d = __fuse.dt(CloseButton_1);
-var ToastContext_1 = __fusereq(166);
+var ToastContext_1 = __fusereq(154);
 var ToastContext_1d = __fuse.dt(ToastContext_1);
 var defaultProps = {
   closeLabel: 'Close',
@@ -18263,7 +18263,7 @@ var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var invariant_1 = __fusereq(167);
+var invariant_1 = __fusereq(155);
 var invariant_1d = __fuse.dt(invariant_1);
 var uncontrollable_1 = __fusereq(112);
 var createChainedFunction_1 = __fusereq(128);
@@ -19577,7 +19577,7 @@ exports.__esModule = true;
 var react_1 = __fusereq(2);
 var useMounted_1 = __fusereq(185);
 var useMounted_1d = __fuse.dt(useMounted_1);
-var useWillUnmount_1 = __fusereq(150);
+var useWillUnmount_1 = __fusereq(162);
 var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
 var MAX_DELAY_MS = Math.pow(2, 31) - 1;
 function setChainedTimeout(handleRef, fn, timeoutAtMs) {
@@ -19621,7 +19621,7 @@ exports.default = useTimeout;
 exports.__esModule = true;
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var inheritsLoose_1 = __fusereq(163);
+var inheritsLoose_1 = __fusereq(151);
 var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
 var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
@@ -19927,7 +19927,7 @@ exports.forEach = forEach;
 exports.__esModule = true;
 var css_1 = __fusereq(127);
 var css_1d = __fuse.dt(css_1);
-var transitionEnd_1 = __fusereq(151);
+var transitionEnd_1 = __fusereq(163);
 var transitionEnd_1d = __fuse.dt(transitionEnd_1);
 function parseDuration(node, property) {
   var str = css_1d.default(node, property) || '';
@@ -20018,7 +20018,7 @@ var matches_1 = __fusereq(193);
 var matches_1d = __fuse.dt(matches_1);
 var querySelectorAll_1 = __fusereq(194);
 var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
-var addEventListener_1 = __fusereq(144);
+var addEventListener_1 = __fusereq(156);
 var addEventListener_1d = __fuse.dt(addEventListener_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -20245,12 +20245,12 @@ var useMergedRefs_1 = __fusereq(202);
 var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var NavbarContext_1 = __fusereq(156);
+var NavbarContext_1 = __fusereq(144);
 var NavbarContext_1d = __fuse.dt(NavbarContext_1);
 var ThemeProvider_1 = __fusereq(91);
 var useWrappedRefWithWarning_1 = __fusereq(203);
 var useWrappedRefWithWarning_1d = __fuse.dt(useWrappedRefWithWarning_1);
-var usePopperMarginModifiers_1 = __fusereq(162);
+var usePopperMarginModifiers_1 = __fusereq(150);
 var usePopperMarginModifiers_1d = __fuse.dt(usePopperMarginModifiers_1);
 var alignDirection = prop_types_1d.default.oneOf(['left', 'right']);
 exports.alignPropType = prop_types_1d.default.oneOfType([alignDirection, prop_types_1d.default.shape({
@@ -20627,7 +20627,7 @@ var NavContext_1 = __fusereq(201);
 var NavContext_1d = __fuse.dt(NavContext_1);
 var SelectableContext_1 = __fusereq(113);
 var SelectableContext_1d = __fuse.dt(SelectableContext_1);
-var TabContext_1 = __fusereq(165);
+var TabContext_1 = __fusereq(153);
 var TabContext_1d = __fuse.dt(TabContext_1);
 var noop = function noop() {};
 var AbstractNav = react_1d.default.forwardRef(function (_ref, ref) {
@@ -20711,7 +20711,454 @@ exports.default = AbstractNav;
 },
 144: function(__fusereq, exports, module){
 exports.__esModule = true;
-var canUseDOM_1 = __fusereq(145);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var context = react_1d.default.createContext(null);
+context.displayName = 'NavbarContext';
+exports.default = context;
+
+},
+145: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var Collapse_1 = __fusereq(42);
+var Collapse_1d = __fuse.dt(Collapse_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
+  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
+  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
+    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
+      in: !!(context && context.expanded)
+    }, props), react_1d.default.createElement("div", {
+      ref: ref,
+      className: bsPrefix
+    }, children));
+  });
+});
+NavbarCollapse.displayName = 'NavbarCollapse';
+exports.default = NavbarCollapse;
+
+},
+146: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var classnames_1 = __fusereq(111);
+var classnames_1d = __fuse.dt(classnames_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var ThemeProvider_1 = __fusereq(91);
+var NavbarContext_1 = __fusereq(144);
+var NavbarContext_1d = __fuse.dt(NavbarContext_1);
+var defaultProps = {
+  label: 'Toggle navigation'
+};
+var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
+  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
+  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
+  var handleClick = useEventCallback_1d.default(function (e) {
+    if (onClick) onClick(e);
+    if (onToggle) onToggle();
+  });
+  if (Component === 'button') {
+    props.type = 'button';
+  }
+  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
+    ref: ref,
+    onClick: handleClick,
+    "aria-label": label,
+    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
+  }), children || react_1d.default.createElement("span", {
+    className: bsPrefix + "-icon"
+  }));
+});
+NavbarToggle.displayName = 'NavbarToggle';
+NavbarToggle.defaultProps = defaultProps;
+exports.default = NavbarToggle;
+
+},
+147: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var classnames_1 = __fusereq(111);
+var classnames_1d = __fuse.dt(classnames_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var useEventCallback_1 = __fusereq(114);
+var useEventCallback_1d = __fuse.dt(useEventCallback_1);
+var warning_1 = __fusereq(134);
+var warning_1d = __fuse.dt(warning_1);
+var NavContext_1 = __fusereq(201);
+var NavContext_1d = __fuse.dt(NavContext_1);
+var SelectableContext_1 = __fusereq(113);
+var SelectableContext_1d = __fuse.dt(SelectableContext_1);
+var defaultProps = {
+  disabled: false
+};
+var AbstractNavItem = react_1d.default.forwardRef(function (_ref, ref) {
+  var active = _ref.active, className = _ref.className, eventKey = _ref.eventKey, onSelect = _ref.onSelect, onClick = _ref.onClick, Component = _ref.as, props = objectWithoutPropertiesLoose_1d.default(_ref, ["active", "className", "eventKey", "onSelect", "onClick", "as"]);
+  var navKey = SelectableContext_1.makeEventKey(eventKey, props.href);
+  var parentOnSelect = react_1.useContext(SelectableContext_1d.default);
+  var navContext = react_1.useContext(NavContext_1d.default);
+  var isActive = active;
+  if (navContext) {
+    if (!props.role && navContext.role === 'tablist') props.role = 'tab';
+    var contextControllerId = navContext.getControllerId(navKey);
+    var contextControlledId = navContext.getControlledId(navKey);
+    "production" !== "production" ? warning_1d.default(!contextControllerId || !props.id, "[react-bootstrap] The provided id '" + props.id + "' was overwritten by the current navContext with '" + contextControllerId + "'.") : void 0;
+    "production" !== "production" ? warning_1d.default(!contextControlledId || !props['aria-controls'], "[react-bootstrap] The provided aria-controls value '" + props['aria-controls'] + "' was overwritten by the current navContext with '" + contextControlledId + "'.") : void 0;
+    props['data-rb-event-key'] = navKey;
+    props.id = contextControllerId || props.id;
+    props['aria-controls'] = contextControlledId || props['aria-controls'];
+    isActive = active == null && navKey != null ? navContext.activeKey === navKey : active;
+  }
+  if (props.role === 'tab') {
+    if (props.disabled) {
+      props.tabIndex = -1;
+      props['aria-disabled'] = true;
+    }
+    props['aria-selected'] = isActive;
+  }
+  var handleOnclick = useEventCallback_1d.default(function (e) {
+    if (onClick) onClick(e);
+    if (navKey == null) return;
+    if (onSelect) onSelect(navKey, e);
+    if (parentOnSelect) parentOnSelect(navKey, e);
+  });
+  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
+    ref: ref,
+    onClick: handleOnclick,
+    className: classnames_1d.default(className, isActive && 'active')
+  }));
+});
+AbstractNavItem.defaultProps = defaultProps;
+exports.default = AbstractNavItem;
+
+},
+148: function(__fusereq, exports, module){
+exports.__esModule = true;
+var extends_1 = __fusereq(109);
+var extends_1d = __fuse.dt(extends_1);
+var objectWithoutPropertiesLoose_1 = __fusereq(110);
+var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
+var prop_types_1 = __fusereq(122);
+var prop_types_1d = __fuse.dt(prop_types_1);
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var react_dom_1 = __fusereq(3);
+var react_dom_1d = __fuse.dt(react_dom_1);
+var useCallbackRef_1 = __fusereq(161);
+var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
+var useMergedRefs_1 = __fusereq(202);
+var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
+var popper_1 = __fusereq(204);
+var usePopper_1 = __fusereq(205);
+var usePopper_1d = __fuse.dt(usePopper_1);
+var useRootClose_1 = __fusereq(206);
+var useRootClose_1d = __fuse.dt(useRootClose_1);
+var useWaitForDOMRef_1 = __fusereq(207);
+var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
+var mergeOptionsWithPopperConfig_1 = __fusereq(208);
+var mergeOptionsWithPopperConfig_1d = __fuse.dt(mergeOptionsWithPopperConfig_1);
+var Overlay = react_1d.default.forwardRef(function (props, outerRef) {
+  var flip = props.flip, offset = props.offset, placement = props.placement, _props$containerPaddi = props.containerPadding, containerPadding = _props$containerPaddi === void 0 ? 5 : _props$containerPaddi, _props$popperConfig = props.popperConfig, popperConfig = _props$popperConfig === void 0 ? {} : _props$popperConfig, Transition = props.transition;
+  var _useCallbackRef = useCallbackRef_1d.default(), rootElement = _useCallbackRef[0], attachRef = _useCallbackRef[1];
+  var _useCallbackRef2 = useCallbackRef_1d.default(), arrowElement = _useCallbackRef2[0], attachArrowRef = _useCallbackRef2[1];
+  var mergedRef = useMergedRefs_1d.default(attachRef, outerRef);
+  var container = useWaitForDOMRef_1d.default(props.container);
+  var target = useWaitForDOMRef_1d.default(props.target);
+  var _useState = react_1.useState(!props.show), exited = _useState[0], setExited = _useState[1];
+  var _usePopper = usePopper_1d.default(target, rootElement, mergeOptionsWithPopperConfig_1d.default({
+    placement: placement,
+    enableEvents: !!props.show,
+    containerPadding: containerPadding || 5,
+    flip: flip,
+    offset: offset,
+    arrowElement: arrowElement,
+    popperConfig: popperConfig
+  })), styles = _usePopper.styles, attributes = _usePopper.attributes, popper = objectWithoutPropertiesLoose_1d.default(_usePopper, ["styles", "attributes"]);
+  if (props.show) {
+    if (exited) setExited(false);
+  } else if (!props.transition && !exited) {
+    setExited(true);
+  }
+  var handleHidden = function handleHidden() {
+    setExited(true);
+    if (props.onExited) {
+      props.onExited.apply(props, arguments);
+    }
+  };
+  var mountOverlay = props.show || Transition && !exited;
+  useRootClose_1d.default(rootElement, props.onHide, {
+    disabled: !props.rootClose || props.rootCloseDisabled,
+    clickTrigger: props.rootCloseEvent
+  });
+  if (!mountOverlay) {
+    return null;
+  }
+  var child = props.children(extends_1d.default({}, popper, {
+    show: !!props.show,
+    props: extends_1d.default({}, attributes.popper, {
+      style: styles.popper,
+      ref: mergedRef
+    }),
+    arrowProps: extends_1d.default({}, attributes.arrow, {
+      style: styles.arrow,
+      ref: attachArrowRef
+    })
+  }));
+  if (Transition) {
+    var onExit = props.onExit, onExiting = props.onExiting, onEnter = props.onEnter, onEntering = props.onEntering, onEntered = props.onEntered;
+    child = react_1d.default.createElement(Transition, {
+      "in": props.show,
+      appear: true,
+      onExit: onExit,
+      onExiting: onExiting,
+      onExited: handleHidden,
+      onEnter: onEnter,
+      onEntering: onEntering,
+      onEntered: onEntered
+    }, child);
+  }
+  return container ? react_dom_1d.default.createPortal(child, container) : null;
+});
+Overlay.displayName = 'Overlay';
+Overlay.propTypes = {
+  show: prop_types_1d.default.bool,
+  placement: prop_types_1d.default.oneOf(popper_1.placements),
+  target: prop_types_1d.default.any,
+  container: prop_types_1d.default.any,
+  flip: prop_types_1d.default.bool,
+  children: prop_types_1d.default.func.isRequired,
+  containerPadding: prop_types_1d.default.number,
+  popperConfig: prop_types_1d.default.object,
+  rootClose: prop_types_1d.default.bool,
+  rootCloseEvent: prop_types_1d.default.oneOf(['click', 'mousedown']),
+  rootCloseDisabled: prop_types_1d.default.bool,
+  onHide: function onHide(props) {
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+    if (props.rootClose) {
+      var _PropTypes$func;
+      return (_PropTypes$func = prop_types_1d.default.func).isRequired.apply(_PropTypes$func, [props].concat(args));
+    }
+    return prop_types_1d.default.func.apply(prop_types_1d.default, [props].concat(args));
+  },
+  transition: prop_types_1d.default.elementType,
+  onEnter: prop_types_1d.default.func,
+  onEntering: prop_types_1d.default.func,
+  onEntered: prop_types_1d.default.func,
+  onExit: prop_types_1d.default.func,
+  onExiting: prop_types_1d.default.func,
+  onExited: prop_types_1d.default.func
+};
+exports.default = Overlay;
+
+},
+149: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_dom_1 = __fusereq(3);
+var react_dom_1d = __fuse.dt(react_dom_1);
+function safeFindDOMNode(componentOrElement) {
+  if (componentOrElement && ('setState' in componentOrElement)) {
+    return react_dom_1d.default.findDOMNode(componentOrElement);
+  }
+  return componentOrElement != null ? componentOrElement : null;
+}
+exports.default = safeFindDOMNode;
+
+},
+150: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var hasClass_1 = __fusereq(209);
+var hasClass_1d = __fuse.dt(hasClass_1);
+var ThemeProvider_1 = __fusereq(91);
+function getMargins(element) {
+  var styles = window.getComputedStyle(element);
+  var top = parseFloat(styles.marginTop) || 0;
+  var right = parseFloat(styles.marginRight) || 0;
+  var bottom = parseFloat(styles.marginBottom) || 0;
+  var left = parseFloat(styles.marginLeft) || 0;
+  return {
+    top: top,
+    right: right,
+    bottom: bottom,
+    left: left
+  };
+}
+function usePopperMarginModifiers() {
+  var overlayRef = react_1.useRef(null);
+  var margins = react_1.useRef(null);
+  var arrowMargins = react_1.useRef(null);
+  var popoverClass = ThemeProvider_1.useBootstrapPrefix(undefined, 'popover');
+  var dropdownMenuClass = ThemeProvider_1.useBootstrapPrefix(undefined, 'dropdown-menu');
+  var callback = react_1.useCallback(function (overlay) {
+    if (!overlay || !(hasClass_1d.default(overlay, popoverClass) || hasClass_1d.default(overlay, dropdownMenuClass))) return;
+    margins.current = getMargins(overlay);
+    overlay.style.margin = '0';
+    overlayRef.current = overlay;
+  }, [popoverClass, dropdownMenuClass]);
+  var offset = react_1.useMemo(function () {
+    return {
+      name: 'offset',
+      options: {
+        offset: function offset(_ref) {
+          var placement = _ref.placement;
+          if (!margins.current) return [0, 0];
+          var _margins$current = margins.current, top = _margins$current.top, left = _margins$current.left, bottom = _margins$current.bottom, right = _margins$current.right;
+          switch (placement.split('-')[0]) {
+            case 'top':
+              return [0, bottom];
+            case 'left':
+              return [0, right];
+            case 'bottom':
+              return [0, top];
+            case 'right':
+              return [0, left];
+            default:
+              return [0, 0];
+          }
+        }
+      }
+    };
+  }, [margins]);
+  var arrow = react_1.useMemo(function () {
+    return {
+      name: 'arrow',
+      options: {
+        padding: function padding() {
+          if (!arrowMargins.current) {
+            return 0;
+          }
+          var _arrowMargins$current = arrowMargins.current, top = _arrowMargins$current.top, right = _arrowMargins$current.right;
+          var padding = top || right;
+          return {
+            top: padding,
+            left: padding,
+            right: padding,
+            bottom: padding
+          };
+        }
+      }
+    };
+  }, [arrowMargins]);
+  var popoverArrowMargins = react_1.useMemo(function () {
+    return {
+      name: 'popoverArrowMargins',
+      enabled: true,
+      phase: 'main',
+      requiresIfExists: ['arrow'],
+      effect: function effect(_ref2) {
+        var state = _ref2.state;
+        if (!overlayRef.current || !state.elements.arrow || !hasClass_1d.default(overlayRef.current, popoverClass)) {
+          return undefined;
+        }
+        if (state.modifiersData['arrow#persistent']) {
+          var _getMargins = getMargins(state.elements.arrow), top = _getMargins.top, right = _getMargins.right;
+          var padding = top || right;
+          state.modifiersData['arrow#persistent'].padding = {
+            top: padding,
+            left: padding,
+            right: padding,
+            bottom: padding
+          };
+        } else {
+          arrowMargins.current = getMargins(state.elements.arrow);
+        }
+        state.elements.arrow.style.margin = '0';
+        return function () {
+          if (state.elements.arrow) state.elements.arrow.style.margin = '';
+        };
+      }
+    };
+  }, [popoverClass]);
+  return [callback, [offset, arrow, popoverArrowMargins]];
+}
+exports.default = usePopperMarginModifiers;
+
+},
+151: function(__fusereq, exports, module){
+exports.__esModule = true;
+var setPrototypeOf_js_1 = __fusereq(210);
+var setPrototypeOf_js_1d = __fuse.dt(setPrototypeOf_js_1);
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  setPrototypeOf_js_1d.default(subClass, superClass);
+}
+exports.default = _inheritsLoose;
+
+},
+152: function(__fusereq, exports, module){
+exports.__esModule = true;
+function contains(context, node) {
+  if (context.contains) return context.contains(node);
+  if (context.compareDocumentPosition) return context === node || !!(context.compareDocumentPosition(node) & 16);
+}
+exports.default = contains;
+
+},
+153: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var TabContext = react_1d.default.createContext(null);
+exports.default = TabContext;
+
+},
+154: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var react_1d = __fuse.dt(react_1);
+var ToastContext = react_1d.default.createContext({
+  onClose: function onClose() {}
+});
+exports.default = ToastContext;
+
+},
+155: function(__fusereq, exports, module){
+'use strict';
+var invariant = function (condition, format, a, b, c, d, e, f) {
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+    error.framesToPop = 1;
+    throw error;
+  }
+};
+module.exports = invariant;
+
+},
+156: function(__fusereq, exports, module){
+exports.__esModule = true;
+var canUseDOM_1 = __fusereq(157);
 var canUseDOM_1d = __fuse.dt(canUseDOM_1);
 exports.optionsSupported = false;
 exports.onceSupported = false;
@@ -20747,12 +21194,12 @@ function addEventListener(node, eventName, handler, options) {
 exports.default = addEventListener;
 
 },
-145: function(__fusereq, exports, module){
+157: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.default = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 
 },
-146: function(__fusereq, exports, module){
+158: function(__fusereq, exports, module){
 exports.__esModule = true;
 function ownerDocument(node) {
   return node && node.ownerDocument || document;
@@ -20760,7 +21207,7 @@ function ownerDocument(node) {
 exports.default = ownerDocument;
 
 },
-147: function(__fusereq, exports, module){
+159: function(__fusereq, exports, module){
 exports.__esModule = true;
 function removeEventListener(node, eventName, handler, options) {
   var capture = options && typeof options !== 'boolean' ? options.capture : options;
@@ -20772,9 +21219,9 @@ function removeEventListener(node, eventName, handler, options) {
 exports.default = removeEventListener;
 
 },
-148: function(__fusereq, exports, module){
+160: function(__fusereq, exports, module){
 exports.__esModule = true;
-var canUseDOM_1 = __fusereq(145);
+var canUseDOM_1 = __fusereq(157);
 var canUseDOM_1d = __fuse.dt(canUseDOM_1);
 var size;
 function scrollbarSize(recalc) {
@@ -20796,7 +21243,7 @@ function scrollbarSize(recalc) {
 exports.default = scrollbarSize;
 
 },
-149: function(__fusereq, exports, module){
+161: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 function useCallbackRef() {
@@ -20805,9 +21252,9 @@ function useCallbackRef() {
 exports.default = useCallbackRef;
 
 },
-150: function(__fusereq, exports, module){
+162: function(__fusereq, exports, module){
 exports.__esModule = true;
-var useUpdatedRef_1 = __fusereq(204);
+var useUpdatedRef_1 = __fusereq(211);
 var useUpdatedRef_1d = __fuse.dt(useUpdatedRef_1);
 var react_1 = __fusereq(2);
 function useWillUnmount(fn) {
@@ -20821,13 +21268,13 @@ function useWillUnmount(fn) {
 exports.default = useWillUnmount;
 
 },
-151: function(__fusereq, exports, module){
+163: function(__fusereq, exports, module){
 exports.__esModule = true;
 var css_1 = __fusereq(127);
 var css_1d = __fuse.dt(css_1);
-var listen_1 = __fusereq(205);
+var listen_1 = __fusereq(212);
 var listen_1d = __fuse.dt(listen_1);
-var triggerEvent_1 = __fusereq(206);
+var triggerEvent_1 = __fusereq(213);
 var triggerEvent_1d = __fuse.dt(triggerEvent_1);
 function parseDuration(node) {
   var str = css_1d.default(node, 'transitionDuration') || '';
@@ -20864,19 +21311,19 @@ function transitionEnd(element, handler, duration, padding) {
 exports.default = transitionEnd;
 
 },
-152: function(__fusereq, exports, module){
+164: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var activeElement_1 = __fusereq(207);
+var activeElement_1 = __fusereq(214);
 var activeElement_1d = __fuse.dt(activeElement_1);
-var contains_1 = __fusereq(164);
+var contains_1 = __fusereq(152);
 var contains_1d = __fuse.dt(contains_1);
-var canUseDOM_1 = __fusereq(145);
+var canUseDOM_1 = __fusereq(157);
 var canUseDOM_1d = __fuse.dt(canUseDOM_1);
-var listen_1 = __fusereq(205);
+var listen_1 = __fusereq(212);
 var listen_1d = __fuse.dt(listen_1);
 var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
@@ -20886,15 +21333,15 @@ var react_dom_1 = __fusereq(3);
 var react_dom_1d = __fuse.dt(react_dom_1);
 var useMounted_1 = __fusereq(185);
 var useMounted_1d = __fuse.dt(useMounted_1);
-var useWillUnmount_1 = __fusereq(150);
+var useWillUnmount_1 = __fusereq(162);
 var useWillUnmount_1d = __fuse.dt(useWillUnmount_1);
 var usePrevious_1 = __fusereq(195);
 var usePrevious_1d = __fuse.dt(usePrevious_1);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ModalManager_1 = __fusereq(208);
+var ModalManager_1 = __fusereq(215);
 var ModalManager_1d = __fuse.dt(ModalManager_1);
-var useWaitForDOMRef_1 = __fusereq(209);
+var useWaitForDOMRef_1 = __fusereq(207);
 var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
 var manager;
 function getManager() {
@@ -21099,17 +21546,17 @@ exports.default = Object.assign(Modal, {
 });
 
 },
-153: function(__fusereq, exports, module){
+165: function(__fusereq, exports, module){
 exports.__esModule = true;
-var inheritsLoose_1 = __fusereq(163);
+var inheritsLoose_1 = __fusereq(151);
 var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
 var css_1 = __fusereq(127);
 var css_1d = __fuse.dt(css_1);
 var querySelectorAll_1 = __fusereq(194);
 var querySelectorAll_1d = __fuse.dt(querySelectorAll_1);
-var scrollbarSize_1 = __fusereq(148);
+var scrollbarSize_1 = __fusereq(160);
 var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var ModalManager_1 = __fusereq(208);
+var ModalManager_1 = __fusereq(215);
 var ModalManager_1d = __fuse.dt(ModalManager_1);
 var Selector = {
   FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
@@ -21169,7 +21616,7 @@ var BootstrapModalManager = (function (_ModalManager) {
 exports.default = BootstrapModalManager;
 
 },
-154: function(__fusereq, exports, module){
+166: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -21179,7 +21626,7 @@ var ModalContext = react_1d.default.createContext({
 exports.default = ModalContext;
 
 },
-155: function(__fusereq, exports, module){
+167: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
@@ -21194,7 +21641,7 @@ var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var ThemeProvider_1 = __fusereq(91);
 var CloseButton_1 = __fusereq(40);
 var CloseButton_1d = __fuse.dt(CloseButton_1);
-var ModalContext_1 = __fusereq(154);
+var ModalContext_1 = __fusereq(166);
 var ModalContext_1d = __fuse.dt(ModalContext_1);
 var defaultProps = {
   closeLabel: 'Close',
@@ -21220,453 +21667,6 @@ var ModalHeader = react_1d.default.forwardRef(function (_ref, ref) {
 ModalHeader.displayName = 'ModalHeader';
 ModalHeader.defaultProps = defaultProps;
 exports.default = ModalHeader;
-
-},
-156: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var context = react_1d.default.createContext(null);
-context.displayName = 'NavbarContext';
-exports.default = context;
-
-},
-157: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var Collapse_1 = __fusereq(42);
-var Collapse_1d = __fuse.dt(Collapse_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(156);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var NavbarCollapse = react_1d.default.forwardRef(function (_ref, ref) {
-  var children = _ref.children, bsPrefix = _ref.bsPrefix, props = objectWithoutPropertiesLoose_1d.default(_ref, ["children", "bsPrefix"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-collapse');
-  return react_1d.default.createElement(NavbarContext_1d.default.Consumer, null, function (context) {
-    return react_1d.default.createElement(Collapse_1d.default, extends_1d.default({
-      in: !!(context && context.expanded)
-    }, props), react_1d.default.createElement("div", {
-      ref: ref,
-      className: bsPrefix
-    }, children));
-  });
-});
-NavbarCollapse.displayName = 'NavbarCollapse';
-exports.default = NavbarCollapse;
-
-},
-158: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var classnames_1 = __fusereq(111);
-var classnames_1d = __fuse.dt(classnames_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var ThemeProvider_1 = __fusereq(91);
-var NavbarContext_1 = __fusereq(156);
-var NavbarContext_1d = __fuse.dt(NavbarContext_1);
-var defaultProps = {
-  label: 'Toggle navigation'
-};
-var NavbarToggle = react_1d.default.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix, className = _ref.className, children = _ref.children, label = _ref.label, _ref$as = _ref.as, Component = _ref$as === void 0 ? 'button' : _ref$as, onClick = _ref.onClick, props = objectWithoutPropertiesLoose_1d.default(_ref, ["bsPrefix", "className", "children", "label", "as", "onClick"]);
-  bsPrefix = ThemeProvider_1.useBootstrapPrefix(bsPrefix, 'navbar-toggler');
-  var _ref2 = react_1.useContext(NavbarContext_1d.default) || ({}), onToggle = _ref2.onToggle, expanded = _ref2.expanded;
-  var handleClick = useEventCallback_1d.default(function (e) {
-    if (onClick) onClick(e);
-    if (onToggle) onToggle();
-  });
-  if (Component === 'button') {
-    props.type = 'button';
-  }
-  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
-    ref: ref,
-    onClick: handleClick,
-    "aria-label": label,
-    className: classnames_1d.default(className, bsPrefix, !expanded && 'collapsed')
-  }), children || react_1d.default.createElement("span", {
-    className: bsPrefix + "-icon"
-  }));
-});
-NavbarToggle.displayName = 'NavbarToggle';
-NavbarToggle.defaultProps = defaultProps;
-exports.default = NavbarToggle;
-
-},
-159: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var classnames_1 = __fusereq(111);
-var classnames_1d = __fuse.dt(classnames_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var useEventCallback_1 = __fusereq(114);
-var useEventCallback_1d = __fuse.dt(useEventCallback_1);
-var warning_1 = __fusereq(134);
-var warning_1d = __fuse.dt(warning_1);
-var NavContext_1 = __fusereq(201);
-var NavContext_1d = __fuse.dt(NavContext_1);
-var SelectableContext_1 = __fusereq(113);
-var SelectableContext_1d = __fuse.dt(SelectableContext_1);
-var defaultProps = {
-  disabled: false
-};
-var AbstractNavItem = react_1d.default.forwardRef(function (_ref, ref) {
-  var active = _ref.active, className = _ref.className, eventKey = _ref.eventKey, onSelect = _ref.onSelect, onClick = _ref.onClick, Component = _ref.as, props = objectWithoutPropertiesLoose_1d.default(_ref, ["active", "className", "eventKey", "onSelect", "onClick", "as"]);
-  var navKey = SelectableContext_1.makeEventKey(eventKey, props.href);
-  var parentOnSelect = react_1.useContext(SelectableContext_1d.default);
-  var navContext = react_1.useContext(NavContext_1d.default);
-  var isActive = active;
-  if (navContext) {
-    if (!props.role && navContext.role === 'tablist') props.role = 'tab';
-    var contextControllerId = navContext.getControllerId(navKey);
-    var contextControlledId = navContext.getControlledId(navKey);
-    "production" !== "production" ? warning_1d.default(!contextControllerId || !props.id, "[react-bootstrap] The provided id '" + props.id + "' was overwritten by the current navContext with '" + contextControllerId + "'.") : void 0;
-    "production" !== "production" ? warning_1d.default(!contextControlledId || !props['aria-controls'], "[react-bootstrap] The provided aria-controls value '" + props['aria-controls'] + "' was overwritten by the current navContext with '" + contextControlledId + "'.") : void 0;
-    props['data-rb-event-key'] = navKey;
-    props.id = contextControllerId || props.id;
-    props['aria-controls'] = contextControlledId || props['aria-controls'];
-    isActive = active == null && navKey != null ? navContext.activeKey === navKey : active;
-  }
-  if (props.role === 'tab') {
-    if (props.disabled) {
-      props.tabIndex = -1;
-      props['aria-disabled'] = true;
-    }
-    props['aria-selected'] = isActive;
-  }
-  var handleOnclick = useEventCallback_1d.default(function (e) {
-    if (onClick) onClick(e);
-    if (navKey == null) return;
-    if (onSelect) onSelect(navKey, e);
-    if (parentOnSelect) parentOnSelect(navKey, e);
-  });
-  return react_1d.default.createElement(Component, extends_1d.default({}, props, {
-    ref: ref,
-    onClick: handleOnclick,
-    className: classnames_1d.default(className, isActive && 'active')
-  }));
-});
-AbstractNavItem.defaultProps = defaultProps;
-exports.default = AbstractNavItem;
-
-},
-160: function(__fusereq, exports, module){
-exports.__esModule = true;
-var extends_1 = __fusereq(109);
-var extends_1d = __fuse.dt(extends_1);
-var objectWithoutPropertiesLoose_1 = __fusereq(110);
-var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
-var prop_types_1 = __fusereq(122);
-var prop_types_1d = __fuse.dt(prop_types_1);
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var react_dom_1 = __fusereq(3);
-var react_dom_1d = __fuse.dt(react_dom_1);
-var useCallbackRef_1 = __fusereq(149);
-var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
-var useMergedRefs_1 = __fusereq(202);
-var useMergedRefs_1d = __fuse.dt(useMergedRefs_1);
-var popper_1 = __fusereq(210);
-var usePopper_1 = __fusereq(211);
-var usePopper_1d = __fuse.dt(usePopper_1);
-var useRootClose_1 = __fusereq(212);
-var useRootClose_1d = __fuse.dt(useRootClose_1);
-var useWaitForDOMRef_1 = __fusereq(209);
-var useWaitForDOMRef_1d = __fuse.dt(useWaitForDOMRef_1);
-var mergeOptionsWithPopperConfig_1 = __fusereq(213);
-var mergeOptionsWithPopperConfig_1d = __fuse.dt(mergeOptionsWithPopperConfig_1);
-var Overlay = react_1d.default.forwardRef(function (props, outerRef) {
-  var flip = props.flip, offset = props.offset, placement = props.placement, _props$containerPaddi = props.containerPadding, containerPadding = _props$containerPaddi === void 0 ? 5 : _props$containerPaddi, _props$popperConfig = props.popperConfig, popperConfig = _props$popperConfig === void 0 ? {} : _props$popperConfig, Transition = props.transition;
-  var _useCallbackRef = useCallbackRef_1d.default(), rootElement = _useCallbackRef[0], attachRef = _useCallbackRef[1];
-  var _useCallbackRef2 = useCallbackRef_1d.default(), arrowElement = _useCallbackRef2[0], attachArrowRef = _useCallbackRef2[1];
-  var mergedRef = useMergedRefs_1d.default(attachRef, outerRef);
-  var container = useWaitForDOMRef_1d.default(props.container);
-  var target = useWaitForDOMRef_1d.default(props.target);
-  var _useState = react_1.useState(!props.show), exited = _useState[0], setExited = _useState[1];
-  var _usePopper = usePopper_1d.default(target, rootElement, mergeOptionsWithPopperConfig_1d.default({
-    placement: placement,
-    enableEvents: !!props.show,
-    containerPadding: containerPadding || 5,
-    flip: flip,
-    offset: offset,
-    arrowElement: arrowElement,
-    popperConfig: popperConfig
-  })), styles = _usePopper.styles, attributes = _usePopper.attributes, popper = objectWithoutPropertiesLoose_1d.default(_usePopper, ["styles", "attributes"]);
-  if (props.show) {
-    if (exited) setExited(false);
-  } else if (!props.transition && !exited) {
-    setExited(true);
-  }
-  var handleHidden = function handleHidden() {
-    setExited(true);
-    if (props.onExited) {
-      props.onExited.apply(props, arguments);
-    }
-  };
-  var mountOverlay = props.show || Transition && !exited;
-  useRootClose_1d.default(rootElement, props.onHide, {
-    disabled: !props.rootClose || props.rootCloseDisabled,
-    clickTrigger: props.rootCloseEvent
-  });
-  if (!mountOverlay) {
-    return null;
-  }
-  var child = props.children(extends_1d.default({}, popper, {
-    show: !!props.show,
-    props: extends_1d.default({}, attributes.popper, {
-      style: styles.popper,
-      ref: mergedRef
-    }),
-    arrowProps: extends_1d.default({}, attributes.arrow, {
-      style: styles.arrow,
-      ref: attachArrowRef
-    })
-  }));
-  if (Transition) {
-    var onExit = props.onExit, onExiting = props.onExiting, onEnter = props.onEnter, onEntering = props.onEntering, onEntered = props.onEntered;
-    child = react_1d.default.createElement(Transition, {
-      "in": props.show,
-      appear: true,
-      onExit: onExit,
-      onExiting: onExiting,
-      onExited: handleHidden,
-      onEnter: onEnter,
-      onEntering: onEntering,
-      onEntered: onEntered
-    }, child);
-  }
-  return container ? react_dom_1d.default.createPortal(child, container) : null;
-});
-Overlay.displayName = 'Overlay';
-Overlay.propTypes = {
-  show: prop_types_1d.default.bool,
-  placement: prop_types_1d.default.oneOf(popper_1.placements),
-  target: prop_types_1d.default.any,
-  container: prop_types_1d.default.any,
-  flip: prop_types_1d.default.bool,
-  children: prop_types_1d.default.func.isRequired,
-  containerPadding: prop_types_1d.default.number,
-  popperConfig: prop_types_1d.default.object,
-  rootClose: prop_types_1d.default.bool,
-  rootCloseEvent: prop_types_1d.default.oneOf(['click', 'mousedown']),
-  rootCloseDisabled: prop_types_1d.default.bool,
-  onHide: function onHide(props) {
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-    if (props.rootClose) {
-      var _PropTypes$func;
-      return (_PropTypes$func = prop_types_1d.default.func).isRequired.apply(_PropTypes$func, [props].concat(args));
-    }
-    return prop_types_1d.default.func.apply(prop_types_1d.default, [props].concat(args));
-  },
-  transition: prop_types_1d.default.elementType,
-  onEnter: prop_types_1d.default.func,
-  onEntering: prop_types_1d.default.func,
-  onEntered: prop_types_1d.default.func,
-  onExit: prop_types_1d.default.func,
-  onExiting: prop_types_1d.default.func,
-  onExited: prop_types_1d.default.func
-};
-exports.default = Overlay;
-
-},
-161: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_dom_1 = __fusereq(3);
-var react_dom_1d = __fuse.dt(react_dom_1);
-function safeFindDOMNode(componentOrElement) {
-  if (componentOrElement && ('setState' in componentOrElement)) {
-    return react_dom_1d.default.findDOMNode(componentOrElement);
-  }
-  return componentOrElement != null ? componentOrElement : null;
-}
-exports.default = safeFindDOMNode;
-
-},
-162: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var hasClass_1 = __fusereq(214);
-var hasClass_1d = __fuse.dt(hasClass_1);
-var ThemeProvider_1 = __fusereq(91);
-function getMargins(element) {
-  var styles = window.getComputedStyle(element);
-  var top = parseFloat(styles.marginTop) || 0;
-  var right = parseFloat(styles.marginRight) || 0;
-  var bottom = parseFloat(styles.marginBottom) || 0;
-  var left = parseFloat(styles.marginLeft) || 0;
-  return {
-    top: top,
-    right: right,
-    bottom: bottom,
-    left: left
-  };
-}
-function usePopperMarginModifiers() {
-  var overlayRef = react_1.useRef(null);
-  var margins = react_1.useRef(null);
-  var arrowMargins = react_1.useRef(null);
-  var popoverClass = ThemeProvider_1.useBootstrapPrefix(undefined, 'popover');
-  var dropdownMenuClass = ThemeProvider_1.useBootstrapPrefix(undefined, 'dropdown-menu');
-  var callback = react_1.useCallback(function (overlay) {
-    if (!overlay || !(hasClass_1d.default(overlay, popoverClass) || hasClass_1d.default(overlay, dropdownMenuClass))) return;
-    margins.current = getMargins(overlay);
-    overlay.style.margin = '0';
-    overlayRef.current = overlay;
-  }, [popoverClass, dropdownMenuClass]);
-  var offset = react_1.useMemo(function () {
-    return {
-      name: 'offset',
-      options: {
-        offset: function offset(_ref) {
-          var placement = _ref.placement;
-          if (!margins.current) return [0, 0];
-          var _margins$current = margins.current, top = _margins$current.top, left = _margins$current.left, bottom = _margins$current.bottom, right = _margins$current.right;
-          switch (placement.split('-')[0]) {
-            case 'top':
-              return [0, bottom];
-            case 'left':
-              return [0, right];
-            case 'bottom':
-              return [0, top];
-            case 'right':
-              return [0, left];
-            default:
-              return [0, 0];
-          }
-        }
-      }
-    };
-  }, [margins]);
-  var arrow = react_1.useMemo(function () {
-    return {
-      name: 'arrow',
-      options: {
-        padding: function padding() {
-          if (!arrowMargins.current) {
-            return 0;
-          }
-          var _arrowMargins$current = arrowMargins.current, top = _arrowMargins$current.top, right = _arrowMargins$current.right;
-          var padding = top || right;
-          return {
-            top: padding,
-            left: padding,
-            right: padding,
-            bottom: padding
-          };
-        }
-      }
-    };
-  }, [arrowMargins]);
-  var popoverArrowMargins = react_1.useMemo(function () {
-    return {
-      name: 'popoverArrowMargins',
-      enabled: true,
-      phase: 'main',
-      requiresIfExists: ['arrow'],
-      effect: function effect(_ref2) {
-        var state = _ref2.state;
-        if (!overlayRef.current || !state.elements.arrow || !hasClass_1d.default(overlayRef.current, popoverClass)) {
-          return undefined;
-        }
-        if (state.modifiersData['arrow#persistent']) {
-          var _getMargins = getMargins(state.elements.arrow), top = _getMargins.top, right = _getMargins.right;
-          var padding = top || right;
-          state.modifiersData['arrow#persistent'].padding = {
-            top: padding,
-            left: padding,
-            right: padding,
-            bottom: padding
-          };
-        } else {
-          arrowMargins.current = getMargins(state.elements.arrow);
-        }
-        state.elements.arrow.style.margin = '0';
-        return function () {
-          if (state.elements.arrow) state.elements.arrow.style.margin = '';
-        };
-      }
-    };
-  }, [popoverClass]);
-  return [callback, [offset, arrow, popoverArrowMargins]];
-}
-exports.default = usePopperMarginModifiers;
-
-},
-163: function(__fusereq, exports, module){
-exports.__esModule = true;
-var setPrototypeOf_js_1 = __fusereq(215);
-var setPrototypeOf_js_1d = __fuse.dt(setPrototypeOf_js_1);
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  setPrototypeOf_js_1d.default(subClass, superClass);
-}
-exports.default = _inheritsLoose;
-
-},
-164: function(__fusereq, exports, module){
-exports.__esModule = true;
-function contains(context, node) {
-  if (context.contains) return context.contains(node);
-  if (context.compareDocumentPosition) return context === node || !!(context.compareDocumentPosition(node) & 16);
-}
-exports.default = contains;
-
-},
-165: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var TabContext = react_1d.default.createContext(null);
-exports.default = TabContext;
-
-},
-166: function(__fusereq, exports, module){
-exports.__esModule = true;
-var react_1 = __fusereq(2);
-var react_1d = __fuse.dt(react_1);
-var ToastContext = react_1d.default.createContext({
-  onClose: function onClose() {}
-});
-exports.default = ToastContext;
-
-},
-167: function(__fusereq, exports, module){
-'use strict';
-var invariant = function (condition, format, a, b, c, d, e, f) {
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-    error.framesToPop = 1;
-    throw error;
-  }
-};
-module.exports = invariant;
 
 },
 168: function(__fusereq, exports, module){
@@ -23644,13 +23644,13 @@ var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
-var inheritsLoose_1 = __fusereq(163);
+var inheritsLoose_1 = __fusereq(151);
 var inheritsLoose_1d = __fuse.dt(inheritsLoose_1);
 var _jsxFileName = "/Users/jquense/src/uncontrollable/src/uncontrollable.js";
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
 var react_lifecycles_compat_1 = __fusereq(227);
-var invariant_1 = __fusereq(167);
+var invariant_1 = __fusereq(155);
 var invariant_1d = __fuse.dt(invariant_1);
 var utils_1 = __fusereq(226);
 function uncontrollable(Component, controlledValues, methods) {
@@ -24010,15 +24010,15 @@ var prop_types_1 = __fusereq(122);
 var prop_types_1d = __fuse.dt(prop_types_1);
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var useCallbackRef_1 = __fusereq(149);
+var useCallbackRef_1 = __fusereq(161);
 var useCallbackRef_1d = __fuse.dt(useCallbackRef_1);
 var DropdownContext_1 = __fusereq(198);
 var DropdownContext_1d = __fuse.dt(DropdownContext_1);
-var usePopper_1 = __fusereq(211);
+var usePopper_1 = __fusereq(205);
 var usePopper_1d = __fuse.dt(usePopper_1);
-var useRootClose_1 = __fusereq(212);
+var useRootClose_1 = __fusereq(206);
 var useRootClose_1d = __fuse.dt(useRootClose_1);
-var mergeOptionsWithPopperConfig_1 = __fusereq(213);
+var mergeOptionsWithPopperConfig_1 = __fusereq(208);
 var mergeOptionsWithPopperConfig_1d = __fuse.dt(mergeOptionsWithPopperConfig_1);
 var noop = function noop() {};
 function useDropdownMenu(options) {
@@ -24172,7 +24172,7 @@ exports.default = useMergedRefs;
 },
 203: function(__fusereq, exports, module){
 exports.__esModule = true;
-var invariant_1 = __fusereq(167);
+var invariant_1 = __fusereq(155);
 var invariant_1d = __fuse.dt(invariant_1);
 var react_1 = __fusereq(2);
 var useMergedRefs_1 = __fusereq(202);
@@ -24189,269 +24189,40 @@ exports.default = useWrappedRefWithWarning;
 },
 204: function(__fusereq, exports, module){
 exports.__esModule = true;
-var react_1 = __fusereq(2);
-function useUpdatedRef(value) {
-  var valueRef = react_1.useRef(value);
-  valueRef.current = value;
-  return valueRef;
-}
-exports.default = useUpdatedRef;
-
-},
-205: function(__fusereq, exports, module){
-exports.__esModule = true;
-var addEventListener_1 = __fusereq(144);
-var addEventListener_1d = __fuse.dt(addEventListener_1);
-var removeEventListener_1 = __fusereq(147);
-var removeEventListener_1d = __fuse.dt(removeEventListener_1);
-function listen(node, eventName, handler, options) {
-  addEventListener_1d.default(node, eventName, handler, options);
-  return function () {
-    removeEventListener_1d.default(node, eventName, handler, options);
-  };
-}
-exports.default = listen;
-
-},
-206: function(__fusereq, exports, module){
-exports.__esModule = true;
-function triggerEvent(node, eventName, bubbles, cancelable) {
-  if (bubbles === void 0) {
-    bubbles = false;
-  }
-  if (cancelable === void 0) {
-    cancelable = true;
-  }
-  if (node) {
-    var event = document.createEvent('HTMLEvents');
-    event.initEvent(eventName, bubbles, cancelable);
-    node.dispatchEvent(event);
-  }
-}
-exports.default = triggerEvent;
-
-},
-207: function(__fusereq, exports, module){
-exports.__esModule = true;
-var ownerDocument_1 = __fusereq(146);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-function activeElement(doc) {
-  if (doc === void 0) {
-    doc = ownerDocument_1d.default();
-  }
-  try {
-    var active = doc.activeElement;
-    if (!active || !active.nodeName) return null;
-    return active;
-  } catch (e) {
-    return doc.body;
-  }
-}
-exports.default = activeElement;
-
-},
-208: function(__fusereq, exports, module){
-exports.__esModule = true;
-var addClass_1 = __fusereq(232);
-var addClass_1d = __fuse.dt(addClass_1);
-var removeClass_1 = __fusereq(233);
-var removeClass_1d = __fuse.dt(removeClass_1);
-var css_1 = __fusereq(127);
-var css_1d = __fuse.dt(css_1);
-var scrollbarSize_1 = __fusereq(148);
-var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
-var isOverflowing_1 = __fusereq(234);
-var isOverflowing_1d = __fuse.dt(isOverflowing_1);
-var manageAriaHidden_1 = __fusereq(235);
-function findIndexOf(arr, cb) {
-  var idx = -1;
-  arr.some(function (d, i) {
-    if (cb(d, i)) {
-      idx = i;
-      return true;
-    }
-    return false;
-  });
-  return idx;
-}
-var ModalManager = (function () {
-  function ModalManager(_temp) {
-    var _ref = _temp === void 0 ? {} : _temp, _ref$hideSiblingNodes = _ref.hideSiblingNodes, hideSiblingNodes = _ref$hideSiblingNodes === void 0 ? true : _ref$hideSiblingNodes, _ref$handleContainerO = _ref.handleContainerOverflow, handleContainerOverflow = _ref$handleContainerO === void 0 ? true : _ref$handleContainerO;
-    this.hideSiblingNodes = void 0;
-    this.handleContainerOverflow = void 0;
-    this.modals = void 0;
-    this.containers = void 0;
-    this.data = void 0;
-    this.scrollbarSize = void 0;
-    this.hideSiblingNodes = hideSiblingNodes;
-    this.handleContainerOverflow = handleContainerOverflow;
-    this.modals = [];
-    this.containers = [];
-    this.data = [];
-    this.scrollbarSize = scrollbarSize_1d.default();
-  }
-  var _proto = ModalManager.prototype;
-  _proto.isContainerOverflowing = function isContainerOverflowing(modal) {
-    var data = this.data[this.containerIndexFromModal(modal)];
-    return data && data.overflowing;
-  };
-  _proto.containerIndexFromModal = function containerIndexFromModal(modal) {
-    return findIndexOf(this.data, function (d) {
-      return d.modals.indexOf(modal) !== -1;
-    });
-  };
-  _proto.setContainerStyle = function setContainerStyle(containerState, container) {
-    var style = {
-      overflow: 'hidden'
-    };
-    containerState.style = {
-      overflow: container.style.overflow,
-      paddingRight: container.style.paddingRight
-    };
-    if (containerState.overflowing) {
-      style.paddingRight = parseInt(css_1d.default(container, 'paddingRight') || '0', 10) + this.scrollbarSize + "px";
-    }
-    css_1d.default(container, style);
-  };
-  _proto.removeContainerStyle = function removeContainerStyle(containerState, container) {
-    Object.assign(container.style, containerState.style);
-  };
-  _proto.add = function add(modal, container, className) {
-    var modalIdx = this.modals.indexOf(modal);
-    var containerIdx = this.containers.indexOf(container);
-    if (modalIdx !== -1) {
-      return modalIdx;
-    }
-    modalIdx = this.modals.length;
-    this.modals.push(modal);
-    if (this.hideSiblingNodes) {
-      manageAriaHidden_1.hideSiblings(container, modal);
-    }
-    if (containerIdx !== -1) {
-      this.data[containerIdx].modals.push(modal);
-      return modalIdx;
-    }
-    var data = {
-      modals: [modal],
-      classes: className ? className.split(/\s+/) : [],
-      overflowing: isOverflowing_1d.default(container)
-    };
-    if (this.handleContainerOverflow) {
-      this.setContainerStyle(data, container);
-    }
-    data.classes.forEach(addClass_1d.default.bind(null, container));
-    this.containers.push(container);
-    this.data.push(data);
-    return modalIdx;
-  };
-  _proto.remove = function remove(modal) {
-    var modalIdx = this.modals.indexOf(modal);
-    if (modalIdx === -1) {
-      return;
-    }
-    var containerIdx = this.containerIndexFromModal(modal);
-    var data = this.data[containerIdx];
-    var container = this.containers[containerIdx];
-    data.modals.splice(data.modals.indexOf(modal), 1);
-    this.modals.splice(modalIdx, 1);
-    if (data.modals.length === 0) {
-      data.classes.forEach(removeClass_1d.default.bind(null, container));
-      if (this.handleContainerOverflow) {
-        this.removeContainerStyle(data, container);
-      }
-      if (this.hideSiblingNodes) {
-        manageAriaHidden_1.showSiblings(container, modal);
-      }
-      this.containers.splice(containerIdx, 1);
-      this.data.splice(containerIdx, 1);
-    } else if (this.hideSiblingNodes) {
-      var _data$modals = data.modals[data.modals.length - 1], backdrop = _data$modals.backdrop, dialog = _data$modals.dialog;
-      manageAriaHidden_1.ariaHidden(false, dialog);
-      manageAriaHidden_1.ariaHidden(false, backdrop);
-    }
-  };
-  _proto.isTopModal = function isTopModal(modal) {
-    return !!this.modals.length && this.modals[this.modals.length - 1] === modal;
-  };
-  return ModalManager;
-})();
-exports.default = ModalManager;
-
-},
-209: function(__fusereq, exports, module){
-exports.__esModule = true;
-var ownerDocument_1 = __fusereq(146);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-var react_1 = __fusereq(2);
-exports.resolveContainerRef = function resolveContainerRef(ref) {
-  var _ref;
-  if (typeof document === 'undefined') return null;
-  if (ref == null) return ownerDocument_1d.default().body;
-  if (typeof ref === 'function') ref = ref();
-  if (ref && ('current' in ref)) ref = ref.current;
-  if ((_ref = ref) != null && _ref.nodeType) return ref || null;
-  return null;
-};
-function useWaitForDOMRef(ref, onResolved) {
-  var _useState = react_1.useState(function () {
-    return exports.resolveContainerRef(ref);
-  }), resolvedRef = _useState[0], setRef = _useState[1];
-  if (!resolvedRef) {
-    var earlyRef = exports.resolveContainerRef(ref);
-    if (earlyRef) setRef(earlyRef);
-  }
-  react_1.useEffect(function () {
-    if (onResolved && resolvedRef) {
-      onResolved(resolvedRef);
-    }
-  }, [onResolved, resolvedRef]);
-  react_1.useEffect(function () {
-    var nextRef = exports.resolveContainerRef(ref);
-    if (nextRef !== resolvedRef) {
-      setRef(nextRef);
-    }
-  }, [ref, resolvedRef]);
-  return resolvedRef;
-}
-exports.default = useWaitForDOMRef;
-
-},
-210: function(__fusereq, exports, module){
-exports.__esModule = true;
-var arrow_1 = __fusereq(236);
+var arrow_1 = __fusereq(232);
 var arrow_1d = __fuse.dt(arrow_1);
-var computeStyles_1 = __fusereq(237);
+var computeStyles_1 = __fusereq(233);
 var computeStyles_1d = __fuse.dt(computeStyles_1);
-var eventListeners_1 = __fusereq(238);
+var eventListeners_1 = __fusereq(234);
 var eventListeners_1d = __fuse.dt(eventListeners_1);
-var flip_1 = __fusereq(239);
+var flip_1 = __fusereq(235);
 var flip_1d = __fuse.dt(flip_1);
-var hide_1 = __fusereq(240);
+var hide_1 = __fusereq(236);
 var hide_1d = __fuse.dt(hide_1);
-var offset_1 = __fusereq(241);
+var offset_1 = __fusereq(237);
 var offset_1d = __fuse.dt(offset_1);
-var popperOffsets_1 = __fusereq(242);
+var popperOffsets_1 = __fusereq(238);
 var popperOffsets_1d = __fuse.dt(popperOffsets_1);
-var preventOverflow_1 = __fusereq(243);
+var preventOverflow_1 = __fusereq(239);
 var preventOverflow_1d = __fuse.dt(preventOverflow_1);
-var enums_1 = __fusereq(244);
-var popper_base_1 = __fusereq(245);
+var enums_1 = __fusereq(240);
+var popper_base_1 = __fusereq(241);
 exports.createPopper = popper_base_1.popperGenerator({
   defaultModifiers: [hide_1d.default, popperOffsets_1d.default, computeStyles_1d.default, eventListeners_1d.default, offset_1d.default, flip_1d.default, preventOverflow_1d.default, arrow_1d.default]
 });
 exports.placements = enums_1.placements;
 
 },
-211: function(__fusereq, exports, module){
+205: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
 var objectWithoutPropertiesLoose_1 = __fusereq(110);
 var objectWithoutPropertiesLoose_1d = __fuse.dt(objectWithoutPropertiesLoose_1);
 var react_1 = __fusereq(2);
-var useSafeState_1 = __fusereq(246);
+var useSafeState_1 = __fusereq(242);
 var useSafeState_1d = __fuse.dt(useSafeState_1);
-var popper_1 = __fusereq(210);
+var popper_1 = __fusereq(204);
 var initialPopperStyles = function initialPopperStyles(position) {
   return {
     position: position,
@@ -24579,18 +24350,18 @@ function usePopper(referenceElement, popperElement, _temp) {
 exports.default = usePopper;
 
 },
-212: function(__fusereq, exports, module){
+206: function(__fusereq, exports, module){
 exports.__esModule = true;
-var contains_1 = __fusereq(164);
+var contains_1 = __fusereq(152);
 var contains_1d = __fuse.dt(contains_1);
-var listen_1 = __fusereq(205);
+var listen_1 = __fusereq(212);
 var listen_1d = __fuse.dt(listen_1);
 var react_1 = __fusereq(2);
 var useEventCallback_1 = __fusereq(114);
 var useEventCallback_1d = __fuse.dt(useEventCallback_1);
 var warning_1 = __fusereq(134);
 var warning_1d = __fuse.dt(warning_1);
-var ownerDocument_1 = __fusereq(247);
+var ownerDocument_1 = __fusereq(243);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
 var escapeKeyCode = 27;
 var noop = function noop() {};
@@ -24660,7 +24431,45 @@ function useRootClose(ref, onRootClose, _temp) {
 exports.default = useRootClose;
 
 },
-213: function(__fusereq, exports, module){
+207: function(__fusereq, exports, module){
+exports.__esModule = true;
+var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+var react_1 = __fusereq(2);
+exports.resolveContainerRef = function resolveContainerRef(ref) {
+  var _ref;
+  if (typeof document === 'undefined') return null;
+  if (ref == null) return ownerDocument_1d.default().body;
+  if (typeof ref === 'function') ref = ref();
+  if (ref && ('current' in ref)) ref = ref.current;
+  if ((_ref = ref) != null && _ref.nodeType) return ref || null;
+  return null;
+};
+function useWaitForDOMRef(ref, onResolved) {
+  var _useState = react_1.useState(function () {
+    return exports.resolveContainerRef(ref);
+  }), resolvedRef = _useState[0], setRef = _useState[1];
+  if (!resolvedRef) {
+    var earlyRef = exports.resolveContainerRef(ref);
+    if (earlyRef) setRef(earlyRef);
+  }
+  react_1.useEffect(function () {
+    if (onResolved && resolvedRef) {
+      onResolved(resolvedRef);
+    }
+  }, [onResolved, resolvedRef]);
+  react_1.useEffect(function () {
+    var nextRef = exports.resolveContainerRef(ref);
+    if (nextRef !== resolvedRef) {
+      setRef(nextRef);
+    }
+  }, [ref, resolvedRef]);
+  return resolvedRef;
+}
+exports.default = useWaitForDOMRef;
+
+},
+208: function(__fusereq, exports, module){
 exports.__esModule = true;
 var extends_1 = __fusereq(109);
 var extends_1d = __fuse.dt(extends_1);
@@ -24723,7 +24532,7 @@ function mergeOptionsWithPopperConfig(_ref) {
 exports.default = mergeOptionsWithPopperConfig;
 
 },
-214: function(__fusereq, exports, module){
+209: function(__fusereq, exports, module){
 exports.__esModule = true;
 function hasClass(element, className) {
   if (element.classList) return !!className && element.classList.contains(className);
@@ -24732,7 +24541,7 @@ function hasClass(element, className) {
 exports.default = hasClass;
 
 },
-215: function(__fusereq, exports, module){
+210: function(__fusereq, exports, module){
 exports.__esModule = true;
 function _setPrototypeOf(o, p) {
   _setPrototypeOf = Object.setPrototypeOf || (function _setPrototypeOf(o, p) {
@@ -24742,6 +24551,197 @@ function _setPrototypeOf(o, p) {
   return _setPrototypeOf(o, p);
 }
 exports.default = _setPrototypeOf;
+
+},
+211: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+function useUpdatedRef(value) {
+  var valueRef = react_1.useRef(value);
+  valueRef.current = value;
+  return valueRef;
+}
+exports.default = useUpdatedRef;
+
+},
+212: function(__fusereq, exports, module){
+exports.__esModule = true;
+var addEventListener_1 = __fusereq(156);
+var addEventListener_1d = __fuse.dt(addEventListener_1);
+var removeEventListener_1 = __fusereq(159);
+var removeEventListener_1d = __fuse.dt(removeEventListener_1);
+function listen(node, eventName, handler, options) {
+  addEventListener_1d.default(node, eventName, handler, options);
+  return function () {
+    removeEventListener_1d.default(node, eventName, handler, options);
+  };
+}
+exports.default = listen;
+
+},
+213: function(__fusereq, exports, module){
+exports.__esModule = true;
+function triggerEvent(node, eventName, bubbles, cancelable) {
+  if (bubbles === void 0) {
+    bubbles = false;
+  }
+  if (cancelable === void 0) {
+    cancelable = true;
+  }
+  if (node) {
+    var event = document.createEvent('HTMLEvents');
+    event.initEvent(eventName, bubbles, cancelable);
+    node.dispatchEvent(event);
+  }
+}
+exports.default = triggerEvent;
+
+},
+214: function(__fusereq, exports, module){
+exports.__esModule = true;
+var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+function activeElement(doc) {
+  if (doc === void 0) {
+    doc = ownerDocument_1d.default();
+  }
+  try {
+    var active = doc.activeElement;
+    if (!active || !active.nodeName) return null;
+    return active;
+  } catch (e) {
+    return doc.body;
+  }
+}
+exports.default = activeElement;
+
+},
+215: function(__fusereq, exports, module){
+exports.__esModule = true;
+var addClass_1 = __fusereq(244);
+var addClass_1d = __fuse.dt(addClass_1);
+var removeClass_1 = __fusereq(245);
+var removeClass_1d = __fuse.dt(removeClass_1);
+var css_1 = __fusereq(127);
+var css_1d = __fuse.dt(css_1);
+var scrollbarSize_1 = __fusereq(160);
+var scrollbarSize_1d = __fuse.dt(scrollbarSize_1);
+var isOverflowing_1 = __fusereq(246);
+var isOverflowing_1d = __fuse.dt(isOverflowing_1);
+var manageAriaHidden_1 = __fusereq(247);
+function findIndexOf(arr, cb) {
+  var idx = -1;
+  arr.some(function (d, i) {
+    if (cb(d, i)) {
+      idx = i;
+      return true;
+    }
+    return false;
+  });
+  return idx;
+}
+var ModalManager = (function () {
+  function ModalManager(_temp) {
+    var _ref = _temp === void 0 ? {} : _temp, _ref$hideSiblingNodes = _ref.hideSiblingNodes, hideSiblingNodes = _ref$hideSiblingNodes === void 0 ? true : _ref$hideSiblingNodes, _ref$handleContainerO = _ref.handleContainerOverflow, handleContainerOverflow = _ref$handleContainerO === void 0 ? true : _ref$handleContainerO;
+    this.hideSiblingNodes = void 0;
+    this.handleContainerOverflow = void 0;
+    this.modals = void 0;
+    this.containers = void 0;
+    this.data = void 0;
+    this.scrollbarSize = void 0;
+    this.hideSiblingNodes = hideSiblingNodes;
+    this.handleContainerOverflow = handleContainerOverflow;
+    this.modals = [];
+    this.containers = [];
+    this.data = [];
+    this.scrollbarSize = scrollbarSize_1d.default();
+  }
+  var _proto = ModalManager.prototype;
+  _proto.isContainerOverflowing = function isContainerOverflowing(modal) {
+    var data = this.data[this.containerIndexFromModal(modal)];
+    return data && data.overflowing;
+  };
+  _proto.containerIndexFromModal = function containerIndexFromModal(modal) {
+    return findIndexOf(this.data, function (d) {
+      return d.modals.indexOf(modal) !== -1;
+    });
+  };
+  _proto.setContainerStyle = function setContainerStyle(containerState, container) {
+    var style = {
+      overflow: 'hidden'
+    };
+    containerState.style = {
+      overflow: container.style.overflow,
+      paddingRight: container.style.paddingRight
+    };
+    if (containerState.overflowing) {
+      style.paddingRight = parseInt(css_1d.default(container, 'paddingRight') || '0', 10) + this.scrollbarSize + "px";
+    }
+    css_1d.default(container, style);
+  };
+  _proto.removeContainerStyle = function removeContainerStyle(containerState, container) {
+    Object.assign(container.style, containerState.style);
+  };
+  _proto.add = function add(modal, container, className) {
+    var modalIdx = this.modals.indexOf(modal);
+    var containerIdx = this.containers.indexOf(container);
+    if (modalIdx !== -1) {
+      return modalIdx;
+    }
+    modalIdx = this.modals.length;
+    this.modals.push(modal);
+    if (this.hideSiblingNodes) {
+      manageAriaHidden_1.hideSiblings(container, modal);
+    }
+    if (containerIdx !== -1) {
+      this.data[containerIdx].modals.push(modal);
+      return modalIdx;
+    }
+    var data = {
+      modals: [modal],
+      classes: className ? className.split(/\s+/) : [],
+      overflowing: isOverflowing_1d.default(container)
+    };
+    if (this.handleContainerOverflow) {
+      this.setContainerStyle(data, container);
+    }
+    data.classes.forEach(addClass_1d.default.bind(null, container));
+    this.containers.push(container);
+    this.data.push(data);
+    return modalIdx;
+  };
+  _proto.remove = function remove(modal) {
+    var modalIdx = this.modals.indexOf(modal);
+    if (modalIdx === -1) {
+      return;
+    }
+    var containerIdx = this.containerIndexFromModal(modal);
+    var data = this.data[containerIdx];
+    var container = this.containers[containerIdx];
+    data.modals.splice(data.modals.indexOf(modal), 1);
+    this.modals.splice(modalIdx, 1);
+    if (data.modals.length === 0) {
+      data.classes.forEach(removeClass_1d.default.bind(null, container));
+      if (this.handleContainerOverflow) {
+        this.removeContainerStyle(data, container);
+      }
+      if (this.hideSiblingNodes) {
+        manageAriaHidden_1.showSiblings(container, modal);
+      }
+      this.containers.splice(containerIdx, 1);
+      this.data.splice(containerIdx, 1);
+    } else if (this.hideSiblingNodes) {
+      var _data$modals = data.modals[data.modals.length - 1], backdrop = _data$modals.backdrop, dialog = _data$modals.dialog;
+      manageAriaHidden_1.ariaHidden(false, dialog);
+      manageAriaHidden_1.ariaHidden(false, backdrop);
+    }
+  };
+  _proto.isTopModal = function isTopModal(modal) {
+    return !!this.modals.length && this.modals[this.modals.length - 1] === modal;
+  };
+  return ModalManager;
+})();
+exports.default = ModalManager;
 
 },
 216: function(__fusereq, exports, module){
@@ -25277,7 +25277,7 @@ module.exports = ReactPropTypesSecret;
 },
 229: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerDocument_1 = __fusereq(146);
+var ownerDocument_1 = __fusereq(158);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
 function ownerWindow(node) {
   var doc = ownerDocument_1d.default(node);
@@ -25318,109 +25318,23 @@ exports.default = useEventListener;
 },
 232: function(__fusereq, exports, module){
 exports.__esModule = true;
-var hasClass_1 = __fusereq(214);
-var hasClass_1d = __fuse.dt(hasClass_1);
-function addClass(element, className) {
-  if (element.classList) element.classList.add(className); else if (!hasClass_1d.default(element, className)) if (typeof element.className === 'string') element.className = element.className + " " + className; else element.setAttribute('class', (element.className && element.className.baseVal || '') + " " + className);
-}
-exports.default = addClass;
-
-},
-233: function(__fusereq, exports, module){
-exports.__esModule = true;
-function replaceClassName(origClass, classToRemove) {
-  return origClass.replace(new RegExp("(^|\\s)" + classToRemove + "(?:\\s|$)", 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
-}
-function removeClass(element, className) {
-  if (element.classList) {
-    element.classList.remove(className);
-  } else if (typeof element.className === 'string') {
-    element.className = replaceClassName(element.className, className);
-  } else {
-    element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
-  }
-}
-exports.default = removeClass;
-
-},
-234: function(__fusereq, exports, module){
-exports.__esModule = true;
-var isWindow_1 = __fusereq(286);
-var isWindow_1d = __fuse.dt(isWindow_1);
-var ownerDocument_1 = __fusereq(146);
-var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-function isBody(node) {
-  return node && node.tagName.toLowerCase() === 'body';
-}
-function bodyIsOverflowing(node) {
-  var doc = isWindow_1d.default(node) ? ownerDocument_1d.default() : ownerDocument_1d.default(node);
-  var win = isWindow_1d.default(node) || doc.defaultView;
-  return doc.body.clientWidth < win.innerWidth;
-}
-function isOverflowing(container) {
-  var win = isWindow_1d.default(container);
-  return win || isBody(container) ? bodyIsOverflowing(container) : container.scrollHeight > container.clientHeight;
-}
-exports.default = isOverflowing;
-
-},
-235: function(__fusereq, exports, module){
-var BLACKLIST = ['template', 'script', 'style'];
-var isHidable = function isHidable(_ref) {
-  var nodeType = _ref.nodeType, tagName = _ref.tagName;
-  return nodeType === 1 && BLACKLIST.indexOf(tagName.toLowerCase()) === -1;
-};
-var siblings = function siblings(container, exclude, cb) {
-  [].forEach.call(container.children, function (node) {
-    if (exclude.indexOf(node) === -1 && isHidable(node)) {
-      cb(node);
-    }
-  });
-};
-function ariaHidden(hide, node) {
-  if (!node) return;
-  if (hide) {
-    node.setAttribute('aria-hidden', 'true');
-  } else {
-    node.removeAttribute('aria-hidden');
-  }
-}
-exports.ariaHidden = ariaHidden;
-function hideSiblings(container, _ref2) {
-  var dialog = _ref2.dialog, backdrop = _ref2.backdrop;
-  siblings(container, [dialog, backdrop], function (node) {
-    return ariaHidden(true, node);
-  });
-}
-exports.hideSiblings = hideSiblings;
-function showSiblings(container, _ref3) {
-  var dialog = _ref3.dialog, backdrop = _ref3.backdrop;
-  siblings(container, [dialog, backdrop], function (node) {
-    return ariaHidden(false, node);
-  });
-}
-exports.showSiblings = showSiblings;
-
-},
-236: function(__fusereq, exports, module){
-exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getLayoutRect_js_1 = __fusereq(288);
+var getLayoutRect_js_1 = __fusereq(287);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var contains_js_1 = __fusereq(289);
+var contains_js_1 = __fusereq(288);
 var contains_js_1d = __fuse.dt(contains_js_1);
-var getOffsetParent_js_1 = __fusereq(290);
+var getOffsetParent_js_1 = __fusereq(289);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(291);
+var getMainAxisFromPlacement_js_1 = __fusereq(290);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
-var within_js_1 = __fusereq(292);
+var within_js_1 = __fusereq(291);
 var within_js_1d = __fuse.dt(within_js_1);
-var mergePaddingObject_js_1 = __fusereq(293);
+var mergePaddingObject_js_1 = __fusereq(292);
 var mergePaddingObject_js_1d = __fuse.dt(mergePaddingObject_js_1);
-var expandToHashMap_js_1 = __fusereq(294);
+var expandToHashMap_js_1 = __fusereq(293);
 var expandToHashMap_js_1d = __fuse.dt(expandToHashMap_js_1);
-var enums_js_1 = __fusereq(244);
+var enums_js_1 = __fusereq(240);
 var toPaddingObject = function toPaddingObject(padding, state) {
   padding = typeof padding === 'function' ? padding(Object.assign({}, state.rects, {
     placement: state.placement
@@ -25483,20 +25397,20 @@ exports.default = {
 };
 
 },
-237: function(__fusereq, exports, module){
+233: function(__fusereq, exports, module){
 exports.__esModule = true;
-var enums_js_1 = __fusereq(244);
-var getOffsetParent_js_1 = __fusereq(290);
+var enums_js_1 = __fusereq(240);
+var getOffsetParent_js_1 = __fusereq(289);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(297);
+var getComputedStyle_js_1 = __fusereq(296);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var math_js_1 = __fusereq(298);
+var math_js_1 = __fusereq(297);
 var unsetSides = {
   top: 'auto',
   right: 'auto',
@@ -25592,9 +25506,9 @@ exports.default = {
 };
 
 },
-238: function(__fusereq, exports, module){
+234: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 var passive = {
   passive: true
@@ -25633,20 +25547,20 @@ exports.default = {
 };
 
 },
-239: function(__fusereq, exports, module){
+235: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getOppositePlacement_js_1 = __fusereq(299);
+var getOppositePlacement_js_1 = __fusereq(298);
 var getOppositePlacement_js_1d = __fuse.dt(getOppositePlacement_js_1);
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getOppositeVariationPlacement_js_1 = __fusereq(300);
+var getOppositeVariationPlacement_js_1 = __fusereq(299);
 var getOppositeVariationPlacement_js_1d = __fuse.dt(getOppositeVariationPlacement_js_1);
-var detectOverflow_js_1 = __fusereq(301);
+var detectOverflow_js_1 = __fusereq(300);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var computeAutoPlacement_js_1 = __fusereq(302);
+var computeAutoPlacement_js_1 = __fusereq(301);
 var computeAutoPlacement_js_1d = __fuse.dt(computeAutoPlacement_js_1);
-var enums_js_1 = __fusereq(244);
-var getVariation_js_1 = __fusereq(303);
+var enums_js_1 = __fusereq(240);
+var getVariation_js_1 = __fusereq(302);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
 function getExpandedFallbackPlacements(placement) {
   if (getBasePlacement_js_1d.default(placement) === enums_js_1.auto) {
@@ -25753,10 +25667,10 @@ exports.default = {
 };
 
 },
-240: function(__fusereq, exports, module){
+236: function(__fusereq, exports, module){
 exports.__esModule = true;
-var enums_js_1 = __fusereq(244);
-var detectOverflow_js_1 = __fusereq(301);
+var enums_js_1 = __fusereq(240);
+var detectOverflow_js_1 = __fusereq(300);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
 function getSideOffsets(overflow, rect, preventedOffsets) {
   if (preventedOffsets === void 0) {
@@ -25812,11 +25726,11 @@ exports.default = {
 };
 
 },
-241: function(__fusereq, exports, module){
+237: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var enums_js_1 = __fusereq(244);
+var enums_js_1 = __fusereq(240);
 function distanceAndSkiddingToXY(placement, rects, offset) {
   var basePlacement = getBasePlacement_js_1d.default(placement);
   var invertDistance = [enums_js_1.left, enums_js_1.top].indexOf(basePlacement) >= 0 ? -1 : 1;
@@ -25857,9 +25771,9 @@ exports.default = {
 };
 
 },
-242: function(__fusereq, exports, module){
+238: function(__fusereq, exports, module){
 exports.__esModule = true;
-var computeOffsets_js_1 = __fusereq(304);
+var computeOffsets_js_1 = __fusereq(303);
 var computeOffsets_js_1d = __fuse.dt(computeOffsets_js_1);
 function popperOffsets(_ref) {
   var state = _ref.state, name = _ref.name;
@@ -25879,28 +25793,28 @@ exports.default = {
 };
 
 },
-243: function(__fusereq, exports, module){
+239: function(__fusereq, exports, module){
 exports.__esModule = true;
-var enums_js_1 = __fusereq(244);
-var getBasePlacement_js_1 = __fusereq(287);
+var enums_js_1 = __fusereq(240);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(291);
+var getMainAxisFromPlacement_js_1 = __fusereq(290);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
-var getAltAxis_js_1 = __fusereq(305);
+var getAltAxis_js_1 = __fusereq(304);
 var getAltAxis_js_1d = __fuse.dt(getAltAxis_js_1);
-var within_js_1 = __fusereq(292);
+var within_js_1 = __fusereq(291);
 var within_js_1d = __fuse.dt(within_js_1);
-var getLayoutRect_js_1 = __fusereq(288);
+var getLayoutRect_js_1 = __fusereq(287);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var getOffsetParent_js_1 = __fusereq(290);
+var getOffsetParent_js_1 = __fusereq(289);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var detectOverflow_js_1 = __fusereq(301);
+var detectOverflow_js_1 = __fusereq(300);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var getVariation_js_1 = __fusereq(303);
+var getVariation_js_1 = __fusereq(302);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
-var getFreshSideObject_js_1 = __fusereq(306);
+var getFreshSideObject_js_1 = __fusereq(305);
 var getFreshSideObject_js_1d = __fuse.dt(getFreshSideObject_js_1);
-var math_js_1 = __fusereq(298);
+var math_js_1 = __fusereq(297);
 function preventOverflow(_ref) {
   var state = _ref.state, options = _ref.options, name = _ref.name;
   var _options$mainAxis = options.mainAxis, checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis, _options$altAxis = options.altAxis, checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis, boundary = options.boundary, rootBoundary = options.rootBoundary, altBoundary = options.altBoundary, padding = options.padding, _options$tether = options.tether, tether = _options$tether === void 0 ? true : _options$tether, _options$tetherOffset = options.tetherOffset, tetherOffset = _options$tetherOffset === void 0 ? 0 : _options$tetherOffset;
@@ -25981,7 +25895,7 @@ exports.default = {
 };
 
 },
-244: function(__fusereq, exports, module){
+240: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.top = 'top';
 exports.bottom = 'bottom';
@@ -26013,15 +25927,15 @@ exports.afterWrite = 'afterWrite';
 exports.modifierPhases = [exports.beforeRead, exports.read, exports.afterRead, exports.beforeMain, exports.main, exports.afterMain, exports.beforeWrite, exports.write, exports.afterWrite];
 
 },
-245: function(__fusereq, exports, module){
+241: function(__fusereq, exports, module){
 exports.__esModule = true;
-var createPopper_js_1 = __fusereq(307);
+var createPopper_js_1 = __fusereq(306);
 exports.createPopper = createPopper_js_1.createPopper;
 exports.popperGenerator = createPopper_js_1.popperGenerator;
 exports.detectOverflow = createPopper_js_1.detectOverflow;
 
 },
-246: function(__fusereq, exports, module){
+242: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var useMounted_1 = __fusereq(185);
@@ -26036,15 +25950,101 @@ function useSafeState(state) {
 exports.default = useSafeState;
 
 },
-247: function(__fusereq, exports, module){
+243: function(__fusereq, exports, module){
 exports.__esModule = true;
-var ownerDocument_1 = __fusereq(146);
+var ownerDocument_1 = __fusereq(158);
 var ownerDocument_1d = __fuse.dt(ownerDocument_1);
-var safeFindDOMNode_1 = __fusereq(161);
+var safeFindDOMNode_1 = __fusereq(149);
 var safeFindDOMNode_1d = __fuse.dt(safeFindDOMNode_1);
 exports.default = function (componentOrElement) {
   return ownerDocument_1d.default(safeFindDOMNode_1d.default(componentOrElement));
 };
+
+},
+244: function(__fusereq, exports, module){
+exports.__esModule = true;
+var hasClass_1 = __fusereq(209);
+var hasClass_1d = __fuse.dt(hasClass_1);
+function addClass(element, className) {
+  if (element.classList) element.classList.add(className); else if (!hasClass_1d.default(element, className)) if (typeof element.className === 'string') element.className = element.className + " " + className; else element.setAttribute('class', (element.className && element.className.baseVal || '') + " " + className);
+}
+exports.default = addClass;
+
+},
+245: function(__fusereq, exports, module){
+exports.__esModule = true;
+function replaceClassName(origClass, classToRemove) {
+  return origClass.replace(new RegExp("(^|\\s)" + classToRemove + "(?:\\s|$)", 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
+}
+function removeClass(element, className) {
+  if (element.classList) {
+    element.classList.remove(className);
+  } else if (typeof element.className === 'string') {
+    element.className = replaceClassName(element.className, className);
+  } else {
+    element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
+  }
+}
+exports.default = removeClass;
+
+},
+246: function(__fusereq, exports, module){
+exports.__esModule = true;
+var isWindow_1 = __fusereq(307);
+var isWindow_1d = __fuse.dt(isWindow_1);
+var ownerDocument_1 = __fusereq(158);
+var ownerDocument_1d = __fuse.dt(ownerDocument_1);
+function isBody(node) {
+  return node && node.tagName.toLowerCase() === 'body';
+}
+function bodyIsOverflowing(node) {
+  var doc = isWindow_1d.default(node) ? ownerDocument_1d.default() : ownerDocument_1d.default(node);
+  var win = isWindow_1d.default(node) || doc.defaultView;
+  return doc.body.clientWidth < win.innerWidth;
+}
+function isOverflowing(container) {
+  var win = isWindow_1d.default(container);
+  return win || isBody(container) ? bodyIsOverflowing(container) : container.scrollHeight > container.clientHeight;
+}
+exports.default = isOverflowing;
+
+},
+247: function(__fusereq, exports, module){
+var BLACKLIST = ['template', 'script', 'style'];
+var isHidable = function isHidable(_ref) {
+  var nodeType = _ref.nodeType, tagName = _ref.tagName;
+  return nodeType === 1 && BLACKLIST.indexOf(tagName.toLowerCase()) === -1;
+};
+var siblings = function siblings(container, exclude, cb) {
+  [].forEach.call(container.children, function (node) {
+    if (exclude.indexOf(node) === -1 && isHidable(node)) {
+      cb(node);
+    }
+  });
+};
+function ariaHidden(hide, node) {
+  if (!node) return;
+  if (hide) {
+    node.setAttribute('aria-hidden', 'true');
+  } else {
+    node.removeAttribute('aria-hidden');
+  }
+}
+exports.ariaHidden = ariaHidden;
+function hideSiblings(container, _ref2) {
+  var dialog = _ref2.dialog, backdrop = _ref2.backdrop;
+  siblings(container, [dialog, backdrop], function (node) {
+    return ariaHidden(true, node);
+  });
+}
+exports.hideSiblings = hideSiblings;
+function showSiblings(container, _ref3) {
+  var dialog = _ref3.dialog, backdrop = _ref3.backdrop;
+  siblings(container, [dialog, backdrop], function (node) {
+    return ariaHidden(false, node);
+  });
+}
+exports.showSiblings = showSiblings;
 
 },
 248: function(__fusereq, exports, module){
@@ -29576,27 +29576,15 @@ function toResult(value) {
 },
 286: function(__fusereq, exports, module){
 exports.__esModule = true;
-var isDocument_1 = __fusereq(339);
-var isDocument_1d = __fuse.dt(isDocument_1);
-function isWindow(node) {
-  if (('window' in node) && node.window === node) return node;
-  if (isDocument_1d.default(node)) return node.defaultView || false;
-  return false;
-}
-exports.default = isWindow;
-
-},
-287: function(__fusereq, exports, module){
-exports.__esModule = true;
 function getBasePlacement(placement) {
   return placement.split('-')[0];
 }
 exports.default = getBasePlacement;
 
 },
-288: function(__fusereq, exports, module){
+287: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(340);
+var getBoundingClientRect_js_1 = __fusereq(339);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 function getLayoutRect(element) {
   var clientRect = getBoundingClientRect_js_1d.default(element);
@@ -29618,9 +29606,9 @@ function getLayoutRect(element) {
 exports.default = getLayoutRect;
 
 },
-289: function(__fusereq, exports, module){
+288: function(__fusereq, exports, module){
 exports.__esModule = true;
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 function contains(parent, child) {
   var rootNode = child.getRootNode && child.getRootNode();
   if (parent.contains(child)) {
@@ -29639,18 +29627,18 @@ function contains(parent, child) {
 exports.default = contains;
 
 },
-290: function(__fusereq, exports, module){
+289: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var getComputedStyle_js_1 = __fusereq(297);
+var getComputedStyle_js_1 = __fusereq(296);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var instanceOf_js_1 = __fusereq(341);
-var isTableElement_js_1 = __fusereq(343);
+var instanceOf_js_1 = __fusereq(340);
+var isTableElement_js_1 = __fusereq(342);
 var isTableElement_js_1d = __fuse.dt(isTableElement_js_1);
-var getParentNode_js_1 = __fusereq(344);
+var getParentNode_js_1 = __fusereq(343);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 function getTrueOffsetParent(element) {
   if (!instanceOf_js_1.isHTMLElement(element) || getComputedStyle_js_1d.default(element).position === 'fixed') {
@@ -29692,7 +29680,7 @@ function getOffsetParent(element) {
 exports.default = getOffsetParent;
 
 },
-291: function(__fusereq, exports, module){
+290: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getMainAxisFromPlacement(placement) {
   return ['top', 'bottom'].indexOf(placement) >= 0 ? 'x' : 'y';
@@ -29700,18 +29688,18 @@ function getMainAxisFromPlacement(placement) {
 exports.default = getMainAxisFromPlacement;
 
 },
-292: function(__fusereq, exports, module){
+291: function(__fusereq, exports, module){
 exports.__esModule = true;
-var math_js_1 = __fusereq(298);
+var math_js_1 = __fusereq(297);
 function within(min, value, max) {
   return math_js_1.max(min, math_js_1.min(value, max));
 }
 exports.default = within;
 
 },
-293: function(__fusereq, exports, module){
+292: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getFreshSideObject_js_1 = __fusereq(306);
+var getFreshSideObject_js_1 = __fusereq(305);
 var getFreshSideObject_js_1d = __fuse.dt(getFreshSideObject_js_1);
 function mergePaddingObject(paddingObject) {
   return Object.assign({}, getFreshSideObject_js_1d.default(), paddingObject);
@@ -29719,7 +29707,7 @@ function mergePaddingObject(paddingObject) {
 exports.default = mergePaddingObject;
 
 },
-294: function(__fusereq, exports, module){
+293: function(__fusereq, exports, module){
 exports.__esModule = true;
 function expandToHashMap(value, keys) {
   return keys.reduce(function (hashMap, key) {
@@ -29730,7 +29718,7 @@ function expandToHashMap(value, keys) {
 exports.default = expandToHashMap;
 
 },
-295: function(__fusereq, exports, module){
+294: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getWindow(node) {
   if (node == null) {
@@ -29745,18 +29733,18 @@ function getWindow(node) {
 exports.default = getWindow;
 
 },
-296: function(__fusereq, exports, module){
+295: function(__fusereq, exports, module){
 exports.__esModule = true;
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 function getDocumentElement(element) {
   return ((instanceOf_js_1.isElement(element) ? element.ownerDocument : element.document) || window.document).documentElement;
 }
 exports.default = getDocumentElement;
 
 },
-297: function(__fusereq, exports, module){
+296: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function getComputedStyle(element) {
   return getWindow_js_1d.default(element).getComputedStyle(element);
@@ -29764,14 +29752,14 @@ function getComputedStyle(element) {
 exports.default = getComputedStyle;
 
 },
-298: function(__fusereq, exports, module){
+297: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.max = Math.max;
 exports.min = Math.min;
 exports.round = Math.round;
 
 },
-299: function(__fusereq, exports, module){
+298: function(__fusereq, exports, module){
 exports.__esModule = true;
 var hash = {
   left: 'right',
@@ -29787,7 +29775,7 @@ function getOppositePlacement(placement) {
 exports.default = getOppositePlacement;
 
 },
-300: function(__fusereq, exports, module){
+299: function(__fusereq, exports, module){
 exports.__esModule = true;
 var hash = {
   start: 'end',
@@ -29801,23 +29789,23 @@ function getOppositeVariationPlacement(placement) {
 exports.default = getOppositeVariationPlacement;
 
 },
-301: function(__fusereq, exports, module){
+300: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(340);
+var getBoundingClientRect_js_1 = __fusereq(339);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getClippingRect_js_1 = __fusereq(345);
+var getClippingRect_js_1 = __fusereq(344);
 var getClippingRect_js_1d = __fuse.dt(getClippingRect_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var computeOffsets_js_1 = __fusereq(304);
+var computeOffsets_js_1 = __fusereq(303);
 var computeOffsets_js_1d = __fuse.dt(computeOffsets_js_1);
-var rectToClientRect_js_1 = __fusereq(346);
+var rectToClientRect_js_1 = __fusereq(345);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
-var enums_js_1 = __fusereq(244);
-var instanceOf_js_1 = __fusereq(341);
-var mergePaddingObject_js_1 = __fusereq(293);
+var enums_js_1 = __fusereq(240);
+var instanceOf_js_1 = __fusereq(340);
+var mergePaddingObject_js_1 = __fusereq(292);
 var mergePaddingObject_js_1d = __fuse.dt(mergePaddingObject_js_1);
-var expandToHashMap_js_1 = __fusereq(294);
+var expandToHashMap_js_1 = __fusereq(293);
 var expandToHashMap_js_1d = __fuse.dt(expandToHashMap_js_1);
 function detectOverflow(state, options) {
   if (options === void 0) {
@@ -29859,14 +29847,14 @@ function detectOverflow(state, options) {
 exports.default = detectOverflow;
 
 },
-302: function(__fusereq, exports, module){
+301: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getVariation_js_1 = __fusereq(303);
+var getVariation_js_1 = __fusereq(302);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
-var enums_js_1 = __fusereq(244);
-var detectOverflow_js_1 = __fusereq(301);
+var enums_js_1 = __fusereq(240);
+var detectOverflow_js_1 = __fusereq(300);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
 function computeAutoPlacement(state, options) {
   if (options === void 0) {
@@ -29899,7 +29887,7 @@ function computeAutoPlacement(state, options) {
 exports.default = computeAutoPlacement;
 
 },
-303: function(__fusereq, exports, module){
+302: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getVariation(placement) {
   return placement.split('-')[1];
@@ -29907,15 +29895,15 @@ function getVariation(placement) {
 exports.default = getVariation;
 
 },
-304: function(__fusereq, exports, module){
+303: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBasePlacement_js_1 = __fusereq(287);
+var getBasePlacement_js_1 = __fusereq(286);
 var getBasePlacement_js_1d = __fuse.dt(getBasePlacement_js_1);
-var getVariation_js_1 = __fusereq(303);
+var getVariation_js_1 = __fusereq(302);
 var getVariation_js_1d = __fuse.dt(getVariation_js_1);
-var getMainAxisFromPlacement_js_1 = __fusereq(291);
+var getMainAxisFromPlacement_js_1 = __fusereq(290);
 var getMainAxisFromPlacement_js_1d = __fuse.dt(getMainAxisFromPlacement_js_1);
-var enums_js_1 = __fusereq(244);
+var enums_js_1 = __fusereq(240);
 function computeOffsets(_ref) {
   var reference = _ref.reference, element = _ref.element, placement = _ref.placement;
   var basePlacement = placement ? getBasePlacement_js_1d.default(placement) : null;
@@ -29972,7 +29960,7 @@ function computeOffsets(_ref) {
 exports.default = computeOffsets;
 
 },
-305: function(__fusereq, exports, module){
+304: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getAltAxis(axis) {
   return axis === 'x' ? 'y' : 'x';
@@ -29980,7 +29968,7 @@ function getAltAxis(axis) {
 exports.default = getAltAxis;
 
 },
-306: function(__fusereq, exports, module){
+305: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getFreshSideObject() {
   return {
@@ -29993,25 +29981,25 @@ function getFreshSideObject() {
 exports.default = getFreshSideObject;
 
 },
-307: function(__fusereq, exports, module){
+306: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getCompositeRect_js_1 = __fusereq(347);
+var getCompositeRect_js_1 = __fusereq(346);
 var getCompositeRect_js_1d = __fuse.dt(getCompositeRect_js_1);
-var getLayoutRect_js_1 = __fusereq(288);
+var getLayoutRect_js_1 = __fusereq(287);
 var getLayoutRect_js_1d = __fuse.dt(getLayoutRect_js_1);
-var listScrollParents_js_1 = __fusereq(348);
+var listScrollParents_js_1 = __fusereq(347);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
-var getOffsetParent_js_1 = __fusereq(290);
+var getOffsetParent_js_1 = __fusereq(289);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var orderModifiers_js_1 = __fusereq(349);
+var orderModifiers_js_1 = __fusereq(348);
 var orderModifiers_js_1d = __fuse.dt(orderModifiers_js_1);
-var debounce_js_1 = __fusereq(350);
+var debounce_js_1 = __fusereq(349);
 var debounce_js_1d = __fuse.dt(debounce_js_1);
-var mergeByName_js_1 = __fusereq(351);
+var mergeByName_js_1 = __fusereq(350);
 var mergeByName_js_1d = __fuse.dt(mergeByName_js_1);
-var detectOverflow_js_1 = __fusereq(301);
+var detectOverflow_js_1 = __fusereq(300);
 var detectOverflow_js_1d = __fuse.dt(detectOverflow_js_1);
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 var INVALID_ELEMENT_ERROR = 'Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.';
 var INFINITE_LOOP_ERROR = 'Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.';
 var DEFAULT_OPTIONS = {
@@ -30147,6 +30135,18 @@ function popperGenerator(generatorOptions) {
 exports.popperGenerator = popperGenerator;
 exports.createPopper = popperGenerator();
 exports.detectOverflow = detectOverflow_js_1d.default;
+
+},
+307: function(__fusereq, exports, module){
+exports.__esModule = true;
+var isDocument_1 = __fusereq(351);
+var isDocument_1d = __fuse.dt(isDocument_1);
+function isWindow(node) {
+  if (('window' in node) && node.window === node) return node;
+  if (isDocument_1d.default(node)) return node.defaultView || false;
+  return false;
+}
+exports.default = isWindow;
 
 },
 308: function(__fusereq, exports, module){
@@ -31282,14 +31282,6 @@ function ok() {
 },
 339: function(__fusereq, exports, module){
 exports.__esModule = true;
-function isDocument(element) {
-  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
-}
-exports.default = isDocument;
-
-},
-340: function(__fusereq, exports, module){
-exports.__esModule = true;
 function getBoundingClientRect(element) {
   var rect = element.getBoundingClientRect();
   return {
@@ -31306,9 +31298,9 @@ function getBoundingClientRect(element) {
 exports.default = getBoundingClientRect;
 
 },
-341: function(__fusereq, exports, module){
+340: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function isElement(node) {
   var OwnElement = getWindow_js_1d.default(node).Element;
@@ -31330,7 +31322,7 @@ exports.isHTMLElement = isHTMLElement;
 exports.isShadowRoot = isShadowRoot;
 
 },
-342: function(__fusereq, exports, module){
+341: function(__fusereq, exports, module){
 exports.__esModule = true;
 function getNodeName(element) {
   return element ? (element.nodeName || '').toLowerCase() : null;
@@ -31338,9 +31330,9 @@ function getNodeName(element) {
 exports.default = getNodeName;
 
 },
-343: function(__fusereq, exports, module){
+342: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
 function isTableElement(element) {
   return ['table', 'td', 'th'].indexOf(getNodeName_js_1d.default(element)) >= 0;
@@ -31348,13 +31340,13 @@ function isTableElement(element) {
 exports.default = isTableElement;
 
 },
-344: function(__fusereq, exports, module){
+343: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 function getParentNode(element) {
   if (getNodeName_js_1d.default(element) === 'html') {
     return element;
@@ -31364,33 +31356,33 @@ function getParentNode(element) {
 exports.default = getParentNode;
 
 },
-345: function(__fusereq, exports, module){
+344: function(__fusereq, exports, module){
 exports.__esModule = true;
-var enums_js_1 = __fusereq(244);
+var enums_js_1 = __fusereq(240);
 var getViewportRect_js_1 = __fusereq(358);
 var getViewportRect_js_1d = __fuse.dt(getViewportRect_js_1);
 var getDocumentRect_js_1 = __fusereq(359);
 var getDocumentRect_js_1d = __fuse.dt(getDocumentRect_js_1);
-var listScrollParents_js_1 = __fusereq(348);
+var listScrollParents_js_1 = __fusereq(347);
 var listScrollParents_js_1d = __fuse.dt(listScrollParents_js_1);
-var getOffsetParent_js_1 = __fusereq(290);
+var getOffsetParent_js_1 = __fusereq(289);
 var getOffsetParent_js_1d = __fuse.dt(getOffsetParent_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(297);
+var getComputedStyle_js_1 = __fusereq(296);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
-var instanceOf_js_1 = __fusereq(341);
-var getBoundingClientRect_js_1 = __fusereq(340);
+var instanceOf_js_1 = __fusereq(340);
+var getBoundingClientRect_js_1 = __fusereq(339);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getParentNode_js_1 = __fusereq(344);
+var getParentNode_js_1 = __fusereq(343);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
-var contains_js_1 = __fusereq(289);
+var contains_js_1 = __fusereq(288);
 var contains_js_1d = __fuse.dt(contains_js_1);
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var rectToClientRect_js_1 = __fusereq(346);
+var rectToClientRect_js_1 = __fusereq(345);
 var rectToClientRect_js_1d = __fuse.dt(rectToClientRect_js_1);
-var math_js_1 = __fusereq(298);
+var math_js_1 = __fusereq(297);
 function getInnerBoundingClientRect(element) {
   var rect = getBoundingClientRect_js_1d.default(element);
   rect.top = rect.top + element.clientTop;
@@ -31438,7 +31430,7 @@ function getClippingRect(element, boundary, rootBoundary) {
 exports.default = getClippingRect;
 
 },
-346: function(__fusereq, exports, module){
+345: function(__fusereq, exports, module){
 exports.__esModule = true;
 function rectToClientRect(rect) {
   return Object.assign({}, rect, {
@@ -31451,18 +31443,18 @@ function rectToClientRect(rect) {
 exports.default = rectToClientRect;
 
 },
-347: function(__fusereq, exports, module){
+346: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(340);
+var getBoundingClientRect_js_1 = __fusereq(339);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
 var getNodeScroll_js_1 = __fusereq(360);
 var getNodeScroll_js_1d = __fuse.dt(getNodeScroll_js_1);
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
@@ -31503,13 +31495,13 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
 exports.default = getCompositeRect;
 
 },
-348: function(__fusereq, exports, module){
+347: function(__fusereq, exports, module){
 exports.__esModule = true;
 var getScrollParent_js_1 = __fusereq(363);
 var getScrollParent_js_1d = __fuse.dt(getScrollParent_js_1);
-var getParentNode_js_1 = __fusereq(344);
+var getParentNode_js_1 = __fusereq(343);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
@@ -31528,9 +31520,9 @@ function listScrollParents(element, list) {
 exports.default = listScrollParents;
 
 },
-349: function(__fusereq, exports, module){
+348: function(__fusereq, exports, module){
 exports.__esModule = true;
-var enums_js_1 = __fusereq(244);
+var enums_js_1 = __fusereq(240);
 function order(modifiers) {
   var map = new Map();
   var visited = new Set();
@@ -31569,7 +31561,7 @@ function orderModifiers(modifiers) {
 exports.default = orderModifiers;
 
 },
-350: function(__fusereq, exports, module){
+349: function(__fusereq, exports, module){
 exports.__esModule = true;
 function debounce(fn) {
   var pending;
@@ -31588,7 +31580,7 @@ function debounce(fn) {
 exports.default = debounce;
 
 },
-351: function(__fusereq, exports, module){
+350: function(__fusereq, exports, module){
 exports.__esModule = true;
 function mergeByName(modifiers) {
   var merged = modifiers.reduce(function (merged, current) {
@@ -31604,6 +31596,14 @@ function mergeByName(modifiers) {
   });
 }
 exports.default = mergeByName;
+
+},
+351: function(__fusereq, exports, module){
+exports.__esModule = true;
+function isDocument(element) {
+  return ('nodeType' in element) && element.nodeType === document.DOCUMENT_NODE;
+}
+exports.default = isDocument;
 
 },
 352: function(__fusereq, exports, module){
@@ -31797,9 +31797,9 @@ function collapse(value) {
 },
 358: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
@@ -31831,15 +31831,15 @@ exports.default = getViewportRect;
 },
 359: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
-var getComputedStyle_js_1 = __fusereq(297);
+var getComputedStyle_js_1 = __fusereq(296);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 var getWindowScrollBarX_js_1 = __fusereq(361);
 var getWindowScrollBarX_js_1d = __fuse.dt(getWindowScrollBarX_js_1);
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
-var math_js_1 = __fusereq(298);
+var math_js_1 = __fusereq(297);
 function getDocumentRect(element) {
   var _element$ownerDocumen;
   var html = getDocumentElement_js_1d.default(element);
@@ -31866,9 +31866,9 @@ exports.default = getDocumentRect;
 exports.__esModule = true;
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 var getHTMLElementScroll_js_1 = __fusereq(365);
 var getHTMLElementScroll_js_1d = __fuse.dt(getHTMLElementScroll_js_1);
 function getNodeScroll(node) {
@@ -31883,9 +31883,9 @@ exports.default = getNodeScroll;
 },
 361: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getBoundingClientRect_js_1 = __fusereq(340);
+var getBoundingClientRect_js_1 = __fusereq(339);
 var getBoundingClientRect_js_1d = __fuse.dt(getBoundingClientRect_js_1);
-var getDocumentElement_js_1 = __fusereq(296);
+var getDocumentElement_js_1 = __fusereq(295);
 var getDocumentElement_js_1d = __fuse.dt(getDocumentElement_js_1);
 var getWindowScroll_js_1 = __fusereq(364);
 var getWindowScroll_js_1d = __fuse.dt(getWindowScroll_js_1);
@@ -31897,7 +31897,7 @@ exports.default = getWindowScrollBarX;
 },
 362: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getComputedStyle_js_1 = __fusereq(297);
+var getComputedStyle_js_1 = __fusereq(296);
 var getComputedStyle_js_1d = __fuse.dt(getComputedStyle_js_1);
 function isScrollParent(element) {
   var _getComputedStyle = getComputedStyle_js_1d.default(element), overflow = _getComputedStyle.overflow, overflowX = _getComputedStyle.overflowX, overflowY = _getComputedStyle.overflowY;
@@ -31908,13 +31908,13 @@ exports.default = isScrollParent;
 },
 363: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getParentNode_js_1 = __fusereq(344);
+var getParentNode_js_1 = __fusereq(343);
 var getParentNode_js_1d = __fuse.dt(getParentNode_js_1);
 var isScrollParent_js_1 = __fusereq(362);
 var isScrollParent_js_1d = __fuse.dt(isScrollParent_js_1);
-var getNodeName_js_1 = __fusereq(342);
+var getNodeName_js_1 = __fusereq(341);
 var getNodeName_js_1d = __fuse.dt(getNodeName_js_1);
-var instanceOf_js_1 = __fusereq(341);
+var instanceOf_js_1 = __fusereq(340);
 function getScrollParent(node) {
   if (['html', 'body', '#document'].indexOf(getNodeName_js_1d.default(node)) >= 0) {
     return node.ownerDocument.body;
@@ -31929,7 +31929,7 @@ exports.default = getScrollParent;
 },
 364: function(__fusereq, exports, module){
 exports.__esModule = true;
-var getWindow_js_1 = __fusereq(295);
+var getWindow_js_1 = __fusereq(294);
 var getWindow_js_1d = __fuse.dt(getWindow_js_1);
 function getWindowScroll(node) {
   var win = getWindow_js_1d.default(node);
