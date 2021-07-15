@@ -41,13 +41,13 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(9);
-var config_1 = __fusereq(11);
-var preview_1 = __fusereq(12);
-var file_saver_1 = __fusereq(13);
-var react_loading_1 = __fusereq(14);
+var react_bootstrap_1 = __fusereq(8);
+var config_1 = __fusereq(10);
+var preview_1 = __fusereq(11);
+var file_saver_1 = __fusereq(12);
+var react_loading_1 = __fusereq(13);
 var react_loading_1d = __fuse.dt(react_loading_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
@@ -120,15 +120,15 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-8: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(18);
-var aos_1 = __fusereq(19);
+var tabler_react_1 = __fusereq(17);
+var aos_1 = __fusereq(18);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(20);
+var footer_1 = __fusereq(19);
 var footer_1d = __fuse.dt(footer_1);
-var config_1 = __fusereq(11);
+var config_1 = __fusereq(10);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -136,7 +136,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(17);
+const logo = __fusereq(16);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -281,19 +281,19 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-11: function(__fusereq, exports, module){
+10: function(__fusereq, exports, module){
 exports.__esModule = true;
 exports.HOME_URL = "https://dev2.opacity.io";
 
 },
-12: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(98);
-var react_markdown_1 = __fusereq(99);
+var preview_renderer_1 = __fusereq(97);
+var react_markdown_1 = __fusereq(98);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(100);
+var react_file_icon_1 = __fusereq(99);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -375,10 +375,10 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-17: function(__fusereq, exports, module){
+16: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-98: function(__fusereq, exports, module){
+97: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
