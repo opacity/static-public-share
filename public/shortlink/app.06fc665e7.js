@@ -123,10 +123,10 @@ exports.default = SharePage;
 7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(17);
-var aos_1 = __fusereq(18);
+var tabler_react_1 = __fusereq(18);
+var aos_1 = __fusereq(19);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(19);
+var footer_1 = __fusereq(20);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(10);
 aos_1d.default.init({
@@ -136,7 +136,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(16);
+const logo = __fusereq(17);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -290,10 +290,10 @@ exports.HOME_URL = "https://dev2.opacity.io";
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(97);
-var react_markdown_1 = __fusereq(98);
+var preview_renderer_1 = __fusereq(98);
+var react_markdown_1 = __fusereq(99);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(99);
+var react_file_icon_1 = __fusereq(100);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -375,10 +375,10 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-16: function(__fusereq, exports, module){
+17: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-97: function(__fusereq, exports, module){
+98: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
