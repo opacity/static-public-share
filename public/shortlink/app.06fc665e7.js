@@ -123,10 +123,10 @@ exports.default = SharePage;
 8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(93);
-var aos_1 = __fusereq(94);
+var tabler_react_1 = __fusereq(18);
+var aos_1 = __fusereq(19);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(95);
+var footer_1 = __fusereq(20);
 var footer_1d = __fuse.dt(footer_1);
 var config_1 = __fusereq(11);
 aos_1d.default.init({
@@ -136,7 +136,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(92);
+const logo = __fusereq(17);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -375,7 +375,7 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-92: function(__fusereq, exports, module){
+17: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
 98: function(__fusereq, exports, module){
