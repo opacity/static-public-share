@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -61,9 +62,8 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	// @TODO: remove this after aspect ratio fix
 	thumbnailUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
-	aceptedMimeTypesThumbnail := getAcceptedMimeTypesThumbnail()
+	aceptedMimeTypesThumbnail := getAcceptedMimeTypesImage()
 	if mimeTypeContains(aceptedMimeTypesThumbnail, ps.MimeType) {
 		thumbnailUrl = fileUrl
 	}
@@ -80,8 +80,25 @@ func getShortlink(c *gin.Context) {
 	})
 }
 
-// @TODO: remove this after aspect ratio fix
-func getAcceptedMimeTypesThumbnail() []string {
+func determineFileType(mimeType string) string {
+	x := strings.Split(mimeType, "/")
+
+	if mimeTypeContains([]string{"png", "png", "gif", "tiff", "bmp"}, x[1]) {
+		return "image"
+	}
+
+	if mimeTypeContains([]string{"mp4", "ogg", "webm"}, x[1]) {
+		return "video"
+	}
+
+	if mimeTypeContains([]string{"mp3", "flac"}, x[1]) {
+		return "audio"
+	}
+
+	return "generic"
+}
+
+func getAcceptedMimeTypesImage() []string {
 	return []string{
 		"image/jpeg",
 		"image/png",
@@ -91,7 +108,6 @@ func getAcceptedMimeTypesThumbnail() []string {
 	}
 }
 
-// @TODO: remove this after aspect ratio fix
 func mimeTypeContains(mimeTypes []string, mimeType string) bool {
 	for _, t := range mimeTypes {
 		if t == mimeType {
