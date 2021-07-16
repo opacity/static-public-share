@@ -60,7 +60,7 @@ class SiteWrapper extends React.Component<Props, State> {
         >
           <div className='container-xl'>
             <h1 className='navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0'>
-              <a href={window.opacityUrl} className='logo-wrapper'>
+              <a href={window.OpacityFile.opacityUrl} className='logo-wrapper'>
                 <img src={logo} width='60' height='60' alt='Opacity' className='navbar-brand-image' />
                 <span className='ml-3'>OPACITY</span>
               </a>
@@ -80,17 +80,17 @@ class SiteWrapper extends React.Component<Props, State> {
               <div className='d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-end'>
                 <ul className='navbar-nav'>
                   <li className='nav-item'>
-                    <a href={window.opacityUrl + 'platform'} className='nav-link'>
+                    <a href={window.OpacityFile.opacityUrl + 'platform'} className='nav-link'>
                       Why Opacity?
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href={window.opacityUrl + 'community'} className='nav-link'>
+                    <a href={window.OpacityFile.opacityUrl + 'community'} className='nav-link'>
                       App Gallery
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <Nav.Link href='/blog'>Learn</Nav.Link>
+                    <Nav.Link href={window.OpacityFile.opacityUrl + 'blog'}>Learn</Nav.Link>
                   </li>
                   <li className='nav-item'>
                     {loggedIn ?
@@ -99,7 +99,7 @@ class SiteWrapper extends React.Component<Props, State> {
                           <Button
                             className='btn btn-primary'
                             onClick={() => {
-                              window.open(`${window.opacityUrl}file-manager`, '_blank');
+                              window.open(`${window.OpacityFile.opacityUrl}file-manager`, '_blank');
                             }}
                           >
                             Dashboard
@@ -110,7 +110,7 @@ class SiteWrapper extends React.Component<Props, State> {
                           <Button
                             className='btn btn-white btn-pill'
                             onClick={() => {
-                              window.open(`${window.opacityUrl}plans`, '_blank');
+                              window.open(`${window.OpacityFile.opacityUrl}plans`, '_blank');
                             }}
                           >
                             Explore Plans
@@ -126,7 +126,7 @@ class SiteWrapper extends React.Component<Props, State> {
                         <Button
                           className='btn btn-primary'
                           onClick={() => {
-                            window.open(`${window.opacityUrl}`, '_blank');
+                            window.open(`${window.OpacityFile.opacityUrl}`, '_blank');
                           }}
                         >
                           Logout
@@ -137,7 +137,7 @@ class SiteWrapper extends React.Component<Props, State> {
                         <Button
                           className='btn btn-primary btn-pill'
                           onClick={() => {
-                            window.open(`${window.opacityUrl}`, '_blank');
+                            window.open(`${window.OpacityFile.opacityUrl}`, '_blank');
                           }}
                         >
                           Log in
@@ -154,12 +154,12 @@ class SiteWrapper extends React.Component<Props, State> {
                 <div className='d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center'>
                   <ul className='navbar-nav'>
                     <li className='nav-item'>
-                      <a href={window.opacityUrl + 'platform'} className='nav-link'>
+                      <a href={window.OpacityFile.opacityUrl + 'platform'} className='nav-link'>
                         Why Opacity?
                     </a>
                     </li>
                     <li className='nav-item'>
-                      <a href={window.opacityUrl + 'community'} className='nav-link'>
+                      <a href={window.OpacityFile.opacityUrl + 'community'} className='nav-link'>
                         App Gallery
                     </a>
                     </li>
@@ -171,14 +171,14 @@ class SiteWrapper extends React.Component<Props, State> {
                       loggedIn ? (
                         <>
                           <li className='nav-item'>
-                            <a href={window.opacityUrl + 'file-manager'} className='nav-link' >
+                            <a href={window.OpacityFile.opacityUrl + 'file-manager'} className='nav-link' >
                               Dashboard
                             </a>
                           </li>
                           <li
                             className='nav-item'
                             onClick={() => {
-                              window.open(`${window.opacityUrl}`, ' _blank');
+                              window.open(`${window.OpacityFile.opacityUrl}`, ' _blank');
                             }}
                           >
                             <Nav.Link>Logout</Nav.Link>

@@ -85,7 +85,7 @@ const SharePage = ({ history }) => {
                   <h2>Easily share your files with Opacity</h2>
 
                   <div className="free-signup-text">
-                    <a href={window.opacityUrl + "plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
+                    <a href={window.OpacityFile.opacityUrl + "plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
                   </div>
                   <div style={{ fontSize: "1.1rem" }}>
                     Free to share ideas. Free to be protected. Free to be you.
