@@ -135,3 +135,7 @@ header {
   z-index: 10000;
   background: rgba(0, 0, 0, 0.2);
 }
+
+footer {
+  flex-shrink: 0;
+}
