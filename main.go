@@ -51,13 +51,21 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	thumbnailUrl := getPublicShareThumbnailURL(ps.FileID)
+	// @TODO: Add this back when ratio is fixed
+	// thumbnailUrl := getPublicShareThumbnailURL(ps.FileID)
 	fileUrl := getPublicShareFileURL(ps.FileID)
 
 	err = UpdateViewsCount(ps)
 	if err != nil {
 		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
 		return
+	}
+
+	// @TODO: remove this after aspect ratio fix
+	thumbnailUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
+	aceptedMimeTypesThumbnail := getAcceptedMimeTypesThumbnail()
+	if mimeTypeContains(aceptedMimeTypesThumbnail, ps.MimeType) {
+		thumbnailUrl = fileUrl
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
@@ -70,6 +78,27 @@ func getShortlink(c *gin.Context) {
 		"Thumbnail":     thumbnailUrl,
 		"OpacityUrl":    os.Getenv("OPACITY_URL"),
 	})
+}
+
+// @TODO: remove this after aspect ratio fix
+func getAcceptedMimeTypesThumbnail() []string {
+	return []string{
+		"image/jpeg",
+		"image/png",
+		"image/gif",
+		"image/tiff",
+		"image/bmp",
+	}
+}
+
+// @TODO: remove this after aspect ratio fix
+func mimeTypeContains(mimeTypes []string, mimeType string) bool {
+	for _, t := range mimeTypes {
+		if t == mimeType {
+			return true
+		}
+	}
+	return false
 }
 
 func getPublicShareThumbnailURL(fileHandle string) string {
