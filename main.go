@@ -72,7 +72,7 @@ func getShortlink(c *gin.Context) {
 }
 
 func getPublicShareThumbnailURL(fileHandle string) string {
-	url := os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail"
+	url := os.Getenv("NODE_BUCKET_URL") + fileHandle + "/thumbnail.png"
 	resp, err := http.Head(url)
 
 	if err == nil && resp.StatusCode == http.StatusOK {
