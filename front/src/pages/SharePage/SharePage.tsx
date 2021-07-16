@@ -2,7 +2,6 @@ import React, { useState, useMemo } from "react";
 import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
-import { HOME_URL } from "../../config"
 import { Preview } from "./preview";
 import { saveAs } from 'file-saver'
 import ReactLoading from "react-loading";
@@ -17,6 +16,7 @@ declare global {
       thumbnail: string,
       mimeType: string,
       fileExtension: string,
+      opacityUrl: string,
     }
   }
 }
@@ -85,7 +85,7 @@ const SharePage = ({ history }) => {
                   <h2>Easily share your files with Opacity</h2>
 
                   <div className="free-signup-text">
-                    <a href={HOME_URL + "/plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
+                    <a href={window.OpacityFile.opacityUrl + "plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
                   </div>
                   <div style={{ fontSize: "1.1rem" }}>
                     Free to share ideas. Free to be protected. Free to be you.
