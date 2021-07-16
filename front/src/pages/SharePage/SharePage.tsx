@@ -46,9 +46,9 @@ const SharePage = ({ history }) => {
               <Row style={{ padding: '20px' }}>
                 <div className='preview-area center'>
                   <Preview
-                    url={file.thumbnail}
+                    url={file.url}
                     ext={file.fileExtension}
-                    type='image/png'
+                    type={file.mimeType}
                     className='preview-content'
                   />
                 </div>

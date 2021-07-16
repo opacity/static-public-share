@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { PreviewRenderer } from "./preview-renderer";
 import ReactMarkdown from "react-markdown";
-import { FileIcon, defaultStyles } from 'react-file-icon';
 
 const getTypeFromExt = (ext?: string) => {
   ext = ("" + ext).replace(/^\./, "");
@@ -9,22 +8,16 @@ const getTypeFromExt = (ext?: string) => {
   if ([
     "png",
     "apng",
-
     "svg",
-
     "gif",
-
     "bmp",
-
     "ico",
     "cur",
-
     "jpg",
     "jpeg",
     "jfif",
     "pjpeg",
     "pjp",
-
     "webp"
   ].includes(ext)) {
     return "image";
@@ -124,14 +117,7 @@ const Preview = ({
           );
       }
     default:
-      return <div style={{ width: '300px' }}>
-        <FileIcon
-          color="#A8A8A8"
-          glyphColor="#ffffff"
-          {...defaultStyles[ext]}
-          extension={ext}
-        />
-      </div>;
+      return <img className={className} src={url} />;
   }
 };
 

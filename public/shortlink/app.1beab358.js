@@ -41,12 +41,12 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(8);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(8);
-var preview_1 = __fusereq(10);
-var file_saver_1 = __fusereq(11);
-var react_loading_1 = __fusereq(12);
+var react_bootstrap_1 = __fusereq(9);
+var preview_1 = __fusereq(11);
+var file_saver_1 = __fusereq(12);
+var react_loading_1 = __fusereq(13);
 var react_loading_1d = __fuse.dt(react_loading_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
@@ -74,9 +74,9 @@ const SharePage = ({history}) => {
   }, react_1d.default.createElement("div", {
     className: 'preview-area center'
   }, react_1d.default.createElement(preview_1.Preview, {
-    url: file.thumbnail,
+    url: file.url,
     ext: file.fileExtension,
-    type: 'image/png',
+    type: file.mimeType,
     className: 'preview-content'
   })))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
@@ -119,13 +119,13 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-7: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(16);
-var aos_1 = __fusereq(17);
+var tabler_react_1 = __fusereq(17);
+var aos_1 = __fusereq(18);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(18);
+var footer_1 = __fusereq(19);
 var footer_1d = __fuse.dt(footer_1);
 aos_1d.default.init({
   once: true,
@@ -134,7 +134,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(15);
+const logo = __fusereq(16);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -279,14 +279,13 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-10: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(20);
-var react_markdown_1 = __fusereq(21);
+var preview_renderer_1 = __fusereq(97);
+var react_markdown_1 = __fusereq(98);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
-var react_file_icon_1 = __fusereq(22);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
   if (["png", "apng", "svg", "gif", "bmp", "ico", "cur", "jpg", "jpeg", "jfif", "pjpeg", "pjp", "webp"].includes(ext)) {
@@ -352,26 +351,20 @@ const Preview = ({ext, type, url, className, onLoad, onUnload}) => {
           }));
       }
     default:
-      return react_1d.default.createElement("div", {
-        style: {
-          width: '300px'
-        }
-      }, react_1d.default.createElement(react_file_icon_1.FileIcon, Object.assign({
-        color: "#A8A8A8",
-        glyphColor: "#ffffff"
-      }, react_file_icon_1.defaultStyles[ext], {
-        extension: ext
-      })));
+      return react_1d.default.createElement("img", {
+        className: className,
+        src: url
+      });
   }
 };
 exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-15: function(__fusereq, exports, module){
+16: function(__fusereq, exports, module){
 module.exports = "/resources/045babb67.svg";
 },
-20: function(__fusereq, exports, module){
+97: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -401,4 +394,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.06d14fcc6.js.map
+//# sourceMappingURL=app.1beab358.js.map
