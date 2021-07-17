@@ -65,7 +65,7 @@ func getShortlink(c *gin.Context) {
 	thumbnailUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
 	aceptedMimeTypesThumbnail := getAcceptedMimeTypesImage()
 	if mimeTypeContains(aceptedMimeTypesThumbnail, ps.MimeType) {
-		thumbnailUrl = fileUrl
+		thumbnailUrl = getPublicShareThumbnailURL(ps.FileID)
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
