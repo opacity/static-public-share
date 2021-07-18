@@ -41,12 +41,12 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(8);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(8);
-var preview_1 = __fusereq(10);
-var file_saver_1 = __fusereq(11);
-var react_loading_1 = __fusereq(12);
+var react_bootstrap_1 = __fusereq(9);
+var preview_1 = __fusereq(11);
+var file_saver_1 = __fusereq(12);
+var react_loading_1 = __fusereq(13);
 var react_loading_1d = __fuse.dt(react_loading_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
@@ -119,7 +119,7 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-7: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(15);
@@ -279,7 +279,7 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-10: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
