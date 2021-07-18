@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -52,69 +51,22 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
-	// @TODO: Add this back when ratio is fixed
-	// thumbnailUrl := getPublicShareThumbnailURL(ps.FileID)
-	fileUrl := getPublicShareFileURL(ps.FileID)
-
 	err = UpdateViewsCount(ps)
 	if err != nil {
 		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	thumbnailUrl := "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
-	aceptedMimeTypesThumbnail := getAcceptedMimeTypesImage()
-	if mimeTypeContains(aceptedMimeTypesThumbnail, ps.MimeType) {
-		thumbnailUrl = fileUrl
-	}
-
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
 		"Shortlink":     os.Getenv("OPACITY_PUBLIC_SHARE_URL") + shortlink,
-		"Url":           fileUrl,
+		"Url":           getPublicShareFileURL(ps.FileID),
 		"Title":         ps.Title,
 		"Description":   ps.Description,
 		"MimeType":      ps.MimeType,
 		"FileExtension": ps.FileExtension,
-		"Thumbnail":     thumbnailUrl,
+		"Thumbnail":     getPublicShareThumbnailURL(ps.FileID),
 		"OpacityUrl":    os.Getenv("OPACITY_URL"),
 	})
-}
-
-func determineFileType(mimeType string) string {
-	x := strings.Split(mimeType, "/")
-
-	if mimeTypeContains([]string{"png", "png", "gif", "tiff", "bmp"}, x[1]) {
-		return "image"
-	}
-
-	if mimeTypeContains([]string{"mp4", "ogg", "webm"}, x[1]) {
-		return "video"
-	}
-
-	if mimeTypeContains([]string{"mp3", "flac"}, x[1]) {
-		return "audio"
-	}
-
-	return "generic"
-}
-
-func getAcceptedMimeTypesImage() []string {
-	return []string{
-		"image/jpeg",
-		"image/png",
-		"image/gif",
-		"image/tiff",
-		"image/bmp",
-	}
-}
-
-func mimeTypeContains(mimeTypes []string, mimeType string) bool {
-	for _, t := range mimeTypes {
-		if t == mimeType {
-			return true
-		}
-	}
-	return false
 }
 
 func getPublicShareThumbnailURL(fileHandle string) string {
