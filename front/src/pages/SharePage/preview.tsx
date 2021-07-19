@@ -50,8 +50,9 @@ const getTypeFromExt = (ext?: string) => {
 
 type PreviewProps = {
   ext: string
-  type?: string
+  type: string
   url: string
+  defaultThumbnail: string
   className?: string
   onLoad?: () => void
   onUnload?: () => void
@@ -61,6 +62,7 @@ const Preview = ({
   ext,
   type,
   url,
+  defaultThumbnail,
   className,
   onLoad,
   onUnload
@@ -117,7 +119,7 @@ const Preview = ({
           );
       }
     default:
-      return <img className={className} src={url} />;
+      return <img className={className} src={defaultThumbnail} />;
   }
 };
 
