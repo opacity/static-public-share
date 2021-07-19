@@ -10,6 +10,8 @@ import (
 	"github.com/joho/godotenv"
 )
 
+const defaultThumbnail = "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
+
 func init() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Printf("error loading .env file: %s", err)
@@ -58,14 +60,15 @@ func getShortlink(c *gin.Context) {
 	}
 
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
-		"Shortlink":     os.Getenv("OPACITY_PUBLIC_SHARE_URL") + shortlink,
-		"Url":           getPublicShareFileURL(ps.FileID),
-		"Title":         ps.Title,
-		"Description":   ps.Description,
-		"MimeType":      ps.MimeType,
-		"FileExtension": ps.FileExtension,
-		"Thumbnail":     getPublicShareThumbnailURL(ps.FileID),
-		"OpacityUrl":    os.Getenv("OPACITY_URL"),
+		"Shortlink":        os.Getenv("OPACITY_PUBLIC_SHARE_URL") + shortlink,
+		"Url":              getPublicShareFileURL(ps.FileID),
+		"Title":            ps.Title,
+		"Description":      ps.Description,
+		"MimeType":         ps.MimeType,
+		"FileExtension":    ps.FileExtension,
+		"Thumbnail":        getPublicShareThumbnailURL(ps.FileID),
+		"OpacityUrl":       os.Getenv("OPACITY_URL"),
+		"DefaultThumbnail": defaultThumbnail,
 	})
 }
 
@@ -83,7 +86,7 @@ func getPublicShareThumbnailURL(fileHandle string) string {
 		return url
 	}
 
-	return "https://s3.us-east-2.amazonaws.com/opacity-public/thumbnail_default.png"
+	return defaultThumbnail
 }
 
 func getPublicShareFileURL(fileHandle string) string {
