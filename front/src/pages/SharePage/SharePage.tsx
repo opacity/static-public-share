@@ -51,6 +51,7 @@ const SharePage = ({ history }) => {
                     url={file.url}
                     ext={file.fileExtension}
                     type={file.mimeType}
+                    defaultThumbnail={file.defaultThumbnail}
                     className='preview-content'
                   />
                 </div>
