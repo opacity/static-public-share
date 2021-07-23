@@ -85,12 +85,12 @@ class SiteWrapper extends React.Component<Props, State> {
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <a href={window.OpacityConfig.opacityUrl + 'community'} className='nav-link'>
-                      App Gallery
+                    <a href={window.OpacityConfig.opacityUrl + 'downloads'} className='nav-link'>
+                      Downloads
                     </a>
                   </li>
                   <li className='nav-item'>
-                    <Nav.Link href={window.OpacityConfig.opacityUrl + 'blog'}>Learn</Nav.Link>
+                    <Nav.Link href="https://medium.com/opacity-storage">Learn</Nav.Link>
                   </li>
                   <li className='nav-item'>
                     {loggedIn ?
