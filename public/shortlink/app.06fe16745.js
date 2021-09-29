@@ -247,9 +247,9 @@ class SiteWrapper extends react_1.Component {
     }, "\n                        Why Opacity?\n                    ")), react_1.createElement("li", {
       className: 'nav-item'
     }, react_1.createElement("a", {
-      href: window.OpacityConfig.opacityUrl + 'community',
+      href: window.OpacityConfig.opacityUrl + 'downloads',
       className: 'nav-link'
-    }, "\n                        App Gallery\n                    ")), react_1.createElement("li", {
+    }, "\n                        Downloads\n                    ")), react_1.createElement("li", {
       className: 'nav-item'
     }, react_1.createElement(tabler_react_1.Nav.Link, {
       href: '/blog'
@@ -284,8 +284,8 @@ exports.default = SiteWrapper;
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(19);
-var react_markdown_1 = __fusereq(20);
+var preview_renderer_1 = __fusereq(95);
+var react_markdown_1 = __fusereq(96);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
@@ -365,7 +365,7 @@ exports.Preview = Preview;
 14: function(__fusereq, exports, module){
 module.exports = "/resources/06dfaeef0.svg";
 },
-19: function(__fusereq, exports, module){
+95: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -395,4 +395,4 @@ exports.PreviewRenderer = PreviewRenderer;
 
 }
 })
-//# sourceMappingURL=app.02a072d95.js.map
+//# sourceMappingURL=app.06fe16745.js.map
