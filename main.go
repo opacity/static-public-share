@@ -63,6 +63,7 @@ func getShortlink(c *gin.Context) {
 		"Shortlink":        os.Getenv("OPACITY_PUBLIC_SHARE_URL") + shortlink,
 		"Url":              getPublicShareFileURL(ps.FileID),
 		"Title":            ps.Title,
+		"ViewsCount":       ps.ViewsCount,
 		"Description":      ps.Description,
 		"MimeType":         ps.MimeType,
 		"FileExtension":    ps.FileExtension,

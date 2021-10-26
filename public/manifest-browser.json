@@ -1,22 +1,22 @@
 [
   {
-    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/public/shortlink/app.06fe16745.js",
-    "browserPath": "/shortlink/app.06fe16745.js",
-    "relativePath": "shortlink/app.06fe16745.js",
+    "absPath": "/home/mihai/repos/opacity/static-public-share/public/shortlink/app.01c08d5a1.js",
+    "browserPath": "/shortlink/app.01c08d5a1.js",
+    "relativePath": "shortlink/app.01c08d5a1.js",
     "type": "js",
     "webIndexed": true
   },
   {
-    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/public/shortlink/vendor.1a2c5c96.js",
-    "browserPath": "/shortlink/vendor.1a2c5c96.js",
-    "relativePath": "shortlink/vendor.1a2c5c96.js",
+    "absPath": "/home/mihai/repos/opacity/static-public-share/public/shortlink/vendor.2c13a3aa.js",
+    "browserPath": "/shortlink/vendor.2c13a3aa.js",
+    "relativePath": "shortlink/vendor.2c13a3aa.js",
     "type": "js",
     "webIndexed": true
   },
   {
-    "absPath": "/home/administrator/work/Opacity/tmp/static-public-share/public/shortlink/style.07e96e73e.css",
-    "browserPath": "/shortlink/style.07e96e73e.css",
-    "relativePath": "shortlink/style.07e96e73e.css",
+    "absPath": "/home/mihai/repos/opacity/static-public-share/public/shortlink/style.7ac3ba42.css",
+    "browserPath": "/shortlink/style.7ac3ba42.css",
+    "relativePath": "shortlink/style.7ac3ba42.css",
     "type": "css",
     "webIndexed": true
   }

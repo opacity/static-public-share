@@ -11,6 +11,7 @@ declare global {
     OpacityFile: {
       shortlink: string,
       url: string,
+      viewsCount: string,
       title: string,
       description: string,
       thumbnail: string,
