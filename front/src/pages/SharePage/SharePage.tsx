@@ -12,6 +12,7 @@ declare global {
       shortlink: string,
       url: string,
       viewsCount: string,
+      fileSizeBytes: string,
       title: string,
       description: string,
       thumbnail: string,
