@@ -59,11 +59,18 @@ func getShortlink(c *gin.Context) {
 		return
 	}
 
+	fileSizeBytes, err := getFileContentLength(ps.FileID)
+	if err != nil {
+		c.AbortWithStatusJSON(http.StatusInternalServerError, err.Error())
+		return
+	}
+
 	c.HTML(http.StatusOK, "shortlink.html", gin.H{
 		"Shortlink":        os.Getenv("OPACITY_PUBLIC_SHARE_URL") + shortlink,
 		"Url":              getPublicShareFileURL(ps.FileID),
 		"Title":            ps.Title,
 		"ViewsCount":       ps.ViewsCount,
+		"FileSize":         fileSizeBytes,
 		"Description":      ps.Description,
 		"MimeType":         ps.MimeType,
 		"FileExtension":    ps.FileExtension,
@@ -92,4 +99,20 @@ func getPublicShareThumbnailURL(fileHandle string) string {
 
 func getPublicShareFileURL(fileHandle string) string {
 	return os.Getenv("NODE_BUCKET_URL") + fileHandle + "/public"
+}
+
+func getFileContentLength(fileHandle string) (int, error) {
+	resp, err := http.Head(getPublicShareFileURL(fileHandle))
+
+	if err != nil {
+		return 0, err
+	}
+
+	defer resp.Body.Close()
+
+	if resp.StatusCode == http.StatusOK {
+		return int(resp.ContentLength), nil
+	}
+
+	return 0, err
 }
