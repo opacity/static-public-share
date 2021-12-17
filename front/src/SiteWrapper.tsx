@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import type { ReactElement, ReactNode } from "react";
-import { Nav, Button } from "tabler-react";
+import { Nav, Button, NavLink } from "tabler-react";
 import AOS from "aos";
 import type { NotificationProps } from "tabler-react";
 import Footer from "opacity-web2.0/src/components/footer/footer";
@@ -46,160 +46,135 @@ class SiteWrapper extends React.Component<Props, State> {
   SetMobileMenu() {
     this.setState({ showMobileMenu: !this.state.showMobileMenu });
   }
-
+  
   render(): ReactElement {
-    const loggedIn = localStorage.getItem('key') ? true : false;
     return (
       <div className='page'>
-        <header
+         <header
           className={
             this.props.isHome
               ? "navbar navbar-expand-md navbar-light d-print-none "
               : "navbar navbar-expand-md navbar-light d-print-none border-bottom"
           }
         >
-          <div className='container-xl'>
-            <h1 className='navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0'>
-              <a href={window.OpacityConfig.opacityUrl} className='logo-wrapper'>
-                <img src={logo} width='60' height='60' alt='Opacity' className='navbar-brand-image' />
-                <span className='ml-3'>OPACITY</span>
-              </a>
+          <div className="container-xl">
+            <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0">
+              <NavLink to={window.OpacityConfig.opacityUrl} className="logo-wrapper">
+                <img src={logo} width="60" height="60" alt="Opacity" className="navbar-brand-image" />
+                <span className="ml-3">OPACITY</span>
+              </NavLink>
             </h1>
             <button
-              className='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#navbar-menu'
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-menu"
               aria-expanded={this.state.showMobileMenu}
               onClick={this.SetMobileMenu.bind(this)}
             >
-              <span className='navbar-toggler-icon'></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className='collapse navbar-collapse' id='navbar-menu'>
-              <div className='d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-end'>
-                <ul className='navbar-nav'>
-                  <li className='nav-item'>
-                    <a href={window.OpacityConfig.opacityUrl + 'platform'} className='nav-link'>
+            <div className="collapse navbar-collapse" id="navbar-menu">
+              <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-end">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <NavLink to={window.OpacityConfig.opacityUrl + 'platform'} className="nav-link">
                       Why Opacity?
-                    </a>
+                    </NavLink>
                   </li>
-                  <li className='nav-item'>
-                    <a href={window.OpacityConfig.opacityUrl + 'downloads'} className='nav-link'>
+                  <li className="nav-item">
+                    <NavLink to={window.OpacityConfig.opacityUrl + 'downloads'} className="nav-link">
                       Downloads
-                    </a>
+                    </NavLink>
                   </li>
-                  <li className='nav-item'>
-                    <Nav.Link href="https://medium.com/opacity-storage">Learn</Nav.Link>
+                  <li className="nav-item">
+                    <NavLink to={window.OpacityConfig.opacityUrl + 'about'} className="nav-link">
+                      About
+                    </NavLink>
                   </li>
-                  <li className='nav-item'>
-                    {loggedIn ?
-                      (
-                        <div className='nav-link'>
-                          <Button
-                            className='btn btn-primary'
-                            onClick={() => {
-                              window.open(`${window.OpacityConfig.opacityUrl}file-manager`, '_blank');
-                            }}
-                          >
-                            Dashboard
-                        </Button>
-                        </div>
-                      ) : (
-                        <div className='nav-link'>
-                          <Button
-                            className='btn btn-white btn-pill'
-                            onClick={() => {
-                              window.open(`${window.OpacityConfig.opacityUrl}plans`, '_blank');
-                            }}
-                          >
-                            Explore Plans
-                      </Button>
-                        </div>
-                      )
-                    }
-
+                  <li className="nav-item">
+                    <Nav.Link href="https://blog.opacity.io/" target="_blank">
+                      Blog
+                    </Nav.Link>
                   </li>
-                  <li className='nav-item'>
-                    {loggedIn ? (
-                      <div className=''>
+                  <li className="nav-item">
+                    <Nav.Link href="https://help.opacity.io" target="_blank">
+                      Help Center
+                    </Nav.Link>
+                  </li>
+                  <li className="nav-item">
+                      <div className="nav-link">
                         <Button
-                          className='btn btn-primary'
+                          className="btn btn-white btn-pill"
                           onClick={() => {
-                            window.open(`${window.OpacityConfig.opacityUrl}`, '_blank');
+                            window.open(`${window.OpacityConfig.opacityUrl}plans`, '_blank');;
                           }}
                         >
-                          Logout
+                          Explore Plans
                         </Button>
                       </div>
-                    ) : (
-                      <div className=''>
+                  </li>
+                  <li className="nav-item">
+                    
+                      <div className="">
                         <Button
-                          className='btn btn-primary btn-pill'
+                          className="btn btn-primary btn-pill"
                           onClick={() => {
-                            window.open(`${window.OpacityConfig.opacityUrl}`, '_blank');
+                            this.setState({ showLoginModal: true });
                           }}
                         >
                           Log in
-                      </Button>
+                        </Button>
                       </div>
-                    )}
-
                   </li>
                 </ul>
               </div>
             </div>
             {this.state.showMobileMenu && (
-              <div className='mobile-menu'>
-                <div className='d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center'>
-                  <ul className='navbar-nav'>
-                    <li className='nav-item'>
-                      <a href={window.OpacityConfig.opacityUrl + 'platform'} className='nav-link'>
+              <div className="mobile-menu">
+                <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center">
+                  <ul className="navbar-nav">
+                    <li className="nav-item">
+                      <NavLink to={window.OpacityConfig.opacityUrl + 'platform'} className="nav-link">
                         Why Opacity?
-                    </a>
+                      </NavLink>
                     </li>
-                    <li className='nav-item'>
-                      <a href={window.OpacityConfig.opacityUrl + 'downloads'} className='nav-link'>
+                    <li className="nav-item">
+                      <NavLink to={window.OpacityConfig.opacityUrl + 'downloads'} className="nav-link">
                         Downloads
-                    </a>
+                      </NavLink>
                     </li>
-                    <li className='nav-item'>
-                      <Nav.Link href='/blog'>Learn</Nav.Link>
+                    <li className="nav-item">
+                      <NavLink to={window.OpacityConfig.opacityUrl + 'about'} className="nav-link">
+                        About
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <Nav.Link href="https://blog.opacity.io" target="_blank">
+                        Blog
+                      </Nav.Link>
+                    </li>
+                    <li className="nav-item">
+                      <Nav.Link href="https://help.opacity.io" target="_blank">
+                        Help Center
+                      </Nav.Link>
                     </li>
 
-                    {
-                      loggedIn ? (
-                        <>
-                          <li className='nav-item'>
-                            <a href={window.OpacityConfig.opacityUrl + 'file-manager'} className='nav-link' >
-                              Dashboard
-                            </a>
-                          </li>
-                          <li
-                            className='nav-item'
-                            onClick={() => {
-                              window.open(`${window.OpacityConfig.opacityUrl}`, ' _blank');
-                            }}
-                          >
-                            <Nav.Link>Logout</Nav.Link>
-                          </li>
-                        </>
-                      ) : (
-                        <>
-                          <li className='nav-item'>
-                            <Nav.Link href='/plans'>Explore Plans</Nav.Link>
-                          </li>
-                          <li
-                            className='nav-item'
-                            onClick={() => {
-                              this.setState({ showLoginModal: true });
-                            }}
-                          >
-                            <Nav.Link>Log in</Nav.Link>
-                          </li>
-                        </>
-                      )
-                    }
+                   
+                      <>
+                        <li className="nav-item">
+                          <Nav.Link href="/plans">Explore Plans</Nav.Link>
+                        </li>
+                        <li
+                          className="nav-item"
+                          onClick={() => {
+                            this.setState({ showLoginModal: true });
+                          }}
+                        >
+                          <Nav.Link>Log in</Nav.Link>
+                        </li>
+                      </>
 
                   </ul>
                 </div>
