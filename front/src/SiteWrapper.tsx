@@ -24,7 +24,7 @@ type Props = {
   handleCloseLoginModal?: Function;
   isHome?: boolean;
   history: any;
-  recoveryHandle: string;
+  recoveryHandle?: string;
 };
 
 type State = {
@@ -46,11 +46,11 @@ class SiteWrapper extends React.Component<Props, State> {
   SetMobileMenu() {
     this.setState({ showMobileMenu: !this.state.showMobileMenu });
   }
-  
+
   render(): ReactElement {
     return (
-      <div className='page'>
-         <header
+      <div className="page">
+        <header
           className={
             this.props.isHome
               ? "navbar navbar-expand-md navbar-light d-print-none "
@@ -59,8 +59,17 @@ class SiteWrapper extends React.Component<Props, State> {
         >
           <div className="container-xl">
             <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0">
-              <NavLink to={window.OpacityConfig.opacityUrl} className="logo-wrapper">
-                <img src={logo} width="60" height="60" alt="Opacity" className="navbar-brand-image" />
+              <NavLink
+                to={window.OpacityConfig.opacityUrl}
+                className="logo-wrapper"
+              >
+                <img
+                  src={logo}
+                  width="60"
+                  height="60"
+                  alt="Opacity"
+                  className="navbar-brand-image"
+                />
                 <span className="ml-3">OPACITY</span>
               </NavLink>
             </h1>
@@ -79,17 +88,26 @@ class SiteWrapper extends React.Component<Props, State> {
               <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-end">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <NavLink to={window.OpacityConfig.opacityUrl + 'platform'} className="nav-link">
+                    <NavLink
+                      to={window.OpacityConfig.opacityUrl + "platform"}
+                      className="nav-link"
+                    >
                       Why Opacity?
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={window.OpacityConfig.opacityUrl + 'downloads'} className="nav-link">
+                    <NavLink
+                      to={window.OpacityConfig.opacityUrl + "downloads"}
+                      className="nav-link"
+                    >
                       Downloads
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink to={window.OpacityConfig.opacityUrl + 'about'} className="nav-link">
+                    <NavLink
+                      to={window.OpacityConfig.opacityUrl + "about"}
+                      className="nav-link"
+                    >
                       About
                     </NavLink>
                   </li>
@@ -104,29 +122,31 @@ class SiteWrapper extends React.Component<Props, State> {
                     </Nav.Link>
                   </li>
                   <li className="nav-item">
-                      <div className="nav-link">
-                        <Button
-                          className="btn btn-white btn-pill"
-                          onClick={() => {
-                            window.open(`${window.OpacityConfig.opacityUrl}plans`, '_blank');;
-                          }}
-                        >
-                          Explore Plans
-                        </Button>
-                      </div>
+                    <div className="nav-link">
+                      <Button
+                        className="btn btn-white btn-pill"
+                        onClick={() => {
+                          window.open(
+                            `${window.OpacityConfig.opacityUrl}plans`,
+                            "_blank"
+                          );
+                        }}
+                      >
+                        Explore Plans
+                      </Button>
+                    </div>
                   </li>
                   <li className="nav-item">
-                    
-                      <div className="">
-                        <Button
-                          className="btn btn-primary btn-pill"
-                          onClick={() => {
-                            this.setState({ showLoginModal: true });
-                          }}
-                        >
-                          Log in
-                        </Button>
-                      </div>
+                    <div className="">
+                      <Button
+                        className="btn btn-primary btn-pill"
+                        onClick={() => {
+                          this.setState({ showLoginModal: true });
+                        }}
+                      >
+                        Log in
+                      </Button>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -136,17 +156,26 @@ class SiteWrapper extends React.Component<Props, State> {
                 <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center">
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <NavLink to={window.OpacityConfig.opacityUrl + 'platform'} className="nav-link">
+                      <NavLink
+                        to={window.OpacityConfig.opacityUrl + "platform"}
+                        className="nav-link"
+                      >
                         Why Opacity?
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink to={window.OpacityConfig.opacityUrl + 'downloads'} className="nav-link">
+                      <NavLink
+                        to={window.OpacityConfig.opacityUrl + "downloads"}
+                        className="nav-link"
+                      >
                         Downloads
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink to={window.OpacityConfig.opacityUrl + 'about'} className="nav-link">
+                      <NavLink
+                        to={window.OpacityConfig.opacityUrl + "about"}
+                        className="nav-link"
+                      >
                         About
                       </NavLink>
                     </li>
@@ -161,21 +190,19 @@ class SiteWrapper extends React.Component<Props, State> {
                       </Nav.Link>
                     </li>
 
-                   
-                      <>
-                        <li className="nav-item">
-                          <Nav.Link href="/plans">Explore Plans</Nav.Link>
-                        </li>
-                        <li
-                          className="nav-item"
-                          onClick={() => {
-                            this.setState({ showLoginModal: true });
-                          }}
-                        >
-                          <Nav.Link>Log in</Nav.Link>
-                        </li>
-                      </>
-
+                    <>
+                      <li className="nav-item">
+                        <Nav.Link href="/plans">Explore Plans</Nav.Link>
+                      </li>
+                      <li
+                        className="nav-item"
+                        onClick={() => {
+                          this.setState({ showLoginModal: true });
+                        }}
+                      >
+                        <Nav.Link>Log in</Nav.Link>
+                      </li>
+                    </>
                   </ul>
                 </div>
               </div>
