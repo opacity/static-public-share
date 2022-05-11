@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
@@ -29,14 +29,6 @@ declare global {
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
   const [pageLoading, setPageLoading] = useState(false)
-  const [error, setError] = useState(false)
-
-
-  useEffect(() => {
-    if (file.fileSizeBytes == "0") {
-      setError(true)
-    }
-  })
 
   const downloadFile = async () => {
     setPageLoading(true)
@@ -53,7 +45,7 @@ const SharePage = ({ history }) => {
   return (
     <>
     {
-      error ? <Page404 history={history}/> :
+      file.fileSizeBytes == "0" ? <Page404 history={history}/> :
       <SiteWrapper history={history}>
         <Container fluid='xl share'>
           <Row>
