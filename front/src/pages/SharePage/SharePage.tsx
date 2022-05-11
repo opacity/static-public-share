@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import SiteWrapper from "../../SiteWrapper";
 import { Row, Col, Container } from "react-bootstrap";
 import "./SharePage.scss";
 import { Preview } from "./preview";
 import { saveAs } from 'file-saver'
 import ReactLoading from "react-loading";
+import Page404 from "../404/404Page";
 
 declare global {
   interface window {
@@ -28,6 +29,14 @@ declare global {
 const SharePage = ({ history }) => {
   const file = useMemo(() => window.OpacityFile, [window.OpacityFile])
   const [pageLoading, setPageLoading] = useState(false)
+  const [error, setError] = useState(false)
+
+
+  useEffect(() => {
+    if (file.fileSizeBytes == "0") {
+      setError(true)
+    }
+  })
 
   const downloadFile = async () => {
     setPageLoading(true)
@@ -43,6 +52,8 @@ const SharePage = ({ history }) => {
 
   return (
     <>
+    {
+      error ? <Page404 history={history}/> :
       <SiteWrapper history={history}>
         <Container fluid='xl share'>
           <Row>
@@ -90,7 +101,7 @@ const SharePage = ({ history }) => {
                   <h2>Easily share your files with Opacity</h2>
 
                   <div className="free-signup-text">
-                    <a href={window.OpacityConfig.opacityUrl + "plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
+                    <a href={window.OpacityFile.opacityUrl + "plans"} target='_blank'>Get 10GB file storage and file sharing for free</a>
                   </div>
                   <div style={{ fontSize: "1.1rem" }}>
                     Free to share ideas. Free to be protected. Free to be you.
@@ -106,6 +117,7 @@ const SharePage = ({ history }) => {
           </div>
         }
       </SiteWrapper >
+    }
     </>
   )
 }
