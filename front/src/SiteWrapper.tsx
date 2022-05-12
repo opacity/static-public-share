@@ -111,22 +111,12 @@ class SiteWrapper extends React.Component<Props, State> {
                   </li>
                   <li className="nav-item">
                     <a
-                      href="https://telegram.me/opacitystorage"
                       className="nav-link"
+                      href="https://medium.com/opacity-storage"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      About
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://blog.opacity.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Blog
+                      Learn
                     </a>
                   </li>
                   <li className="nav-item">

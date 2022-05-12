@@ -41,14 +41,14 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(9);
-var preview_1 = __fusereq(11);
-var file_saver_1 = __fusereq(12);
-var react_loading_1 = __fusereq(13);
+var react_bootstrap_1 = __fusereq(8);
+var preview_1 = __fusereq(10);
+var file_saver_1 = __fusereq(11);
+var react_loading_1 = __fusereq(12);
 var react_loading_1d = __fuse.dt(react_loading_1);
-var a404Page_1 = __fusereq(14);
+var a404Page_1 = __fusereq(13);
 var a404Page_1d = __fuse.dt(a404Page_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
@@ -128,7 +128,7 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-8: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(16);
@@ -213,18 +213,11 @@ class SiteWrapper extends react_1.Component {
     }, "\n                      Downloads\n                    ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement("a", {
-      href: "https://telegram.me/opacitystorage",
       className: "nav-link",
+      href: "https://medium.com/opacity-storage",
       target: "_blank",
       rel: "noopener noreferrer"
-    }, "\n                      About\n                    ")), react_1.createElement("li", {
-      className: "nav-item"
-    }, react_1.createElement("a", {
-      className: "nav-link",
-      href: "https://blog.opacity.io/",
-      target: "_blank",
-      rel: "noopener noreferrer"
-    }, "\n                      Blog\n                    ")), react_1.createElement("li", {
+    }, "\n                      Learn\n                    ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement("a", {
       className: "nav-link",
@@ -297,12 +290,12 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-11: function(__fusereq, exports, module){
+10: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(98);
-var react_markdown_1 = __fusereq(99);
+var preview_renderer_1 = __fusereq(24);
+var react_markdown_1 = __fusereq(25);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
@@ -379,13 +372,13 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-14: function(__fusereq, exports, module){
+13: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(16);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-const logo = __fusereq(100);
+const logo = __fusereq(22);
 const Page404 = ({history}) => {
   return react_1.createElement(SiteWrapper_1d.default, {
     history: history
@@ -531,12 +524,15 @@ module.exports = "/resources/609cde56.svg";
 },
 19: function(__fusereq, exports, module){
 exports.__esModule = true;
-var Footer_1 = __fusereq(107);
+var Footer_1 = __fusereq(102);
 var Footer_1d = __fuse.dt(Footer_1);
 exports.default = Footer_1d.default;
 
 },
-98: function(__fusereq, exports, module){
+22: function(__fusereq, exports, module){
+module.exports = "/resources/04ce82873.png";
+},
+24: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -565,18 +561,15 @@ const PreviewRenderer = ({url, render = text => react_1d.default.createElement("
 exports.PreviewRenderer = PreviewRenderer;
 
 },
-100: function(__fusereq, exports, module){
-module.exports = "/resources/04ce82873.png";
-},
-107: function(__fusereq, exports, module){
+102: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 const logo = __fusereq(15);
-const github = __fusereq(178);
-const reddit = __fusereq(179);
-const telegram = __fusereq(180);
-const twitter = __fusereq(181);
-const youtube = __fusereq(182);
+const github = __fusereq(175);
+const reddit = __fusereq(176);
+const telegram = __fusereq(177);
+const twitter = __fusereq(178);
+const youtube = __fusereq(179);
 const Footer = () => {
   return react_1.createElement("footer", null, react_1.createElement("div", {
     className: "container-xl"
@@ -737,20 +730,20 @@ const Footer = () => {
 exports.default = Footer;
 
 },
-178: function(__fusereq, exports, module){
+175: function(__fusereq, exports, module){
 module.exports = "/resources/045ef80b2.svg";
 },
-179: function(__fusereq, exports, module){
+176: function(__fusereq, exports, module){
 module.exports = "/resources/07d019bb7.svg";
 },
-180: function(__fusereq, exports, module){
+177: function(__fusereq, exports, module){
 module.exports = "/resources/1fed042c.svg";
 },
-181: function(__fusereq, exports, module){
+178: function(__fusereq, exports, module){
 module.exports = "/resources/038ead66c.svg";
 },
-182: function(__fusereq, exports, module){
+179: function(__fusereq, exports, module){
 module.exports = "/resources/2f86d244.svg";
 }
 })
-//# sourceMappingURL=app.02b2fde1f.js.map
+//# sourceMappingURL=app.07541a900.js.map
