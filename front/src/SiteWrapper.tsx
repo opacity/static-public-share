@@ -5,8 +5,8 @@ import type { ReactElement, ReactNode } from "react";
 import { Nav, Button, NavLink } from "tabler-react";
 import AOS from "aos";
 import type { NotificationProps } from "tabler-react";
-import Footer from "opacity-web2.0/src/components/footer/footer";
 import "aos/dist/aos.css";
+import Footer from "./components/Footer";
 
 AOS.init({
   once: true,
@@ -59,9 +59,11 @@ class SiteWrapper extends React.Component<Props, State> {
         >
           <div className="container-xl">
             <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0">
-              <NavLink
-                to={window.OpacityConfig.opacityUrl}
+              <a
+                href={window.OpacityConfig.opacityUrl}
                 className="logo-wrapper"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={logo}
@@ -71,7 +73,7 @@ class SiteWrapper extends React.Component<Props, State> {
                   className="navbar-brand-image"
                 />
                 <span className="ml-3">OPACITY</span>
-              </NavLink>
+              </a>
             </h1>
             <button
               className="navbar-toggler"
@@ -88,38 +90,54 @@ class SiteWrapper extends React.Component<Props, State> {
               <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-end">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <NavLink
-                      to={window.OpacityConfig.opacityUrl + "platform"}
+                    <a
+                      href={window.OpacityConfig.opacityUrl + "platform"}
                       className="nav-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Why Opacity?
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <NavLink
-                      to={window.OpacityConfig.opacityUrl + "downloads"}
+                    <a
+                      href={window.OpacityConfig.opacityUrl + "downloads"}
                       className="nav-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Downloads
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <NavLink
-                      to={window.OpacityConfig.opacityUrl + "about"}
+                    <a
+                      href="https://telegram.me/opacitystorage"
                       className="nav-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       About
-                    </NavLink>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link href="https://blog.opacity.io/" target="_blank">
+                    <a
+                      className="nav-link"
+                      href="https://blog.opacity.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Blog
-                    </Nav.Link>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link href="https://help.opacity.io" target="_blank">
+                    <a
+                      className="nav-link"
+                      href="https://help.opacity.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Help Center
-                    </Nav.Link>
+                    </a>
                   </li>
                   <li className="nav-item">
                     <div className="nav-link">
@@ -141,7 +159,10 @@ class SiteWrapper extends React.Component<Props, State> {
                       <Button
                         className="btn btn-primary btn-pill"
                         onClick={() => {
-                          this.setState({ showLoginModal: true });
+                          window.open(
+                            window.OpacityConfig.opacityUrl,
+                            "_blank"
+                          );
                         }}
                       >
                         Log in

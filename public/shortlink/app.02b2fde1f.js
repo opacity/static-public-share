@@ -41,14 +41,14 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(8);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(8);
-var preview_1 = __fusereq(10);
-var file_saver_1 = __fusereq(11);
-var react_loading_1 = __fusereq(12);
+var react_bootstrap_1 = __fusereq(9);
+var preview_1 = __fusereq(11);
+var file_saver_1 = __fusereq(12);
+var react_loading_1 = __fusereq(13);
 var react_loading_1d = __fuse.dt(react_loading_1);
-var a404Page_1 = __fusereq(13);
+var a404Page_1 = __fusereq(14);
 var a404Page_1d = __fuse.dt(a404Page_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
@@ -128,14 +128,14 @@ const SharePage = ({history}) => {
 exports.default = SharePage;
 
 },
-7: function(__fusereq, exports, module){
+8: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(16);
 var aos_1 = __fusereq(17);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(18);
-var footer_1d = __fuse.dt(footer_1);
+var Footer_1 = __fusereq(19);
+var Footer_1d = __fuse.dt(Footer_1);
 aos_1d.default.init({
   once: true,
   anchorPlacement: "center-bottom",
@@ -167,9 +167,11 @@ class SiteWrapper extends react_1.Component {
       className: "container-xl"
     }, react_1.createElement("h1", {
       className: "navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3 mb-0"
-    }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl,
-      className: "logo-wrapper"
+    }, react_1.createElement("a", {
+      href: window.OpacityConfig.opacityUrl,
+      className: "logo-wrapper",
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, react_1.createElement("img", {
       src: logo,
       width: "60",
@@ -196,29 +198,39 @@ class SiteWrapper extends react_1.Component {
       className: "navbar-nav"
     }, react_1.createElement("li", {
       className: "nav-item"
-    }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + "platform",
-      className: "nav-link"
+    }, react_1.createElement("a", {
+      href: window.OpacityConfig.opacityUrl + "platform",
+      className: "nav-link",
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, "\n                      Why Opacity?\n                    ")), react_1.createElement("li", {
       className: "nav-item"
-    }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + "downloads",
-      className: "nav-link"
+    }, react_1.createElement("a", {
+      href: window.OpacityConfig.opacityUrl + "downloads",
+      className: "nav-link",
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, "\n                      Downloads\n                    ")), react_1.createElement("li", {
       className: "nav-item"
-    }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + "about",
-      className: "nav-link"
+    }, react_1.createElement("a", {
+      href: "https://telegram.me/opacitystorage",
+      className: "nav-link",
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, "\n                      About\n                    ")), react_1.createElement("li", {
       className: "nav-item"
-    }, react_1.createElement(tabler_react_1.Nav.Link, {
+    }, react_1.createElement("a", {
+      className: "nav-link",
       href: "https://blog.opacity.io/",
-      target: "_blank"
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, "\n                      Blog\n                    ")), react_1.createElement("li", {
       className: "nav-item"
-    }, react_1.createElement(tabler_react_1.Nav.Link, {
+    }, react_1.createElement("a", {
+      className: "nav-link",
       href: "https://help.opacity.io",
-      target: "_blank"
+      target: "_blank",
+      rel: "noopener noreferrer"
     }, "\n                      Help Center\n                    ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement("div", {
@@ -235,9 +247,7 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement(tabler_react_1.Button, {
       className: "btn btn-primary btn-pill",
       onClick: () => {
-        this.setState({
-          showLoginModal: true
-        });
+        window.open(window.OpacityConfig.opacityUrl, "_blank");
       }
     }, "\n                        Log in\n                      ")))))), this.state.showMobileMenu && react_1.createElement("div", {
       className: "mobile-menu"
@@ -281,13 +291,13 @@ class SiteWrapper extends react_1.Component {
           showLoginModal: true
         });
       }
-    }, react_1.createElement(tabler_react_1.Nav.Link, null, "Log in")))))))), this.props.children, react_1.createElement(footer_1d.default, null));
+    }, react_1.createElement(tabler_react_1.Nav.Link, null, "Log in")))))))), this.props.children, react_1.createElement(Footer_1d.default, null));
   }
 }
 exports.default = SiteWrapper;
 
 },
-10: function(__fusereq, exports, module){
+11: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -369,11 +379,11 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-13: function(__fusereq, exports, module){
+14: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var tabler_react_1 = __fusereq(16);
-var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1 = __fusereq(8);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
 const logo = __fusereq(100);
 const Page404 = ({history}) => {
@@ -519,6 +529,13 @@ exports.default = Page404;
 15: function(__fusereq, exports, module){
 module.exports = "/resources/609cde56.svg";
 },
+19: function(__fusereq, exports, module){
+exports.__esModule = true;
+var Footer_1 = __fusereq(107);
+var Footer_1d = __fuse.dt(Footer_1);
+exports.default = Footer_1d.default;
+
+},
 98: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
@@ -550,6 +567,190 @@ exports.PreviewRenderer = PreviewRenderer;
 },
 100: function(__fusereq, exports, module){
 module.exports = "/resources/04ce82873.png";
+},
+107: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+const logo = __fusereq(15);
+const github = __fusereq(178);
+const reddit = __fusereq(179);
+const telegram = __fusereq(180);
+const twitter = __fusereq(181);
+const youtube = __fusereq(182);
+const Footer = () => {
+  return react_1.createElement("footer", null, react_1.createElement("div", {
+    className: "container-xl"
+  }, react_1.createElement("div", {
+    className: "row"
+  }, react_1.createElement("div", {
+    className: "col-md-6 footer-logo"
+  }, react_1.createElement("a", {
+    href: window.OpacityConfig.opacityUrl,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "footer-logo"
+  }, react_1.createElement("img", {
+    width: 78,
+    height: 78,
+    src: logo
+  }), react_1.createElement("span", {
+    className: "ml-3"
+  }, "OPACITY"))), react_1.createElement("div", {
+    className: "col-md-6 footer-third"
+  }, react_1.createElement("div", {
+    className: "d-flex h-100 align-items-center",
+    style: {
+      justifyContent: "flex-end"
+    }
+  }, react_1.createElement("a", {
+    href: "https://github.com/opacity",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "social-link"
+  }, react_1.createElement("img", {
+    width: 43,
+    height: 43,
+    src: github
+  })), react_1.createElement("a", {
+    href: "https://www.reddit.com/r/Opacity/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "social-link"
+  }, react_1.createElement("img", {
+    width: 43,
+    height: 43,
+    src: reddit
+  })), react_1.createElement("a", {
+    href: "https://telegram.me/opacitystorage",
+    className: "social-link",
+    rel: "noopener noreferrer",
+    target: "_blank"
+  }, react_1.createElement("img", {
+    width: 43,
+    height: 43,
+    src: telegram
+  })), react_1.createElement("a", {
+    href: "https://twitter.com/Opacity_Storage",
+    className: "social-link",
+    rel: "noopener noreferrer",
+    target: "_blank"
+  }, react_1.createElement("img", {
+    width: 43,
+    height: 43,
+    src: twitter
+  })), react_1.createElement("a", {
+    href: "https://www.youtube.com/opacitystorage",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, react_1.createElement("img", {
+    width: 43,
+    height: 43,
+    src: youtube
+  }))))), react_1.createElement("div", {
+    className: "divider"
+  }), react_1.createElement("div", {
+    className: " footer-links"
+  }, react_1.createElement("div", {
+    className: "link-wrapper"
+  }, react_1.createElement("span", {
+    className: "title"
+  }, " Company"), react_1.createElement("a", {
+    href: "https://telegram.me/opacitystorage",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              About Us\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "https://blog.opacity.io",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Blog\n            ")), react_1.createElement("div", {
+    className: "link-wrapper"
+  }, react_1.createElement("span", {
+    className: "title"
+  }, " Resources"), react_1.createElement("a", {
+    href: `${window.OpacityConfig.opacityUrl}downloads`,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Downloads\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "https://opacitystora.ge/GalaxyWhitepaperV1",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Whitepaper\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "https://medium.com/opacity-storage",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Learn\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "https://api.opacity.io:3000/swagger/index.html",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              API for Developers\n            ")), react_1.createElement("div", {
+    className: "link-wrapper"
+  }, react_1.createElement("span", {
+    className: "title"
+  }, " Help"), react_1.createElement("a", {
+    href: "https://help.opacity.io",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Help Center\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "https://telegram.me/opacitystorage",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Telegram\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: "http://discord.opacity.io/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Discord\n            ")), react_1.createElement("div", {
+    className: "link-wrapper"
+  }, react_1.createElement("span", {
+    className: "title"
+  }, " Legal"), react_1.createElement("a", {
+    href: `${window.OpacityConfig.opacityUrl}terms-of-service`,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Terms of Service\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: `${window.OpacityConfig.opacityUrl}privacy-policy`,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Privacy Policy\n            "), react_1.createElement("br", null), react_1.createElement("a", {
+    href: `${window.OpacityConfig.opacityUrl}code-review-license`,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "nav-link"
+  }, "\n              Code License\n            "))), react_1.createElement("div", {
+    className: "divider"
+  }), react_1.createElement("div", {
+    className: "row"
+  }, react_1.createElement("div", {
+    className: "col-md-12 text-center copywrite"
+  }, " ", "\n            © 2018-2021 Opacity Storage Inc. All rights reserved.\n          "))));
+};
+exports.default = Footer;
+
+},
+178: function(__fusereq, exports, module){
+module.exports = "/resources/045ef80b2.svg";
+},
+179: function(__fusereq, exports, module){
+module.exports = "/resources/07d019bb7.svg";
+},
+180: function(__fusereq, exports, module){
+module.exports = "/resources/1fed042c.svg";
+},
+181: function(__fusereq, exports, module){
+module.exports = "/resources/038ead66c.svg";
+},
+182: function(__fusereq, exports, module){
+module.exports = "/resources/2f86d244.svg";
 }
 })
-//# sourceMappingURL=app.07c0d9ab3.js.map
+//# sourceMappingURL=app.02b2fde1f.js.map
