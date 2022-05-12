@@ -14,6 +14,8 @@ Run the image using `docker run --publish 3080:3080 --name static-public-share-t
 
 ## Deploy
 
+Before pushing code to main branch, make sure you run `npm run dist:prod` inside `front` directory
+
 `go build`
 
 `nohup ./static-public-share &`
