@@ -41,13 +41,15 @@ react_dom_1.render(react_1.createElement(App, null), document.getElementById("ro
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var SiteWrapper_1 = __fusereq(8);
+var SiteWrapper_1 = __fusereq(7);
 var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
-var react_bootstrap_1 = __fusereq(9);
-var preview_1 = __fusereq(11);
-var file_saver_1 = __fusereq(12);
-var react_loading_1 = __fusereq(13);
+var react_bootstrap_1 = __fusereq(8);
+var preview_1 = __fusereq(10);
+var file_saver_1 = __fusereq(11);
+var react_loading_1 = __fusereq(12);
 var react_loading_1d = __fuse.dt(react_loading_1);
+var a404Page_1 = __fusereq(13);
+var a404Page_1d = __fuse.dt(a404Page_1);
 const SharePage = ({history}) => {
   const file = react_1.useMemo(() => window.OpacityFile, [window.OpacityFile]);
   const [pageLoading, setPageLoading] = react_1.useState(false);
@@ -59,36 +61,42 @@ const SharePage = ({history}) => {
       setPageLoading(false);
     });
   };
-  return react_1d.default.createElement(react_1d.default.Fragment, null, react_1d.default.createElement(SiteWrapper_1d.default, {
+  if (Number(file.fileSizeBytes) === 0) {
+    return react_1d.default.createElement(a404Page_1d.default, {
+      history: history
+    });
+  }
+  return react_1d.default.createElement(SiteWrapper_1d.default, {
     history: history
   }, react_1d.default.createElement(react_bootstrap_1.Container, {
-    fluid: 'xl share'
+    fluid: "xl",
+    className: "share"
   }, react_1d.default.createElement(react_bootstrap_1.Row, null, react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
     xs: 12,
-    className: 'center'
+    className: "center"
   }, react_1d.default.createElement(react_bootstrap_1.Row, {
     style: {
-      padding: '20px'
+      padding: "20px"
     }
   }, react_1d.default.createElement("div", {
-    className: 'preview-area center'
+    className: "preview-area center"
   }, react_1d.default.createElement(preview_1.Preview, {
     url: file.url,
     ext: file.fileExtension,
     type: file.mimeType,
     defaultThumbnail: file.defaultThumbnail,
-    className: 'preview-content'
+    className: "preview-content"
   })))), react_1d.default.createElement(react_bootstrap_1.Col, {
     md: 6,
     xs: 12,
     className: "control-area"
   }, react_1d.default.createElement(react_bootstrap_1.Row, {
-    className: 'align-items-center'
+    className: "align-items-center"
   }, react_1d.default.createElement(react_bootstrap_1.Col, {
-    className: 'text-center'
+    className: "text-center"
   }, react_1d.default.createElement("div", {
-    className: 'text-filename'
+    className: "text-filename"
   }, file && file.title), react_1d.default.createElement("div", {
     className: "text-filesize"
   }, file && file.description), react_1d.default.createElement("div", {
@@ -105,28 +113,28 @@ const SharePage = ({history}) => {
     className: "free-signup-text"
   }, react_1d.default.createElement("a", {
     href: window.OpacityConfig.opacityUrl + "plans",
-    target: '_blank'
-  }, "Get 10GB file storage and file sharing for free")), react_1d.default.createElement("div", {
+    target: "_blank"
+  }, "\n                    Get 10GB file storage and file sharing for free\n                  ")), react_1d.default.createElement("div", {
     style: {
       fontSize: "1.1rem"
     }
-  }, "\n                    Free to share ideas. Free to be protected. Free to be you.\n                ")))))), pageLoading && react_1d.default.createElement("div", {
-    className: 'loading'
+  }, "\n                  Free to share ideas. Free to be protected. Free to be you.\n                ")))))), pageLoading && react_1d.default.createElement("div", {
+    className: "loading"
   }, react_1d.default.createElement(react_loading_1d.default, {
     type: "spinningBubbles",
     color: "#2e6dde"
-  }))));
+  })));
 };
 exports.default = SharePage;
 
 },
-8: function(__fusereq, exports, module){
+7: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
-var tabler_react_1 = __fusereq(95);
-var aos_1 = __fusereq(96);
+var tabler_react_1 = __fusereq(16);
+var aos_1 = __fusereq(17);
 var aos_1d = __fuse.dt(aos_1);
-var footer_1 = __fusereq(97);
+var footer_1 = __fusereq(18);
 var footer_1d = __fuse.dt(footer_1);
 aos_1d.default.init({
   once: true,
@@ -135,7 +143,7 @@ aos_1d.default.init({
   delay: 50,
   duration: 700
 });
-const logo = __fusereq(94);
+const logo = __fusereq(15);
 class SiteWrapper extends react_1.Component {
   constructor(props) {
     super(props);
@@ -152,7 +160,7 @@ class SiteWrapper extends react_1.Component {
   }
   render() {
     return react_1.createElement("div", {
-      className: 'page'
+      className: "page"
     }, react_1.createElement("header", {
       className: this.props.isHome ? "navbar navbar-expand-md navbar-light d-print-none " : "navbar navbar-expand-md navbar-light d-print-none border-bottom"
     }, react_1.createElement("div", {
@@ -189,17 +197,17 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'platform',
+      to: window.OpacityConfig.opacityUrl + "platform",
       className: "nav-link"
     }, "\n                      Why Opacity?\n                    ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'downloads',
+      to: window.OpacityConfig.opacityUrl + "downloads",
       className: "nav-link"
     }, "\n                      Downloads\n                    ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'about',
+      to: window.OpacityConfig.opacityUrl + "about",
       className: "nav-link"
     }, "\n                      About\n                    ")), react_1.createElement("li", {
       className: "nav-item"
@@ -218,10 +226,9 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement(tabler_react_1.Button, {
       className: "btn btn-white btn-pill",
       onClick: () => {
-        window.open(`${window.OpacityConfig.opacityUrl}plans`, '_blank');
-        ;
+        window.open(`${window.OpacityConfig.opacityUrl}plans`, "_blank");
       }
-    }, "\n                          Explore Plans\n                        "))), react_1.createElement("li", {
+    }, "\n                        Explore Plans\n                      "))), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement("div", {
       className: ""
@@ -232,7 +239,7 @@ class SiteWrapper extends react_1.Component {
           showLoginModal: true
         });
       }
-    }, "\n                          Log in\n                        ")))))), this.state.showMobileMenu && react_1.createElement("div", {
+    }, "\n                        Log in\n                      ")))))), this.state.showMobileMenu && react_1.createElement("div", {
       className: "mobile-menu"
     }, react_1.createElement("div", {
       className: "d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center justify-content-center"
@@ -241,17 +248,17 @@ class SiteWrapper extends react_1.Component {
     }, react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'platform',
+      to: window.OpacityConfig.opacityUrl + "platform",
       className: "nav-link"
     }, "\n                        Why Opacity?\n                      ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'downloads',
+      to: window.OpacityConfig.opacityUrl + "downloads",
       className: "nav-link"
     }, "\n                        Downloads\n                      ")), react_1.createElement("li", {
       className: "nav-item"
     }, react_1.createElement(tabler_react_1.NavLink, {
-      to: window.OpacityConfig.opacityUrl + 'about',
+      to: window.OpacityConfig.opacityUrl + "about",
       className: "nav-link"
     }, "\n                        About\n                      ")), react_1.createElement("li", {
       className: "nav-item"
@@ -280,12 +287,12 @@ class SiteWrapper extends react_1.Component {
 exports.default = SiteWrapper;
 
 },
-11: function(__fusereq, exports, module){
+10: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
-var preview_renderer_1 = __fusereq(16);
-var react_markdown_1 = __fusereq(17);
+var preview_renderer_1 = __fusereq(98);
+var react_markdown_1 = __fusereq(99);
 var react_markdown_1d = __fuse.dt(react_markdown_1);
 const getTypeFromExt = ext => {
   ext = ("" + ext).replace(/^\./, "");
@@ -362,7 +369,157 @@ exports.getTypeFromExt = getTypeFromExt;
 exports.Preview = Preview;
 
 },
-16: function(__fusereq, exports, module){
+13: function(__fusereq, exports, module){
+exports.__esModule = true;
+var react_1 = __fusereq(2);
+var tabler_react_1 = __fusereq(16);
+var SiteWrapper_1 = __fusereq(7);
+var SiteWrapper_1d = __fuse.dt(SiteWrapper_1);
+const logo = __fusereq(100);
+const Page404 = ({history}) => {
+  return react_1.createElement(SiteWrapper_1d.default, {
+    history: history
+  }, react_1.createElement("div", {
+    className: "page404"
+  }, react_1.createElement("div", {
+    className: "content"
+  }, react_1.createElement("div", {
+    className: "title",
+    title: "Error 404"
+  }, react_1.createElement("svg", {
+    className: "shape shape-rock-1",
+    width: "71",
+    height: "70",
+    viewBox: "0 0 71 70",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M11.5 26L11.5 46.5L33.5001 57L49.3246 57.8977L62.5 44.0001L62 28.5001L51.2115 15.2668L41.5 16.5L26.5 9.50002L11.5 26Z",
+    fill: "#4C4C4C"
+  }), react_1.createElement("path", {
+    d: "M20.5 24L22 41L36 52.5L49.3246 57.8977L62.5001 44L62 28.5L51.2115 15.2668L41.5 16.5L26.5 9.50001L20.5 24Z",
+    fill: "#A4A4A5"
+  })), react_1.createElement("svg", {
+    className: "shape shape-four-1",
+    width: "124",
+    height: "142",
+    viewBox: "0 0 124 142",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M89.0471 141.322L95.3623 117.754L111.01 121.947L118.827 92.7756L103.179 88.5828L123.574 12.4678L77.4023 0.0962432L7.25156 66.3991L0.315214 92.2859L61.9413 108.799L55.6261 132.367L89.0471 141.322ZM69.7576 79.6276L40.3935 71.7595L82.388 32.4904L69.7576 79.6276Z",
+    fill: "url(#paint0_linear)"
+  }), react_1.createElement("defs", null, react_1.createElement("linearGradient", {
+    id: "paint0_linear",
+    x1: "67",
+    y1: "57",
+    x2: "101",
+    y2: "168",
+    gradientUnits: "userSpaceOnUse"
+  }, react_1.createElement("stop", {
+    "stop-color": "white"
+  }), react_1.createElement("stop", {
+    offset: "1",
+    "stop-color": "white",
+    "stop-opacity": "0"
+  })))), react_1.createElement("svg", {
+    className: "shape shape-zero",
+    width: "104",
+    height: "121",
+    viewBox: "0 0 104 121",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M66.017 119.444C99.347 111.482 108 78.88 100.814 48.7976C93.6278 18.7151 71.2141 -6.28433 37.8841 1.67783C4.55407 9.63998 -4.14024 42.0707 3.04612 72.1532C10.2325 102.236 32.687 127.406 66.017 119.444ZM59.8106 93.4635C46.1368 96.7301 37.6049 85.2175 32.7867 65.0485C27.9686 44.8796 30.4166 30.9247 44.0905 27.6581C57.7643 24.3916 66.2554 35.7333 71.0735 55.9023C75.8916 76.0712 73.4845 90.197 59.8106 93.4635Z",
+    fill: "url(#paint0_linear)"
+  }), react_1.createElement("defs", null, react_1.createElement("linearGradient", {
+    id: "paint0_linear",
+    x1: "80.0001",
+    y1: "53",
+    x2: "132",
+    y2: "15",
+    gradientUnits: "userSpaceOnUse"
+  }, react_1.createElement("stop", {
+    "stop-color": "white"
+  }), react_1.createElement("stop", {
+    offset: "1",
+    "stop-color": "white",
+    "stop-opacity": "0"
+  })))), react_1.createElement("svg", {
+    className: "shape shape-rock-2",
+    width: "71",
+    height: "72",
+    viewBox: "0 0 71 72",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M23.6404 14.9808L4.68481 34.9094L25.8063 65.3995L43 65.2361L51.0289 46.1523C51.0289 46.1523 62.7982 46.1912 63.6985 47.2673C64.5988 48.3434 66.8592 29.8569 66.8592 29.8569L58.1282 8.55272L33.5203 9.83583L23.6404 14.9808Z",
+    fill: "#4C4C4C"
+  }), react_1.createElement("path", {
+    d: "M58.1294 8.5519L33.5214 9.83501L23.6413 14.981L21.2386 17.5064L32.1271 23.5505L28.421 43.9649L36.9157 65.2942L43.0011 65.2353L51.0301 46.1515C51.0301 46.1515 62.7994 46.1904 63.6996 47.2665C64.5999 48.3426 66.8604 29.8561 66.8604 29.8561L58.1294 8.5519Z",
+    fill: "#A4A4A5"
+  })), react_1.createElement("svg", {
+    className: "shape shape-four-2",
+    width: "119",
+    height: "139",
+    viewBox: "0 0 119 139",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M103.82 135.525L101.989 110.776L118.42 109.56L116.154 78.9278L99.7221 80.1436L93.8083 0.215792L45.3242 3.80309L0.168954 90.977L2.18024 118.161L66.8934 113.372L68.7245 138.122L103.82 135.525ZM64.6269 82.7403L33.7918 85.0217L60.9646 33.2418L64.6269 82.7403Z",
+    fill: "url(#paint0_linear)"
+  }), react_1.createElement("defs", null, react_1.createElement("linearGradient", {
+    id: "paint0_linear",
+    x1: "76.2591",
+    y1: "77.0593",
+    x2: "166.259",
+    y2: "18.0593",
+    gradientUnits: "userSpaceOnUse"
+  }, react_1.createElement("stop", {
+    "stop-color": "white"
+  }), react_1.createElement("stop", {
+    offset: "1",
+    "stop-color": "white",
+    "stop-opacity": "0"
+  })))), react_1.createElement("svg", {
+    className: "shape shape-rock-3",
+    width: "31",
+    height: "32",
+    viewBox: "0 0 31 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1.createElement("path", {
+    d: "M4.49999 5.5L6.49996 13.5L2.49997 22L11.5 29.5L23.5 28L28.5 14L21.385 4.42362L11.5 1.49999L4.49999 5.5Z",
+    fill: "#4C4C4C"
+  }), react_1.createElement("path", {
+    d: "M4.49999 5.5L8.99998 7.5L14.5 15.5L14.5 24L23.5 28L28.5 14L21.385 4.42362L11.5 1.49999L4.49999 5.5Z",
+    fill: "#A4A4A5"
+  }))), react_1.createElement("div", {
+    className: "description"
+  }, react_1.createElement("h1", null, "Uh oh! You've reached a dead-end. "), react_1.createElement("h2", null, "\n              If you're looking for an image, it's probably been deleted or may\n              not have existed at all. If you are looking to share your images,\n              ", react_1.createElement("a", {
+    href: "https://opacity.io"
+  }, "visit our homepage"), "!\n            "), react_1.createElement(tabler_react_1.NavLink, {
+    href: "https://opacity.io"
+  }, react_1.createElement("div", {
+    className: "d-flex justify-content-center w-100 mt-3"
+  }, react_1.createElement("div", {
+    className: "logo-wrapper"
+  }, react_1.createElement("img", {
+    src: logo,
+    width: "60",
+    height: "60",
+    alt: "Opacity"
+  }), react_1.createElement("span", {
+    className: "ml-3"
+  }, "OPACITY"))))))));
+};
+exports.default = Page404;
+
+},
+15: function(__fusereq, exports, module){
+module.exports = "/resources/609cde56.svg";
+},
+98: function(__fusereq, exports, module){
 exports.__esModule = true;
 var react_1 = __fusereq(2);
 var react_1d = __fuse.dt(react_1);
@@ -391,8 +548,8 @@ const PreviewRenderer = ({url, render = text => react_1d.default.createElement("
 exports.PreviewRenderer = PreviewRenderer;
 
 },
-94: function(__fusereq, exports, module){
-module.exports = "/resources/06dfaeef0.svg";
+100: function(__fusereq, exports, module){
+module.exports = "/resources/04ce82873.png";
 }
 })
-//# sourceMappingURL=app.044d8ec93.js.map
+//# sourceMappingURL=app.07c0d9ab3.js.map
